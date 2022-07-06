@@ -1,0 +1,33 @@
+
+.contenedor {
+    /* definir tamaño de letras para lo interno al contenedor */
+    font-size: 32px;
+}
+
+.pixeles {
+    /* 16px es el valor por defecto */
+    font-size: 25px; 
+    background-color: gray;
+    width: 700px;
+}
+
+.porcentaje {
+    /* 100% del valor contenedor 16px */
+    font-size: 150%; 
+    background-color: gray;
+    width: 50%;
+}
+
+.em {
+    /* 1em = valor del contenedor */
+    font-size: 1.5em; 
+    background-color: gray;
+    width: 5em;
+}
+
+.rem {
+    /* 1rem = valor del root (valor por defecto que son 16px) */
+    font-size: 0.8rem; 
+    background-color: gray;
+    width: 5rem;
+}

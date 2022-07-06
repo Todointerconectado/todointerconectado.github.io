@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&family=Signika+Negative&display=swap');/* Formateo valores predeterminados */
+:root {
+    --blue: rgb(47, 47, 185);
+    --blue_sure: rgb(70, 70, 183);
+    --white: rgb(255, 255, 255);
+    --gray: rgb(195, 191, 191);
+    --gray_strong: rgb(220, 216, 216);
+    --green: #b8f2e6af;
+}
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --------------------------- Estilos de esplicación --------------------------- */
+body {
+    font-family: 'Signika Negative', 'Segoe UI';
+    font-weight: 600;
+    font-size: 1rem;
+    /* height: 1000px; */
+}
+.contenedor_esplicaciones {
+    border: 1px solid black;
+    margin: 10px;
+    width: 80%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.title {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.contenedor_esplicaciones .text {
+    padding: 10px 0px;
+    text-align: center;
+    background-color: var(--gray);
+    line-height: 30px;
+}
+.contenedor_general {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    background-color: var(--gray_strong);
+}
+.contenedor_list {
+    /* border: 1px solid; */
+    box-shadow: 0px 0px 3px black;
+    margin-bottom: 5px;
+}
+.title_list {
+    padding: 2px 0px 2px 10px;
+    box-shadow: 0px 0px 2px black;
+    background-color: var(--blue_sure);
+    color: var(--white);
+}
+.ul_list {
+    padding: 10px;
+    background-color: var(--gray);
+}
+.list {
+    /* margin: top right bottom left */
+    width: 90%;
+    margin: 0px auto 5px auto;
+    padding: 2px 0px 2px 10px;
+    list-style: none;
+    box-shadow: 0px 0px 2px black;
+    background-color: var(--gray_strong);
+}
+/* --------------------------- Estilos de Muestra --------------------------- */
+.contenedor_barra {
+    border: 1px solid;
+    width: 90%;
+    height: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+li {
+    list-style: none;
+
+}
+.box1 {
+    width: 100%;
+    height: 100%;
+    /* animation-name: cambiocolor; */
+    /* animation-duration: 4000ms; */
+    /* animation-delay: 2000ms; */
+
+    /* animation-iteration-count: infinite; */
+    /* animation-iteration-count: 1; */
+
+    /* animation-direction: alternate; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate-reverse; */
+
+    /* animation-timing-function: ease; */
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease-out; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-timing-function: cubic-bezier(.2, .6, .3, 1); */
+
+    /* se queda en el ultimo valor establecido (en este caso color) */
+    /* animation-fill-mode: forwards; */
+
+    /* Todos los valores en una sola linea */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: cambiocolor 4000ms cubic-bezier(.2, .6, .3, 1) 0ms 3 alternate-reverse forwards;
+}
+@keyframes cambiocolor {
+    0%{
+        background-color: red;
+        width: 30%;
+    }
+    75%{
+        background-color: rgb(229, 255, 0);
+        width: 15%;
+    }
+    50%{
+        background-color: rgb(0, 255, 17);
+        width: 100%;
+    }
+    100%{
+        background-color: blueviolet;
+        width: 87%;
+    }
+}
+
+.contenedor_name {
+    border: 1px solid;
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.nombres {
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    text-align: center;
+    padding: 7px 0 0 0;
+    animation: name 2500ms ease 0ms infinite alternate-reverse forwards;
+}
+
+@keyframes name {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+    25% {
+        color: rgb(193, 183, 3);
+    }
+    50% {
+        color: rgb(0, 164, 11);
+    }
+    100% {
+        color: rgb(2, 2, 143);
+    }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 10 CSS</title>
+    <link rel="icon" href="/CSS/MULTIMEDIA/1_Logo_css.png" type="png">
+    <link rel="stylesheet" href="/Clases/Clase_10/style_clase_10.css">
+    <script src="https://kit.fontawesome.com/4600a4ff4e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+
+        <section class="contenedor_esplicaciones">
+            <h1 class="title">Propiedad Transform</h1>
+            <p class="text">
+                Nos permite mover, rotar, incrinar o modificar las dimenciones de un objeto. <br>
+                Esto se puede hacer en 2D o 3D. Para lograrlo la propiedad transform utiliza funciones. <br>
+            </p>
+            <ul class="contenedor_general">
+                <li>
+                    <details class="contenedor_list">
+                        <summary class="title_list">2D</summary>
+                        <ul class="ul_list">
+                            <li class="list">
+                                <details>
+                                    <summary>translate( ) ➡ Mueve el objeto en el eje x como en el eje y</summary>
+                                    <br><br> <p> .muestra .translate2D:hover { transform: translate(100px, 20px); }</p>
+                                    <section class="muestra">
+                                        <div class="box translate2D"> transform: translate(100px, 20px); </div>
+                                        <div class="backbox"></div>
+                                    </section>
+                                </details>
+                            </li>
+                            <li class="list"> 
+                                <details>
+                                    <summary>rotate ( ) ➡ Gira el objeto tanto a la izquierda (left) como a la derecha (right)</summary>
+                                    <br><br> <p> .muestra .rotate2D:hover { transform: rotate(-45deg); }</p>
+                                    <section class="muestra">
+                                        <div class="box rotate2D"> transform: rotate(-45deg); </div>
+                                        <div class="backbox"></div>
+                                    </section>
+                                </details>
+                            </li>
+                            <li class="list">
+                                <details>
+                                    <summary>scale ( ) ➡ Permite hacer más grande o pequeño un objeto</summary>
+                                    <br><br> <p> .muestra .scale2D:hover { transform: scale(1.5, .8); }</p>
+                                    <section class="muestra">
+                                        <div class="box scale2D"> transform: scale(1.5, .8); </div>
+                                        <div class="backbox"></div>
+                                    </section>
+                                </details>
+                            </li>
+                            <li class="list">
+                                <details>
+                                    <summary>skew ( ) ➡ Hace un efecto de romboide dependiendo el valor declarado</summary>
+                                    <br><br> <p> .muestra .skew2D:hover { transform: skew(-35deg); }</p>
+                                    <section class="muestra">
+                                        <div class="box skew2D"> transform: skew(-35deg); </div>
+                                        <div class="backbox"></div>
+                                    </section>
+                                </details>
+                            </li>
+                            <li class="list">
+                                <details>
+                                    <summary>matrix ( ) ➡ Esta permite declarar todas las funciones anteriores en una sola linea.</summary>
+                                    <br>
+                                    <p> Orden de posición: matrix( scaleX(), skewY(), skewX(), scaleY(), traslateX(), traslateY() ) </p> <br>
+                                    <p> .muestra .matrix2D:hover { transform: matrix(1.5, .25, .25, .8, 100, 10); } </p>
+                                    <section class="muestra">
+                                        <div class="box matrix2D"> transform: matrix(1.5, .25, .25, .8, 100, 10); </div>
+                                        <div class="backbox"></div>
+                                    </section>
+                                </details>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details class="contenedor_list">
+                        <summary class="title_list">3D</summary>
+                        <ul class="ul_list">
+                            <li class="list">
+                                <details>
+                                    <summary>rotateX( ) ➡ Se puede visualisar mejor con una img. Voltea la img hacia abajo o hacia arriba</summary>
+                                    <br><br> <p> .muestra .rotateX3D:hover { transform: rotateX(180deg); } </p>
+                                    <section class="muestra">
+                                        <div class="box rotateX3D"> transform: rotateX(180deg); </div>
+                                        <div class="backbox"></div>
+                                    </section>
+                                </details>
+                            </li>
+                            <li class="list">
+                                <details>
+                                    <summary>rotateY( ) ➡ Se puede visualisar mejor con una img. Voltea la img hacia la izquierda o hacia la derecha</summary>
+                                    <br><br> <p> .muestra .rotateX3D:hover { transform: rotateY(180deg); } </p>
+                                    <section class="muestra">
+                                        <div class="box rotateY3D"> transform: rotateY(180deg); </div>
+                                        <div class="backbox"></div>
+                                    </section>
+                                </details>
+                            </li>
+                            <li class="list">
+                                <details>
+                                    <summary>rotateZ( ) ➡ Se puede visualisar mejor con una img. Gira la img en el eje Z</summary>
+                                    <br>
+                                    <p> El origen es el centro del objeto. Lo cambiamos con la propiedad transform-origin dentro del padre </p> <br> 
+                                    <p> .muestra .rotateZ3D:hover { transform: rotateZ(180deg); } </p>
+                                    <section class="muestra"> 
+                                        <div class="box rotateZ3D"> transform: rotateZ(180deg); </div>
+                                        <div class="backbox"></div>
+                                    </section>
+                                </details>
+                            </li>
+                            <li class="list">
+                                <details>
+                                    <summary>rotateY( ) ➡ efecto con profundidad</summary>
+                                    <br>
+                                    <P> Dentro del contenedor padre va perspective: </P>
+                                    <p> .muestra { perspective: 800px; height: 300px; } </p> <br>
+                                    <p> .muestra .profundidad3D:hover { transform: rotateY(180deg); } </p>
+                                    <section class="muestra"> 
+                                        <div class="box profundidad3D"> transform: rotateY(180deg); </div>
+                                        <div class="backbox"></div>
+                                    </section>
+                                </details>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+</html>
+

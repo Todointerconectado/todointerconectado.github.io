@@ -1,0 +1,29 @@
+.name {
+    background-color: lightblue;
+}
+
+.hex {
+    background-color: #d36336;
+}
+
+.rgb {
+    background-color: rgb(12, 127, 57);
+}
+
+.rgba {
+    background-color: rgba(12, 127, 57, 0.3);
+}
+
+.hsl {
+    background-color: hsl(16, 100%, 50%);
+}
+
+.hsla {
+    background-color: hsla(16, 100%, 50%, 0.3);
+    /* #FFC7B2 */
+    /* #A66E59 */
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1654789460791-74c79093c37e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+}

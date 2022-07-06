@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&family=Signika+Negative&display=swap');/* Formateo valores predeterminados */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+/* Estetico */
+body {
+    font-family: 'Signika Negative', 'Segoe UI';
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: wheat;
+}
+
+div {
+    padding: 5px;
+}
+
+/* Position */
+.static {
+    background-color: gray;
+    /* valor por defecto que ponen los navegadores */
+    position: static;
+}
+
+.relative {
+    background-color: rgb(183, 73, 73);
+    width: 700px;
+    height: 300px;
+    position: relative;
+    top: 40px;
+    left: 70px;
+}
+
+.absolute {
+    background-color: aqua;
+    position: absolute;
+    top: 160px;
+    left: 200px;
+}
+
+.sticky {
+    background-color: blueviolet;
+    position: sticky;
+    top: 200px; /*Detenerce*/
+    height: auto;
+}
+
+.fixed {
+    background-color: rgb(196, 124, 36);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+
+/* Estilos de visualización */
+.espacio {
+    background-color: darkcyan;
+    height: 1000px;
+}
+
+span {
+    color: rgb(170, 167, 167);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+pre {
+    color: white;
+}

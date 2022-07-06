@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 11 CSS</title>
+    <link rel="icon" href="/CSS/MULTIMEDIA/1_Logo_css.png" type="png">
+    <link rel="stylesheet" href="/Clases/Clase_11/style_clase_11.css">
+    <script src="https://kit.fontawesome.com/4600a4ff4e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+
+        <section class="contenedor_esplicaciones">
+            <h1 class="title">Animaciones</h1>
+            <p class="text">
+                La propiedad animation nos permite animar cualquier otra propiedad de CSS <br> 
+                como color, background-color, height, width, etc. <br>
+                cada animación tiene que ser definida con keyframes de la siguientes maneras: <br>
+            </p>
+            <ul class="contenedor_general">
+                <li>
+                    <details class="contenedor_list">
+                        <summary class="title_list">Propiedad Animation</summary>
+                        <ul class="ul_list">
+                            <li class="list">
+                                <details>
+                                    <summary> Primera animación </summary>
+                                    <p>Todos los valores en una sola linea. <br>
+                                        animation: name duration timing-function delay iteration-count direction fill-mode; <br>
+                                        animation: cambiocolor 4000ms cubic-bezier(.2, .6, .3, 1) 0ms 3 alternate-reverse forwards;
+                                    </p>
+                                    <div class="contenedor_barra">
+                                        <div class="box1"></div>
+                                    </div>
+                                    <ul>
+                                        <li>name: cambiocolor </li>
+                                        <li>duration: 4000ms </li>
+                                        <li>timing-function: cubic-bezier(.2, .6, .3, 1) </li>
+                                        <li>delay: 0ms </li>
+                                        <li>iteration-count: 3  </li>
+                                        <li>direction: alternate-reverse</li>
+                                        <li>fill-mode: forwards</li> 
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details class="contenedor_list">
+                        <summary class="title_list">Cambio de texto</summary>
+                        <ul class="ul_list">
+                            <li class="list">
+                                <details>
+                                    <summary>Nombres</summary>
+                                    <div class="contenedor_name">
+                                        <div class="nombres">
+                                            Francisco Carusso
+                                        </div>
+                                    </div>
+                                </details>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+</html>
+

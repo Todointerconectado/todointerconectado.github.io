@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&family=Signika+Negative&display=swap');/* Formateo valores predeterminados */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+/* Estetico */
+body {
+    font-family: 'Signika Negative', 'Segoe UI';
+    font-weight: 600;
+    font-size: 1rem;
+    background-image: url(https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+
+    /* Usar toda el area del contenedor */
+    /* background-size: cover; */
+}
+
+.photo {
+    width: 500px;
+    height: 750px;
+    border: 2px solid black;
+
+    /* Img de fondo en el contenedor */
+    /* background-image: url("/Clases/Clase_8/img/foto.jpg"); */
+    /* background-repeat: no-repeat; */
+
+    /* Efecto de capa gradient transparente para img */
+    background: linear-gradient(to right, rgba(255, 255, 255, .4), rgba(255, 255, 255, .4) ), url("/Clases/Clase_8/img/foto.jpg") ;
+
+    padding: 10px;
+    /* valor por defecto: Crece el contenedor y el contenido es estatico.*/
+    /* box-sizing: content-box; */
+
+    /*Cambia el tamaño del contenido para fijar el contenedor padre. Es decir, la suma del margin, border y padding da el tamaño definido del contenedor, en este caso width: 500px; height: 750px;*/
+    box-sizing: border-box;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+
+    /* Posicionamiento */
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    /* img */
+    background-image: url("/Clases/Clase_8/img/perfil\ 1.jpg");
+    background-size: contain;
+    /* background-position: center; */
+
+    border-radius: 50%;
+}

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&family=Signika+Negative&display=swap');/* Formateo valores predeterminados */
+:root {
+    --white: rgb(255, 255, 255);
+
+    --gray: rgb(195, 191, 191);
+    --gray_strong: rgb(220, 216, 216);
+
+    --blue: rgb(47, 47, 185);
+    --blue_sure: rgb(70, 70, 183);
+
+    --green: #b8f2e6af;
+    --green_strong: rgb(119, 233, 195);
+}
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --------------------------- Estilos de libro --------------------------- */
+body {
+    /* border: 10px solid rgb(255, 0, 242); */
+    padding: 50px 30px;
+    font-family: 'Signika Negative', 'Segoe UI';
+    font-weight: 600;
+    /*------ fondo de la web ------*/
+    background-image: url("/Clases/Clase_13/img/fondo.png");
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.contenedor__maestro {
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 1px black;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.title {
+    /* border: 5px solid salmon; */
+    height: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.inicio {
+    /* border: 6px solid rgb(4, 255, 4); */
+    height: 100%;
+    margin: 0px;
+    padding-bottom: 8px;
+    background-color: var(--gray);
+    text-align: center;
+}
+.text {
+    /* border: 5px solid black; */
+    background-color: var(--gray);
+    height: 100%;
+    margin: 0px;
+    padding: 10px 0px;
+}
+span {
+    /* border: 2px solid black; */
+    /* border: 2px dotted black; */
+    /* border: 2px double black; */
+
+    /* border: 2px dashed black; */
+    color: rgb(86, 84, 84);
+    display: inline-block;
+    padding: 0px 10px 5px 0px;
+    margin: 1px;
+}
+.padre {
+    border: 0.1px solid rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 3px 1px black;
+    width: 70%;
+    height: 100%;
+    background-color: var(--green);
+    margin: 0px auto;
+    padding: 5px 0px 0px 0px;
+    line-height: 20px;
+}
+.hijos {
+    border: 1px dashed black;
+    margin: 5px;
+    padding-top: 5px;
+    background-color: var(--green_strong);
+}
+
+.contenedor_general {
+    /* border: 6px solid rgb(0, 195, 255); */
+    background-color: rgb(164, 220, 241);
+    background-color: var(lin);
+    padding: 10px 10px 5px 10px;
+}
+.contenedor_list {
+    /* border: 5px solid black; */
+    background-color: var(--white);
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 1px black;
+    box-shadow: 0px 0px 2px 1px black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.title_list {
+    /* border: 4px solid #ff9900; */
+    background-color: var(--blue_sure);
+    color: var(--white);
+    font-size: 18px;
+    padding: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+.list_contenido {
+    /* border: 4px solid green; */
+    background-color: var(--white);
+    padding: 0px;
+    margin: 0px;
+}
+.contenido {
+    border: 1px dashed black;
+    margin: 5px;
+    padding: 4px;
+    line-height: 20px;
+}
+
+/*--------------- Animación en los contenedores ---------------*/
+.contenedor_list[open] .title_list ~ * {
+    animation: sweep 2000ms ease;
+}
+@keyframes sweep {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0px); }
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&display=swap');
+/* Formateo valores predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Gentium Book Basic',;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.link {
+    background-color: aquamarine;
+    margin: 15px;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.link:hover {
+    color: blue;
+}
+
+img {
+    margin: 15px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+article {
+    background-color: aquamarine;
+    margin: 15px;
+    border: 3px dashed black;
+}
+
+.bloque {
+    background-color: lightcoral;
+    /* margin */
+    margin: 15px;
+    /* border */
+    /* border-style: solid; Setiamos el border */
+    /* border-width: 3px; El grosor del border */
+    /* border-color: darkslateblue; Cambio el color */
+    /* Las tres lineas anteriores del border la ponemos en una linea */
+    border: 3px darkslateblue solid;
+    border-radius: 5px; /*Redondeamos las esquinas del contenedor*/
+    /* En dirección del reloj */
+    padding: 5px 10px 15px 20px;
+}
+
+.bloque2 {
+    background-color: lightseagreen; /*Color del contenedor*/
+    margin: 15px;                      /*Espacio del contenedor del borde hacia afuera*/
+    border: 3px solid darkslateblue; /*Grosor, estilo y color del border*/
+    border-radius: 5px;                /*Redondear esquinas del contenedor*/
+    padding: 5px 10px 15px 20px;       /*Espacio del contenedor del borde hacia adentro*/
+}
+
+.bloque3 {
+    background-color: rgb(215, 215, 46); 
+    margin: 15px;
+    border: 3px solid darkslateblue;
+    border-radius: 5px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.linea {
+    background-color: aqua;
+    margin: 15px;
+    border: 3px solid green;
+    border-radius: 10px;
+    padding: 5px 10px 15px 20px;
+}

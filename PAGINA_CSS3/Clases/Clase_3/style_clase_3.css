@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&display=swap');
+
+/* Limpiar margenes predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 250%;
+    text-align: center;
+    color: #c69c6d;
+    text-shadow: 2px 2px 5px black;
+}
+
+.parrafo {
+    font-family: 'Playfair Display', ;
+    font-size: 20px;
+    text-align: justify;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/* Seudo elementos */
+p#inicio::first-letter {
+    color: #c69c6d;
+    font-size: 80px;
+    float: left;
+    background-color: brown;
+    padding: 0px 8px 0px 8px;
+    margin: 10px 10px 0px 0px;
+}
+
+/* link */
+a {
+    text-decoration: none;
+    color: brown;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* cambia el color al tener el mous encima */
+a:hover {
+    color: #c69c6d;
+}
+
+/* subrayar_palabra */
+.underline {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* palabra en italica */
+.italic {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* border del contenedor */
+.border {
+    width: 70%;
+    margin: 10% auto;
+    border: 5px dashed gray;
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&family=Signika+Negative&display=swap');/* Formateo valores predeterminados */
+* {
+    margin: 10;
+    border: 0;
+    padding: 0;
+}
+/* Estetico */
+body {
+    font-family: 'Signika Negative', 'Segoe UI';
+    font-weight: 600;
+    font-size: 1rem;
+    height: 1000px;
+}
+
+.contenedor1 {
+    border: 2px solid black;
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    /* La forma corecta es declarando las propiedades y la duración en mili segundos */
+    transition-property: background-color, height, width;
+    /* Se puede definir el tiempo de cabio por propiedad colocando su tiempo en orden.
+    background-color: 1000ms en 0ms - height: 1000ms en 2000ms - width: 1000ms en 1000ms */
+    transition-duration: 1000ms, 2000ms, 2000ms;
+    transition-delay: 0ms, 2000ms, 1000ms;
+}
+.contenedor1:hover {
+    background-color: green;
+    width: 300px;
+    height: 200px;
+}
+
+.contenedor2 {
+    margin: 10px 0px;
+    border: 2px solid black;
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    transition-property: background-color, width;
+    transition-duration: 1000ms, 2000ms;
+    /* 
+    ease: Transition constante.
+    ease-in: Transition principio lento y final rapido.
+    ease-out: Transition principio rapido y final lento.
+    ease-in-out: Transition principio lento, medio rapido y final lento.
+    cubic-bezier(.1, .5, .7, -0.7): Transition personalizados.
+     */
+    transition-timing-function: cubic-bezier(.1, .5, .7, -0.7);
+}
+.contenedor2:hover {
+    background-color: green;
+    width: 100%;
+}
+
+ /* Todos estos valores lo ponemos en una sola linea de código */
+.contenedor3 {
+    border: 1px solid;
+    height: 32px;
+    border-radius: 16px;
+    background-color: rgb(182, 182, 182);
+    /* El continido se amolda a la forma del contenedor. */
+    overflow: hidden;
+}
+.barra {
+    width: 10%;
+    height: 100%;
+    background-color: green;
+    border-right: 5px solid rgb(4, 59, 4);
+    /* transition: propiedad, tiempo de demora, efecto y reley */
+    transition: width 2000ms ease-in-out 1000ms;
+}
+.barra:hover {
+    width: 100%;
+}
