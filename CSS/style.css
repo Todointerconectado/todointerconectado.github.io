@@ -1,120 +1,157 @@
+:root {
+    --color_ContenedorMaestro_Transparente_white: rgba(255, 255, 255, .5);
+    --color_link_blue: rgb(8, 31, 134);
+    --color_link_hover_blue: rgb(8, 31, 134);
+    --color_link_hover_white: rgb(255, 255, 255);
+    --color_portada_hover_blue: rgb(52, 95, 132);
+    --color_sombrasContenedores_black: rgb(0, 0, 0);
+    --color_descripción_img_gray: rgb(102, 100, 100);
+}
 * {
     margin: 0;
+    border: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
+/* ---- fondo de página ---- */
 body {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
 }
-
-/* Fondo con movimiento */
 .fondo__video {
-    width: 100%;
+    width: 200%;
     position: fixed;
-    min-width: 100%;
-    transform: tr translateX(-50%) translateY(-50);
+    top: 0px;
+    right: -40px;
     z-index: -1;
 }
 
-/*  */
+/* Contenedor maestro */
 main {
-    width: 80%;
-    background-color: rgba(255, 255, 255, .5);
-    margin: 10px;
-    padding: 0px 0px 20px 0px;
-    border: 1px solid rgb(100, 97, 97);
-    box-shadow: 2px 2px 5px rgb(0, 0, 0);
-    border-radius: 5px;
+    height: auto;
+    width: 95%;
+    max-width: 700px;
+    padding: 20px 10px ;
+    background-color: var(--color_ContenedorMaestro_Transparente_white);
+    box-shadow: 0px 0px 5px var(--color_sombrasContenedores_black);
+    border-radius: 8px;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
-
-/* Boton de comandos Git */
-.contenedor_seccion_comando {
-    background-color: #ffffff;
+.title {
+    /* border: 1px solid black; */
+    padding: 20px;
     text-align: center;
-    margin: 10px 0px;
-    padding: 5px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 }
-.padre {
-    display: table;
-}
-.contenedor_seccion_comando p, a {
-    display: table-cell;
-    vertical-align: middle;
-}
-.contenedor_comando {
-    width: 150px;
-}
-.comandos {
-    height: 70px;
-    display: block;
-    margin: auto;
-}
-
 /* navegación */
 .navegacion {
     display: flex;
-    padding: 20px 50px;
-    gap: 15px;
-    font-size: 25px;
-}
-a {
-    color: #860808;
-}
-
-/* Contenedor de los títulos principales de la lista de comandos */
-details {
-    background-color: white;
-    border-radius: 5px;
-    margin: 10px;
-    margin-right: 10px;
-    border-bottom: 1px solid #feffff;
-    box-shadow: 1px 1px 5px rgba(0,0,0,1);
-}
-summary {
-    background-color: #1d6386;
-    color: #ffffff;
+    justify-content: center;
     padding: 5px;
-    border: 1px solid #1e249a;
-    border-radius: 5px;
+    gap: 5px;
+    font-size: 16px;
 }
-p {
-    padding: 5px 50px;
-}
-
-/* Proceso de los comandos en img */
-.contenedor__img {
-    width: 95%;
-    margin: 10px;
-    max-width: 800px;
-}
-.img__proceso {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Tablas */
-fieldset {
-    margin: 5px 20px;
-}
-
-abbr {
+.url {
+    /* border: 1px solid black; */
     text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+    color: var(--color_link_blue);
+    overflow: hidden;
+}
+.url:hover {
+    background-color: var(--color_link_hover_blue);
+    color: var(--color_link_hover_white);
 }
 
+/* Contenido Principal */
+section {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+article {
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 5px var(--color_sombrasContenedores_black);
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+}
+article:hover {
+    background-color: var(--color_portada_hover_blue);
+}
+article:hover figcaption{
+    color: var(--color_link_hover_white);
+}
+figure {
+    /* border: 1px solid black; */
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portada {
+    width: 90%;
+}
 figcaption {
+    /* padding: 10px; */
+    margin-top: 10px;
+    color: var(--color_descripción_img_gray);
     text-align: center;
 }
 
-/* Clase 1 */
-#cambiar__fondo {
-    background-color: aquamarine;
+/* ---- Boton de subida ----*/
+.flecha{
+    /* border: 1px solid black; */
+    width: 50px;
+    height: 50px;
+    margin-top: 100px;
+    margin-bottom: 73px;
+    transition: transform 1s;
+}
+.flecha:hover {
+    transform: scale(1.2);
+}
+.flecha img {
+    width: 100%;
 }
 
-#cambiar__fondo .li__color {
-    color: #860808;
-}
+/* footer */
 
-iframe {
-    height: 600px;
+footer {
+    background-color: rgb(7, 139, 153, .8);
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    position: relative;
+    /* centrar contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto_footer {
+    /* border: 1px solid black; */
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
 }
