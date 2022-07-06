@@ -16,29 +16,33 @@
 
 /* ---- fondo de página ---- */
 body {
-    font-weight: bold;
-    font-size: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 300px;
 }
 .fondo__video {
     width: 200%;
     position: fixed;
     top: 0px;
-    right: -40px;
+    right: -20px;
     z-index: -1;
+}
+.title1 {
+    border: 1px solid black;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Contenedor maestro */
 main {
+    box-shadow: 0px 0px 5px var(--color_sombrasContenedores_black);
+    background-color: var(--color_ContenedorMaestro_Transparente_white);
+    margin-top: 300px;
     height: auto;
     width: 95%;
     max-width: 700px;
-    padding: 20px 10px ;
-    background-color: var(--color_ContenedorMaestro_Transparente_white);
-    box-shadow: 0px 0px 5px var(--color_sombrasContenedores_black);
+    padding: 20px 10px;
     border-radius: 8px;
     overflow: hidden;
     flex-wrap: wrap;
@@ -46,6 +50,8 @@ main {
 .title {
     /* border: 1px solid black; */
     padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
 }
 /* navegación */
@@ -90,6 +96,8 @@ article {
     cursor: pointer;
     border-radius: 8px;
     overflow: hidden;
+    font-size: 14px;
+    font-weight: bold;
 }
 article:hover {
     background-color: var(--color_portada_hover_blue);
