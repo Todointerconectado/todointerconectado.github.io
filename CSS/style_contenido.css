@@ -37,12 +37,19 @@ figure {
     justify-content: center;
     align-items: center;
 }
+.link_contenido {
+    text-decoration: none;
+}
 .portada {
     width: 90%;
 }
 figcaption {
-    /* padding: 10px; */
     margin-top: 10px;
     color: var(--color_descripción_img_gray);
     text-align: center;
-}
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 

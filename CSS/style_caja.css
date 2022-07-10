@@ -2,6 +2,9 @@
 
 :root {
     --color_ContenedorMaestro_Transparente_white: rgba(255, 255, 255, .5);
+    --color_fondo_title: rgb(26, 30, 116);
+    --color_letra_title_white: rgb(255, 255, 255);
+    --color_abbr_hover: rgb(255, 255, 0);
     --color_link_blue: rgb(8, 31, 134);
     --color_link_hover_blue: rgb(8, 31, 134);
     --color_link_hover_white: rgb(255, 255, 255);
@@ -9,6 +12,7 @@
     --color_sombrasContenedores_black: rgb(0, 0, 0);
     --color_descripción_img_gray: rgb(102, 100, 100);
     --color_boton-subir_dark-greens: rgb(5, 92, 102);
+    
 }
 * {
     margin: 0;
@@ -33,11 +37,8 @@ body {
 .title1 {
     /* border: 1px solid black; */
     margin-top: 20px;
-    color: rgb(255, 255, 255);
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    color: var(--color_letra_title_white);
     font-family: 'Gentium Book Basic', serif;
-    /* font-family: 'Playfair Display', serif; */
-    /* font-family: 'Signika Negative', sans-serif; */
 }
 
 /* Contenedor maestro */
@@ -55,10 +56,22 @@ main {
 }
 .title {
     /* border: 1px solid black; */
+    background: var(--color_fondo_title);
+    border-radius: 8px;
+    color: var(--color_letra_title_white);
+    margin-bottom: 20px;
     padding: 20px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+}
+abbr {
+    text-decoration: none;
+    transition: font-size 1s;
+}
+abbr:hover {
+    color: var(--color_abbr_hover);
+    font-size: 18px;
 }
 /* navegación */
 .navegacion {
@@ -137,7 +150,6 @@ footer {
 .texto_footer {
     /* border: 1px solid black; */
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
     font-size: 18px;
     color: white;
     font-weight: bold;
