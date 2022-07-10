@@ -4,7 +4,7 @@
     --color_ContenedorMaestro_Transparente_white: rgba(255, 255, 255, .5);
     --color_fondo_title: rgb(26, 30, 116);
     --color_letra_title_white: rgb(255, 255, 255);
-    --color_abbr_hover: rgb(255, 255, 0);
+    --color_abbr_hover: rgb(255, 187, 0);
     --color_link_blue: rgb(8, 31, 134);
     --color_link_hover_blue: rgb(8, 31, 134);
     --color_link_hover_white: rgb(255, 255, 255);
@@ -12,7 +12,6 @@
     --color_sombrasContenedores_black: rgb(0, 0, 0);
     --color_descripción_img_gray: rgb(102, 100, 100);
     --color_boton-subir_dark-greens: rgb(5, 92, 102);
-    
 }
 * {
     margin: 0;
@@ -48,8 +47,8 @@ main {
     margin-top: 300px;
     height: auto;
     width: 95%;
-    max-width: 700px;
-    padding: 20px 10px;
+    max-width: 1200px;
+    padding: 10px;
     border-radius: 8px;
     overflow: hidden;
     flex-wrap: wrap;

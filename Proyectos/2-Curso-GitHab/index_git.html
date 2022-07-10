@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Inicio con Git</title>
+    <link rel="icon" href="./css/img/1_logo.png" type="png">
+    <link rel="stylesheet" href="/CSS/style_caja.css">
+    <link rel="stylesheet" href="/Proyectos/2-Curso-GitHab/css/style_git.css">
+
+    <script src="/Proyectos/2-Curso-GitHab/js/JavaScrip.js"></script>
+</head>
+<body>
+    <video class="fondo__video" muted autoplay loop src="/CSS/MULTIMEDIA/2_homeVideo.mp4">
+    </video>
+    <h1 class="title1"> Francisco Carusso </h1>
+
+    <main>
+        <h2 class="title">Bienvenidos al curso Git </h2>
+        <div class="contenedor_seccion_comando">
+                <p class="texto_comando"> Acceso a los comandos en la página oficial de Git: </p>
+                <a class="link_comando" href="https://git-scm.com/docs/git#_git_commands" target="_blanck">
+                    <figure class="contenedo_logo_comando">
+                        <img class="logo_comando" src="/Proyectos/2-Curso-GitHab/css/img/2_Comandos_Git.png" alt="Comandos de Git">
+                    </figure>
+                </a>
+
+        </div>
+
+        <section class="contenedor_principal">
+            <details>
+                <summary> git init </summary>
+                <dfn> Empezar la conexión con Git </dfn>
+            </details>
+            
+            <details> 
+                <summary>git add (nombre del archivo)</summary>
+                <dfn>Sirve para guardar un archivo en el repositorio de Git.</dfn>
+            </details>
+
+            <details> 
+                <summary>git add .</summary>
+                <dfn> para guardar todos los archivos en el repositorio de Git </dfn>
+            </details>
+
+            <details> 
+                <summary>git status -s</summary>
+                <dfn> Muestra los archivos con copia de guardado y los que no. </dfn>
+            </details>
+            
+            <details>
+                <summary> (conectar el repositorio de GitHub a la terminal) </summary>
+                <dfn> dentro de la terminal Git Bash pegamos la url del repositorio </dfn>
+            </details>
+
+            <details> 
+                <summary>git commit -m "descripción"</summary>
+                <dfn> Crea una copia de guardado. </dfn>
+            </details>
+
+            <details> 
+                <summary>git log --oneline</summary>
+                <dfn> Muestra los archivos guardados en Git. </dfn>
+            </details>
+
+            <details> 
+                <summary>git reset --hard (código guardado)</summary>
+                <dfn> vuelbe al punto que se guardo en el codigo seleccionado. </dfn>
+            </details>
+
+            <details> 
+                <summary>git log --oneline | cat </summary>
+                <dfn> Muestra los commit generados. </dfn>
+            </details>
+
+            <details> 
+                <summary>git diff (los 2 codigos a comparar)</summary>
+                <dfn> Se comparan las lineas de códigos cambiados entre dos commit. </dfn>
+            </details>
+
+            <details> 
+                <summary> git revert --no-commit HEAD </summary>
+                <dfn> Sirve para eliminar cambios de varios commit y crear un solo commit nuevo.
+                    <details> 
+                        <summary> git revert --no-commit HEAD~1 </summary>
+                        <dfn> Revierte los cambios al commit anterior.<br> (HEAD es el puntero y ~ señala a que commit ir con el número) <br> Una ves de terminar los cambios colocamos:
+                            <details> 
+                                <summary> git revert --continue </summary>
+                                <dfn> Esto termina de hacer la reversión y crea un unico commit con los cambios.
+                                    <figure class="contenedor__img">
+                                        <img class="img__proceso" src="/Proyectos/2-Curso-GitHab/css/img/5_Revert.png" alt="Nos queda un único commit de revert">
+                                    </figure>
+                                </dfn>
+                            </details>
+                        </dfn>
+                    </details>
+                </dfn>
+            </details>
+
+            <details> 
+                <summary> (Elimina un commit específico) Pasos: </summary>
+                <dfn> Tenemos que estar en la rama en la cual vamos a eliminar el commit especifico.
+                    <details> 
+                        <summary> git log (colocas master o main, dos puntos y el nombre de la rama que se esta.) </summary>
+                        <dfn> Vemos los disintos commit con su respectivo identificadores.
+                            <details> 
+                                <summary> git rebase -i (colocamos el identificador anterior al que queremos eliminar) </summary>
+                                <dfn> Si queremos eliminar el commit número 3 colocamos el identificador número 2. </dfn>
+                            </details>
+                        </dfn>
+                    </details>
+                </dfn>
+            </details>
+
+            <details> 
+                <summary>git commit -am "descripción"</summary>
+                <ul>
+                    <li>Dos comandos en uno:</li>
+                    <li>Comando commit</li>
+                    <li>Comando add</li>
+                </ul>
+            </details>
+
+            <details> 
+                <summary>clear:</summary>
+                <dfn> Para limpiar la consolo de Git </dfn>
+            </details>
+
+            <details> 
+                <summary>push:</summary>
+                <dfn> Para cargar del editor al GitHub. </dfn>
+            </details>
+
+            <details> 
+                <summary>pull:</summary>
+                <dfn> Para traer de GitHub al editor local. </dfn>
+            </details>
+
+            <details>
+                <summary>tags:</summary>
+                <dfn> Nos permiten verificar versiones de nuestro proyecto.
+                    <details>
+                        <summary>Para esto tenemos dos pasos:</summary>
+                        <dfn>
+                            git tag (nombre identificatibo) -m "descripción": <br> Este paso toma nota en Git. <br> <br>
+                            git push --tags: <br> Guardamos los tags en GitHub.
+                        </dfn>
+                    </details>
+                </dfn>
+            </details>
+
+            <details>
+                <summary> Ramas o Brach </summary>
+                <dfn> Rama es una linea de tiempo del proyecto en Git. Se pueden crear varias ramas.
+                    <details>
+                        <summary> git branch (y el nombre de la rama)</summary>
+                        <dfn> Crear una rama. </dfn>
+                    </details>
+                    
+                    <details>
+                        <summary> git branch -d (y el nombre de la rama)</summary>
+                        <dfn> Borrar rama. </dfn>
+                    </details>
+                    
+                    <details>
+                        <summary> git branch</summary>
+                        <dfn> Podemos ver las ramas existentes. Nos encontramos en la rama con el * </dfn>
+                    </details>
+
+                    <details>
+                        <summary> git checkout (y el nombre de la rama)</summary>
+                        <dfn> 
+                            Me muevo entre las ramas. Y creo un botón desde una rama secundaria:
+                            <input type="button" onclick="saludo()" value="Dale ya!">
+                            Guardo el desarrollo en la rama pertinente con Git
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary> git merge (y el nombre de la rama que se quiere fucionar) </summary>
+                        <dfn> Hacer un merge (Enlasar las ramas creadas en un solo archivo.) Se hace desde la rama master (main) </dfn>
+                        <figure class="contenedor__img">
+                            <img class="img__proceso" src="/Proyectos/2-Curso-GitHab/css/img/3_git_merge_nombreDeLaRama.png" alt="Proceso de git merge">
+                        </figure>
+                    </details>
+                </dfn>
+            </details>
+        </section>
+    </main>
+</body>
+</html>

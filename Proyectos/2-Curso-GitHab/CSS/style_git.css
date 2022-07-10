@@ -1,61 +1,110 @@
+:root {
+    --color_ContenedorMaestro_Transparente_white: rgba(255, 255, 255, .5);
+    --color_fondo_title: rgb(26, 30, 116);
+    --color_letra_title_white: rgb(255, 255, 255);
+    --color_abbr_hover: rgb(255, 187, 0);
+    --color_link_blue: rgb(8, 31, 134);
+    --color_link_hover_blue: rgb(8, 31, 134);
+    --color_link_hover_white: rgb(255, 255, 255);
+    --color_portada_hover_blue: rgb(52, 95, 132);
+    --color_sombrasContenedores_black: rgb(0, 0, 0);
+    --color_descripción_img_gray: rgb(102, 100, 100);
+    --color_boton-subir_dark-greens: rgb(5, 92, 102);
+    --color_contenedor_title_comandos: rgb(29, 99, 134);
+}
+
 body {
     font-weight: bold;
     font-size: 16px;
 }
 
-<<<<<<< HEAD:Proyectos/2-Curso-GitHab/css/style.css
-=======
-
->>>>>>> 0dad48d0ae70fabc397edf1f586fe8713ce6b019:Proyectos/2-Curso-GitHab/CSS/style.css
 /* Boton de comandos Git */
 .contenedor_seccion_comando {
-    background-color: #ffffff;
     text-align: center;
-    margin: 10px 0px;
+    margin: 5px 0 10px 0;
     padding: 5px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 10px;
 }
-.padre {
-    display: table;
+.texto_comando {
+    height: 40px;
+    padding: 10px;
+    background-color: var(--color_letra_title_white);
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px var(--color_sombrasContenedores_black);
+    display: flex;
+    align-items: center;
 }
-.contenedor_seccion_comando p, a {
-    display: table-cell;
-    vertical-align: middle;
+.link_comando {
+    height: 40px;
+    display: flex;
+    align-items: center;
 }
-.contenedor_comando {
-    width: 150px;
-}
-.comandos {
+.logo_comando {
+    padding: 5px;
     height: 70px;
-    display: block;
-    margin: auto;
 }
 
 /* Contenedor de los títulos principales de la lista de comandos */
+.contenedor_principal {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 details {
-    border-radius: 5px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    border-bottom: 1px solid #feffff;
-    box-shadow: 1px 1px 5px rgba(0,0,0,1);
+    border: 1px solid var(--color_contenedor_title_comandos);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px var(--color_sombrasContenedores_black);
+    width: 300px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
+
 summary {
-    background-color: #1d6386;
-    color: #ffffff;
-    padding: 5px;
-    border: 1px solid #1e249a;
-    border-radius: 5px;
+    background-color: var(--color_contenedor_title_comandos);
+    color: var(--color_letra_title_white);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-p {
-    padding: 10px 50px;
+dfn {
+    /* margin: 5px; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+li {
+    text-align: center;
 }
 
 /* Proceso de los comandos en img */
 .contenedor__img {
-    margin: 10px;
-    max-width: 800px;
+    width: 100%;
+    margin: 2px;
+    transition: all 2s;
 }
 .img__proceso {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 8px;
+}
+.contenedor__img:hover {
+    position: absolute;
+    transform: scale(.8);
 }
