@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estructuras de HTML5</title>
+    <link rel="icon" href="/CSS/MULTIMEDIA/html-5.png" type="png">
+    <link rel="stylesheet" href="/CSS/style_caja.css">
+    <link rel="stylesheet" href="/Proyectos/2-Git_GitHub/css/style_git.css">
+    <!-- <link rel="stylesheet" href="/Proyectos/1_Curso_HTML/CSS/style_HTML.css"> -->
+    
+</head>
+
+<body>
+    <video class="fondo__video" muted autoplay loop src="/CSS/MULTIMEDIA/homeVideo.mp4"></video>
+    <!-- <audio id="audio__inicio" autoplay src="/Proyectos/1_Curso_HTML/CSS/IMG/AUDIOS/audio2.mp3" type="mp3"></audio> -->
+    <h1 id="home" class="title1"> Francisco Carusso </h1>
+
+    <main>
+        <h2 class="title"> Curso de HTML desde cero </h2>
+
+        <section class="contenedor_principal">
+            <details>
+                <summary id="1"> Etiquetas especiales: </summary>
+                <dfn>
+                    <ul>
+                        <li>Espacio: & nbsp; (sin el espacio)</li>
+                        <li>Símbolo mayor que: & lt; ➡️ &lt; (sin el espacio)</li>
+                        <li>Símbolo mayor que: & gt; ➡️ &gt; (sin el espacio)</li>
+                        <li>Comando para abrir el panel de los emojis: Tecla Windows + punto </li>
+                        <li>Para comentar en HTML se escribe dentro de: &lt;!-- comentario --&gt;</li>
+                        <li>Símbolo de copi ray &copy;: & copy; (sin el espacio) </li>
+                        <li>Espacio: &lt;br&gt;</li>
+                        <li>linea: &lt;hr&gt;</li>
+                        <li>Abrir el panel de emojis en VSC: Apletamos la tecla Windows más el punto . </li>
+                        <li>Etiqueta de descripción: &lt;abbr&gt; &lt;/abbr&gt;
+                            <details>
+                                <summary>Ejemplo de &lt;abbr&gt; &lt;/abbr&gt;</summary>
+                                <dfn>
+                                    Estructura: &lt;p&gt;Aprender &lt;abbr&gt; title="HyperTexT Markup Lenguage"&gt;HTML&lt;/abbr&gt; es genial!&lt;/p&gt; <br>
+                                    <p>Muestra: Aprender <abbr title="HyperTexT Markup Lenguage">HTML</abbr> es genial!</p>
+                                </dfn>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary> Etiqueta &lt;base href=""&gt; (Este va en el &lt;head&gt;) </summary>
+                                <dfn>
+                                    Podemos quitar la ruta raiz de las url y ponerla en la respectiva base. <br> Recordar que podemos tener una etiqueta &lt;base href=""&gt; por página.
+                                </dfn>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Sitar a un autor</summary>
+                                <details>
+                                    <summary>Sita pequeña: </summary>
+                                    <ul>
+                                        <li>&lt;q&gt;: para dirijirte al auto</li>
+                                        <li>Estructura: <br> &lt;p&gt; Albert Einstein también dijo: <br> &nbsp; &nbsp; &nbsp; 
+                                            &lt;q&gt;Cada día sabemos más y entendemos menos.&lt;/q&gt; <br> &lt;/p&gt; <br>
+                                            Muestra:<p>
+                                                Albert Einstein también dijo:
+                                                <q>Cada día sabemos más y entendemos menos.</q>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </details>
+                            </details>
+                        </li>
+                        <li>Con la etiqueta &lt;code&gt; &lt;/code&gt; mostras código en la pantalla de la web.</li>
+                        <li>
+                                <details>
+                                    <summary>Asociamos una palabra a un código con la etiqueta: &lt;data&gt;</summary>
+                                    <dfn>
+                                        <ul>
+                                            &lt;li&gt; &lt;data value="34568951"&gt; Arroz &lt;/data&gt; &lt;/li&gt; <br>
+                                            &lt;li&gt; &lt;data value="34568952"&gt; Harina &lt;/data&gt; &lt;/li&gt; <br>
+                                            &lt;li&gt; &lt;data value="34568953"&gt; Aceíte &lt;/data&gt; &lt;/li&gt; <br>
+                                            <li> <data value="34568951" > Arroz </data> </li>
+                                            <li> <data value="34568952" > Harina </data> </li>
+                                            <li> <data value="34568953"> Aceíte </data> </li>
+                                        </ul>
+                                    </dfn>
+                                </details>
+                        </li>
+                        <li>
+                                <details>
+                                    <summary>La etiqueta &lt;iframe&gt; permite insertar parte de una página externa en tu página. </summary>
+                                    <ul>
+                                        <li>Es util cuando queremos insertar videos, mapas, etc de otros citios.</li>
+                                        <li>
+                                            <details>
+                                                <summary>Ejemplo de inserción de mapa</summary>
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://acortar.link/TLCzC0" target="_black">Vamos al mapa</a>
+                                                    </li>
+                                                    <li>
+                                                        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                                                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                                                        src="https://acortar.link/i1a8cF" ></iframe>
+                                                    </li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                </details>
+                        </li>
+                        <li>
+                                <details>
+                                    <summary>Colocar texto con formato pre definido</summary>
+                                    <ul>
+                                        <li>Utilizamos la etiqueta: &lt;pre&gt;</li>
+                                        <li>
+                                            <pre>
+                                                Ojalá no te hagan lo que me hiciste aquella vez
+                                                Ojalá que te arrepientas siempre y que quieras volver
+                                                No me digas que me amas, porque esa ya me la sé
+                                                Ojalá que sufras cada vez que me veas con él ...
+                                            </pre>
+                                        </li>
+                                    </ul>
+                                </details>
+                        </li>
+                    </ul>
+                </dfn>
+            </details>
+
+            <details>
+                <summary id="2"> Las etiquetas para los títulos van del h1 al h6 </summary>
+                <dfn> 
+                    <ol>
+                        <li> <h1> Etiqueta: &lt;h1&gt; &lt;/h1&gt; </h1> </li>
+                        <li> <h2> Etiqueta: &lt;h2&gt; &lt;/h2&gt; </h2> </li>
+                        <li> <h3> Etiqueta: &lt;h3&gt; &lt;/h3&gt; </h3> </li>
+                        <li> <h4> Etiqueta: &lt;h4&gt; &lt;/h4&gt; </h4> </li>
+                        <li> <h5> Etiqueta: &lt;h5&gt; &lt;/h5&gt; </h5> </li>
+                        <li> <h6> Etiqueta: &lt;h6&gt; &lt;/h6&gt; </h6> </li>
+                    </ol>
+                </dfn>
+            </details>
+
+            <details>
+                <summary id="3"> Para crear párrafos usamos la etiqueta p </summary>
+                <dfn>
+                    <p>Etiqueta: &lt;p&gt; &lt;/p&gt;</p>
+                    <p>Si ponemos "lorem" crea texto de ejempro.</p>
+                    <details>
+                        <summary> Muestra: &lt;p&gt; lorem &lt;/p&gt; </summary>
+                        <dfn>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rem nulla architecto velit repellendus temporibus vitae, excepturi facilis, eveniet, sint est voluptates incidunt. Minima magnam fuga eum odit totam deserunt?
+                            </p>
+                        </dfn>
+                    </details>
+                </dfn>
+            </details>
+
+            <details>
+                <summary id="4"> Resaltar con Negrita una palabra. </summary>
+                <dfn>
+                    <p>Negrita: &lt;b&gt; (<b>palabra</b> o texto) &lt;/b&gt; <br> Negrita con fuerza de búscador: &lt;strong&gt; (<strong>palabra</strong> o texto) &lt;/strong&gt; </p>
+                <dfn>
+            </details>
+
+            <details>
+                <summary id="5"> Cursiva con y sin énfasos. </summary>
+                <dfn>
+                    <p> Cursiva: &lt;b&gt; (palabra) &lt;/b&gt; <br> Cursiva (énfasis): &lt;em&gt; (palabra) &lt;em&gt; </p>
+                </dfn>
+            </details>
+
+            <details>
+                <summary id="6"> Etiquetas de estructura de una página Web </summary>
+                <dnf>
+                    <details>
+                        <summary> &lt;header&gt; &lt;/header&gt;  </summary>
+                        <dfn>
+                            <p>Esta lleva la información del encabezado.</p>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary> &lt;nav&gt; &lt;/nav&gt; </summary>
+                        <dfn>
+                            <p>Barra de navegación</p>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary>Importancia semantica &lt;aside&gt; &lt;/aside&gt; </summary>
+                        <dfn>
+                            <p>Información adicional aclarando el contenido principal. <br><br> </p>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary> &lt;main&gt; &lt;/main&gt;  </summary>
+                        <dfn>
+                            <p>Lleva el contenido principal.</p>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary> &lt;section&gt; &lt;/section&gt;  </summary>
+                        <dfn>
+                            <p>Nospermite organizar de mejor manera la información que se quiere mostrar. Esta por porciones de contenidos.</p>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary> &lt;article&gt; &lt;/article&gt; </summary>
+                        <dfn>
+                            <p>
+                                Se dividen distintos articulos. Por ejemplo, los blog. <br><br> Este puede contener su respectivo &lt;header&gt;, Título (&lt;h&gt;) y párrafos (&lt;p&gt;) <br><br>
+                                Una caracteristica de los article es que son indeendiente del contenido general de la página. Esto quiere decir, que un articulo se puede agregar, remover, re utilizar, etc. 
+                            </p>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary> &lt;footer&gt; &lt;/footer&gt; </summary>
+                        <dfn> 
+                            <p>Información de pie de página. Información de contactos y legales mayor mente.</p>
+                        </dfn>
+                        <details>
+                            <summary>Escribir Dirección semantico dentro del &lt;footer&gt; &lt;address&gt; &lt;/address&gt; </summary>
+                            <address>
+                                Escripo por Francisco Carusso <br> Visitanos en: <br>
+                                <a href="https://www.youtube.com/channel/UCY8m1JDOQFr1RvnrUnOiKMQ">YouTube</a>
+                                Codijo Postal 1748, General Rodriguez Argentina
+                            </address>
+                        </details>
+                    </details>
+
+                    <details>
+                        <summary> Ejemplo de una estructura de página web </summary>
+                        <dfn>
+                            <figure class="contenedor__img">
+                                <img class="img__proceso" src="/Proyectos/1_Curso_HTML/CSS/IMG/2_Estructura.png">
+                            </figure>
+
+                            <section class="eti__estrucura">
+                                <header class="eti__estrucura"> </header>
+                                <nav class="eti__estrucura"> </nav>
+                                <aside class="eti__estrucura"> </aside>
+                                <div class="eti__estrucura">
+                                    <article class="eti__estrucura">  </article>
+                                    <article class="eti__estrucura">  </article>
+                                </div>
+                                <footer class="eti__estrucura">  </footer>
+                            </section>
+                        </dfn>
+                    </details>
+                </dnf>
+            </details>
+
+            <details>
+                <summary id="7"> Enlaces: Etiqueta &lt;a&gt; Ir a &lt;/a&gt; </summary>
+                <dfn>
+                    <p>
+                        Las etiquetas &lt;a&gt; &lt;/a&gt; llevan un atributo que permite colocar la dirección a donde queremos ir. sea una url o una sección de la misma página. <br> El atributo se coloca: &lt;a href="#"&gt; Ir a &lt;/a&gt; <br> Si colocamos # no nos lleva a ningun lado.
+                    </p>
+                    <details>
+                        <summary> Ejempro de Enlace </summary>
+                        <dfn>
+                            <details>
+                                <summary> Ir a ninguna página </summary>
+                                <dfn>
+                                    <p>
+                                        <a href="#"> Ir a ningun lado (#) </a>
+                                    </p>
+                                </dfn>
+                            </details>
+
+                            <details>
+                                <summary> Ir a una página con url </summary>
+                                <dfn>
+                                    <p>
+                                        <a href="https://www.google.com.ar/" target="_black"> Ir a google (url) </a>
+                                        Para que se abra en otra ventana usamos el atributo: target="_black". Lo aplicamos después de la url. <br>
+                                        &lt;a href="https://www.google.com.ar/" target="_black"&gt; Ir a google (url) &lt;/a&gt;
+                                    </p>
+                                </dfn>
+                            </details>
+
+                            <details>
+                                <summary> Ir a una parte de tu página </summary>
+                                <dfn>
+                                    <p>
+                                        <a href="#4"> Ir a la sección 4 de esta página (#4) </a>
+                                        Para lograr moverte dentro de la página colocamos # más el id que le asignamos a la etiqueta.
+                                    </p>
+                                </dfn>
+                            </details>
+
+                            <details>
+                                <summary> Ir a otra página tuya </summary>
+                                <dfn>
+                                    <p>
+                                        <a href="pagina2.html" target="_black"> Ir a otra página tuya </a>
+                                        Para lograr moverte a otra página colocamos el nombre que le dimos al archivo HTML.
+                                    </p>
+                                </dfn>
+                            </details>
+
+                            <details>
+                                <summary> Descargar archivos </summary>
+                                <dfn>
+                                    <p>
+                                        <a href="/ARCHIVOS/Archivos.zip" target="_black"> Descargar Archivo </a>
+                                        Para lograr descargar el archivo colocamos su dirección en el href.
+                                    </p>
+                                </dfn>
+                            </details>
+                        </dfn>
+                    </details>
+                </dfn>
+            </details>
+
+            <details>
+                <summary id="8"> Listas </summary>
+                <dfn>
+                    <details>
+                        <summary>Listas Ordenadas:</summary>
+                        <dfn>
+                            <ol>
+                                <li>Primer Item</li>
+                                <li>Segundo Item</li>
+                                <li>Tercer Item</li>
+                                <li>Cuarto Item</li>
+                            </ol>
+
+                            <details>
+                                <summary> Su estructura es: </summary>
+                                <dfn>
+                                    <p>
+                                        <code>
+                                            &lt;ol&gt; <br>
+                                                &nbsp; &lt;li&gt; Primer Item &lt;/li&gt; <br>
+                                                &nbsp; &lt;li&gt; Segundo Item &lt;/li&gt; <br>
+                                                &nbsp; &lt;li&gt; Tercer Item &lt;/li&gt; <br>
+                                                &nbsp; &lt;li&gt; Cuarto Item &lt;/li&gt; <br>
+                                            &lt;/ol&gt; 
+                                        </code>
+                                    </p>
+                                </dfn>
+                            </details>
+                            <details>
+                                <summary>Atributos:</summary>
+                                <dfn>
+                                    <ol type="A">
+                                        <li>Podemos elejir como empieza la lista: type="A".<br> Podemos usar: A, a, 1, i(N° romanos).</li>
+                                        <li>Ejemplo</li>
+                                    </ol>
+                                </dfn>
+                            </details>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary>Listas desordenadas:</summary>
+                        <dfn>
+                            <ul>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                            </ul>
+
+                            <details>
+                                <summary> Su estructura es: </summary>
+                                <dfn>
+                                    <p>
+                                        <code>
+                                            &lt;ul type="square"&gt; <br>
+                                                &nbsp; &lt;li&gt; Item &lt;/li&gt; <br>
+                                                &nbsp; &lt;li&gt; Item &lt;/li&gt; <br>
+                                                &nbsp; &lt;li&gt; Item &lt;/li&gt; <br>
+                                                &nbsp; &lt;li&gt; Item &lt;/li&gt; <br>
+                                            &lt;/ul&gt;
+                                        </code>
+                                    </p>
+                                </dfn>
+                            </details>
+                            <details>
+                                <summary>Atributos</summary>
+                                <dfn>
+                                    <ul type="none">
+                                        <li>type="square": Símbolo cuadrado</li>
+                                        <li>type="nome": Elimina el simbolo</li>
+                                    </ul>
+                                </dfn>
+                            </details>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary>Lista de descripción:</summary>
+                        <dfn>
+                            <code>
+                                &lt;dl&gt;  <br>
+                                &nbsp;&nbsp; &lt;dt&gt; Título &lt;/dt&gt; <br>
+                                &nbsp;&nbsp; &lt;dd&gt; Descripción. &lt;/dd&gt; <br>
+                                &lt;/dl&gt;
+                            </code>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary>Lista despegables</summary>
+                        <dfn>
+                            <details>
+                                <summary>Estructura</summary>
+                                <code>
+                                    &lt;fieldset&gt; <br>
+                                        &lt;legend&gt;Lista despegable&lt;/legend&gt; <br>
+                                        &lt;input list="colors" placeholder="selecciona color..."&gt; <br>
+                                        &lt;datalist id="colors"&gt; <br>
+                                            &nbsp; &nbsp; &lt;option value="Amarillo"&gt; &lt;/option&gt; <br>
+                                            &nbsp; &nbsp; &lt;option value="Rojo"&gt; &lt;/option&gt; <br>
+                                            &nbsp; &nbsp; &lt;option value="verde"&gt; &lt;/option&gt; <br>
+                                            &nbsp; &nbsp; &lt;option value="Azul"&gt; &lt;/option&gt; <br>
+                                            &nbsp; &nbsp; &lt;option value="Negro"&gt; &lt;/option&gt; <br>
+                                        &lt;/datalist&gt; <br>
+                                    &lt;/fieldset&gt;
+                                </code>
+                            </details>
+
+                            <details>
+                                <summary>Ejemplo</summary>
+                                <dfn>
+                                    <h3>Etiqueta &lt;datalist&gt;</h3>
+                                    <fieldset>
+                                        <legend>Lista despegable</legend>
+                                        <input list="colors" placeholder="selecciona color...">
+                                        <datalist id="colors">
+                                            <option value="Amarillo"></option>
+                                            <option value="Rojo"></option>
+                                            <option value="verde"></option>
+                                            <option value="Azul"></option>
+                                            <option value="Negro"></option>
+                                        </datalist>
+                                    </fieldset>
+                                </dfn>
+                            </details>
+                        </dfn>
+                    </details>
+                </dfn>
+            </details>
+
+            <details>
+                <summary id="9"> Insertar imagenes:</summary>
+                <dfn>
+                    Utilizamos la etiqueta &lt;img&gt; <br> Ejemplo: &lt;img &nbsp;src="url" &nbsp; alt="descripción"&gt;
+                    <details>
+                        <summary>Esta tiene atributos:</summary>
+                        <dfn>
+                            <ol>
+                                <li>src="url"</li>
+                                <li>alt="descripción"</li>
+                                <li>title="título de la imagen al poner el raton encima."</li>
+                                <li>height="altura de la imagen" </li>
+                            </ol>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary>Contenedor de img y leyenda</summary>
+                        <dfn> 
+                            &lt;figure&gt; <br>
+                            &nbsp; &nbsp; &lt;img &nbsp;src="url" &nbsp; alt="descripción" &nbsp; title="título" &nbsp; height="altura de la imagen" &gt; <br>
+                            &nbsp; &nbsp; &lt;figcaption&gt; leyenda de la imagen. &lt;/figcaption&gt; <br>
+                            &lt;/figure&gt;
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary>Ejemplo de imagen </summary>
+                        <dfn>
+                            <figure class="contenedor__img">
+                                <img class="img__proceso" src="https://www.mancomunidaddetentudia.com/portal/wp-content/uploads/2020/05/viajar-focus-0-0-983-557.jpg" alt="Viaje en avion" title="Sueño de viajar">
+                                <figcaption> hombre con maleta viendo un avion. </figcaption>
+                            </figure>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary> Imagen con link </summary>
+                        <dfn>
+                            <a href="https://www.instagram.com/francisco_carusso/" target="_black">
+                                <figure class="contenedor__img">
+                                    <img class="img__proceso" src="/CSS/IMG/3_Instagram icon logo.png" alt="imagen de Instagram con link" title="instagram" height="200px">
+                                </figure>
+                            </a>
+                            <a href="https://wa.me/message/NDFDMQDDCCIBB1" target="_black">
+                                <figure class="contenedor__img">
+                                    <img class="img__proceso" src="/CSS/ICONOS/Whatsapp.png" alt="logo de whatsapp" title="Whatsapp">
+                                </figure>
+                            </a>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary> Link en una coordenada especifica en una imagen. </summary>
+                        <details>
+                            <summary> Etiqueta y atributos </summary>
+                            <dfn>
+                                <p> 
+                                    Etiqueta: &lt;map name=""&gt; <br> Esta etiqueta me permite tener un mapa de coordenada dentro de una imagen.<br>
+                                    Dentro de &lt;map&gt; colocamos la etiqueta <br> &lt;area shape="forma" coords="coordenadas" href="url" alt="descripción" &gt;
+                                    <br> Podemos poner tantas &lt;area&gt; como secciones en la imagen queramos poner un link.
+                                </p>
+                                <a href="https://www.image-map.net/"" target="_black">Obtener coordenadas de una sección en una imagen</a>
+                            </dfn>
+                        </details>
+
+                        <details>
+                            <summary> Ejemplo de link coordenada en imagen </summary>
+                            <dfn>
+                                <figure>
+                                    <img src="/CSS/IMG/5_camara_300px.jpg" alt="fotografía" usemap="#img__map" title="fotografía">
+                                </figure>
+                                <figcaption> Nota: La img no puede ser responsive porque cambiaria las coordenadas de la sección del link que se encuentra en el radio del area de la camara. </figcaption>
+                                <map name="img__map">
+                                    <area title="instagram" shape="circle" coords="217,109,28" href="https://www.instagram.com/p/CWUJnqxlVsj/?utm_source=ig_web_copy_link" target="_black" alt="fotografía">
+                                    <area title="tiempo" shape="poly" coords="224,199,229,208,240,209,249,207,258,208,258,195,243,196,234,189,228,189,250,193" href="https://www.instagram.com/reel/CaSqmFdsvxX/?utm_source=ig_web_copy_link" target="_black" alt="Reloj">
+                                </map>
+                            </dfn>
+                        </details>
+
+                        <details>
+                            <summary> Estructura de etiquetas </summary>
+                            <dfn>
+                                &lt;figure&gt;<br>
+                                    <p>&lt;img src="/CSS/IMG/5_camara_300px.jpg" alt="fotografía" usemap="#img__map" title="fotografía"&gt; <br> </p>
+                                &lt;/figure&gt;<br>
+                                &lt;figcaption&gt; <p>Nota: La img no puede ser responsive porque cambiaria las coordenadas de la sección del link que se encuentra en el radio del area de la camara.</p> &lt;/figcaption&gt; <br>
+                                &lt;map name="img__map"&gt;<br>
+                                    <p> &lt;area title="instagram" shape="circle" coords="217,109,28" href="https://www.instagram.com/p/CWUJnqxlVsj/?utm_source=ig_web_copy_link" target="_black" alt="fotografía"&gt <br><br> &lt;area title="tiempo" shape="poly" coords="224,199,229, 208,240,209,249, 207,258,208,258, 195,243,196,234, 189,228,189,250, 193" href="https://www.instagram.com/reel/CaSqmFdsvxX/?utm_source=ig_web_copy_link" alt="Reloj"&gt;</p>
+                                &lt;/map&gt;
+                            </dfn>
+                        </details>
+                    </details>
+                </dfn>
+            </details>
+            
+            <details>
+                <summary id="10">Crear Tablas </summary>
+                <dfn>
+                    <details>
+                        <summary> Estructura basica </summary>
+                        <dfn>
+                            <ul>
+                                <li>Etiqueta contenedor: &lt;table&gt; &lt;/table&gt; <br> Atributo: border="1" </li>
+                                <li>Título de la tabla: &lt;caption&gt; &lt;/caption&gt;</li>
+                                <li>Etiqueta de fila (table raw): &lt;tr&gt; &lt;/tr&gt;</li>
+                                <li>
+                                    Etiqueta contenido de fila encabezados (tabla heading): &lt;th&gt; &lt;/th&gt;<br>
+                                    Atributo 1: colspan="N° de columnas a combinar"
+                                    Atributo 2: rowspan="N° de filas a combinar"
+                                </li>
+                                <li>Etiqueta contenido de fila normal: &lt;td&gt; &lt;/td&gt;</li><hr>
+                                <code>
+                                    &lt;table border="1"&gt;<br>
+                                        &nbsp; &lt;caption&gt;Mis horarios&lt;/caption&gt;<br>
+                                        &nbsp; &lt;tr&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;th colspan="3"&gt;HORARIO&lt;/th&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;th colspan="2"&gt;Fin de semana&lt;/th&gt;<br>
+                                        &nbsp; &lt;/tr&gt;<br>
+
+                                        &nbsp; &lt;tr&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;th&gt;Lunes&lt;/th&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;th&gt;Martes&lt;/th&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;th&gt;Miércoles&lt;/th&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;th&gt;Jueves&lt;/th&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;th&gt;Viernes&lt;/th&gt;<br>
+                                        &nbsp; &lt;/tr&gt;<br>
+
+                                        &nbsp; &lt;tr&gt;<br>
+                                        &nbsp;&nbsp;&nbsp; &lt;th rowspan="3"&gt;Programar&lt;/th&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                        &nbsp; &lt;/tr&gt;<br>
+
+                                        &nbsp; &lt;tr&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                        &nbsp; &lt;/tr&gt;<br>
+
+                                        &nbsp; &lt;tr&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                                nbsp;&nbsp;&nbsp; &lt;td&gt;Descansar&lt;/td&gt;<br>
+                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Descansar&lt;/td&gt;<br>
+                                        &nbsp; &lt;/tr&gt;<br>
+                                    &lt;/table&gt;<br>
+                                </code>
+                            </ul>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary> Ejemplo de tabla </summary>
+                        <dfn>
+                            <table border="1">
+                                <caption> Mis horarios </caption>
+                                <tr>
+                                    <th colspan="3"> HORARIO </th>
+                                    <th colspan="2"> Fin de semana </th>
+                                </tr>
+                                <tr>
+                                    <th> Lunes </th>
+                                    <th> Martes </th>
+                                    <th> Miércoles </th>
+                                    <th> Jueves </th>
+                                    <th> Viernes </th>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3"> Programar </th>
+                                    <td> Programar </td>
+                                    <td> Programar </td>
+                                    <td> Programar </td>
+                                    <td> Programar </td>
+                                </tr>
+                                <tr>
+                                    <td> Programar </td>
+                                    <td> Programar </td>
+                                    <td> Programar </td>
+                                    <td> Programar </td>
+                                </tr>
+                                <tr>
+                                    <td> Programar </td>
+                                    <td> Programar </td>
+                                    <td> Descansar </td>
+                                    <td> Descansar </td>
+                                </tr>
+                            </table>
+                        </dfn>
+                    </details>
+                    
+                    <details>
+                        <summary>Estilos a ciertas columnas de tus tablas</summary>
+                        <dfn>
+                            <ul>
+                                <li>Usamos la etiqueta &lt;col&gt; que tiene que estar dentro de la etiqueta &lt;colgroup&gt;</li>
+                                <li>Dentro de col usamos el atributo style="background-color: aqua;"</li>
+                                <li>Si queremos más columnas le agregamos el atributo span="N° DE COLUMNAS"</li>
+                                <li>
+                                    &lt;colgroup&gt; <br> &nbsp; &nbsp;
+                                        &lt;col style="background-color: aqua;"&gt; <br> &nbsp; &nbsp;
+                                        &lt;col span="2" style="background-color: rgb(54, 184, 65);"&gt;  <br>
+                                    &lt;/colgroup&gt;
+                                </li>
+                            </ul>
+                            Ejemplo: <br>
+                            <table border="1">
+                                <colgroup>
+                                    <col style="background-color: aqua;">
+                                    <col span="2" style="background-color: rgb(54, 184, 65);">
+                                </colgroup>
+                                <caption>Título</caption>
+                                <tr>
+                                    <th>Lunes</th>
+                                    <th>Martes</th>
+                                    <th>Miercoles</th>
+                                </tr>
+                                <tr>
+                                    <td>estudiar</td>
+                                    <td>entrenar</td>
+                                    <td>entrenar</td>
+                                </tr>
+                                <tr>
+                                    <td>descansar</td>
+                                    <td>descansar</td>
+                                    <td>descansar</td>
+                                </tr>
+                            </table>
+                        </dfn>
+                    </details>
+                </dfn>
+            </details>
+
+            <details>
+                <summary id="11"> Formularios </summary>
+                <dfn>
+                    <details>
+                        <summary> Estructura </summary>
+                        <dfn>
+                            <ul>
+                                <li>Etiqueta contenedora: &lt;form&gt; &lt;/form&gt; <br> Atribito: action="dirección a donde enviar los datos"</li>
+                                <li>
+                                    Para las entradas: &lt;input&gt;<br>
+                                    <table border="1">
+                                        <caption>Atributos básicos</caption>
+                                        <tr>
+                                            <th>Atribito</th>
+                                            <th>Descripción</th>
+                                        </tr>
+                                        <tr>
+                                            <td> type="#" </td>
+                                            <td>
+                                                <ul>
+                                                    <li>Tipo texto:&nbsp; type="text"</li>
+                                                    <li>Tipo password:&nbsp; type="password"</li>
+                                                    <li>Tipo submit:&nbsp; type="submit"</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> id="#" </td>
+                                            <td>
+                                                <ul>
+                                                    <li>Es el identificador unico que se enlaza con el &lt;label for=""&gt; Usuario: &lt;/label&gt;</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> name="#" </td>
+                                            <td>
+                                                <ul>
+                                                    <li>Es la información que se enviara al servidor.</li>
+                                                    <li>Ejemplo del name tendra: name="User" y value="David"</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> value="#" </td>
+                                            <td>
+                                                <ul>
+                                                    <li>Es la información que se enviara al servidor.</li>
+                                                    <li>Ejemplo del value tendra: name="Pass" y value="12345"</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Ejemplo: &lt;input type="#" id="#" name="#" value="#"&gt;</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>Para los input usamos &lt;label &nbsp; for=""&gt; &lt;/label&gt; para darle el nombre (que se le da con el id="#")<br></li>
+                                <li>Podemos usar &lt;fieldset&gt; &lt;/fieldset&gt; para encapsular una sección de datos. <br> Le damos un nombre con la etiqueta &lt;legend&gt; Colocamos el Nombre &lt;/legend&gt;</li>
+                            </ul>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary>Ejemplo práctico</summary>
+                        <dfn>
+                            <form action="#" method="post">
+                                <fieldset>
+                                    <legend> Datos del Usuario </legend>
+                                    <p>Nota: Los apartados con el símbolo * son obligatorios.</p>
+
+                                    <label for="name">* Usuario:</label><br>
+                                    <input type="text" id="name" name="Usuario" placeholder="Escribe tu usuario..." required autofocus><br><br>
+
+                                    <label for="pass">* Contraseña </label><br>
+                                    <input type="password" id="pass" name="Contraseña" placeholder="Escribe tu contraseña..." required><br><br>
+
+                                    <label for="gmail">* gmail:</label><br>
+                                    <input type="email" id="gmail" name="gmail" placeholder="Escribe tu gmail..." required><br><br>
+
+                                    <label for="birthday">Fecha de nacimiento:</label><br>
+                                    <input type="date" id="birthday" name="birthday"><br> <br>
+
+                                    <label for="cv">Ingresa tu CV:</label>
+                                    <input type="file" id="cv" name="cv"> <br> <br>
+
+                                    <fieldset>
+                                        <legend>
+                                            <label for="Description"> Breve biografía </label>
+                                        </legend>
+                                        <textarea name="Description" id="Description" cols="auto" rows="5" placeholder="Escribe tu texto..."></textarea>
+                                    </fieldset>
+                                </fieldset>
+                                
+                                <fieldset>
+                                    <legend> Color favorito </legend>
+                                    
+                                    <input type="radio" id="red" name="color" value="red">
+                                    <label for="red">Rojo</label><br>
+
+                                    <input type="radio" id="blue" name="color" value="blue">
+                                    <label for="blue">Azul</label><br>
+
+                                    <input type="radio" id="green" name="color" value="green">
+                                    <label for="green">Verde</label><br>
+
+                                    <label for="especifico">Especifique su color:</label>
+                                    <input type="color" id="especifico" name="color"><br><br>
+
+                                    <label for="colores">Lista de colores:</label>
+                                    <select name="colores" id="colores">
+                                        <optgroup label="Simples">
+                                            <option value="blue">Azul</option>
+                                            <option value="red">Rojo</option>
+                                            <option value="green" selected>Verde</option>
+                                        </optgroup>
+
+                                        <optgroup label="Compuestos">
+                                            <option value="Yellow">Amarillo</option>
+                                            <option value="Pink">Rosa</option>
+                                            <option value="white">Branco</option>
+                                            <option value="Black">Negro</option>
+                                        </optgroup>
+                                    </select>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend> Hobbies </legend>
+                                    <input type="checkbox" id="read" name="Hobby 1" value="read">
+                                    <label for="read">Leer</label><br>
+
+                                    <input type="checkbox" id="entrenar" name="Hobby 2" value="entrenar">
+                                    <label for="entrenar">Entrenar</label><br>
+
+                                    <input type="checkbox" id="programar" name="Hobby 3" value="programar">
+                                    <label for="programar">Programar</label><br>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend> Enviar datos del formulario </legend>
+                                    <input type="submit" value="Listo!"> &nbsp;
+                                    <input type="reset" value="Borrar">
+                                </fieldset>
+                            </form>
+                        </dfn>
+                    </details>
+                </dfn>
+            </details>
+
+            <details>
+                <summary id="12"> Ingresar Videos y audio </summary>
+                <dfn>
+                    <details>
+                        <summary> Estructuras para ambos: </summary>
+                        <dfn>
+                            <details>
+                                <summary> Forma estendida </summary>
+                                <dfn>
+                                    <details>
+                                        <summary> Estructura </summary>
+                                        <dfn>
+                                            &lt;audio controls autoplay muted loop&gt;<br>
+                                                <p>
+                                                    &lt;source src="/CSS/IMG/AUDIOS/audio1.mp3" type="audio/mp3"&gt;<br>
+                                                    &lt;source src="/CSS/IMG/AUDIOS/audio1.mp3" type="audio/ogg"&gt;<br>
+                                                    El navegador no puede reproducir el audio. <br>
+                                                </p>
+                                            &lt;/audio&gt; <br><hr>
+                                            &lt;video controls loop muted height="200px"&gt; <br>
+                                                <p>
+                                                    &lt;source src="/CSS/IMG/homeVideo.mp4" type="video/mp4"&gt;<br>
+                                                    &lt;source src="/CSS/IMG/homeVideo.mp4" type="video/wav"&gt; <br>
+                                                    El navegador no puede reproducir el video. <br>
+                                                </p>
+                                            &lt;/video&gt;
+                                        </dfn>
+                                    </details>
+
+                                    <audio controls autoplay muted loop>
+                                        <source src="/Proyectos/1_Curso_HTML/CSS/IMG/AUDIOS/audio1.mp3" type="audio/mp3">
+                                        <source src="/Proyectos/1_Curso_HTML/CSS/IMG/AUDIOS/audio1.mp3" type="audio/ogg">
+                                        El navegador no puede reproducir el audio. <br>
+                                    </audio><br><hr>
+                                    <video controls loop muted width="90%" height="300px">
+                                        <source src="/Proyectos/1_Curso_HTML/CSS/IMG/1_video.mp4" type="video/mp4">
+                                        <source src="/Proyectos/1_Curso_HTML/CSS/IMG/1_video.mp4" type="video/wav">
+                                        El navegador no puede reproducir el audio. <br>
+                                    </video>
+                                </dfn>
+                            </details>
+                            
+                            <details>
+                                <summary> Forma corta </summary>
+                                <dfn>
+                                    <details>
+                                        <summary> Estructura </summary>
+                                        <dfn>
+                                            &lt;audio controls src="/CSS/IMG/AUDIOS/audio1.mp3" type="audio/mp3"&gt; &lt;/audio&gt;<br><hr>
+                                            &lt;video&gt; controls src="/CSS/IMG/1_video.mp4" type="video/mp4" height="200px"&gt;&lt;/video&gt;
+                                        </dfn>
+                                    </details>
+                                    <audio controls src="/CSS/IMG/AUDIOS/audio1.mp3" type="audio/mp3"></audio><br><hr>
+                                    <video controls src="/CSS/IMG/homeVideo.mp4" type="video/mp4" width="90%" height="300px"></video>
+                                </dfn>
+                            </details>
+                        </dfn>
+                    </details>
+                    
+                    <details>
+                        <summary> Video desde YouTube </summary>
+                        <dfn>
+                            <details>
+                                <summary>Estructura</summary>
+                                <dfn>
+                                    Vas a youtube, segundo click en el video y seleccionas: "copiar código de inserción" <br> La etiqueta &lt;iframe&gt; &lt;/iframe&gt; sirve para inserta material de otra página. <br>
+                                </dfn>
+                            </details>
+                            <iframe width="90%" height="300px" src="https://www.youtube.com/embed/akFzU5K8VL0?list=PLJubkp8BnTJt-pKYkVNLt72n1hKmYmkFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </dfn>
+                    </details>
+                </dfn>
+            </details>
+            
+            <details>
+                <summary id="13"> Dibujar en HTML5 gráficos <abbr title="Scalable Vector Graphics">SVG</abbr> </summary>
+                <dfn>
+                    <details>
+                        <summary> Estructura básica </summary>
+                        <dfn>
+                            <svg width="500" height="320">
+                                <circle cx="150" cy="200" r="100" stroke="blue" stroke-width="4" fill="pink"></circle>
+                                <line x1="150" y1="200" x2="250" y2="200" stroke="blue" stroke-width="4"></line>
+                                <text x="150" y="198" fill="red"> r = 100 </text>
+                                <polyline points="0,40 40,40 40,0 80,0 80,80 0,80 0,40" fill="white" stroke="blue" stroke-width="4"></polyline>
+                            </svg>
+                        </dfn>
+                    </details>
+                    
+                    <details>
+                        <summary> Etiqueta &lt;Path/&gt; </summary>
+                        <dfn>
+                            <svg width="500" height="400">
+                                <circle cx="100" cy="350" r="3" />
+                                <circle cx="250" cy="50" r="3" />
+                                <text x="100" y="350" dx="-20" >A</text>
+                                <text x="250" y="50" dx="10" >B</text>
+                                <path d="M 100 350 Q 50 -50 250 50" stroke="blue" stroke-width="5" fill="none" />
+                            </svg>
+                        </dfn>
+                    </details>
+
+                    <details>
+                        <summary> Descargar un archivo con formato SVG </summary>
+                        <dfn>
+                            <ul>
+                                <li>
+                                    <a class="link" href="https://www.flaticon.es/resultados?word=home" target="__black"> Página para descargar SVG </a>
+                                </li>
+                                <li>
+                                    <a class="link" href="https://imagen.online-convert.com/es/convertir-a-svg" target="__black"> Convertir imagenes en SVG </a>
+                                </li>
+                            </ul>
+                            <img width="100%" src="/Proyectos/1_Curso_HTML/CSS/IMG/dibujo.svg" alt="imagen/svg">
+                        </dfn>
+                    </details>
+                </dfn>
+            </details>
+            
+            <details>
+                <summary id="14"> Proyecto Final Estructura HTML</summary>
+                <dfn>
+                    <details>
+                        <summary> Página del proyecto </summary>
+                        <dfn>
+                            <a href="/HTML/Proyecto final HTML/index.html" target="_black">Ir al Proyecto Final!</a>
+                        </dfn>
+                    </details>
+                </dfn>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+            <a class="flecha2" href="#home">
+                <p class="simbolo"> > </p>
+            </a>
+    
+            <p class="texto_footer">
+                Copyright &copy; 2022-2023 Todointerconectado Company S.L. Todos los derechos reservados.
+            </p>
+        </footer>
+</body>
+</html>

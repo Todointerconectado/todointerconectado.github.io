@@ -11,6 +11,7 @@
     --color_descripción_img_gray: rgb(102, 100, 100);
     --color_boton-subir_dark-greens: rgb(5, 92, 102);
     --color_contenedor_title_comandos: rgb(29, 99, 134);
+    --color_contenedor_dfn_white: rgb(255, 255, 255, .7);
 }
 
 /* Boton de comandos Git */
@@ -54,7 +55,6 @@
 }
 
 details {
-    border: 1px solid var(--color_contenedor_title_comandos);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 0px 5px var(--color_sombrasContenedores_black);
@@ -67,11 +67,13 @@ details {
     flex-grow: 1;
 }
 summary {
+    border-radius: 8px;
+    overflow: hidden;
     background-color: var(--color_contenedor_title_comandos);
     color: var(--color_letra_title_white);
     width: 100%;
     height: 50px;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,10 +83,9 @@ summary {
     font-size: 16px;
 }
 dfn {
-    /* margin: 5px; */
+    background-color: var(--color_contenedor_dfn_white);
     padding: 5px;
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -98,7 +99,20 @@ li {
     font-size: 16px;
 }
 
-/* img */
+/*--- listas ---*/
+li {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    background-color: var(--color_contenedor_dfn_white);
+    color: var(--color_contenedor_title_comandos);
+}
+.link:active {
+    color: var(--color_link_hover_blue);
+}
+
+/*--- img ---*/
 .contenedor__img {
     width: 100%;
     margin: 2px;
@@ -110,5 +124,5 @@ li {
 }
 .contenedor__img:hover {
     position: absolute;
-    transform: scale(.8);
+    transform: scale(.95);
 }
