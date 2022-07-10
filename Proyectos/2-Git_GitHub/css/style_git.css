@@ -122,7 +122,15 @@ li {
     width: 100%;
     border-radius: 8px;
 }
-.contenedor__img:hover {
+.icono {
+    width: 100%;
+    border-radius: 8px;
+}
+.foto {
+    width: 100%;
+    border-radius: 8px;
+}
+.img__proceso:hover {
     position: absolute;
     transform: scale(.95);
 }
