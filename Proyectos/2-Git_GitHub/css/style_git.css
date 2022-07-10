@@ -13,11 +13,6 @@
     --color_contenedor_title_comandos: rgb(29, 99, 134);
 }
 
-body {
-    font-weight: bold;
-    font-size: 16px;
-}
-
 /* Boton de comandos Git */
 .contenedor_seccion_comando {
     text-align: center;
@@ -36,6 +31,8 @@ body {
     box-shadow: 0px 0px 5px var(--color_sombrasContenedores_black);
     display: flex;
     align-items: center;
+    font-weight: bold;
+    font-size: 16px;
 }
 .link_comando {
     height: 40px;
@@ -61,7 +58,7 @@ details {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 0px 5px var(--color_sombrasContenedores_black);
-    width: 300px;
+    /* width: 300px; */
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -69,32 +66,39 @@ details {
     align-items: center;
     flex-grow: 1;
 }
-
 summary {
     background-color: var(--color_contenedor_title_comandos);
     color: var(--color_letra_title_white);
     width: 100%;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-dfn {
-    /* margin: 5px; */
+    height: 50px;
     padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+dfn {
+    /* margin: 5px; */
+    padding: 5px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
 }
 li {
     text-align: center;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-/* Proceso de los comandos en img */
+/* img */
 .contenedor__img {
     width: 100%;
     margin: 2px;

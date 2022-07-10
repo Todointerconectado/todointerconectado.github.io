@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Inicio con Git</title>
+    <title>Git/GitHub</title>
     <link rel="icon" href="./css/img/1_logo.png" type="png">
     <link rel="stylesheet" href="/CSS/style_caja.css">
-    <link rel="stylesheet" href="/Proyectos/2-Curso-GitHab/css/style_git.css">
-
-    <script src="/Proyectos/2-Curso-GitHab/js/JavaScrip.js"></script>
+    <link rel="stylesheet" href="./css/style_git.css">
+    <script src="/Proyectos/2-Git_GitHub/js/JavaScrip.js"></script>
 </head>
+
 <body>
-    <video class="fondo__video" muted autoplay loop src="/Proyectos/2-Curso-GitHab/css/img/homeVideo.mp4">
+    <video class="fondo__video" muted autoplay loop src="/Proyectos/2-Git_GitHub/css/img/homeVideo.mp4">
     </video>
-    <h1 class="title1"> Francisco Carusso </h1>
+    <h1 id="home" class="title1"> Francisco Carusso </h1>
 
     <main>
         <h2 class="title">Bienvenidos al curso Git </h2>
@@ -23,10 +23,9 @@
                 <p class="texto_comando"> Acceso a los comandos en la página oficial de Git: </p>
                 <a class="link_comando" href="https://git-scm.com/docs/git#_git_commands" target="_blanck">
                     <figure class="contenedo_logo_comando">
-                        <img class="logo_comando" src="/Proyectos/2-Curso-GitHab/css/img/2_Comandos_Git.png" alt="Comandos de Git">
+                        <img class="logo_comando" src="/Proyectos/2-Git_GitHub/css/img/2_Comandos_Git.png" alt="Comandos de Git">
                     </figure>
                 </a>
-
         </div>
 
         <section class="contenedor_principal">
@@ -90,7 +89,7 @@
                                 <summary> git revert --continue </summary>
                                 <dfn> Esto termina de hacer la reversión y crea un unico commit con los cambios.
                                     <figure class="contenedor__img">
-                                        <img class="img__proceso" src="/Proyectos/2-Curso-GitHab/css/img/5_Revert.png" alt="Nos queda un único commit de revert">
+                                        <img class="img__proceso" src="/Proyectos/2-Git_GitHub/css/img/5_Revert.png" alt="Nos queda un único commit de revert">
                                     </figure>
                                 </dfn>
                             </details>
@@ -180,14 +179,25 @@
 
                     <details>
                         <summary> git merge (y el nombre de la rama que se quiere fucionar) </summary>
-                        <dfn> Hacer un merge (Enlasar las ramas creadas en un solo archivo.) Se hace desde la rama master (main) </dfn>
-                        <figure class="contenedor__img">
-                            <img class="img__proceso" src="/Proyectos/2-Curso-GitHab/css/img/3_git_merge_nombreDeLaRama.png" alt="Proceso de git merge">
-                        </figure>
+                        <dfn> Hacer un merge (Enlasar las ramas creadas en un solo archivo.) Se hace desde la rama master (main) <br>
+                            <figure class="contenedor__img">
+                                <img class="img__proceso" src="/Proyectos/2-Git_GitHub/css/img/3_git_merge_nombreDeLaRama.png" alt="Proceso de git merge">
+                            </figure>
+                        </dfn>
                     </details>
                 </dfn>
             </details>
         </section>
     </main>
+
+    <footer>
+        <a class="flecha2" href="#home">
+            <p class="simbolo"> > </p>
+        </a>
+
+        <p class="texto_footer">
+            Copyright &copy; 2022-2023 Todointerconectado Company S.L. Todos los derechos reservados.
+        </p>
+    </footer>
 </body>
 </html>
