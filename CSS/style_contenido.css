@@ -41,15 +41,18 @@ figure {
     text-decoration: none;
 }
 .portada {
-    width: 90%;
+    /* border: 1px solid; */
+    width: 100%;
 }
 figcaption {
+    /* border: 1px solid; */
+    width: 100%;
+    height: auto;
     margin-top: 10px;
+    padding: 5px 0;
     color: var(--color_descripción_img_gray);
     text-align: center;
-    width: 100%;
-    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+}

@@ -76,7 +76,7 @@ span {
 abbr {
     /* border: 1px solid; */
     height: 25px;
-    width: 60px;
+    width: 100%;
     text-decoration: none;
     display: flex;
     justify-content: center;
