@@ -29,63 +29,63 @@
         </div>
 
         <section class="contenedor_principal">
-            <details>
+            <details class="contenedor_inicio">
                 <summary> git init </summary>
                 <dfn> Empezar la conexión con Git </dfn>
             </details>
             
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary>git add (nombre del archivo)</summary>
                 <dfn>Sirve para guardar un archivo en el repositorio de Git.</dfn>
             </details>
 
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary>git add .</summary>
                 <dfn> para guardar todos los archivos en el repositorio de Git </dfn>
             </details>
 
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary>git status -s</summary>
                 <dfn> Muestra los archivos con copia de guardado y los que no. </dfn>
             </details>
             
-            <details>
+            <details class="contenedor_inicio">
                 <summary> (conectar el repositorio de GitHub a la terminal) </summary>
                 <dfn> dentro de la terminal Git Bash pegamos la url del repositorio </dfn>
             </details>
 
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary>git commit -m "descripción"</summary>
                 <dfn> Crea una copia de guardado. </dfn>
             </details>
 
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary>git log --oneline</summary>
                 <dfn> Muestra los archivos guardados en Git. </dfn>
             </details>
 
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary>git reset --hard (código guardado)</summary>
                 <dfn> vuelbe al punto que se guardo en el codigo seleccionado. </dfn>
             </details>
 
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary>git log --oneline | cat </summary>
                 <dfn> Muestra los commit generados. </dfn>
             </details>
 
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary>git diff (los 2 codigos a comparar)</summary>
                 <dfn> Se comparan las lineas de códigos cambiados entre dos commit. </dfn>
             </details>
 
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary> git revert --no-commit HEAD </summary>
                 <dfn> Sirve para eliminar cambios de varios commit y crear un solo commit nuevo.
-                    <details> 
+                    <details class="details_interno"> 
                         <summary> git revert --no-commit HEAD~1 </summary>
                         <dfn> Revierte los cambios al commit anterior.<br> (HEAD es el puntero y ~ señala a que commit ir con el número) <br> Una ves de terminar los cambios colocamos:
-                            <details> 
+                            <details class="details_interno"> 
                                 <summary> git revert --continue </summary>
                                 <dfn> Esto termina de hacer la reversión y crea un unico commit con los cambios.
                                     <figure class="contenedor__img">
@@ -98,13 +98,13 @@
                 </dfn>
             </details>
 
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary> (Elimina un commit específico) Pasos: </summary>
                 <dfn> Tenemos que estar en la rama en la cual vamos a eliminar el commit especifico.
-                    <details> 
+                    <details class="details_interno"> 
                         <summary> git log (colocas master o main, dos puntos y el nombre de la rama que se esta.) </summary>
                         <dfn> Vemos los disintos commit con su respectivo identificadores.
-                            <details> 
+                            <details class="details_interno"> 
                                 <summary> git rebase -i (colocamos el identificador anterior al que queremos eliminar) </summary>
                                 <dfn> Si queremos eliminar el commit número 3 colocamos el identificador número 2. </dfn>
                             </details>
@@ -113,7 +113,7 @@
                 </dfn>
             </details>
 
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary>git commit -am "descripción"</summary>
                 <ul>
                     <li>Dos comandos en uno:</li>
@@ -122,25 +122,25 @@
                 </ul>
             </details>
 
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary>clear:</summary>
                 <dfn> Para limpiar la consolo de Git </dfn>
             </details>
 
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary>push:</summary>
                 <dfn> Para cargar del editor al GitHub. </dfn>
             </details>
 
-            <details> 
+            <details class="contenedor_inicio"> 
                 <summary>pull:</summary>
                 <dfn> Para traer de GitHub al editor local. </dfn>
             </details>
 
-            <details>
+            <details class="contenedor_inicio">
                 <summary>tags:</summary>
                 <dfn> Nos permiten verificar versiones de nuestro proyecto.
-                    <details>
+                    <details class="details_interno">
                         <summary>Para esto tenemos dos pasos:</summary>
                         <dfn>
                             git tag (nombre identificatibo) -m "descripción": <br> Este paso toma nota en Git. <br> <br>
@@ -150,25 +150,25 @@
                 </dfn>
             </details>
 
-            <details>
+            <details class="contenedor_inicio">
                 <summary> Ramas o Brach </summary>
                 <dfn> Rama es una linea de tiempo del proyecto en Git. Se pueden crear varias ramas.
-                    <details>
+                    <details class="details_interno">
                         <summary> git branch (y el nombre de la rama)</summary>
                         <dfn> Crear una rama. </dfn>
                     </details>
                     
-                    <details>
+                    <details class="details_interno">
                         <summary> git branch -d (y el nombre de la rama)</summary>
                         <dfn> Borrar rama. </dfn>
                     </details>
                     
-                    <details>
+                    <details class="details_interno">
                         <summary> git branch</summary>
                         <dfn> Podemos ver las ramas existentes. Nos encontramos en la rama con el * </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary> git checkout (y el nombre de la rama)</summary>
                         <dfn> 
                             Me muevo entre las ramas. Y creo un botón desde una rama secundaria:
@@ -177,7 +177,7 @@
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary> git merge (y el nombre de la rama que se quiere fucionar) </summary>
                         <dfn> Hacer un merge (Enlasar las ramas creadas en un solo archivo.) Se hace desde la rama master (main) <br>
                             <figure class="contenedor__img">
@@ -195,9 +195,9 @@
             <p class="simbolo"> > </p>
         </a>
 
-        <p class="texto_footer">
+        <address class="texto_footer">
             Copyright &copy; 2022-2023 Todointerconectado Company S.L. Todos los derechos reservados.
-        </p>
+        </address>
     </footer>
 </body>
 </html>

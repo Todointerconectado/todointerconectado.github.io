@@ -15,140 +15,140 @@
 
 <body>
     <video class="fondo__video" muted autoplay loop src="/CSS/MULTIMEDIA/homeVideo.mp4"></video>
-    <!-- <audio id="audio__inicio" autoplay src="/Proyectos/1_Curso_HTML/CSS/IMG/AUDIOS/audio2.mp3" type="mp3"></audio> -->
     <h1 id="home" class="title1"> Francisco Carusso </h1>
 
     <main>
         <h2 class="title"> Curso de HTML desde cero </h2>
 
         <section class="contenedor_principal">
-            <details>
-                <summary id="1"> Etiquetas especiales: </summary>
+            <details class="contenedor_inicio">
+                <summary> Etiquetas especiales: </summary>
                 <dfn>
                     <ul>
                         <li>Espacio: & nbsp; (sin el espacio)</li>
-                        <li>Símbolo mayor que: & lt; ➡️ &lt; (sin el espacio)</li>
-                        <li>Símbolo mayor que: & gt; ➡️ &gt; (sin el espacio)</li>
+                        <li>Símbolo mayor que: & lt; ➡ &lt; (sin el espacio)</li>
+                        <li>Símbolo mayor que: & gt; ➡ &gt; (sin el espacio)</li>
                         <li>Comando para abrir el panel de los emojis: Tecla Windows + punto </li>
                         <li>Para comentar en HTML se escribe dentro de: &lt;!-- comentario --&gt;</li>
-                        <li>Símbolo de copi ray &copy;: & copy; (sin el espacio) </li>
+                        <li>Símbolo de copiray &copy;: & copy; (sin el espacio) </li>
                         <li>Espacio: &lt;br&gt;</li>
                         <li>linea: &lt;hr&gt;</li>
-                        <li>Abrir el panel de emojis en VSC: Apletamos la tecla Windows más el punto . </li>
-                        <li>Etiqueta de descripción: &lt;abbr&gt; &lt;/abbr&gt;
-                            <details>
-                                <summary>Ejemplo de &lt;abbr&gt; &lt;/abbr&gt;</summary>
-                                <dfn>
-                                    Estructura: &lt;p&gt;Aprender &lt;abbr&gt; title="HyperTexT Markup Lenguage"&gt;HTML&lt;/abbr&gt; es genial!&lt;/p&gt; <br>
-                                    <p>Muestra: Aprender <abbr title="HyperTexT Markup Lenguage">HTML</abbr> es genial!</p>
-                                </dfn>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary> Etiqueta &lt;base href=""&gt; (Este va en el &lt;head&gt;) </summary>
-                                <dfn>
-                                    Podemos quitar la ruta raiz de las url y ponerla en la respectiva base. <br> Recordar que podemos tener una etiqueta &lt;base href=""&gt; por página.
-                                </dfn>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Sitar a un autor</summary>
-                                <details>
-                                    <summary>Sita pequeña: </summary>
-                                    <ul>
-                                        <li>&lt;q&gt;: para dirijirte al auto</li>
-                                        <li>Estructura: <br> &lt;p&gt; Albert Einstein también dijo: <br> &nbsp; &nbsp; &nbsp; 
-                                            &lt;q&gt;Cada día sabemos más y entendemos menos.&lt;/q&gt; <br> &lt;/p&gt; <br>
-                                            Muestra:<p>
-                                                Albert Einstein también dijo:
-                                                <q>Cada día sabemos más y entendemos menos.</q>
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </details>
-                            </details>
-                        </li>
+                        <li>Abrir el panel de emojis en VSC: Apletamos la tecla Windows más el punto </li>
                         <li>Con la etiqueta &lt;code&gt; &lt;/code&gt; mostras código en la pantalla de la web.</li>
-                        <li>
-                                <details>
-                                    <summary>Asociamos una palabra a un código con la etiqueta: &lt;data&gt;</summary>
-                                    <dfn>
-                                        <ul>
-                                            &lt;li&gt; &lt;data value="34568951"&gt; Arroz &lt;/data&gt; &lt;/li&gt; <br>
-                                            &lt;li&gt; &lt;data value="34568952"&gt; Harina &lt;/data&gt; &lt;/li&gt; <br>
-                                            &lt;li&gt; &lt;data value="34568953"&gt; Aceíte &lt;/data&gt; &lt;/li&gt; <br>
-                                            <li> <data value="34568951" > Arroz </data> </li>
-                                            <li> <data value="34568952" > Harina </data> </li>
-                                            <li> <data value="34568953"> Aceíte </data> </li>
-                                        </ul>
-                                    </dfn>
-                                </details>
-                        </li>
-                        <li>
-                                <details>
-                                    <summary>La etiqueta &lt;iframe&gt; permite insertar parte de una página externa en tu página. </summary>
-                                    <ul>
-                                        <li>Es util cuando queremos insertar videos, mapas, etc de otros citios.</li>
-                                        <li>
-                                            <details>
-                                                <summary>Ejemplo de inserción de mapa</summary>
-                                                <ul>
-                                                    <li>
-                                                        <a href="https://acortar.link/TLCzC0" target="_black">Vamos al mapa</a>
-                                                    </li>
-                                                    <li>
-                                                        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-                                                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
-                                                        src="https://acortar.link/i1a8cF" ></iframe>
-                                                    </li>
-                                                </ul>
-                                            </details>
-                                        </li>
-                                    </ul>
-                                </details>
-                        </li>
-                        <li>
-                                <details>
-                                    <summary>Colocar texto con formato pre definido</summary>
-                                    <ul>
-                                        <li>Utilizamos la etiqueta: &lt;pre&gt;</li>
-                                        <li>
-                                            <pre>
-                                                Ojalá no te hagan lo que me hiciste aquella vez
-                                                Ojalá que te arrepientas siempre y que quieras volver
-                                                No me digas que me amas, porque esa ya me la sé
-                                                Ojalá que sufras cada vez que me veas con él ...
-                                            </pre>
-                                        </li>
-                                    </ul>
-                                </details>
-                        </li>
                     </ul>
+                    <details class="details_interno">
+                        <summary>Etiqueta de descripción: Ejemplo de &lt;abbr&gt;</summary>
+                        <dfn>
+                            Estructura del código: <br>
+                            <code>
+                                &lt;span&gt; <br> &nbsp; &nbsp;
+                                Aprender &lt;abbr title="HyperTexT Markup Lenguage"&gt;HTML&lt;/abbr&gt; es genial!! <br>
+                                &lt;/span&gt;
+                            </code>
+                            Muestra en la web:
+                            <span>
+                                Aprender <abbr title="HyperTexT Markup Lenguage">HTML</abbr> es genial!!
+                            </span>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary> Etiqueta &lt;base href=""&gt; (Este va en el &lt;head&gt;) </summary>
+                        <dfn>
+                            Podemos quitar la ruta raiz de las url y ponerla en la respectiva base. <br> Recordar que podemos tener una etiqueta &lt;base href=""&gt; por página.
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>Sitar a un autor</summary>
+                        <dfn>
+                            <ul>
+                                <li>&lt;q&gt;: para dirijirte al autor</li>
+                            </ul>
+                            Estructura código:<br>
+                            <code>
+                                &lt;p&gt; <br> &nbsp; Albert Einstein también dijo:
+                                &lt;q&gt;Cada día sabemos más y entendemos menos.&lt;/q&gt; <br> &lt;/p&gt; <br>
+                            </code> 
+                            Muestra en la web: <br>
+                            <p> Albert Einstein también dijo: <q>Cada día sabemos más y entendemos menos.</q> </p>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>Asociamos una palabra a un código con la etiqueta: &lt;data&gt;</summary>
+                        <dfn>
+                            Estructura del código: <br>
+                            <code>
+                                &lt;li&gt; &lt;data value="34568951"&gt; Arroz &lt;/data&gt; &lt;/li&gt; <br>
+                                &lt;li&gt; &lt;data value="34568952"&gt; Harina &lt;/data&gt; &lt;/li&gt; <br>
+                                &lt;li&gt; &lt;data value="34568953"&gt; Aceíte &lt;/data&gt; &lt;/li&gt; <br>
+                            </code>
+                            Muestra en la web:
+                            <ul>
+                                <li> <data value="34568951" > Arroz </data> </li>
+                                <li> <data value="34568952" > Harina </data> </li>
+                                <li> <data value="34568953"> Aceíte </data> </li>
+                            </ul>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>La etiqueta &lt;iframe&gt; permite insertar parte de una página externa en tu página. </summary>
+                        <dfn>
+                            <p>Es util cuando queremos insertar videos, mapas, etc. <br> Estructura código:</p>
+                            <code>
+                                &lt;iframe class="mapa" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://acortar.link/i1a8cF"&gt;&lt;/iframe&gt;
+                            </code>
+                            <p>Muestra en la web:</p>
+                            <details class="details_interno">
+                                <summary>Ejemplo de inserción de mapa</summary>
+                                <dfn>
+                                    <ul>
+                                        <li>
+                                            <a class="link" href="https://acortar.link/TLCzC0" target="_black">Vamos al mapa</a>
+                                        </li>
+                                    </ul>
+                                    <iframe class="mapa" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://acortar.link/i1a8cF"></iframe>
+                                </dfn>
+                            </details>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>Colocar texto con formato pre definido</summary>
+                        <dfn>
+                            <p> Utilizamos la etiqueta: &lt;pre&gt; </p>
+<pre>
+    Ojalá no te hagan lo que me hiciste aquella vez
+    Ojalá que te arrepientas siempre y que quieras volver
+    No me digas que me amas, porque esa ya me la sé
+    Ojalá que sufras cada vez que me veas con él ...
+</pre>
+                        </dfn>
+                    </details>
                 </dfn>
             </details>
 
-            <details>
+            <details class="contenedor_inicio">
                 <summary id="2"> Las etiquetas para los títulos van del h1 al h6 </summary>
                 <dfn> 
                     <ol>
-                        <li> <h1> Etiqueta: &lt;h1&gt; &lt;/h1&gt; </h1> </li>
-                        <li> <h2> Etiqueta: &lt;h2&gt; &lt;/h2&gt; </h2> </li>
-                        <li> <h3> Etiqueta: &lt;h3&gt; &lt;/h3&gt; </h3> </li>
-                        <li> <h4> Etiqueta: &lt;h4&gt; &lt;/h4&gt; </h4> </li>
-                        <li> <h5> Etiqueta: &lt;h5&gt; &lt;/h5&gt; </h5> </li>
-                        <li> <h6> Etiqueta: &lt;h6&gt; &lt;/h6&gt; </h6> </li>
+                        <li> <h1 class="etiquetas_H"> Etiqueta: &lt;h1&gt; &lt;/h1&gt; </h1> </li>
+                        <li> <h2 class="etiquetas_H"> Etiqueta: &lt;h2&gt; &lt;/h2&gt; </h2> </li>
+                        <li> <h3 class="etiquetas_H"> Etiqueta: &lt;h3&gt; &lt;/h3&gt; </h3> </li>
+                        <li> <h4 class="etiquetas_H"> Etiqueta: &lt;h4&gt; &lt;/h4&gt; </h4> </li>
+                        <li> <h5 class="etiquetas_H"> Etiqueta: &lt;h5&gt; &lt;/h5&gt; </h5> </li>
+                        <li> <h6 class="etiquetas_H"> Etiqueta: &lt;h6&gt; &lt;/h6&gt; </h6> </li>
                     </ol>
                 </dfn>
             </details>
 
-            <details>
-                <summary id="3"> Para crear párrafos usamos la etiqueta p </summary>
+            <details class="contenedor_inicio">
+                <summary> Para crear párrafos usamos la etiqueta &lt;p&gt; </summary>
                 <dfn>
-                    <p>Etiqueta: &lt;p&gt; &lt;/p&gt;</p>
-                    <p>Si ponemos "lorem" crea texto de ejempro.</p>
-                    <details>
+                    <p>Etiqueta: &lt;p&gt; &lt;/p&gt; Si ponemos "lorem" crea texto de ejemplo.</p>
+                    <details class="details_interno">
                         <summary> Muestra: &lt;p&gt; lorem &lt;/p&gt; </summary>
                         <dfn>
                             <p>
@@ -159,59 +159,65 @@
                 </dfn>
             </details>
 
-            <details>
-                <summary id="4"> Resaltar con Negrita una palabra. </summary>
+            <details class="contenedor_inicio">
+                <summary> Resaltar con Negrita una palabra ( &lt;b&gt; y &lt;strong&gt; ) </summary>
                 <dfn>
-                    <p>Negrita: &lt;b&gt; (<b>palabra</b> o texto) &lt;/b&gt; <br> Negrita con fuerza de búscador: &lt;strong&gt; (<strong>palabra</strong> o texto) &lt;/strong&gt; </p>
+                    <ul>
+                        <li> Negrita: &lt;b&gt; (palabra o texto) &lt;/b&gt; </li>
+                        <li> Negrita con fuerza de búscador: &lt;strong&gt; (palabra o texto) &lt;/strong&gt; </li>
+                    </ul>
                 <dfn>
             </details>
 
-            <details>
-                <summary id="5"> Cursiva con y sin énfasos. </summary>
+            <details class="contenedor_inicio">
+                <summary> Cursiva con y sin énfasos. </summary>
                 <dfn>
-                    <p> Cursiva: &lt;b&gt; (palabra) &lt;/b&gt; <br> Cursiva (énfasis): &lt;em&gt; (palabra) &lt;em&gt; </p>
+                    <ul>
+                        <li> Cursiva: &lt;b&gt; (palabra) &lt;/b&gt; </li>
+                        <li> Cursiva (énfasis): &lt;em&gt; (palabra) &lt;em&gt; </li>
+                    </ul>
                 </dfn>
             </details>
 
-            <details>
-                <summary id="6"> Etiquetas de estructura de una página Web </summary>
-                <dnf>
-                    <details>
+            <details class="contenedor_inicio">
+                <summary> Etiquetas de estructura de una página Web </summary>
+                <dfn>
+                    <details class="details_interno">
                         <summary> &lt;header&gt; &lt;/header&gt;  </summary>
                         <dfn>
                             <p>Esta lleva la información del encabezado.</p>
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary> &lt;nav&gt; &lt;/nav&gt; </summary>
                         <dfn>
                             <p>Barra de navegación</p>
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary>Importancia semantica &lt;aside&gt; &lt;/aside&gt; </summary>
                         <dfn>
                             <p>Información adicional aclarando el contenido principal. <br><br> </p>
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary> &lt;main&gt; &lt;/main&gt;  </summary>
                         <dfn>
                             <p>Lleva el contenido principal.</p>
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary> &lt;section&gt; &lt;/section&gt;  </summary>
                         <dfn>
                             <p>Nospermite organizar de mejor manera la información que se quiere mostrar. Esta por porciones de contenidos.</p>
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary> &lt;article&gt; &lt;/article&gt; </summary>
                         <dfn>
                             <p>
@@ -221,29 +227,28 @@
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary> &lt;footer&gt; &lt;/footer&gt; </summary>
                         <dfn> 
                             <p>Información de pie de página. Información de contactos y legales mayor mente.</p>
+                            <details>
+                                <summary> Escribir Dirección semantico dentro del &lt;footer&gt; &lt;address&gt; &lt;/address&gt; </summary>
+                                <address>
+                                    Escripo por Francisco Carusso <br> Visitanos en: 
+                                    <a href="https://www.youtube.com/channel/UCY8m1JDOQFr1RvnrUnOiKMQ">YouTube</a>
+                                    <br> General Rodriguez Argentina.
+                                </address>
+                            </details>
                         </dfn>
-                        <details>
-                            <summary>Escribir Dirección semantico dentro del &lt;footer&gt; &lt;address&gt; &lt;/address&gt; </summary>
-                            <address>
-                                Escripo por Francisco Carusso <br> Visitanos en: <br>
-                                <a href="https://www.youtube.com/channel/UCY8m1JDOQFr1RvnrUnOiKMQ">YouTube</a>
-                                Codijo Postal 1748, General Rodriguez Argentina
-                            </address>
-                        </details>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary> Ejemplo de una estructura de página web </summary>
                         <dfn>
                             <figure class="contenedor__img">
                                 <img class="img__proceso" src="/Proyectos/1_Curso_HTML/CSS/IMG/2_Estructura.png">
                             </figure>
-
-                            <section class="eti__estrucura">
+                            <!-- <section class="eti__estrucura">
                                 <header class="eti__estrucura"> </header>
                                 <nav class="eti__estrucura"> </nav>
                                 <aside class="eti__estrucura"> </aside>
@@ -252,22 +257,22 @@
                                     <article class="eti__estrucura">  </article>
                                 </div>
                                 <footer class="eti__estrucura">  </footer>
-                            </section>
+                            </section> -->
                         </dfn>
                     </details>
-                </dnf>
+                </dfn>
             </details>
 
-            <details>
+            <details class="contenedor_inicio">
                 <summary id="7"> Enlaces: Etiqueta &lt;a&gt; Ir a &lt;/a&gt; </summary>
                 <dfn>
                     <p>
                         Las etiquetas &lt;a&gt; &lt;/a&gt; llevan un atributo que permite colocar la dirección a donde queremos ir. sea una url o una sección de la misma página. <br> El atributo se coloca: &lt;a href="#"&gt; Ir a &lt;/a&gt; <br> Si colocamos # no nos lleva a ningun lado.
                     </p>
-                    <details>
+                    <details class="details_interno">
                         <summary> Ejempro de Enlace </summary>
                         <dfn>
-                            <details>
+                            <details class="details_interno">
                                 <summary> Ir a ninguna página </summary>
                                 <dfn>
                                     <p>
@@ -276,38 +281,43 @@
                                 </dfn>
                             </details>
 
-                            <details>
-                                <summary> Ir a una página con url </summary>
+                            <details class="details_interno">
+                                <summary> Ir a una página con url (google) </summary>
                                 <dfn>
                                     <p>
-                                        <a href="https://www.google.com.ar/" target="_black"> Ir a google (url) </a>
-                                        Para que se abra en otra ventana usamos el atributo: target="_black". Lo aplicamos después de la url. <br>
-                                        &lt;a href="https://www.google.com.ar/" target="_black"&gt; Ir a google (url) &lt;/a&gt;
+                                        <a href="https://www.google.com.ar/" target="_black"> Ir a google (url) </a> <br>
+                                        Para que se abra en otra ventana usamos el atributo: target="_blank". Lo aplicamos después de la url. <br>
+                                        <p>Estructura código:</p>
+                                        <code>
+                                            &lt;a href="https://www.google.com.ar/" target="_black"&gt; Ir a google (url) &lt;/a&gt;
+                                        </code>
                                     </p>
                                 </dfn>
                             </details>
 
-                            <details>
+                            <details class="details_interno">
                                 <summary> Ir a una parte de tu página </summary>
                                 <dfn>
                                     <p>
-                                        <a href="#4"> Ir a la sección 4 de esta página (#4) </a>
+                                        <a href="#2"> Ir a la sección 2 de esta página (#2) </a> <br>
                                         Para lograr moverte dentro de la página colocamos # más el id que le asignamos a la etiqueta.
                                     </p>
                                 </dfn>
                             </details>
 
-                            <details>
+                            <details class="details_interno">
                                 <summary> Ir a otra página tuya </summary>
                                 <dfn>
                                     <p>
-                                        <a href="pagina2.html" target="_black"> Ir a otra página tuya </a>
-                                        Para lograr moverte a otra página colocamos el nombre que le dimos al archivo HTML.
-                                    </p>
+                                        <a href="/Proyectos/1_Curso_HTML/HTML/pagina2.html" target="_black"> Ir a otra página tuya </a> <br>
+                                        Para lograr moverte a otra página colocamos el nombre que le dimos al archivo HTML. <br><br> Estructura código:</p>
+                                    <code>
+                                        &lt;a href="/Proyectos/1_Curso_HTML/HTML/pagina2.html" target="_black"&gt; Ir a otra página tuya &lt;/a&gt;
+                                    </code>
                                 </dfn>
                             </details>
 
-                            <details>
+                            <details class="details_interno">
                                 <summary> Descargar archivos </summary>
                                 <dfn>
                                     <p>
@@ -321,10 +331,10 @@
                 </dfn>
             </details>
 
-            <details>
+            <details class="contenedor_inicio">
                 <summary id="8"> Listas </summary>
                 <dfn>
-                    <details>
+                    <details class="details_interno">
                         <summary>Listas Ordenadas:</summary>
                         <dfn>
                             <ol>
@@ -334,7 +344,7 @@
                                 <li>Cuarto Item</li>
                             </ol>
 
-                            <details>
+                            <details class="details_interno">
                                 <summary> Su estructura es: </summary>
                                 <dfn>
                                     <p>
@@ -349,7 +359,8 @@
                                     </p>
                                 </dfn>
                             </details>
-                            <details>
+
+                            <details class="details_interno">
                                 <summary>Atributos:</summary>
                                 <dfn>
                                     <ol type="A">
@@ -361,7 +372,7 @@
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary>Listas desordenadas:</summary>
                         <dfn>
                             <ul>
@@ -398,7 +409,7 @@
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary>Lista de descripción:</summary>
                         <dfn>
                             <code>
@@ -410,7 +421,7 @@
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary>Lista despegables</summary>
                         <dfn>
                             <details>
@@ -452,11 +463,11 @@
                 </dfn>
             </details>
 
-            <details>
+            <details class="contenedor_inicio">
                 <summary id="9"> Insertar imagenes:</summary>
                 <dfn>
                     Utilizamos la etiqueta &lt;img&gt; <br> Ejemplo: &lt;img &nbsp;src="url" &nbsp; alt="descripción"&gt;
-                    <details>
+                    <details class="details_interno">
                         <summary>Esta tiene atributos:</summary>
                         <dfn>
                             <ol>
@@ -468,7 +479,7 @@
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary>Contenedor de img y leyenda</summary>
                         <dfn> 
                             &lt;figure&gt; <br>
@@ -478,7 +489,7 @@
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary>Ejemplo de imagen </summary>
                         <dfn>
                             <figure class="contenedor__img">
@@ -488,7 +499,7 @@
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary> Imagen con link </summary>
                         <dfn>
                             <a href="https://www.instagram.com/francisco_carusso/" target="_blank">
@@ -504,9 +515,9 @@
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary> Link en una coordenada especifica en una imagen. </summary>
-                        <details>
+                        <details class="details_interno">
                             <summary> Etiqueta y atributos </summary>
                             <dfn>
                                 <p> 
@@ -518,7 +529,7 @@
                             </dfn>
                         </details>
 
-                        <details>
+                        <details class="details_interno">
                             <summary> Ejemplo de link coordenada en imagen </summary>
                             <dfn>
                                 <figure>
@@ -532,7 +543,7 @@
                             </dfn>
                         </details>
 
-                        <details>
+                        <details class="details_interno">
                             <summary> Estructura de etiquetas </summary>
                             <dfn>
                                 &lt;figure&gt;<br>
@@ -548,10 +559,10 @@
                 </dfn>
             </details>
             
-            <details>
+            <details class="contenedor_inicio">
                 <summary id="10">Crear Tablas </summary>
                 <dfn>
-                    <details>
+                    <details class="details_interno">
                         <summary> Estructura basica </summary>
                         <dfn>
                             <ul>
@@ -607,7 +618,7 @@
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary> Ejemplo de tabla </summary>
                         <dfn>
                             <table border="1">
@@ -646,7 +657,7 @@
                         </dfn>
                     </details>
                     
-                    <details>
+                    <details class="details_interno">
                         <summary>Estilos a ciertas columnas de tus tablas</summary>
                         <dfn>
                             <ul>
@@ -688,10 +699,10 @@
                 </dfn>
             </details>
 
-            <details>
+            <details class="contenedor_inicio">
                 <summary id="11"> Formularios </summary>
                 <dfn>
-                    <details>
+                    <details class="details_interno">
                         <summary> Estructura </summary>
                         <dfn>
                             <ul>
@@ -751,7 +762,7 @@
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary>Ejemplo práctico</summary>
                         <dfn>
                             <form action="#" method="post">
@@ -837,16 +848,16 @@
                 </dfn>
             </details>
 
-            <details>
+            <details class="contenedor_inicio">
                 <summary id="12"> Ingresar Videos y audio </summary>
                 <dfn>
-                    <details>
+                    <details class="details_interno">
                         <summary> Estructuras para ambos: </summary>
                         <dfn>
-                            <details>
+                            <details class="details_interno">
                                 <summary> Forma estendida </summary>
                                 <dfn>
-                                    <details>
+                                    <details class="details_interno">
                                         <summary> Estructura </summary>
                                         <dfn>
                                             &lt;audio controls autoplay muted loop&gt;<br>
@@ -879,10 +890,10 @@
                                 </dfn>
                             </details>
                             
-                            <details>
+                            <details class="details_interno">
                                 <summary> Forma corta </summary>
                                 <dfn>
-                                    <details>
+                                    <details class="details_interno">
                                         <summary> Estructura </summary>
                                         <dfn>
                                             &lt;audio controls src="/CSS/IMG/AUDIOS/audio1.mp3" type="audio/mp3"&gt; &lt;/audio&gt;<br><hr>
@@ -896,10 +907,10 @@
                         </dfn>
                     </details>
                     
-                    <details>
+                    <details class="details_interno">
                         <summary> Video desde YouTube </summary>
                         <dfn>
-                            <details>
+                            <details class="details_interno">
                                 <summary>Estructura</summary>
                                 <dfn>
                                     Vas a youtube, segundo click en el video y seleccionas: "copiar código de inserción" <br> La etiqueta &lt;iframe&gt; &lt;/iframe&gt; sirve para inserta material de otra página. <br>
@@ -911,10 +922,10 @@
                 </dfn>
             </details>
             
-            <details>
+            <details class="contenedor_inicio">
                 <summary id="13"> Dibujar en HTML5 gráficos <abbr title="Scalable Vector Graphics">SVG</abbr> </summary>
                 <dfn>
-                    <details>
+                    <details class="details_interno">
                         <summary> Estructura básica </summary>
                         <dfn>
                             <svg width="500" height="320">
@@ -926,7 +937,7 @@
                         </dfn>
                     </details>
                     
-                    <details>
+                    <details class="details_interno">
                         <summary> Etiqueta &lt;Path/&gt; </summary>
                         <dfn>
                             <svg width="500" height="400">
@@ -939,7 +950,7 @@
                         </dfn>
                     </details>
 
-                    <details>
+                    <details class="details_interno">
                         <summary> Descargar un archivo con formato SVG </summary>
                         <dfn>
                             <ul>
@@ -956,10 +967,10 @@
                 </dfn>
             </details>
             
-            <details>
+            <details class="contenedor_inicio">
                 <summary id="14"> Proyecto Final Estructura HTML</summary>
                 <dfn>
-                    <details>
+                    <details class="details_interno">
                         <summary> Página del proyecto </summary>
                         <dfn>
                             <a href="/HTML/Proyecto final HTML/index.html" target="_black">Ir al Proyecto Final!</a>
@@ -971,13 +982,13 @@
     </main>
 
     <footer>
-            <a class="flecha2" href="#home">
-                <p class="simbolo"> > </p>
-            </a>
+        <a class="flecha2" href="#home">
+            <p class="simbolo"> > </p>
+        </a>
     
-            <p class="texto_footer">
-                Copyright &copy; 2022-2023 Todointerconectado Company S.L. Todos los derechos reservados.
-            </p>
-        </footer>
+        <address class="texto_footer">
+            Copyright &copy; 2022-2023 Todointerconectado Company S.L. Todos los derechos reservados.
+        </address>
+    </footer>
 </body>
 </html>
