@@ -113,7 +113,7 @@ dfn {
 }
 
 /*--- listas ---*/
-ul, ol {
+ul, ol, dl {
     border: 1px solid;
     width: 100%;
     margin: 5px;
@@ -123,7 +123,7 @@ ul, ol {
     align-items: flex-start;
     gap: 5px;
 }
-li {
+li, dt, dd {
     /* list-style: none; */
     width: 100%;
     border: 1px solid;
@@ -133,12 +133,13 @@ li {
 
 code {
     border: 1px solid;
-    background-color: rgb(143, 202, 183);
     width: 100%;
     padding: 5px 0;
+    background-color: rgb(143, 202, 183);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    font-size: 12px;
 }
 .link {
     text-decoration: none;
@@ -165,6 +166,12 @@ p {
     padding: 10px 0;
     text-align: center;
 }
+fieldset {
+    border: 1px solid blue;
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+}
 
 /*-------- fotos, iconos, img-código, imag --------*/
 .contenedor__img {
@@ -188,4 +195,11 @@ p {
     /* position: absolute; */
     /* transform: scale(.95); */
 }
-
+figcaption {
+    border: 1px solid;
+    color: var(--color_descripción_img_gray);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
