@@ -175,17 +175,42 @@ fieldset {
 
 /*-------- fotos, iconos, img-código, imag --------*/
 .contenedor__img {
+    border: 1px solid;
     width: 100%;
     margin: 2px;
-    transition: all 2s;
+    transition: all 2s ease;
 }
 .img__proceso {
     width: 100%;
     border-radius: 8px;
 }
-.icono {
+.contenedor_de_iconos {
+    /* border: 1px solid; */
     width: 100%;
-    border-radius: 8px;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor__icono {
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    width: 150px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icono {
+    border: 3px solid white;
+    width: 150px;
+    border-radius: 50%;
+    transition: width 1s ease, box-shadow 1s ease;
+}
+.icono:hover {
+    width: 160px;
+    box-shadow: 0 0 10px black;
 }
 .foto {
     width: 100%;
