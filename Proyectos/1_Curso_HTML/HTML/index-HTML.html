@@ -584,66 +584,22 @@
             <details class="contenedor_inicio">
                 <summary id="10">Crear Tablas </summary>
                 <dfn>
-                    <details class="details_interno">
-                        <summary> Estructura basica </summary>
-                        <dfn>
-                            <ul>
-                                <li>Etiqueta contenedor: &lt;table&gt; &lt;/table&gt; <br> Atributo: border="1" </li>
-                                <li>Título de la tabla: &lt;caption&gt; &lt;/caption&gt;</li>
-                                <li>Etiqueta de fila (table raw): &lt;tr&gt; &lt;/tr&gt;</li>
-                                <li>
-                                    Etiqueta contenido de fila encabezados (tabla heading): &lt;th&gt; &lt;/th&gt;<br>
-                                    Atributo 1: colspan="N° de columnas a combinar"
-                                    Atributo 2: rowspan="N° de filas a combinar"
-                                </li>
-                                <li>Etiqueta contenido de fila normal: &lt;td&gt; &lt;/td&gt;</li><hr>
-                                <code>
-                                    &lt;table border="1"&gt;<br>
-                                        &nbsp; &lt;caption&gt;Mis horarios&lt;/caption&gt;<br>
-                                        &nbsp; &lt;tr&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;th colspan="3"&gt;HORARIO&lt;/th&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;th colspan="2"&gt;Fin de semana&lt;/th&gt;<br>
-                                        &nbsp; &lt;/tr&gt;<br>
-
-                                        &nbsp; &lt;tr&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;th&gt;Lunes&lt;/th&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;th&gt;Martes&lt;/th&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;th&gt;Miércoles&lt;/th&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;th&gt;Jueves&lt;/th&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;th&gt;Viernes&lt;/th&gt;<br>
-                                        &nbsp; &lt;/tr&gt;<br>
-
-                                        &nbsp; &lt;tr&gt;<br>
-                                        &nbsp;&nbsp;&nbsp; &lt;th rowspan="3"&gt;Programar&lt;/th&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
-                                        &nbsp; &lt;/tr&gt;<br>
-
-                                        &nbsp; &lt;tr&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
-                                        &nbsp; &lt;/tr&gt;<br>
-
-                                        &nbsp; &lt;tr&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
-                                                nbsp;&nbsp;&nbsp; &lt;td&gt;Descansar&lt;/td&gt;<br>
-                                            &nbsp;&nbsp;&nbsp; &lt;td&gt;Descansar&lt;/td&gt;<br>
-                                        &nbsp; &lt;/tr&gt;<br>
-                                    &lt;/table&gt;<br>
-                                </code>
-                            </ul>
-                        </dfn>
-                    </details>
+                    <ul>
+                        <li>Etiqueta contenedor: &lt;table&gt; &lt;/table&gt; <br> Atributo: border="1" </li>
+                        <li>Título de la tabla: &lt;caption&gt; &lt;/caption&gt;</li>
+                        <li>Etiqueta de fila (table raw): &lt;tr&gt; &lt;/tr&gt;</li>
+                        <li>
+                            Etiqueta contenido de fila encabezados (tabla heading): &lt;th&gt; &lt;/th&gt;<br>
+                            Atributo 1: colspan="N° de columnas a combinar" <br>
+                            Atributo 2: rowspan="N° de filas a combinar"
+                        </li>
+                        <li>Etiqueta contenido de fila normal: &lt;td&gt; &lt;/td&gt;</li><hr>
+                    </ul>
 
                     <details class="details_interno">
                         <summary> Ejemplo de tabla </summary>
                         <dfn>
-                            <table border="1">
+                            <table class="tabla_ej">
                                 <caption> Mis horarios </caption>
                                 <tr>
                                     <th colspan="3"> HORARIO </th>
@@ -676,9 +632,57 @@
                                     <td> Descansar </td>
                                 </tr>
                             </table>
+
+                            <details class="details_interno">
+                                <summary> Estructura del código: </summary>
+                                <dfn>
+                                    <code class="code_maestro">
+                                        &lt;table  class="tabla_ej"&gt;<br>
+                                            <code class="code_interno">
+                                                &lt;caption&gt;Mis horarios&lt;/caption&gt;<br>
+                                                
+                                                &lt;tr&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;th colspan="3"&gt;HORARIO&lt;/th&gt; <br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;th colspan="2"&gt;Fin de semana&lt;/th&gt; <br>
+                                                &lt;/tr&gt;<br>
+            
+                                                &lt;tr&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;th&gt;Lunes&lt;/th&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;th&gt;Martes&lt;/th&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;th&gt;Miércoles&lt;/th&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;th&gt;Jueves&lt;/th&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;th&gt;Viernes&lt;/th&gt;<br>
+                                                &lt;/tr&gt;<br>
+            
+                                                &lt;tr&gt;<br>
+                                                &nbsp;&nbsp;&nbsp; &lt;th rowspan="3"&gt;Programar&lt;/th&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                                &lt;/tr&gt;<br>
+            
+                                                &lt;tr&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                                &lt;/tr&gt;<br>
+            
+                                                &lt;tr&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;td&gt;Programar&lt;/td&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;td&gt;Descansar&lt;/td&gt;<br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;td&gt;Descansar&lt;/td&gt;<br>
+                                                &lt;/tr&gt;<br>
+                                            </code>
+                                        &lt;/table&gt;<br>
+                                    </code>
+                                </dfn>
+                            </details>
                         </dfn>
                     </details>
-                    
+
                     <details class="details_interno">
                         <summary>Estilos a ciertas columnas de tus tablas</summary>
                         <dfn>
@@ -687,19 +691,23 @@
                                 <li>Dentro de col usamos el atributo style="background-color: aqua;"</li>
                                 <li>Si queremos más columnas le agregamos el atributo span="N° DE COLUMNAS"</li>
                                 <li>
-                                    &lt;colgroup&gt; <br> &nbsp; &nbsp;
-                                        &lt;col style="background-color: aqua;"&gt; <br> &nbsp; &nbsp;
-                                        &lt;col span="2" style="background-color: rgb(54, 184, 65);"&gt;  <br>
-                                    &lt;/colgroup&gt;
+                                    <code class="code_maestro">
+                                        &lt;colgroup&gt; <br>
+                                            <code class="code_interno">
+                                                &lt;col style="background-color: aqua;"&gt; <br>
+                                                &lt;col span="2" style="background-color: rgb(54, 184, 65);"&gt;
+                                            </code>
+                                        &lt;/colgroup&gt;
+                                    </code>
                                 </li>
                             </ul>
-                            Ejemplo: <br>
-                            <table border="1">
+                            <p>Ejemplo:</p>
+                            <table>
                                 <colgroup>
                                     <col style="background-color: aqua;">
                                     <col span="2" style="background-color: rgb(54, 184, 65);">
                                 </colgroup>
-                                <caption>Título</caption>
+                                <caption>Tabla con colores</caption>
                                 <tr>
                                     <th>Lunes</th>
                                     <th>Martes</th>
@@ -731,7 +739,7 @@
                                 <li>Etiqueta contenedora: &lt;form&gt; &lt;/form&gt; <br> Atribito: action="dirección a donde enviar los datos"</li>
                                 <li>
                                     Para las entradas: &lt;input&gt;<br>
-                                    <table border="1">
+                                    <table border="1" class="formulario_tabla">
                                         <caption>Atributos básicos</caption>
                                         <tr>
                                             <th>Atribito</th>
@@ -739,7 +747,7 @@
                                         </tr>
                                         <tr>
                                             <td> type="#" </td>
-                                            <td>
+                                            <td class="td_contenido">
                                                 <ul>
                                                     <li>Tipo texto:&nbsp; type="text"</li>
                                                     <li>Tipo password:&nbsp; type="password"</li>
@@ -749,7 +757,7 @@
                                         </tr>
                                         <tr>
                                             <td> id="#" </td>
-                                            <td>
+                                            <td class="td_contenido">
                                                 <ul>
                                                     <li>Es el identificador unico que se enlaza con el &lt;label for=""&gt; Usuario: &lt;/label&gt;</li>
                                                 </ul>
@@ -757,7 +765,7 @@
                                         </tr>
                                         <tr>
                                             <td> name="#" </td>
-                                            <td>
+                                            <td class="td_contenido">
                                                 <ul>
                                                     <li>Es la información que se enviara al servidor.</li>
                                                     <li>Ejemplo del name tendra: name="User" y value="David"</li>
@@ -766,7 +774,7 @@
                                         </tr>
                                         <tr>
                                             <td> value="#" </td>
-                                            <td>
+                                            <td class="td_contenido">
                                                 <ul>
                                                     <li>Es la información que se enviara al servidor.</li>
                                                     <li>Ejemplo del value tendra: name="Pass" y value="12345"</li>
@@ -788,18 +796,18 @@
                         <summary>Ejemplo práctico</summary>
                         <dfn>
                             <form action="#" method="post">
-                                <fieldset>
+                                <fieldset class="Formularios_ej">
                                     <legend> Datos del Usuario </legend>
                                     <p>Nota: Los apartados con el símbolo * son obligatorios.</p>
 
-                                    <label for="name">* Usuario:</label><br>
-                                    <input type="text" id="name" name="Usuario" placeholder="Escribe tu usuario..." required autofocus><br><br>
+                                    <label for="name"> <span class="formulario_obligatorio">*</span> Usuario:</label><br>
+                                    <input class="input_completar" type="text" id="name" name="Usuario" placeholder=" Escribe tu usuario..." required autofocus><br><br>
 
-                                    <label for="pass">* Contraseña </label><br>
-                                    <input type="password" id="pass" name="Contraseña" placeholder="Escribe tu contraseña..." required><br><br>
+                                    <label for="pass"> <span class="formulario_obligatorio">*</span> Contraseña </label><br>
+                                    <input class="input_completar" type="password" id="pass" name="Contraseña" placeholder=" Escribe tu contraseña..." required><br><br>
 
-                                    <label for="gmail">* gmail:</label><br>
-                                    <input type="email" id="gmail" name="gmail" placeholder="Escribe tu gmail..." required><br><br>
+                                    <label for="gmail"> <span class="formulario_obligatorio">*</span> gmail:</label><br>
+                                    <input class="input_completar" type="email" id="gmail" name="gmail" placeholder=" Escribe tu gmail..." required><br><br>
 
                                     <label for="birthday">Fecha de nacimiento:</label><br>
                                     <input type="date" id="birthday" name="birthday"><br> <br>
@@ -807,7 +815,7 @@
                                     <label for="cv">Ingresa tu CV:</label>
                                     <input type="file" id="cv" name="cv"> <br> <br>
 
-                                    <fieldset>
+                                    <fieldset class="Formularios_ej">
                                         <legend>
                                             <label for="Description"> Breve biografía </label>
                                         </legend>
@@ -815,17 +823,17 @@
                                     </fieldset>
                                 </fieldset>
                                 
-                                <fieldset>
+                                <fieldset class="Formularios_ej">
                                     <legend> Color favorito </legend>
                                     
-                                    <input type="radio" id="red" name="color" value="red">
-                                    <label for="red">Rojo</label><br>
-
-                                    <input type="radio" id="blue" name="color" value="blue">
-                                    <label for="blue">Azul</label><br>
-
-                                    <input type="radio" id="green" name="color" value="green">
-                                    <label for="green">Verde</label><br>
+                                    <div class="contenedor_selector">
+                                        <input type="radio" id="red" name="color" value="red">
+                                        <label for="red">Rojo</label><br>
+                                        <input type="radio" id="blue" name="color" value="blue">
+                                        <label for="blue">Azul</label><br>
+                                        <input type="radio" id="green" name="color" value="green">
+                                        <label for="green">Verde</label>
+                                    </div><br>
 
                                     <label for="especifico">Especifique su color:</label>
                                     <input type="color" id="especifico" name="color"><br><br>
@@ -847,22 +855,22 @@
                                     </select>
                                 </fieldset>
 
-                                <fieldset>
+                                <fieldset class="Formularios_ej">
                                     <legend> Hobbies </legend>
-                                    <input type="checkbox" id="read" name="Hobby 1" value="read">
-                                    <label for="read">Leer</label><br>
-
-                                    <input type="checkbox" id="entrenar" name="Hobby 2" value="entrenar">
-                                    <label for="entrenar">Entrenar</label><br>
-
-                                    <input type="checkbox" id="programar" name="Hobby 3" value="programar">
-                                    <label for="programar">Programar</label><br>
+                                    <div class="contenedor_selector">
+                                        <input type="checkbox" id="read" name="Hobby 1" value="read">
+                                        <label for="read">Leer</label><br>
+                                        <input type="checkbox" id="entrenar" name="Hobby 2" value="entrenar">
+                                        <label for="entrenar">Entrenar</label><br>
+                                        <input type="checkbox" id="programar" name="Hobby 3" value="programar">
+                                        <label for="programar">Programar</label><br>
+                                    </div>
                                 </fieldset>
 
-                                <fieldset>
+                                <fieldset class="Formularios_ej">
                                     <legend> Enviar datos del formulario </legend>
-                                    <input type="submit" value="Listo!"> &nbsp;
-                                    <input type="reset" value="Borrar">
+                                    <input class="formulario_boton" type="submit" value="Listo!">
+                                    <input class="formulario_boton" type="reset" value="Borrar">
                                 </fieldset>
                             </form>
                         </dfn>
@@ -871,7 +879,7 @@
             </details>
 
             <details class="contenedor_inicio">
-                <summary id="12"> Ingresar Videos y audio </summary>
+                <summary> Ingresar Videos y audio </summary>
                 <dfn>
                     <details class="details_interno">
                         <summary> Estructuras para ambos: </summary>
@@ -880,35 +888,48 @@
                                 <summary> Forma estendida </summary>
                                 <dfn>
                                     <details class="details_interno">
-                                        <summary> Estructura </summary>
+                                        <summary>Audios</summary>
                                         <dfn>
-                                            &lt;audio controls autoplay muted loop&gt;<br>
-                                                <p>
-                                                    &lt;source src="/CSS/IMG/AUDIOS/audio1.mp3" type="audio/mp3"&gt;<br>
-                                                    &lt;source src="/CSS/IMG/AUDIOS/audio1.mp3" type="audio/ogg"&gt;<br>
-                                                    El navegador no puede reproducir el audio. <br>
-                                                </p>
-                                            &lt;/audio&gt; <br><hr>
-                                            &lt;video controls loop muted height="200px"&gt; <br>
-                                                <p>
-                                                    &lt;source src="/CSS/IMG/homeVideo.mp4" type="video/mp4"&gt;<br>
-                                                    &lt;source src="/CSS/IMG/homeVideo.mp4" type="video/wav"&gt; <br>
-                                                    El navegador no puede reproducir el video. <br>
-                                                </p>
-                                            &lt;/video&gt;
+                                            <p>Estructura del código:</p>
+                                            <code class="code_maestro">
+                                                &lt;audio controls autoplay muted loop&gt;<br>
+                                                    <code class="code_interno">
+                                                        &lt;source src="/CSS/IMG/AUDIOS/audio1.mp3" type="audio/mp3"&gt;<br>
+                                                        &lt;source src="/CSS/IMG/AUDIOS/audio1.mp3" type="audio/ogg"&gt;<br>
+                                                        El navegador no puede reproducir el audio. <br>
+                                                    </code>
+                                                &lt;/audio&gt; <br><hr>
+                                            </code>
+                                            <p>Muestra en la web:</p>
+                                            <audio controls autoplay muted loop>
+                                                <source src="/Proyectos/1_Curso_HTML/CSS/IMG/AUDIOS/audio1.mp3" type="audio/mp3">
+                                                <source src="/Proyectos/1_Curso_HTML/CSS/IMG/AUDIOS/audio1.mp3" type="audio/ogg">
+                                                El navegador no puede reproducir el audio. <br>
+                                            </audio><br><hr>
                                         </dfn>
                                     </details>
 
-                                    <audio controls autoplay muted loop>
-                                        <source src="/Proyectos/1_Curso_HTML/CSS/IMG/AUDIOS/audio1.mp3" type="audio/mp3">
-                                        <source src="/Proyectos/1_Curso_HTML/CSS/IMG/AUDIOS/audio1.mp3" type="audio/ogg">
-                                        El navegador no puede reproducir el audio. <br>
-                                    </audio><br><hr>
-                                    <video controls loop muted width="90%" height="300px">
-                                        <source src="/Proyectos/1_Curso_HTML/CSS/IMG/1_video.mp4" type="video/mp4">
-                                        <source src="/Proyectos/1_Curso_HTML/CSS/IMG/1_video.mp4" type="video/wav">
-                                        El navegador no puede reproducir el audio. <br>
-                                    </video>
+                                    <details class="details_interno">
+                                        <summary>Videos</summary>
+                                        <dfn>
+                                            <p>Estructura del código:</p>
+                                            <code class="code_maestro">
+                                                &lt;video controls loop muted height="200px"&gt; <br>
+                                                    <code class="code_interno">
+                                                        &lt;source src="/CSS/IMG/homeVideo.mp4" type="video/mp4"&gt;<br>
+                                                        &lt;source src="/CSS/IMG/homeVideo.mp4" type="video/wav"&gt; <br>
+                                                        El navegador no puede reproducir el video. <br>
+                                                    </code>
+                                                &lt;/video&gt;
+                                            </code>
+                                            <p>Muestra en la web:</p>
+                                            <video controls loop muted width="90%" height="300px">
+                                                <source src="/Proyectos/1_Curso_HTML/CSS/IMG/1_video.mp4" type="video/mp4">
+                                                <source src="/Proyectos/1_Curso_HTML/CSS/IMG/1_video.mp4" type="video/wav">
+                                                El navegador no puede reproducir el audio. <br>
+                                            </video>
+                                        </dfn>
+                                    </details>
                                 </dfn>
                             </details>
                             
@@ -916,14 +937,28 @@
                                 <summary> Forma corta </summary>
                                 <dfn>
                                     <details class="details_interno">
-                                        <summary> Estructura </summary>
+                                        <summary>Audios</summary>
                                         <dfn>
-                                            &lt;audio controls src="/CSS/IMG/AUDIOS/audio1.mp3" type="audio/mp3"&gt; &lt;/audio&gt;<br><hr>
-                                            &lt;video&gt; controls src="/CSS/IMG/1_video.mp4" type="video/mp4" height="200px"&gt;&lt;/video&gt;
+                                            <p>Estructura del código:</p>
+                                            <code class="code_maestro">
+                                                &lt;audio controls src="/CSS/IMG/AUDIOS/audio1.mp3" type="audio/mp3"&gt; &lt;/audio&gt;<br><hr>
+                                            </code>
+                                            <p>Muestra en la web:</p>
+                                            <audio controls src="/Proyectos/1_Curso_HTML/CSS/IMG/AUDIOS/audio1.mp3" type="audio/mp3"></audio>
                                         </dfn>
                                     </details>
-                                    <audio controls src="/CSS/IMG/AUDIOS/audio1.mp3" type="audio/mp3"></audio><br><hr>
-                                    <video controls src="/CSS/IMG/homeVideo.mp4" type="video/mp4" width="90%" height="300px"></video>
+
+                                    <details class="details_interno">
+                                        <summary>Videos</summary>
+                                        <dfn>
+                                            <p>Estructura del código:</p>
+                                            <code class="code_maestro">
+                                                &lt;video&gt; controls src="/CSS/IMG/1_video.mp4" type="video/mp4" height="200px"&gt;&lt;/video&gt;
+                                            </code>
+                                            <p>Muestra en la web:</p>
+                                            <video controls src="/Proyectos/1_Curso_HTML/CSS/IMG/1_video.mp4" type="video/mp4" width="90%" height="300px"></video>
+                                        </dfn>
+                                    </details>
                                 </dfn>
                             </details>
                         </dfn>
@@ -932,20 +967,23 @@
                     <details class="details_interno">
                         <summary> Video desde YouTube </summary>
                         <dfn>
-                            <details class="details_interno">
-                                <summary>Estructura</summary>
-                                <dfn>
-                                    Vas a youtube, segundo click en el video y seleccionas: "copiar código de inserción" <br> La etiqueta &lt;iframe&gt; &lt;/iframe&gt; sirve para inserta material de otra página. <br>
-                                </dfn>
-                            </details>
-                            <iframe width="90%" height="300px" src="https://www.youtube.com/embed/akFzU5K8VL0?list=PLJubkp8BnTJt-pKYkVNLt72n1hKmYmkFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>
+                                Vas a youtube, segundo click en el video y seleccionas: "copiar código de inserción" <br> La etiqueta &lt;iframe&gt; &lt;/iframe&gt; sirve para inserta material de otra página.
+                            </p>
+
+                            <iframe width="90%" height="300" src="https://www.youtube.com/embed/Y_96rXEeoKc?list=PLRxT9fiEWdJ2M_hFK2BITKUAbe_s_gtqm" title="Seminario Fénix | 08 Doce pasos hacia el logro de metas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </dfn>
                     </details>
                 </dfn>
             </details>
             
             <details class="contenedor_inicio">
-                <summary id="13"> Dibujar en HTML5 gráficos <abbr title="Scalable Vector Graphics">SVG</abbr> </summary>
+                <summary>
+                    Dibujar en HTML5 gráficos &nbsp;
+                    <div class="contenideor_abbr">
+                        <abbr title="Scalable Vector Graphics">SVG</abbr> 
+                    </div>
+                </summary>
                 <dfn>
                     <details class="details_interno">
                         <summary> Estructura básica </summary>

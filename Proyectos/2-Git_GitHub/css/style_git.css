@@ -77,7 +77,7 @@ summary {
     height: 50px;
     padding: 2px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -115,7 +115,7 @@ dfn {
 /*--- listas ---*/
 ul, ol, dl {
     border: 1px solid;
-    width: 100%;
+    width: 99.5%;
     margin: 5px;
     padding: 5px 0 5px 20px;
     display: flex;
@@ -125,8 +125,9 @@ ul, ol, dl {
 }
 li, dt, dd {
     /* list-style: none; */
-    width: 100%;
+    width: 99.5%;
     border: 1px solid;
+    padding: 3px;
     font-weight: bold;
     font-size: 16px;
 }
@@ -169,12 +170,69 @@ p {
     padding: 10px 0;
     text-align: center;
 }
-fieldset {
-    border: 1px solid blue;
-    width: 50%;
-    padding: 10px 0;
+
+/*-------- Tablas --------*/
+.tabla_ej {
+    border: 1px solid;
+    width: 100%;
+    margin: 5px;
+}
+.tabla_ej caption, tr, th, td {
+    border: 1px solid;
+    padding: 5px;
+    font-size: 14px;
     text-align: center;
 }
+
+/*-------- Formularios --------*/
+fieldset {
+    border: 1px solid blue;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.formulario_tabla li {
+    text-align: left;
+}
+form {
+    /* border: 1px solid; */
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Formularios_ej {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contenedor_selector {
+    /* border: 1px solid; */
+    width: 150px;
+    margin: 0 auto;
+    text-align: left;
+}
+.formulario_obligatorio {
+    display: inline;
+    color: rgb(231, 31, 31);
+}
+.input_completar {
+    width: 80%;
+    height: 25px;
+    padding: 5px;
+}
+.formulario_boton {
+    width: 150px;
+    height: 25px;
+    border-radius: 8px;
+    font-weight: 800;
+    margin: 5px;
+}
+.formulario_boton:hover {
+    color: var(--color_link_hover_blue);
+}
+
 
 /*-------- fotos, iconos, img-código, imag --------*/
 .contenedor__img {
@@ -196,11 +254,13 @@ fieldset {
     align-items: center;
     flex-wrap: wrap;
 }
+.contenedor_de_iconos a {
+    border-radius: 50%;
+}
 .contenedor__icono {
     /* border: 1px solid black; */
     border-radius: 50%;
     width: 150px;
-    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;

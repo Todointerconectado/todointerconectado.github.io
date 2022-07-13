@@ -73,8 +73,17 @@ span {
     justify-content: center;
     align-items: center;
 }
+.contenideor_abbr{
+    /* border: 1px solid; */
+    width: 45px;
+    /* height: auto; */
+    /* padding: 5px 0; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 abbr {
-    border: 1px solid;
+    /* border: 1px solid; */
     height: 25px;
     width: auto;
     text-decoration: none;
