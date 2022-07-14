@@ -2,7 +2,7 @@
 
 :root {
     --color_ContenedorMaestro_Transparente_white: rgba(255, 255, 255, .5);
-    --color_fondo_title: rgb(26, 30, 116);
+    --color_fondo_title: rgb(60, 65, 168);
     --color_letra_title_white: rgb(255, 255, 255);
     --color_abbr_hover: rgb(255, 187, 0);
     --color_link_blue: rgb(8, 31, 134);
@@ -54,17 +54,38 @@ main {
     overflow: hidden;
     flex-wrap: wrap;
 }
+
+.contenedor_title {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, rgb(196, 8, 8), var(--color_fondo_title), rgb(9, 158, 9), black);
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+    margin-bottom: 20px;
+}
 .title {
     /* border: 1px solid black; */
-    background: var(--color_fondo_title);
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    position: absolute;
     border-radius: 8px;
     color: var(--color_letra_title_white);
-    margin-bottom: 20px;
-    padding: 20px;
+    
     font-size: 20px;
     font-weight: bold;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
 span {
     /* border: 1px solid; */
     width: 100%;
