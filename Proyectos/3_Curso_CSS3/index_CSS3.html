@@ -27,6 +27,7 @@
             color: brown;
         }
     </style>
+    <script src="https://kit.fontawesome.com/4600a4ff4e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -470,7 +471,7 @@
                     </ul>
             
                     <figure class="contenedor__img">
-                        <img class="img" src="/Proyectos/3_Curso_CSS3/Clases/Clase_5/img/Modelo_de_caja/1_modelo_de_caja.png" alt="Modelo de caja" title="Modelo de caja"> 
+                        <img class="img" src="/Proyectos/3_Curso_CSS3/CSS/MULTIMEDIA/1_modelo_de_caja.png" alt="Modelo de caja" title="Modelo de caja"> 
                     </figure>
             
                     <article>
@@ -493,25 +494,158 @@
 
             <details class="contenedor_inicio">
                 <summary id="7">Como dar estilos a los enlaces</summary>
-                <details>
-                    <summary>HTML</summary>
-                    <figure class="contenedor__img">
-                        <img src="/Clases/Clase_7/img/img_HTML.png" alt="código HTML" title="código HTML" class="img__proceso" >
-                        <figcaption>Código HTML</figcaption>
-                    </figure>
-                </details>
-                <details>
-                    <summary>CSS</summary>
-                    <figure class="contenedor__img">
-                        <img class="img__proceso" title="código CSS" src="/Clases/Clase_7/img/img_CSS.png" alt="código css">
-                        <figcaption>Código CSS</figcaption>
-                    </figure>
-                </details>
-                <details>
-                    <summary>Muestra</summary>
-                    <iframe class="img__proceso" frameborder="0" src="http://127.0.0.1:5500/Clases/Clase_7/Clase_7.html"></iframe>
-                </details>
-                <a href="/Clases/Clase_7/Clase_7.html" target="_blanck"> Ir a la página</a>
+                <dfn>
+                    <details class="details_interno">
+                        <summary>Dar estilos a una barra de nabegación</summary>
+                        <dfn>
+                            Estructura del código HTML:
+                            <code class="code_maestro">
+                                &lt;header&gt; <br>
+                                    <code class="code_interno">
+                                        &lt;div class="menu_estilos_enlace"&gt; <br>
+                                            &nbsp;&nbsp; &lt;a class="active" href="#"&gt;Inicio&lt;/a&gt; <br>
+                                            &nbsp;&nbsp; &lt;a href="#"&gt;Noticias&lt;/a&gt; <br>
+                                            &nbsp;&nbsp; &lt;a href="#"&gt;Videos&lt;/a&gt; <br>
+                                            &nbsp;&nbsp; &lt;a href="#"&gt;Contactos&lt;/a&gt; <br>
+                                            &nbsp;&nbsp; &lt;a href="#"&gt;Cursos&lt;/a&gt; <br>
+                                        &lt;/div>
+                                    </code>
+                                &lt;/header>
+                            </code>
+                            Estructura del código CSS:
+                            <code class="code_maestro">
+                                .menu_estilos_enlace { <br>
+                                    border: 1px solid; <br>
+                                    width: 100%; <br>
+                                    height: auto; <br>
+                                    padding: 5px; <br>
+                                    background-color: black; <br>
+                                    display: inline-flex; <br>
+                                } <br> <br>
+                                .menu_estilos_enlace a { <br>
+                                    background-color: black; <br>
+                                    color: white; <br>
+                                    padding: 0 10px; <br>
+                                } <br> <br>
+                                .menu_estilos_enlace a:hover { <br>
+                                    background-color: white; <br>
+                                    color: black; <br>
+                                    border-radius: 5px; <br>
+                                } <br> <br>
+                                .menu_estilos_enlace a.active { <br>
+                                    background-color: white; <br>
+                                    color: black; <br>
+                                    border-radius: 5px; <br>
+                                    font-weight: bold; <br>
+                                }
+                            </code>
+                            Muestra en la web:
+                            <section class="contenedor_estilos_a_enlaces">
+                                <header class="header_estilos_enlace">
+                                    <div class="menu_estilos_enlace">
+                                        <a class="active" href="#">Inicio</a>
+                                        <a href="#">Noticias</a>
+                                        <a href="#">Videos</a>
+                                        <a href="#">Contactos</a>
+                                        <a href="#">Cursos</a>
+                                    </div>
+                                </header>
+                            </section>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>Redes sociales</summary>
+                        <dfn>
+                            Estructura del código HTML:
+                            <code class="code_maestro">
+                                &lt;section class="contenedor_estilos_a_enlaces"&gt;
+                                    <code class="code_interno">
+                                        &lt;div class="social_estilos_enlace"&gt; <br>
+                                            &nbsp;&nbsp; &lt;a href="#"&gt; &lt;i class="fa-brands fa-facebook-f"&gt;&lt;/i&gt; &lt;/a&gt;;<br>
+                                            &nbsp;&nbsp; &lt;a href="#"&gt; &lt;i class="fa-brands fa-instagram"&gt;&lt;/i&gt; &lt;/a&gt;; <br>
+                                            &nbsp;&nbsp; &lt;a href="#"&gt; &lt;i class="fa-brands fa-twitter"&gt;&lt;/i&gt; &lt;/a&gt;; <br>
+                                        &lt;/div&gt;
+                                    </code>
+                                &lt;/section&gt;
+                            </code>
+                            Estructura del código CSS:
+                            <code class="code_maestro">
+                                .social_estilos_enlace { <br>
+                                    border: 1px solid; <br>
+                                    display: inline-block; <br>
+                                    padding: 5px; <br>
+                                    margin: 10px 0; <br>
+                                } <br> <br>
+                                .social_estilos_enlace a { <br>
+                                    padding: 0 10px; <br>
+                                    color: white; <br>
+                                } <br> <br>
+                                .social_estilos_enlace a:hover { <br>
+                                    color: black; <br>
+                                }
+                            </code>
+                            Muestra en la web:
+                            <section class="contenedor_estilos_a_enlaces">
+                                <div class="social_estilos_enlace">
+                                    <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                                    <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                                    <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+                                </div>
+                            </section>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>Redes sociales</summary>
+                        <dfn>
+                            Estructura del código HTML:
+                            <code class="code_maestro">
+                                &lt;section class="contenedor_estilos_a_enlaces"&gt; 
+                                    <code class="code_interno">
+                                        &lt;div class="boton_estilos_enlace"&gt; <br>
+                                            &nbsp; &lt;a href="https://www.youtube.com/channel/ <br>&nbsp;&nbsp;&nbsp; UCY8m1JDOQFr1RvnrUnOiKMQ" target="_blanck"&gt; <br>
+                                                    &nbsp;&nbsp;&nbsp; &lt;i class="fa-brands fa-youtube"&gt;&lt;/i&gt;
+                                                    Suscríbete! <br>
+                                                &nbsp; &lt;/a&gt; <br>
+                                        &lt;/div&gt;
+                                    </code>
+                                &lt;/section&gt;
+                            </code>
+                            Estructura del código CSS:
+                            <code class="code_maestro">
+                                .boton_estilos_enlace { <br>
+                                    margin: 10px 0; <br>
+                                    padding: 10px 0; <br>
+                                } <br> <br>
+                                .boton_estilos_enlace a { <br>
+                                    box-shadow: 0px 0px 5px black; <br>
+                                    background-color: #f60707c5; <br>
+                                    border-radius: 8px; <br>
+                                    color: white; <br>
+                                    padding: 10px; <br>
+                                    /* display: inline-flex; */ <br>
+                                    align-items: center; <br>
+                                } <br> <br>
+                                .boton_estilos_enlace a i { <br>
+                                    padding-right: 8px; <br>
+                                } <br> <br>
+                                .boton_estilos_enlace a:hover { <br>
+                                    color: black; <br>
+                                }
+                            </code>
+                            Muestra en la web:
+                            <section class="contenedor_estilos_a_enlaces">
+                                <div class="boton_estilos_enlace">
+                                    <a href="https://www.youtube.com/channel/UCY8m1JDOQFr1RvnrUnOiKMQ" target="_blanck">
+                                        <i class="fa-brands fa-youtube"></i> 
+                                        Suscríbete!
+                                    </a>
+                                </div>
+                            </section>
+                        </dfn>
+                    </details>
+                </dfn>
             </details>
             
             <details class="contenedor_inicio">

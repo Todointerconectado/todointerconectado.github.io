@@ -182,9 +182,78 @@ article {
 }
 
 /*------------ Como dar estilos a los enlaces ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&family=Signika+Negative&display=swap');/* Formateo valores predeterminados */
 
+/* Menu principal */
+.contenedor_estilos_a_enlaces {
+    width: 100%;
+    background-color: gray;
+    font-family: 'Signika Negative',;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.menu_estilos_enlace {
+    border: 1px solid;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    background-color: black;
+    display: inline-flex;
+}
+.menu_estilos_enlace a {
+    background-color: black;
+    color: white;
+    padding: 0 10px;
+}
+.menu_estilos_enlace a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.menu_estilos_enlace a.active {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
+/* Redes sociales */
+.social_estilos_enlace {
+    border: 1px solid;
+    display: inline-block;
+    padding: 5px;
+    margin: 10px 0;
+}
+.social_estilos_enlace a {
+    padding: 0 10px;
+    color: white;
+}
+.social_estilos_enlace a:hover {
+    color: black;
+}
 
+/* Boton Suscríbete */
+.boton_estilos_enlace {
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.boton_estilos_enlace a {
+    box-shadow: 0px 0px 5px black;
+    background-color: #f60707c5;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    /* display: inline-flex; */
+    align-items: center;
+}
+.boton_estilos_enlace a i {
+    padding-right: 8px;
+}
+.boton_estilos_enlace a:hover {
+    color: black;
+}
+
+/*------------ Como insertar imagenes con CSS ------------*/
 
 
 
