@@ -45,6 +45,11 @@
     padding: 5px;
     height: 70px;
 }
+a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
 
 /* Contenedor de los títulos principales de la lista de comandos */
 .contenedor_principal {

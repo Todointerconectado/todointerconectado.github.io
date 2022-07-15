@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curso CSS3</title>
+    <link rel="icon" href="/CSS/MULTIMEDIA/1_Logo_css.png" type="png">
+    <link rel="stylesheet" href="/CSS/style_caja.css">
+    <link rel="stylesheet" href="/Proyectos/2-Git_GitHub/css/style_git.css">
+    <link rel="stylesheet" href="/Proyectos/3_Curso_CSS3/CSS/style_CSS3.css">
+    <style>
+        .etiqueta__h1 {
+            color: blue;
+        }
+        .etiqueta__h2 {
+            color: green;
+        }
+        .class__h2 {
+            color: salmon;
+        }
+        #id__h2 {
+            color: red;
+        }
+        h2.class__brown {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <video class="fondo__video" src="/CSS/MULTIMEDIA/homeVideo.mp4" muted autoplay loop></video>
+    <h1 id="home" class="title1"> Francisco Carusso </h1>
+
+    <main>
+        <section class="contenedor_title">
+            <h2 class="title"> Curso de CSS3 desde cero </h2>
+        </section>
+
+        <section class="contenedor_principal">
+            <details class="contenedor_inicio">
+                <summary id="2"> Tres formas de aplicar CSS en el HTML (esta en forma cascada) </summary>
+                <dfn>
+                    <details class="details_interno">
+                        <summary>Directo en la etiqueta especifica en el código HTML</summary>
+                        <p>Se lo aplicamos como un atributo: style="" </p>
+                        <details class="details_interno">
+                            <summary>Estructura del Código HTML y CSS</summary>
+                            &lt;h1 style="color: red;"&gt; h1: (css directo) Aprendiendo estilos CSS &lt;/h1&gt;
+                            <details class="details_interno">
+                                <summary>Muestra</summary>
+                                <h1 style="color: red;">h1: (css directo) Aprendiendo estilos CSS</h1>
+                            </details>
+                        </details>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>Dentro del &lt;head&gt; aplicamos la etiqueta &lt;style&gt;</summary>
+                        <details class="details_interno">
+                            <summary>Dentro de &lt;head&gt; y &lt;body&gt; </summary>
+                            Podes llamar a las etiquetas HTML, Class y id para aplicarles los estilos.
+                            <section>
+                                &lt;head&gt; <br>
+                                &nbsp; &nbsp; &lt;style&gt; <br>
+                                <details class="details_interno">
+                                    <summary>Etiquetas</summary>
+                                    h1 { <br>
+                                        &nbsp; &nbsp; color: blue; <br>
+                                    } <br>
+                                    h2 { <br>
+                                        &nbsp; &nbsp; color: green; <br>
+                                    }
+                                    <details class="details_interno">
+                                        <summary>Muestra</summary>
+                                        <h1 class="etiqueta__h1">h1: Probamos la etiqueta &lt;style&gt; dentro del &lt;head&gt;</h1>
+                                        <h2 class="etiqueta__h2">Etiqueta h2</h2>
+                                    </details>
+                                </details>
+                                <details class="details_interno">
+                                    <summary>Class</summary>
+                                    .class__h2 { <br>
+                                        &nbsp; &nbsp; color: salmon; <br>
+                                    }
+                                    <details class="details_interno">
+                                        <summary>Muestra</summary>
+                                        <h2 class="class__h2" >h2 con class</h2>
+                                    </details>
+                                </details>
+                                <details class="details_interno">
+                                    <summary>id</summary>
+                                    #id__h2 { <br>
+                                        &nbsp; &nbsp; color: red; <br>
+                                    }
+                                    <details class="details_interno">
+                                        <summary>Muestra</summary>
+                                        <h2 id="id__h2" >h2 con id</h2>
+                                    </details>
+                                </details>
+                                <details class="details_interno">
+                                    <summary>combinaciones</summary>
+                                    h2.class__brown { <br>
+                                        &nbsp; &nbsp; color: brown; <br>
+                                    }
+                                    <details class="details_interno">
+                                        <summary>Muestra</summary>
+                                        <h2 class="class__brown"> etiqueta: h2 y class="class__brown" </h2>
+                                        <h2> etiqueta: h2 </h2>
+                                        <h2 class="class__brown"> etiqueta: h2 y class="class__brown" </h2>
+                                    </details>
+                                </details>
+                                &nbsp; &nbsp; &lt;/style&gt; <br>
+                                &lt;/head&gt;
+                            </section>
+                        </details>
+                    </details>
+
+                    <details id="cambiar__fondo" class="details_interno">
+                        <summary>Creamos las hojas de estilos</summary>
+                        Dentro del head enlazamos la hoja de estilo con la etiqueta &lt;link&gt; <br>
+                        <ul>
+                            <li class="li__color">&lt;link rel="stylesheet" href="/style.css"&gt;</li>
+                            <li>Atributo rel="stylesheet" tipo de documenta al que estoy llamando. </li>
+                            <li class="li__color">Atributo href="/style.css" (dentro de las comillas va la dirección del archivo</li>
+                            <li>Este es la forma recomendable para los estilos.</li>
+                            <li>Acontinuación escribimos el css en su respectivo archivo.</li>
+                        </ul>
+                    </details>
+
+                    <a href="/Proyectos/3_Curso_CSS3/Clases/Clase_1/Clase_1.html" target="_blanck" >Ir a la página</a>
+                </dfn>
+            </details>
+
+            <details class="contenedor_inicio">
+                <summary>Tipos de colores</summary>
+                <dfn>
+                    <details class="details_interno">
+                        <summary>Por nombre</summary>
+                        <dfn>
+                            Estructura del código HTML:
+                            <code  class="code_maestro">
+                                &lt; h2 id="name"&gt; Por nombre &lt;/h2&gt;
+                            </code>
+                            Estructura del código CSS:
+                            <code class="code_maestro">
+                                #name { <br>
+                                    <code  class="code_interno">
+                                        background-color: lightblue;
+                                    </code>
+                                }
+                            </code>
+                            Muestra en la web:
+                            <h2 id="name"> Por nombre </h2>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>Por Hexadecimal</summary>
+                        <dfn>
+                            Estructura del código HTML:
+                            <code  class="code_maestro">
+                                &lt;h2 id="hex"&gt;Hexadecimal&lt;/h2&gt;
+                            </code>
+                            Estructura del código CSS:
+                            <code class="code_maestro">
+                                #hex { <br>
+                                    <code  class="code_interno">
+                                        background-color: #d36336;
+                                    </code>
+                                }
+                            </code>
+                            Muestra en la web:
+                            <h2 id="hex">Hexadecimal</h2>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>Por RBG</summary>
+                        <dfn>
+                            Estructura del código HTML:
+                            <code  class="code_maestro">
+                                &lt;h2 id="rgb"&gt;RBG&lt;/h2&gt;
+                            </code>
+                            Estructura del código CSS:
+                            <code class="code_maestro">
+                                #rgb { <br>
+                                    <code  class="code_interno">
+                                        background-color: rgb(12, 127, 57);
+                                    </code>
+                                }
+                            </code>
+                            Muestra en la web:
+                            <h2 id="rgb">RBG</h2>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>Por RBGa</summary>
+                        <dfn>
+                            Estructura del código HTML:
+                            <code  class="code_maestro">
+                                &lt;h2 id="rgba"&gt;RBGa&lt;/h2&gt;
+                            </code>
+                            Estructura del código CSS:
+                            <code class="code_maestro">
+                                #rgba { <br>
+                                    <code  class="code_interno">
+                                        background-color: rgba(12, 127, 57, 0.3);
+                                    </code>
+                                }
+                            </code>
+                            Muestra en la web:
+                            <h2 id="rgba">RBGa</h2>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>Por HSL</summary>
+                        <dfn>
+                            Estructura del código HTML:
+                            <code  class="code_maestro">
+                                &lt;h2 id="hsl"&gt;HSL&lt;/h2&gt;
+                            </code>
+                            Estructura del código CSS:
+                            <code class="code_maestro">
+                                #hsl { <br>
+                                    <code  class="code_interno">
+                                        background-color: hsl(16, 100%, 50%);
+                                    </code>
+                                }
+                            </code>
+                            Muestra en la web:
+                            <h2 id="hsl">HSL</h2>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>Por HSLa</summary>
+                        <dfn>
+                            Estructura del código HTML:
+                            <code  class="code_maestro">
+                                &lt;h2 id="hsla"&gt;HSLa&lt;/h2&gt;
+                            </code>
+                            Estructura del código CSS:
+                            <code class="code_maestro">
+                                #hsla { <br>
+                                    <code  class="code_interno">
+                                        background-color: hsla(16, 100%, 50%, 0.3);
+                                    </code>
+                                }
+                            </code>
+                            Muestra en la web:
+                            <h2 id="hsla">HSLa</h2>
+                        </dfn>
+                    </details>
+                </dfn>
+            </details>
+
+            <details class="contenedor_inicio">
+                <summary>Parte de un blog</summary>
+                <dfn>
+                    <section class="border">
+                        <h1 class="titulo">Bienvenido a Todointerconectado</h1>
+                        <article>
+                            <p class="parrafo" id="inicio">
+                                Este canal fue creado para enseñar código de una forma sencilla y práctica. Enfocada en una metodologia de "aprender haciendo". <span class="underline">Francisco Carusso</span> es el autor de este canal quien le dedica parte de su tiempo libre para desarrollar cada uno de los videos. El logo representa las lineas de código ya que con cada linea puedes construir lo que tu imaginación te diga, al igual que un lego.
+                            </p>
+                        </article>
+                        <article>
+                            <p class="parrafo">
+                                Este <a href="https://www.youtube.com/channel/UCY8m1JDOQFr1RvnrUnOiKMQ" target="_blanck" title="YouTube">Canal</a> fue creado para enseñar códogo de una forma sencilla y práctica. Enfocada en una metodologia de <span class="italic">"aprender haciendo".</span> Francisco Carusso es el autor de este canal quien le dedica parte de su tiempo libre para desarrollar cada uno de los videos. El logo representa las lineas de código ya que con cada linea puedes construir lo que tu imaginación te diga.
+                            </p>
+                        </article>
+                    </section>
+                    Estructura del código CSS3:
+                    <code class="code_maestro">
+                        <pre>
+                            .titulo {
+                                font-family: 'Gentium Book Basic', serif;
+                                font-size: 150%;
+                                text-align: center;
+                                color: #c69c6d;
+                                text-shadow: 2px 2px 5px black;
+                            }
+                            .parrafo {
+                                font-family: 'Playfair Display', ;
+                                font-size: 15px;
+                                text-align: justify;
+                                width: 95%;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-bottom: 20px;
+                                border: none;
+                            }
+                            /* Seudo elementos */
+                            p#inicio::first-letter {
+                                color: #c69c6d;
+                                font-size: 80px;
+                                float: left;
+                                background-color: brown;
+                                padding: 0px 8px 0px 8px;
+                                margin: 10px 10px 0px 0px;
+                            }
+                            /* link */
+                            a {
+                                text-decoration: none;
+                                color: brown;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                            }
+                            /* cambia el color al tener el mous encima */
+                            a:hover {
+                                color: #c69c6d;
+                            }
+                            /* subrayar_palabra */
+                            .underline {
+                                text-decoration: underline;
+                                font-weight: bold;
+                                display: inline;
+                            }
+                            /* palabra en italica */
+                            .italic {
+                                font-style: italic;
+                                font-weight: bold;
+                                display: inline;
+                            }
+                            /* border del contenedor */
+                            .border {
+                                width: 95%;
+                                margin: 10px auto;
+                                border: 5px dashed gray;
+                            }
+                        </pre>
+                    </code>
+                    
+                </dfn>
+            </details>
+
+            <details class="contenedor_inicio">
+                <summary id="5">Tipos de tamaños: Unidades de medida</summary>
+                <dfn>
+                    <details class="details_interno">
+                        <summary>Pixeles</summary>
+                        <dfn>
+                            Estructura del código HTML:
+                            <code class="code_maestro">
+                                &lt;article class="contenedor"&gt; <br>
+                                    <code class="code_interno">
+                                        &lt;p class="pixeles">Unidad de medida en pixeles.&lt;/p&gt;
+                                    </code>
+                                &lt;/article&gt;
+                            </code>
+                            Estructura del código CSS3:
+                            <code class="code_maestro">
+                                .pixeles { <br>
+                                    <code class="code_interno">
+                                        /* 16px es el valor por defecto */ <br>
+                                        font-size: 16px; <br>
+                                        background-color: gray; <br> 
+                                        width: 400px;
+                                    </code>
+                                }
+                            </code>
+                            <section class="medidas">
+                                <article class="contenedor">
+                                    <p class="pixeles">Unidad de medida en pixeles.</p>
+                                </article>
+                            </section>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>Porcentaje</summary>
+                        <dfn>
+                            Estructura del código HTML:
+                            <code class="code_maestro">
+                                &lt;article class="contenedor"&gt; <br>
+                                    <code class="code_interno">
+                                        &lt;p class="porcentaje">Unidad de medida en porcentaje.&lt;/p&gt;
+                                    </code>
+                                &lt;/article&gt;
+                            </code>
+                            Estructura del código CSS3:
+                            <code class="code_maestro">
+                                .porcentaje { <br>
+                                    <code class="code_interno">
+                                        /* 100% del valor contenedor 16px */ <br>
+                                        font-size: 150%; <br>
+                                        background-color: gray; <br>
+                                        width: 50%;
+                                    </code>
+                                }
+                            </code>
+                            <section class="medidas">
+                                <article class="contenedor">
+                                    <p class="porcentaje">Unidad de medida en porcentaje</p>
+                                </article>
+                            </section>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>EM</summary>
+                        <dfn>
+                            Estructura del código HTML:
+                            <code class="code_maestro">
+                                &lt;article class="contenedor"&gt; <br>
+                                    <code class="code_interno">
+                                        &lt;p class="em">Unidad de medida "em".&lt;/p&gt;
+                                    </code>
+                                &lt;/article&gt;
+                            </code>
+                            Estructura del código CSS3:
+                            <code class="code_maestro">
+                                .em { <br>
+                                    <code class="code_interno">
+                                        /* 1em = valor del contenedor */ <br>
+                                        font-size: 1.5em;  <br>
+                                        background-color: gray; <br>
+                                        width: 5em;
+                                    </code>
+                                }
+                            </code>
+                            <section class="medidas">
+                                <article class="contenedor">
+                                    <p class="em">Unidad de medida "em"</p>
+                                </article>
+                            </section>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>REM</summary>
+                        <dfn>
+                            Estructura del código HTML:
+                            <code class="code_maestro">
+                                &lt;article class="contenedor"&gt; <br>
+                                    <code class="code_interno">
+                                        &lt;p class="rem">Unidad de medida "rem".&lt;/p&gt;
+                                    </code>
+                                &lt;/article&gt;
+                            </code>
+                            Estructura del código CSS3:
+                            <code class="code_maestro">
+                                .rem { <br>
+                                    <code class="code_interno">
+                                        /* 1rem = valor del root (valor por defecto que son 16px) */ <br>
+                                        font-size: 0.8rem; <br>
+                                        background-color: gray; <br>
+                                        width: 5rem;
+                                    </code>
+                                }
+                            </code>
+                            <section class="medidas">
+                                <article class="contenedor">
+                                    <p class="rem">Unidad de medida "rem"</p>
+                                </article>
+                            </section>
+                        </dfn>
+                    </details>
+                </dfn>
+            </details>
+
+            <details class="contenedor_inicio">
+                <summary>Modelo de caja</summary>
+                <dfn>
+                    <ul id="modelo_caja_ul">
+                        <a class="link" href="https://developer.mozilla.org/es/docs/Web/HTML/Block-level_elements" target="_blanck">Etiquetas de elemento en bloque </a>
+                        <a class="link" href="https://developer.mozilla.org/es/docs/Web/HTML/Inline_elements" target="_blanck">Etiquetas de elemento en linea </a>
+                    </ul>
+            
+                    <figure class="contenedor__img">
+                        <img class="img" src="/Proyectos/3_Curso_CSS3/Clases/Clase_5/img/Modelo_de_caja/1_modelo_de_caja.png" alt="Modelo de caja" title="Modelo de caja"> 
+                    </figure>
+            
+                    <article>
+                        <p class="bloque">
+                            &lt;p&gt; Contenedor de elemento bloque. Ocupa todo el ancho de la página.
+                        </p>
+                        <p class="bloque2">
+                            Segundo Párrafo
+                        </p>
+                    </article>
+            
+                    <article>
+                        <p class="bloque3">&lt;p&gt; Elemento en bloque. class="bloque3"</p>
+                        <p class="bloque3">&lt;p&gt; Elemento en bloque. class="bloque3"</p>
+                    </article>
+                    
+                    <span class="linea"> &lt;span&gt; Elemento en linea. class="linea" </span>
+                </dfn>
+            </details>
+
+            <details class="contenedor_inicio">
+                <summary id="7">Como dar estilos a los enlaces</summary>
+                <details>
+                    <summary>HTML</summary>
+                    <figure class="contenedor__img">
+                        <img src="/Clases/Clase_7/img/img_HTML.png" alt="código HTML" title="código HTML" class="img__proceso" >
+                        <figcaption>Código HTML</figcaption>
+                    </figure>
+                </details>
+                <details>
+                    <summary>CSS</summary>
+                    <figure class="contenedor__img">
+                        <img class="img__proceso" title="código CSS" src="/Clases/Clase_7/img/img_CSS.png" alt="código css">
+                        <figcaption>Código CSS</figcaption>
+                    </figure>
+                </details>
+                <details>
+                    <summary>Muestra</summary>
+                    <iframe class="img__proceso" frameborder="0" src="http://127.0.0.1:5500/Clases/Clase_7/Clase_7.html"></iframe>
+                </details>
+                <a href="/Clases/Clase_7/Clase_7.html" target="_blanck"> Ir a la página</a>
+            </details>
+            
+            <details class="contenedor_inicio">
+                <summary id="8">Como insertar imagenes con CSS</summary>
+                <details>
+                    <summary>HTML</summary>
+                    <figure class="contenedor__img">
+                        <img src="/Clases/Clase_8/img/img_HTML.png" alt="código HTML" title="código HTML" class="img__proceso" >
+                        <figcaption>Código HTML</figcaption>
+                    </figure>
+                </details>
+                <details>
+                    <summary>CSS</summary>
+                    <figure class="contenedor__img">
+                        <img class="img__proceso" title="código CSS" src="/Clases/Clase_8/img/img_CSS.png" alt="código css">
+                        <figcaption>Código CSS</figcaption>
+                    </figure>
+                </details>
+                <details>
+                    <summary>Muestra</summary>
+                    <iframe class="img__proceso" frameborder="0" src="http://127.0.0.1:5500/Clases/Clase_8/Clase_8.html"></iframe>
+                </details>
+                <a href="/Clases/Clase_8/Clase_8.html" target="_blanck"> Ir a la página</a>
+            </details>
+
+            <details class="contenedor_inicio">
+                <summary id="9">Transiciones en CSS</summary>
+                <details>
+                    <summary>HTML</summary>
+                    <figure class="contenedor__img">
+                        <img src="/Clases/Clase_9/img/img_HTML.png" alt="código HTML" title="código HTML" class="img__proceso" >
+                        <figcaption>Código HTML</figcaption>
+                    </figure>
+                </details>
+                <details>
+                    <summary>CSS</summary>
+                    <figure class="contenedor__img">
+                        <img class="img__proceso" title="código CSS" src="/Clases/Clase_9/img/img_CSS.png" alt="código css">
+                        <figcaption>Código CSS</figcaption>
+                    </figure>
+                </details>
+                <details>
+                    <summary>Muestra</summary>
+                    <iframe class="img__proceso" frameborder="0" src="http://127.0.0.1:5500/Clases/Clase_9/Clase_9.html"></iframe>
+                </details>
+                <a href="/Clases/Clase_9/Clase_9.html" target="_blanck"> Ir a la página</a>
+            </details>
+
+            <details class="contenedor_inicio">
+                <summary id="10">Transform en CSS</summary>
+                <details>
+                    <summary>HTML</summary>
+                    <figure class="contenedor__img">
+                        <img src="/Clases/Clase_10/img/img_HTML.png" alt="código HTML" title="código HTML" class="img__proceso" >
+                        <figcaption>Código HTML</figcaption>
+                    </figure>
+                </details>
+                <details>
+                    <summary>CSS</summary>
+                    <figure class="contenedor__img">
+                        <img class="img__proceso" title="código CSS" src="/Clases/Clase_10/img/img_CSS.png" alt="código css">
+                        <figcaption>Código CSS</figcaption>
+                    </figure>
+                </details>
+                <details>
+                    <summary>Muestra</summary>
+                    <iframe class="img__proceso" frameborder="0" src="http://127.0.0.1:5500/Clases/Clase_10/Clase_10.html"></iframe>
+                </details>
+                <a href="/Clases/Clase_10/Clase_10.html" target="_blanck"> Ir a la página</a>
+            </details>
+
+            <details class="contenedor_inicio">
+                <summary id="11">Animaciones en CSS</summary>
+                <details>
+                    <summary>HTML</summary>
+                    <figure class="contenedor__img">
+                        <img src="/Clases/Clase_11/img/img_HTML.png" alt="código HTML" title="código HTML" class="img__proceso" >
+                        <figcaption>Código HTML</figcaption>
+                    </figure>
+                </details>
+
+                <details>
+                    <summary>CSS</summary>
+                    <figure class="contenedor__img">
+                        <img class="img__proceso" title="código CSS" src="/Clases/Clase_11/img/img_CSS.png" alt="código css">
+                        <figcaption>Código CSS</figcaption>
+                    </figure>
+                </details>
+
+                <details>
+                    <summary>Muestra</summary>
+                    <iframe class="img__proceso" frameborder="0" src="http://127.0.0.1:5500/Clases/Clase_11/Clase_11.html"></iframe>
+                </details>
+
+                <a href="/Clases/Clase_11/Clase_11.html" target="_blanck"> Ir a la página</a>
+            </details>
+
+            <details class="contenedor_inicio">
+                <summary id="12">Flexbox en CSS</summary>
+                <details>
+                    <summary>HTML</summary>
+                    <figure class="contenedor__img">
+                        <img src="/Clases/Clase_12/img/img_HTML.png" alt="código HTML" title="código HTML" class="img__proceso" >
+                        <figcaption>Código HTML</figcaption>
+                    </figure>
+                </details>
+
+                <details>
+                    <summary>CSS</summary>
+                    <figure class="contenedor__img">
+                        <img class="img__proceso" title="código CSS" src="/Clases/Clase_12/img/img_CSS.png" alt="código css">
+                        <figcaption>Código CSS</figcaption>
+                    </figure>
+                </details>
+
+                <details>
+                    <summary>Muestra</summary>
+                    <iframe class="img__proceso" frameborder="0" src="http://127.0.0.1:5500/Clases/Clase_12/Clase_12.html"></iframe>
+                </details>
+
+                <a href="/Clases/Clase_12/Clase_12.html" target="_blanck"> Ir a la página</a>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <a class="flecha2" href="#home">
+            <p class="simbolo"> > </p>
+        </a>
+
+        <address class="texto_footer">
+            Copyright &copy; 2022-2023 Todointerconectado Company S.L. Todos los derechos reservados.
+        </address>
+    </footer>
+</body>
+</html>

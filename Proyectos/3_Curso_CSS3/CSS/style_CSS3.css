@@ -1,0 +1,215 @@
+
+/*------------ Tipos de colores ------------*/
+#name {
+    background-color: lightblue;
+}
+#hex {
+    background-color: #d36336;
+}
+#rgb {
+    background-color: rgb(12, 127, 57);
+}
+#rgba {
+    background-color: rgba(12, 127, 57, 0.3);
+}
+#hsl {
+    background-color: hsl(16, 100%, 50%);
+}
+#hsla {
+    background-color: hsla(16, 100%, 50%, 0.3);
+}
+
+/*------------ Parte de un blog ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&display=swap');
+
+.titulo {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 150%;
+    text-align: center;
+    color: #c69c6d;
+    text-shadow: 2px 2px 5px black;
+}
+.parrafo {
+    font-family: 'Playfair Display', ;
+    font-size: 15px;
+    text-align: justify;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: none;
+}
+/* Seudo elementos */
+p#inicio::first-letter {
+    color: #c69c6d;
+    font-size: 80px;
+    float: left;
+    background-color: brown;
+    padding: 0px 8px 0px 8px;
+    margin: 10px 10px 0px 0px;
+}
+/* link */
+a {
+    text-decoration: none;
+    color: brown;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+/* cambia el color al tener el mous encima */
+a:hover {
+    color: blue;
+}
+/* subrayar_palabra */
+.underline {
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline;
+}
+/* palabra en italica */
+.italic {
+    font-style: italic;
+    font-weight: bold;
+    display: inline;
+}
+/* border del contenedor */
+.border {
+    width: 95%;
+    margin: 10px auto;
+    border: 5px dashed gray;
+}
+
+pre {
+    /* border: 1px solid; */
+    position: relative;
+    left: -170px;
+}
+
+/*------------ Tipos de tamaños ------------*/
+.contenedor {
+    /* definir tamaño de letras para lo interno al contenedor */
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pixeles {
+    /* 16px es el valor por defecto */
+    font-size: 16px; 
+    background-color: gray;
+    width: 400px;
+}
+.porcentaje {
+    /* 100% del valor contenedor 16px */
+    font-size: 150%; 
+    background-color: gray;
+    width: 50%;
+}
+.em {
+    /* 1em = valor del contenedor */
+    font-size: 1.5em; 
+    background-color: gray;
+    width: 5em;
+}
+.rem {
+    /* 1rem = valor del root (valor por defecto que son 16px) */
+    font-size: 0.8rem; 
+    background-color: gray;
+    width: 5rem;
+}
+
+/*------------ Modelo de caja ------------*/
+.link {
+    border: 3px solid black;
+    background-color: aquamarine;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.link:hover {
+    color: blue;
+}
+.contenedor__img {
+    border: 1px solid;
+    width: 100%;
+}
+img {
+    max-width: 80%;
+    margin: 15px;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+article {
+    border: 2px dashed;
+    background-color: aquamarine;
+    width: 100%;
+}
+.bloque {
+    border: 3px darkslateblue solid;
+    background-color: lightcoral;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 8px;
+    /* En dirección del reloj */
+    padding: 5px 10px 15px 20px;
+}
+.bloque2 {
+    background-color: lightseagreen; /*Color del contenedor*/
+    width: 90%;
+    margin: 10px auto; /*Espacio del contenedor del borde hacia afuera*/
+    border: 3px solid darkslateblue; /*Grosor, estilo y color del border*/
+    border-radius: 8px; /*Redondear esquinas del contenedor*/
+    padding: 5px 10px 15px 20px; /*Espacio del contenedor del borde hacia adentro*/
+}
+.bloque3 {
+    background-color: rgb(215, 215, 46); 
+    margin: 10px;
+    border: 3px solid darkslateblue;
+    border-radius: 5px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+.linea {
+    border: 3px solid green;
+    background-color: aqua;
+    height: auto;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/*------------ Como dar estilos a los enlaces ------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor de los títulos principales de la lista de comandos */
+/* Tablas */
+fieldset {
+    margin: 5px 20px;
+}
+
+/* Clase 1 */
+#cambiar__fondo {
+    background-color: aquamarine;
+}
+
+#cambiar__fondo .li__color {
+    color: #860808;
+}
+
+iframe {
+    height: 600px;
+}
