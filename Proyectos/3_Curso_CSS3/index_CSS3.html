@@ -8,9 +8,10 @@
     <title>Curso CSS3</title>
     <link rel="icon" href="/CSS/MULTIMEDIA/1_Logo_css.png" type="png">
     <link rel="stylesheet" href="/CSS/style_caja.css">
-    <link rel="stylesheet" href="/Proyectos/2-Git_GitHub/css/style_git.css">
+    <link rel="stylesheet" href="/CSS/style_general.css">
     <link rel="stylesheet" href="/Proyectos/3_Curso_CSS3/CSS/style_CSS3.css">
     <style>
+        /*------ Directo en la etiqueta especifica en el código HTML ------*/
         .etiqueta__h1 {
             color: blue;
         }
@@ -45,15 +46,24 @@
                 <dfn>
                     <details class="details_interno">
                         <summary>Directo en la etiqueta especifica en el código HTML</summary>
-                        <p>Se lo aplicamos como un atributo: style="" </p>
-                        <details class="details_interno">
-                            <summary>Estructura del Código HTML y CSS</summary>
-                            &lt;h1 style="color: red;"&gt; h1: (css directo) Aprendiendo estilos CSS &lt;/h1&gt;
-                            <details class="details_interno">
-                                <summary>Muestra</summary>
-                                <h1 style="color: red;">h1: (css directo) Aprendiendo estilos CSS</h1>
-                            </details>
-                        </details>
+                        <dfn>
+                            <p class="text_etiqueta_codigo">
+                                Se lo aplicamos como un atributo:
+                                <span class="etiquetas_css" title="Etiqueta: CSS"> style="...;"&gt; </span>
+                            </p>
+                            Estructura del código HTML y CSS juntos:
+                            <code class="code_maestro">
+                                <span class="etiquetas_html" title="Etiqueta: HTML">&lt;h1
+                                    <span class="etiquetas_css" title="Etiqueta: CSS">style="color: red;"</span>&gt;
+                                </span> <br>
+                                <code class="code_interno">
+                                    h1: (css directo) Aprendiendo estilos CSS
+                                </code> <br>
+                                <span class="etiquetas_html" title="Etiqueta: HTML">&lt;/h1&gt;</span>
+                            </code>
+                            Muestra en la web:
+                            <h1 style="color: red;">h1: (css directo) Aprendiendo estilos CSS</h1>
+                        </dfn>
                     </details>
 
                     <details class="details_interno">
@@ -127,8 +137,6 @@
                             <li>Acontinuación escribimos el css en su respectivo archivo.</li>
                         </ul>
                     </details>
-
-                    <a href="/Proyectos/3_Curso_CSS3/Clases/Clase_1/Clase_1.html" target="_blanck" >Ir a la página</a>
                 </dfn>
             </details>
 
@@ -166,7 +174,7 @@
                             <code class="code_maestro">
                                 #hex { <br>
                                     <code  class="code_interno">
-                                        background-color: #d36336;
+                                        background-color: #d36336; <br>
                                     </code>
                                 }
                             </code>
