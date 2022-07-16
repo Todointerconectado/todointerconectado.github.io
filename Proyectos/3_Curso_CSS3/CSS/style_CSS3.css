@@ -26,34 +26,54 @@
 /*------------ Parte de un blog ------------*/
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&display=swap');
 
+/* border del contenedor */
+.border {
+    margin: 10px auto;
+    border: 5px dashed gray;
+    padding: 10px;
+    width: 95%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .titulo {
     font-family: 'Gentium Book Basic', serif;
+    letter-spacing: 1px;
     font-size: 150%;
     text-align: center;
-    color: #c69c6d;
-    text-shadow: 2px 2px 5px black;
+    color: #e09f54;
+    text-shadow: 0px 0px 3px black;
 }
-.parrafo {
-    font-family: 'Playfair Display', ;
-    font-size: 15px;
-    text-align: justify;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+
+.border article {
+    background-color: rgb(167, 163, 163);
+    width: 100%;
+    padding: 3px;
     border: none;
+}
+
+.parrafo {
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Playfair Display', ;
+    text-align: justify;
+    font-size: 14px;
 }
 /* Seudo elementos */
 p#inicio::first-letter {
     color: #c69c6d;
-    font-size: 80px;
+    font-size: 40px;
     float: left;
     background-color: brown;
-    padding: 0px 8px 0px 8px;
-    margin: 10px 10px 0px 0px;
+    padding: 0px 7px 0px 7px;
+    margin: 4px 10px 0px 0px;
 }
 /* link */
-a {
+.border a {
     text-decoration: none;
     color: brown;
     text-transform: uppercase;
@@ -75,15 +95,7 @@ a:hover {
     font-weight: bold;
     display: inline;
 }
-/* border del contenedor */
-.border {
-    width: 95%;
-    margin: 10px auto;
-    border: 5px dashed gray;
-}
-
 pre {
-    /* border: 1px solid; */
     position: relative;
     left: -170px;
 }

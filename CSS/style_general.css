@@ -242,7 +242,7 @@ form {
 .etiquetas_css, .etiquetas_html, .etiquetas_class, .etiquetas_id, .etiquetas_atributo {
     width: auto;
     height: auto;
-    margin: 1px 4px;
+    margin: 1px 1px 1px 4px;
     padding: 2px 4px;
     border: 1px solid black;
     border-radius: 4px;
