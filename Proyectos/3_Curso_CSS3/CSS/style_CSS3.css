@@ -1,4 +1,6 @@
-/*------------ Directo en la etiqueta especifica en el código HTML ------------*/
+/*------------ Tres formas de aplicar CSS en el HTML (esta en forma cascada) ------------*/
+/*------------ Creamos las hojas de estilos ------------*/
+
 
 
 /*------------ Tipos de colores ------------*/
@@ -256,31 +258,3 @@ article {
 }
 
 /*------------ Como insertar imagenes con CSS ------------*/
-
-
-
-
-
-
-
-
-
-
-/* Contenedor de los títulos principales de la lista de comandos */
-/* Tablas */
-fieldset {
-    margin: 5px 20px;
-}
-
-/* Clase 1 */
-#cambiar__fondo {
-    background-color: aquamarine;
-}
-
-#cambiar__fondo .li__color {
-    color: #860808;
-}
-
-iframe {
-    height: 600px;
-}

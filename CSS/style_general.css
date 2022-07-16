@@ -129,11 +129,12 @@ ul, ol, dl {
 }
 li, dt, dd {
     /* list-style: none; */
+    background-color: rgba(255, 255, 255, 0.8);
     width: 99.5%;
     border: 1px solid;
     padding: 3px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .code_maestro {
@@ -169,7 +170,7 @@ li, dt, dd {
     text-align: center;
 }
 p {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 99.5%;
     padding: 10px 0;
     text-align: center;
@@ -238,7 +239,7 @@ form {
 }
 
 /*-------- Etiquetas de código --------*/
-.etiquetas_css, .etiquetas_html {
+.etiquetas_css, .etiquetas_html, .etiquetas_class, .etiquetas_id, .etiquetas_atributo {
     width: auto;
     height: auto;
     margin: 1px 4px;
@@ -256,9 +257,19 @@ form {
 .etiquetas_html {
     background-color: rgb(255, 183, 0);
 }
+.etiquetas_class {
+    background-color: rgb(233, 146, 233);
+}
+.etiquetas_id {
+    background-color: rgb(154, 140, 250);
+}
+.etiquetas_atributo {
+    background-color: rgb(224, 110, 110);
+}
+
 .text_etiqueta_codigo {
     border: none;
-    padding: 0;
+    padding: 0 2px;
     display: inline-flex;
     align-items: center;
 }
