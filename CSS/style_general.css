@@ -170,7 +170,7 @@ li, dt, dd {
 }
 p {
     border: 1px solid red;
-    width: 100%;
+    width: 99.5%;
     padding: 10px 0;
     text-align: center;
 }
@@ -246,6 +246,7 @@ form {
     border: 1px solid black;
     border-radius: 4px;
     background-color: rgb(123, 183, 240);
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     letter-spacing: 1px;

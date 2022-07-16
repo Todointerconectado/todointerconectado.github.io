@@ -41,16 +41,97 @@
         </section>
 
         <section class="contenedor_principal">
-            <details class="contenedor_inicio">
+            <!-- <details class="contenedor_inicio"> -->
                 <summary id="2"> Tres formas de aplicar CSS en el HTML (esta en forma cascada) </summary>
                 <dfn>
-                    <details class="details_interno">
+                    <!-- <details class="details_interno"> -->
                         <summary>Directo en la etiqueta especifica en el código HTML</summary>
                         <dfn>
                             <p class="text_etiqueta_codigo">
                                 Se lo aplicamos como un atributo:
                                 <span class="etiquetas_css" title="Etiqueta: CSS"> style="...;"&gt; </span>
                             </p>
+
+                            <!-- <details class="details_interno"> -->
+                                <summary>
+                                    Dentro del <span class="etiquetas_html" title="Etiqueta: HTML">&lt;head&gt;</span>
+                                    aplicamos la etiqueta <span class="etiquetas_css" title="Etiqueta: CSS">&lt;style&gt;</span>
+                                </summary>
+                                <dfn>
+                                    <ol>
+                                        <p>
+                                            Para aplicar los estilos lo podemos hacer llamando el nombre de las etiquetas html o creando clases, id y/o combinando.
+                                        </p>
+                                        <li>Etiqueta de HTML: Los estilos se le aplicaran a todas las etiquetas con el mismo nombre.</li>
+                                        <li>Class: Se puede crear un nombre el cual puede ir a varias etiquetas html y los estilos se le aplicaran solo a las que tengan el nombre determinado por la clase.</li>
+                                        <li>Id: Es un nombre unico que se le puede dar a una etiqueta html por unica ves y se le aplica los estilos a ese unico nombre.</li>
+                                        <li>Combinar: Se puede crear un ID y Class a una etiqueta html particular. Entonces, las clases se pueden compartir y el id es unico para una etiqueta espesifica.</li>
+                                        
+                                    </ol>
+                                    Estructura del código CSS dentro del HTML:
+                                    <code class="code_maestro">
+                                            <span class="etiquetas_html" title="Etiqueta: HTML">&lt;head&gt; <br>
+                                            &nbsp; &nbsp; <span class="etiquetas_css" title="Etiqueta: CSS">&lt;style&gt; <br>
+                                                
+                                            <dfn>
+
+                                                <details class="details_interno">
+                                                    <summary>Etiquetas</summary>
+                                                    h1 { <br>
+                                                        &nbsp; &nbsp; color: blue; <br>
+                                                    } <br>
+                                                    h2 { <br>
+                                                        &nbsp; &nbsp; color: green; <br>
+                                                    }
+                                                    <details class="details_interno">
+                                                        <summary>Muestra</summary>
+                                                        <h1 class="etiqueta__h1">h1: Probamos la etiqueta &lt;style&gt; dentro del &lt;head&gt;</h1>
+                                                        <h2 class="etiqueta__h2">Etiqueta h2</h2>
+                                                    </details>
+                                                </details>
+
+                                                <details class="details_interno">
+                                                    <summary>Class</summary>
+                                                    .class__h2 { <br>
+                                                        &nbsp; &nbsp; color: salmon; <br>
+                                                    }
+                                                    <details class="details_interno">
+                                                        <summary>Muestra</summary>
+                                                        <h2 class="class__h2" >h2 con class</h2>
+                                                    </details>
+                                                </details>
+
+                                                <details class="details_interno">
+                                                    <summary>id</summary>
+                                                    #id__h2 { <br>
+                                                        &nbsp; &nbsp; color: red; <br>
+                                                    }
+                                                    <details class="details_interno">
+                                                        <summary>Muestra</summary>
+                                                        <h2 id="id__h2" >h2 con id</h2>
+                                                    </details>
+                                                </details>
+
+                                                <details class="details_interno">
+                                                    <summary>combinaciones</summary>
+                                                    h2.class__brown { <br>
+                                                        &nbsp; &nbsp; color: brown; <br>
+                                                    }
+                                                    <details class="details_interno">
+                                                        <summary>Muestra</summary>
+                                                        <h2 class="class__brown"> etiqueta: h2 y class="class__brown" </h2>
+                                                        <h2> etiqueta: h2 </h2>
+                                                        <h2 class="class__brown"> etiqueta: h2 y class="class__brown" </h2>
+                                                    </details>
+                                                </details>
+
+                                            </dfn>
+                                            &lt;/style&gt; </span> <br>
+                                            &lt;/head&gt; </span>
+                                    </code>
+                                </dfn>
+                            <!-- </details> -->
+
                             Estructura del código HTML y CSS juntos:
                             <code class="code_maestro">
                                 <span class="etiquetas_html" title="Etiqueta: HTML">&lt;h1
@@ -64,67 +145,7 @@
                             Muestra en la web:
                             <h1 style="color: red;">h1: (css directo) Aprendiendo estilos CSS</h1>
                         </dfn>
-                    </details>
-
-                    <details class="details_interno">
-                        <summary>Dentro del &lt;head&gt; aplicamos la etiqueta &lt;style&gt;</summary>
-                        <details class="details_interno">
-                            <summary>Dentro de &lt;head&gt; y &lt;body&gt; </summary>
-                            Podes llamar a las etiquetas HTML, Class y id para aplicarles los estilos.
-                            <section>
-                                &lt;head&gt; <br>
-                                &nbsp; &nbsp; &lt;style&gt; <br>
-                                <details class="details_interno">
-                                    <summary>Etiquetas</summary>
-                                    h1 { <br>
-                                        &nbsp; &nbsp; color: blue; <br>
-                                    } <br>
-                                    h2 { <br>
-                                        &nbsp; &nbsp; color: green; <br>
-                                    }
-                                    <details class="details_interno">
-                                        <summary>Muestra</summary>
-                                        <h1 class="etiqueta__h1">h1: Probamos la etiqueta &lt;style&gt; dentro del &lt;head&gt;</h1>
-                                        <h2 class="etiqueta__h2">Etiqueta h2</h2>
-                                    </details>
-                                </details>
-                                <details class="details_interno">
-                                    <summary>Class</summary>
-                                    .class__h2 { <br>
-                                        &nbsp; &nbsp; color: salmon; <br>
-                                    }
-                                    <details class="details_interno">
-                                        <summary>Muestra</summary>
-                                        <h2 class="class__h2" >h2 con class</h2>
-                                    </details>
-                                </details>
-                                <details class="details_interno">
-                                    <summary>id</summary>
-                                    #id__h2 { <br>
-                                        &nbsp; &nbsp; color: red; <br>
-                                    }
-                                    <details class="details_interno">
-                                        <summary>Muestra</summary>
-                                        <h2 id="id__h2" >h2 con id</h2>
-                                    </details>
-                                </details>
-                                <details class="details_interno">
-                                    <summary>combinaciones</summary>
-                                    h2.class__brown { <br>
-                                        &nbsp; &nbsp; color: brown; <br>
-                                    }
-                                    <details class="details_interno">
-                                        <summary>Muestra</summary>
-                                        <h2 class="class__brown"> etiqueta: h2 y class="class__brown" </h2>
-                                        <h2> etiqueta: h2 </h2>
-                                        <h2 class="class__brown"> etiqueta: h2 y class="class__brown" </h2>
-                                    </details>
-                                </details>
-                                &nbsp; &nbsp; &lt;/style&gt; <br>
-                                &lt;/head&gt;
-                            </section>
-                        </details>
-                    </details>
+                    <!-- </details> -->
 
                     <details id="cambiar__fondo" class="details_interno">
                         <summary>Creamos las hojas de estilos</summary>
@@ -138,7 +159,7 @@
                         </ul>
                     </details>
                 </dfn>
-            </details>
+            <!-- </details> -->
 
             <details class="contenedor_inicio">
                 <summary>Tipos de colores</summary>
