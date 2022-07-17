@@ -188,7 +188,7 @@ article {
     width: 100%;
     background-color: gray;
     font-family: 'Signika Negative',;
-    font-size: 1rem;
+    font-size: .9rem;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -197,6 +197,7 @@ article {
     border: 1px solid;
     width: 100%;
     height: auto;
+    margin: 0 1px;
     padding: 5px;
     background-color: black;
     display: inline-flex;
