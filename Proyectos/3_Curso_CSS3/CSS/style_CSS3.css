@@ -37,7 +37,6 @@
     flex-direction: column;
     gap: 10px;
 }
-
 .titulo {
     font-family: 'Gentium Book Basic', serif;
     letter-spacing: 1px;
@@ -46,14 +45,12 @@
     color: #e09f54;
     text-shadow: 0px 0px 3px black;
 }
-
 .border article {
     background-color: rgb(167, 163, 163);
     width: 100%;
     padding: 3px;
     border: none;
 }
-
 .parrafo {
     background-color: white;
     border: none;
@@ -100,14 +97,16 @@ pre {
     left: -170px;
 }
 
-/*------------ Tipos de tamaños ------------*/
-.contenedor {
+/*------------ Tipos de tamaños: Unidades de medida ------------*/
+.medidas .contenedor {
     /* definir tamaño de letras para lo interno al contenedor */
+    background-color: white;
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .pixeles {
     /* 16px es el valor por defecto */
     font-size: 16px; 
@@ -165,36 +164,20 @@ article {
 .bloque {
     border: 3px darkslateblue solid;
     background-color: lightcoral;
-    width: 90%;
+    width: 100%;
     margin: 10px auto;
     border-radius: 8px;
     /* En dirección del reloj */
     padding: 5px 10px 15px 20px;
 }
-.bloque2 {
-    background-color: lightseagreen; /*Color del contenedor*/
-    width: 90%;
-    margin: 10px auto; /*Espacio del contenedor del borde hacia afuera*/
-    border: 3px solid darkslateblue; /*Grosor, estilo y color del border*/
-    border-radius: 8px; /*Redondear esquinas del contenedor*/
-    padding: 5px 10px 15px 20px; /*Espacio del contenedor del borde hacia adentro*/
-}
-.bloque3 {
-    background-color: rgb(215, 215, 46); 
-    margin: 10px;
-    border: 3px solid darkslateblue;
-    border-radius: 5px;
-    padding: 10px;
-    width: auto;
-    height: auto;
-    display: inline-block;
-}
 .linea {
     border: 3px solid green;
     background-color: aqua;
+    width: 80%;
     height: auto;
+    margin: 10px auto;
     border-radius: 8px;
-    padding: 10px;
+    padding: 10px 5px;
 }
 
 /*------------ Como dar estilos a los enlaces ------------*/
@@ -207,6 +190,8 @@ article {
     font-family: 'Signika Negative',;
     font-size: 1rem;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 .menu_estilos_enlace {
     border: 1px solid;
