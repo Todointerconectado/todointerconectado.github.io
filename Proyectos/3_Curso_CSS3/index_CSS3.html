@@ -7,6 +7,7 @@
 
     <title>Curso CSS3</title>
     <link rel="icon" href="/CSS/MULTIMEDIA/1_Logo_css.png" type="png">
+    <script src="https://kit.fontawesome.com/4600a4ff4e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/CSS/style_caja.css">
     <link rel="stylesheet" href="/CSS/style_general.css">
     <link rel="stylesheet" href="/Proyectos/3_Curso_CSS3/CSS/style_CSS3.css">
@@ -51,7 +52,7 @@
         </section>
 
         <section class="contenedor_principal">
-            <details class="contenedor_inicio">
+            <!-- <details class="contenedor_inicio"> -->
                 <summary id="2"> Tres formas de aplicar CSS en el HTML (esta en forma cascada) </summary>
                 <dfn>
                     <details class="details_interno">
@@ -59,12 +60,16 @@
                         <dfn>
                             <p class="text_etiqueta_codigo">
                                 Se lo aplicamos como un atributo:
-                                <span class="etiquetas_css" title="Etiqueta: CSS"> style="...;"&gt; </span>
+                                <span class="etiquetas_css tooltips" title="Etiqueta: CSS"> style="...;"&gt;
+                                    <span class="tooltips-box">
+                                        <i class="fa-solid fa-circle-info"></i> &nbsp;Etiqueta: CSS
+                                    </span>
+                                </span>
                             </p>
 
                             <details class="details_interno">
                                 <summary>
-                                    Dentro del <span class="etiquetas_html" title="Etiqueta: HTML">&lt;head&gt;</span>
+                                    Dentro del <span class="etiquetas_html tooltips" title="Etiqueta: HTML">&lt;head&gt;</span>
                                     aplicamos la etiqueta <span class="etiquetas_css" title="Etiqueta: CSS">&lt;style&gt;</span>
                                 </summary>
                                 <dfn>
@@ -80,7 +85,10 @@
                                     </ol>
                                     Estructura del código CSS dentro del HTML:
                                     <code class="code_maestro">
-                                        <span class="etiquetas_html" title="Etiqueta: HTML">&lt;head&gt; <br>
+                                        <span class="etiquetas_html tooltips" title="Etiqueta: HTML">&lt;head&gt; <br>
+                                            <span class="tooltips-box">
+                                                <i class="fa-solid fa-circle-info"></i> &nbsp;Etiqueta: HTML
+                                            </span>
                                             &nbsp; &nbsp; <span class="etiquetas_css" title="Etiqueta: CSS">&lt;style&gt; <br>
                                             <dfn>
                                                 <details class="details_interno">
@@ -212,7 +220,7 @@
                         </dfn>
                     </details>
                 </dfn>
-            </details>
+            <!-- </details> -->
 
             <details class="contenedor_inicio">
                 <summary>Tipos de colores</summary>
@@ -691,7 +699,7 @@
                                     padding: 0 10px; <br>
                                 } <br> <br>
                                 <span class="etiquetas_class" title="Class_en_CSS">.menu_estilos_enlace</span>
-                                <span class="etiquetas_class" title="Class_en_CSS">a</span>:hover { <br>
+                                <span class="etiquetas_html" title="Etiqueta_HTML">a</span>:hover { <br>
                                     background-color: white; <br>
                                     color: black; <br>
                                     border-radius: 5px; <br>
