@@ -205,7 +205,7 @@ article {
 .menu_estilos_enlace a {
     background-color: black;
     color: white;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 .menu_estilos_enlace a:hover {
     background-color: white;
