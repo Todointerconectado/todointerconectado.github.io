@@ -301,6 +301,11 @@ form {
     top: -30px;
     left: -5px;
 }
+.tooltips-text {
+    border: 1px solid;
+    padding: 0;
+    display: inline-flex;
+}
 /* Triángulo selector */
 .tooltips-box::after {
     content: "";
@@ -312,7 +317,7 @@ form {
     left: calc(50% - 9px);
     bottom: -9px;
 }
-.tooltips:active .tooltips-box {
+.tooltips-text:active .tooltips-box {
     display: flex;
 }
 
