@@ -1,5 +1,5 @@
 /*---------- Contenido Principal ----------*/
-section {
+.section_menu {
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@ article:hover {
 article:hover figcaption{
     color: var(--color_link_hover_white);
 }
-figure {
+.figure_menu_img {
     /* border: 1px solid black; */
     width: 90%;
     height: auto;

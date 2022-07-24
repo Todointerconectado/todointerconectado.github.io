@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= Gentium+Book+Basic:ital@1 & family= Playfair+Display:ital,wght@1,500 & family= Signika+Negative & mostrar=cambiar');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&family=Signika+Negative&display=swap');
 :root {
     --color_ContenedorMaestro_Transparente_white: rgba(255, 255, 255, .5);
     --color_fondo_title: rgb(60, 65, 168);
@@ -34,45 +33,68 @@ body {
     top: -170px;
     right: 0px;
 }
-.barra_presentacion {
-    border: 1px solid rgb(29, 219, 4);
-    width: 100%;
-    margin: 0px;
+
+/* perfil */
+.barra_perfil {
+    /* border: 1px solid rgb(29, 219, 4); */
+    margin: 10px 0 0 0;
     padding: 0px;
-    display: flex;
+    width: 98%;
+    height: auto;
+    display: inline-flex;
     justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-.contenedor_perfil {
-    border: 1px solid;
-    border-radius: 20% 20% 0 0;
-    overflow: hidden;
-    width: 100px;
-    margin: 5px 0px 5px 2px;
-    padding: 0px;
-}
-.contenedor_perfil img {
-    border: 1px solid;
-    width: 100px;
-    border-radius: 20% 20% 0% 0%;
-}
-.contenedor_perfil figcaption {
+.contenedor_mi_perfil {
+    /* border: 1px solid blue; */
+    /* background-color: white; */
+    width: 150px;
+    height: 100%;
     margin: 0;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mi_perfil {
+    border: none;
+    margin: 0;
+    max-width: 120px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white
+}
+.text_mi_perfil {
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin: 5px 0 0 0;
     padding: 2px;
-    color: rgb(255, 255, 255);
-    font-size: 8px;
-    letter-spacing: 1px;
+
+    color: var(--color_descripción_img_gray);
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
     font-weight: 900;
-    font-family: 'Gentium Book Basic', serif;
+    font-family: 'Abril Fatface', cursive;
     text-align: center;
 }
+
 .title1 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    width: calc(100% - 180px);
     margin: 0;
-    padding: 2px 5px;
+    padding: 2px 3px;
     color: var(--color_letra_title_white);
     font-family: 'Gentium Book Basic', serif;
-    font-size: 18px;
+    font-size: 35px;
     letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Contenedor maestro */
