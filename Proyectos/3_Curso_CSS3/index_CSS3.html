@@ -39,7 +39,6 @@
             font-size: 14px;
         }
     </style>
-    <script src="https://kit.fontawesome.com/4600a4ff4e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -52,14 +51,14 @@
         </section>
 
         <section class="contenedor_principal">
-            <!-- <details class="contenedor_inicio"> -->
+            <details class="contenedor_inicio">
                 <summary id="2"> Tres formas de aplicar CSS en el HTML (esta en forma cascada) </summary>
                 <dfn>
                     <details class="details_interno">
                         <summary>Directo en la etiqueta especifica en el código HTML</summary>
                         <dfn>
                             <p class="text_etiqueta_codigo">
-                                <span class="etiquetas_css tooltips-text" title="Etiqueta: CSS"> style="...;"&gt;
+                                <span class="etiquetas_css tooltips-text"> style="...;"&gt;
                                     <span class="tooltips-box">
                                         <i class="fa-solid fa-circle-info"></i> &nbsp;Etiqueta: CSS
                                     </span>
@@ -91,10 +90,11 @@
                                                 <i class="fa-solid fa-circle-info"></i> &nbsp;Etiqueta: HTML
                                             </span>
                                             </p>
+
                                             &nbsp; &nbsp; <span class="etiquetas_css tooltips" title="Etiqueta: CSS">
                                                 <p class="tooltips-text">&lt;style&gt;
                                                     <span class="tooltips-box">
-                                                        <i class="fa-solid fa-circle_css"></i> &nbsp; Etiqueta: CSS
+                                                        <i class="fa-solid fa-circle-info"></i> &nbsp; Etiqueta: CSS
                                                     </span>
                                                 </p>
                                             <dfn>
@@ -125,7 +125,11 @@
                                                     <summary>Class</summary>
                                                     <dfn>
                                                         <code class="code_maestro">
-                                                            <span class="etiquetas_class" title="Etiqueta: Class_en_html">.class__h2</span>{ <br>
+                                                            <span class="etiquetas_class tooltips-text" title="Etiqueta: Class_en_html">.class__h2
+                                                                <span class="tooltips-box">
+                                                                    <i class="fa-solid fa-circle-info"></i>&nbsp; Clase CSS
+                                                                </span>
+                                                            </span>{ <br>
                                                                 &nbsp; &nbsp; color: salmon; <br>
                                                                 &nbsp; &nbsp; background-color: aliceblue; <br>
                                                             }
@@ -141,7 +145,11 @@
                                                     <summary>id</summary>
                                                     <dfn>
                                                         <code class="code_maestro">
-                                                            <span class="etiquetas_id" title="Etiqueta: Id">#id__h2</span>{ <br>
+                                                            <span class="etiquetas_id tooltips-text" title="Etiqueta: Id">#id__h2
+                                                                <span class="tooltips-box">
+                                                                    <i class="fa-solid fa-circle-info"></i>&nbsp; ID CSS
+                                                                </span>
+                                                            </span>{ <br>
                                                                 &nbsp; &nbsp; color: red; <br>
                                                                 &nbsp; &nbsp; background-color: aliceblue; <br>
                                                             }
@@ -157,8 +165,16 @@
                                                     <summary>combinaciones</summary>
                                                     <dfn>
                                                         <code class="code_maestro">
-                                                            <span class="etiquetas_html" title="Etiqueta: HTML">h2</span>
-                                                            <span class="etiquetas_class" title="Etiqueta: Class">.class__brown</span>{ <br>
+                                                            <span class="etiquetas_html tooltips-text" title="Etiqueta: HTML">h2
+                                                                <span class="tooltips-box">
+                                                                    <i class="fa-solid fa-circle-info"></i>&nbsp; HTML
+                                                                </span>
+                                                            </span>
+                                                            <span class="etiquetas_class tooltips-text" title="Etiqueta: Class">.class__brown
+                                                                <span class="tooltips-box">
+                                                                    <i class="fa-solid fa-circle-info"></i>&nbsp; CLASE CSS
+                                                                </span>
+                                                            </span>{ <br>
                                                                 &nbsp; &nbsp; color: brown; <br>
                                                                 &nbsp; &nbsp; background-color: bisque <br>
                                                             }
@@ -179,13 +195,27 @@
                                 <dfn>
                                     <code class="code_maestro">
                                         <span class="etiquetas_html" title="Etiqueta: HTML">&lt;h1
-                                        <span class="etiquetas_css" title="Etiqueta: CSS"> style="
-                                            <span class="etiquetas_atributo" title="Atributo">color: red;</span>
-                                            <span class="etiquetas_atributo" title="Atributo">font-size: 14px;</span> <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <span class="etiquetas_atributo" title="Atributo">background-color: white;</span>"
-                                        </span>&gt;
+                                            <span class="etiquetas_css" title="Etiqueta: CSS">style="
+                                                <span class="etiquetas_atributo tooltips-text" title="Atributo">color: red;
+                                                    <span class="tooltips-box">
+                                                        <i class="fa-solid fa-circle-info"></i>&nbsp; ATRIBUTO
+                                                    </span>
+                                                </span>
+
+                                                <span class="etiquetas_atributo tooltips-text" title="Atributo">font-size: 14px;
+                                                    <span class="tooltips-box">
+                                                        <i class="fa-solid fa-circle-info"></i>&nbsp; ATRIBUTO
+                                                    </span>
+                                                </span> <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span class="etiquetas_atributo tooltips-text" title="Atributo">background-color: white;
+                                                    <span class="tooltips-box">
+                                                        <i class="fa-solid fa-circle-info"></i>&nbsp; ATRIBUTO
+                                                    </span>
+                                                </span>"
+                                            </span>&gt;
                                         </span> <br>
+
                                             <code class="code_interno">
                                                 h1: (css directo) Aprendiendo estilos CSS
                                             </code> <br>
@@ -208,9 +238,22 @@
                             <ul>
                                 <li>
                                     <span class="etiquetas_html" title="Etiqueta: HTML">
-                                        &lt;link
-                                        <span class="etiquetas_atributo" title="Atributo">rel="stylesheet"</span>
-                                        <span class="etiquetas_atributo" title="Atributo">href="/style.css"</span> &gt;
+                                        <p class="tooltips-text"> &lt;link
+                                            <span class="tooltips-box">
+                                                <i class="fa-solid fa-circle-info"></i>&nbsp; Etiqueta: HTML
+                                            </span>
+                                        </p>
+
+                                        <span class="etiquetas_atributo tooltips-text" title="Atributo">rel="stylesheet"
+                                            <span class="tooltips-box">
+                                                <i class="fa-solid fa-circle-info"></i>&nbsp; ATRIBUTO
+                                            </span>
+                                        </span>
+                                        <span class="etiquetas_atributo tooltips-text" title="Atributo">href="/style.css"
+                                            <span class="tooltips-box">
+                                                <i class="fa-solid fa-circle-info"></i>&nbsp; ATRIBUTO
+                                            </span>
+                                        </span> &gt;
                                     </span>
                                 </li>
                                 <li>
@@ -227,7 +270,7 @@
                         </dfn>
                     </details>
                 </dfn>
-            <!-- </details> -->
+            </details>
 
             <details class="contenedor_inicio">
                 <summary>Tipos de colores</summary>

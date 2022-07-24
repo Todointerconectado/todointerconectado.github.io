@@ -17,33 +17,48 @@
 
 /*-------- Boton de comandos Git --------*/
 .contenedor_seccion_comando {
+    border: 1px solid;
     text-align: center;
     margin: 5px 0 10px 0;
     padding: 5px;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
     align-items: center;
     gap: 10px;
 }
 .texto_comando {
-    height: 40px;
+    max-width: 400px;
+    height: auto;
     padding: 10px;
     background-color: var(--color_letra_title_white);
     border-radius: 8px;
     box-shadow: 0px 0px 5px var(--color_sombrasContenedores_black);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     font-weight: bold;
     font-size: 16px;
 }
-.link_comando {
-    height: 40px;
+.contenedo_logo_comando {
+    /* border: 1px solid; */
+    width: 100px;
+    height: 80px;
+    padding-left: 5px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    box-sizing: content-box;
+}
+.link_comando {
+    border-radius: 50% 50% 30% 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .logo_comando {
-    padding: 5px;
-    height: 70px;
+    padding: 0px;
+    height: 100%;
 }
 a {
     width: 100%;
@@ -244,7 +259,7 @@ form {
     width: auto;
     height: auto;
     margin: 1px 1px 1px 4px;
-    padding: 2px 4px;
+    padding: 2px 5px;
     border: 1px solid black;
     border-radius: 4px;
     background-color: rgb(123, 183, 240);
@@ -279,8 +294,6 @@ form {
 /*--------- Tooltips ---------*/
 .fa-solid {
     color: yellow;
-    /* position: absolute; */
-    /*left: 15px;*/
 }
 .tooltips-box {
     border-radius: 4px;
@@ -293,6 +306,7 @@ form {
     font-size: 10px;
     font-weight: 900;
     text-align: center;
+    letter-spacing: 1px;
     position: absolute;
     display: none;
     flex-wrap: wrap;
@@ -302,9 +316,11 @@ form {
     left: -5px;
 }
 .tooltips-text {
-    /*border: 1px solid;*/
-    padding: 0;
+    /* border: 1px solid; */
+    padding: 2px 5px;
     display: inline-flex;
+    position: relative;
+    transition: display 2s ease;
 }
 /* Triángulo selector */
 .tooltips-box::after {
@@ -317,6 +333,7 @@ form {
     left: calc(50% - 9px);
     bottom: -9px;
 }
+/* Activar/desactivar etiqueta */
 .tooltips-text:active .tooltips-box {
     display: flex;
 }

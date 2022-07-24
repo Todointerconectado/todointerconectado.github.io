@@ -45,7 +45,7 @@ figure {
     width: 100%;
 }
 figcaption {
-    /* border: 1px solid; */
+    border: 1px solid;
     width: 100%;
     height: auto;
     margin-top: 10px;
