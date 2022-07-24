@@ -37,7 +37,8 @@ body {
 .barra_presentacion {
     border: 1px solid rgb(29, 219, 4);
     width: 100%;
-    padding: 3px 1px;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     justify-content: left;
 }
@@ -46,7 +47,8 @@ body {
     border-radius: 20% 20% 0 0;
     overflow: hidden;
     width: 100px;
-    margin-right: 5px;
+    margin: 5px 0px 5px 2px;
+    padding: 0px;
 }
 .contenedor_perfil img {
     border: 1px solid;
@@ -55,7 +57,7 @@ body {
 }
 .contenedor_perfil figcaption {
     margin: 0;
-    padding: 2px 3px;
+    padding: 2px;
     color: rgb(255, 255, 255);
     font-size: 8px;
     letter-spacing: 1px;
@@ -65,11 +67,11 @@ body {
 }
 .title1 {
     border: 1px solid black;
-    margin-top: 20px;
+    margin: 0;
     padding: 2px 5px;
     color: var(--color_letra_title_white);
     font-family: 'Gentium Book Basic', serif;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 3px;
 }
 
