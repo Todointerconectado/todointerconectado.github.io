@@ -155,15 +155,20 @@ li, dt, dd {
 .code_maestro {
     border: 1px solid;
     width: 100%;
+    margin: 0;
     padding: 5px 4px;
     background-color: rgb(143, 202, 183);
     display: inline-block;
-    /* flex-direction: column; */
     justify-content: flex-start;
     font-size: 12px;
 }
 .code_interno {
-    padding-left: 30px;
+    /* border: 1px solid; */
+    width: 100%;
+    margin: 0;
+    padding-left: 20px;
+    display: inline-block;
+    justify-content: flex-start;
 }
 .link {
     text-decoration: none;
@@ -275,6 +280,8 @@ form {
 }
 .etiquetas_html {
     background-color: rgb(255, 183, 0);
+    /* display: inline-flex; */
+    /* align-items: center; */
 }
 .etiquetas_class {
     background-color: rgb(233, 146, 233);
