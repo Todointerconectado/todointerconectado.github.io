@@ -256,3 +256,164 @@ article {
 }
 
 /*------------ Como insertar imagenes con CSS ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&family=Signika+Negative&display=swap');/* Formateo valores predeterminados */
+
+/* Estetico */
+.contenedor_dfn_photo {
+    background-image: url(https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    width: 100%;
+}
+.photo {
+    width: 500px;
+    height: 750px;
+    border: 2px solid black;
+
+    /* Efecto de capa gradient transparente para img */
+    background: linear-gradient(to right, rgba(255, 255, 255, .4), rgba(255, 255, 255, .4) ), url("/Proyectos/3_Curso_CSS3/Clases/Clase_8/img/foto.jpg") ;
+    background-repeat: no-repeat;
+    padding: 10px;
+    /* valor por defecto: Crece el contenedor y el contenido es estatico: box-sizing: content-box; */
+    /*Cambia el tamaño del contenido para fijar el contenedor padre: box-sizing: border-box;*/
+    box-sizing: border-box;
+}
+.photo article {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+.text_photo {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 8px double black;
+    padding: 10px;
+    font: 16px 'Signika Negative', 'Segoe UI';
+    font-weight: 100;
+    text-align: justify;
+    letter-spacing: 0px;
+    word-spacing: normal;
+    /* font-variant: small-caps; establece que las letras deben ser mayúsculas pequeñas.*/
+    /* text-decoration: underline; decora con una línea horizontal debajo del texto.*/
+    /* text-decoration: line-through; este valor hace que se dibuje una línea horizontal atravesando al texto. */
+}
+.text_photo span {
+    border: 2px dotted;
+    display: inline;
+    padding: 0 5px;
+    text-shadow: 0px 0px 2px red;
+}
+
+.profile {
+    box-shadow: 0 0 20px blue;
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+
+    /* Posicionamiento */
+    position: relative;
+    top: 0;
+    left: 0;
+
+    /* img */
+    background-image: url("/Proyectos/3_Curso_CSS3/Clases/Clase_8/img/perfil\ 1.jpg");
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+}
+
+/*------------ Transiciones en CSS ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&family=Signika+Negative&display=swap');/* Formateo valores predeterminados */
+
+/* Estetico */
+.transiciones {
+    border: 1px solid;
+    padding: 20px 5px;
+    width: 100%;
+    height: auto;
+    font-family: 'Signika Negative', 'Segoe UI';
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.transiciones_1-2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor1 {
+    border: 2px solid black;
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    /* La forma corecta es declarando las propiedades y la duración en mili segundos */
+    transition-property: background-color, height, width;
+    /* Se puede definir el tiempo de cabio por propiedad colocando su tiempo en orden.
+    background-color: 1000ms en 0ms - height: 1000ms en 2000ms - width: 1000ms en 1000ms */
+    transition-duration: 1000ms, 2000ms, 2000ms;
+    transition-delay: 0ms, 2000ms, 1000ms;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor1:hover {
+    background-color: green;
+    width: 300px;
+    height: 200px;
+}
+
+.contenedor2 {
+    margin: 10px 0px;
+    border: 2px solid black;
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    transition-property: background-color, width;
+    transition-duration: 1000ms, 2000ms;
+    /* 
+    ease: Transition constante.
+    ease-in: Transition principio lento y final rapido.
+    ease-out: Transition principio rapido y final lento.
+    ease-in-out: Transition principio lento, medio rapido y final lento.
+    cubic-bezier(.1, .5, .7, -0.7): Transition personalizados.
+     */
+    transition-timing-function: cubic-bezier(.1, .5, .7, -0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor2:hover {
+    background-color: green;
+    width: 100%;
+}
+
+.transiciones_text {
+    border: 1px solid blue;
+    border-radius: 50px;
+    padding: 2px 5px;
+    width: 90%;
+}
+
+ /* Todos estos valores lo ponemos en una sola linea de código */
+.contenedor3 {
+    border: 1px solid;
+    height: 32px;
+    border-radius: 16px;
+    background-color: rgb(182, 182, 182);
+    /* El continido se amolda a la forma del contenedor. */
+    overflow: hidden;
+}
+.barra {
+    width: 10%;
+    height: 100%;
+    background-color: green;
+    border-right: 3px solid rgb(4, 59, 4);
+    /* transition: propiedad, tiempo de demora, efecto y reley */
+    transition: width 2000ms ease-in-out 1000ms;
+}
+.barra:hover {
+    width: 100%;
+}

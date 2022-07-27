@@ -28,7 +28,7 @@ body {
     /* background-repeat: no-repeat; */
 
     /* Efecto de capa gradient transparente para img */
-    background: linear-gradient(to right, rgba(255, 255, 255, .4), rgba(255, 255, 255, .4) ), url("/Clases/Clase_8/img/foto.jpg") ;
+    background: linear-gradient(to right, rgba(255, 255, 255, .4), rgba(255, 255, 255, .4) ), url("/Proyectos/3_Curso_CSS3/Clases/Clase_8/img/foto.jpg") ;
 
     padding: 10px;
     /* valor por defecto: Crece el contenedor y el contenido es estatico.*/
@@ -49,9 +49,8 @@ body {
     right: 0;
 
     /* img */
-    background-image: url("/Clases/Clase_8/img/perfil\ 1.jpg");
+    background-image: url("/Proyectos/3_Curso_CSS3/Clases/Clase_8/img/perfil\ 1.jpg");
     background-size: contain;
     /* background-position: center; */
-
     border-radius: 50%;
 }
