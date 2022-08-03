@@ -607,3 +607,197 @@ article {
     /* efecto de profundidad */
     transform: rotateY(180deg);
 }
+
+/* ---------------------------------------- Anomaciones en CSS  ----------------------------------------*/
+/* --------------------------- Estilos de esplicación --------------------------- */
+.Animaciones_contenedor_esplicaciones {
+    border: 1px solid black;
+    background-color: aquamarine;
+    margin: 2px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Signika Negative', 'Segoe UI';
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Animaciones_title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.Animaciones_text {
+    border: 1px solid;
+    background-color: var(--gray);
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;
+    line-height: 30px;
+}
+
+.Animaciones_contenedor_general {
+    border: 1px solid;
+    background-color: var(--gray_strong);
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Animaciones_contenedor_list {
+    border: 1px solid;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 8px;
+    width: 100%;
+}
+.Animaciones_title_list {
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: var(--blue_sure);
+    color: var(--white);
+}
+.Animaciones_dfn_list {
+    border: 1px solid red;
+    background-color: var(--gray_strong);
+    margin: 10px;
+    width: auto;
+    height: auto;
+}
+
+
+/*---------- Tabla de Atributos ---------- */
+.fila_atributo {
+    background-color: var(--green);
+}
+.fila_valor {
+    background-color: var(--white);
+}
+
+/*---------- Texto final de tabla ---------- */
+.Animaciones_article {
+    border: none;
+    background-color: var(--gray_strong);
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    font-size: 14px;
+    
+}
+.Animaciones_article h3 {
+    /* border: 1px solid; */
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Animaciones_article p {
+    /* border: 1px solid; */
+    padding: 5px;
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+    line-height: 20px;
+}
+
+/* --------------------------- Estilos de Muestra --------------------------- */
+.contenedor_barra {
+    border: 1px solid;
+    background-color: var(--gray_strong);
+    width: 90%;
+    height: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box1 {
+    width: 100%;
+    height: 100%;
+    /* animation-name: cambiocolor; */
+    /* animation-duration: 4000ms; */
+    /* animation-delay: 2000ms; */
+
+    /* animation-iteration-count: infinite; */
+    /* animation-iteration-count: 1; */
+
+    /* animation-direction: alternate; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate-reverse; */
+
+    /* animation-timing-function: ease; */
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease-out; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-timing-function: cubic-bezier(.2, .6, .3, 1); */
+
+    /* se queda en el ultimo valor establecido (en este caso color) */
+    /* animation-fill-mode: forwards; */
+
+    /* Todos los valores en una sola linea */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: cambiocolor 4000ms cubic-bezier(.2, .6, .3, 1) 0ms 3 alternate-reverse forwards;
+}
+@keyframes cambiocolor {
+    0%{
+        background-color: red;
+        width: 30%;
+    }
+    75%{
+        background-color: rgb(229, 255, 0);
+        width: 15%;
+    }
+    50%{
+        background-color: rgb(0, 255, 17);
+        width: 100%;
+    }
+    100%{
+        background-color: blueviolet;
+        width: 87%;
+    }
+}
+
+.contenedor_name {
+    border: 1px solid;
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: white;
+}
+.nombres {
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    text-align: center;
+    padding: 7px 0 0 0;
+    animation: name 2500ms ease 0ms infinite alternate-reverse forwards;
+}
+@keyframes name {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+    25% {
+        color: rgb(193, 183, 3);
+    }
+    50% {
+        color: rgb(0, 164, 11);
+    }
+    100% {
+        color: rgb(2, 2, 143);
+    }
+}
