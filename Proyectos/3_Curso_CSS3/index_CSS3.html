@@ -914,54 +914,682 @@
             <details class="contenedor_inicio">
                 <summary>Transiciones en CSS</summary>
                 <dfn>
-                    Muestra en la web:
-                    <section class="transiciones transiciones_1-2">
-                        <div class="contenedor1">
-                            <p class="transiciones_text">Contenedor 1</p>
-                        </div>
-                    </section>
-                    Estructura del código HTML:
-                    <code class="code_maestro">
-                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;section
-                            <span class="etiquetas_class" title="Class_en_HTML">class="transiciones transiciones_1-2"</span>&gt;
-                        </span>
-                            <code class="code_interno">
-                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;div
-                                    <span class="etiquetas_class" title="Class_en_HTML">class="contenedor1"</span>&gt;
+                    <details class="details_interno">
+                        <summary>Contenedor 1</summary>
+                        <dfn>
+                            Muestra en la web:
+                            <section class="transiciones transiciones_1-2">
+                                <div class="contenedor1">
+                                    <p class="transiciones_text">Contenedor 1</p>
+                                </div>
+                            </section>
+                            Estructura del código HTML:
+                            <code class="code_maestro">
+                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;section
+                                    <span class="etiquetas_class" title="Class_en_HTML">class="transiciones transiciones_1-2"</span>&gt;
                                 </span>
                                     <code class="code_interno">
-                                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;p
-                                            <span class="etiquetas_class" title="Class_en_HTML">class="transiciones_text"</span>&gt;
-                                        </span>    
-                                        Contenedor 1 
-                                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/p&gt;</span>
+                                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;div
+                                            <span class="etiquetas_class" title="Class_en_HTML">class="contenedor1"</span>&gt;
+                                        </span>
+                                            <code class="code_interno">
+                                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;p
+                                                    <span class="etiquetas_class" title="Class_en_HTML">class="transiciones_text"</span>&gt;
+                                                </span>    
+                                                Contenedor 1 
+                                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/p&gt;</span>
+                                            </code>
+                                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/div&gt;</span>
                                     </code>
-                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/div&gt;</span>
+                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/section&gt;</span>
                             </code>
-                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/section&gt;</span>
-                    </code>
-                    Estructura del código CSS3:
-                    <code class="code_maestro">
-                    </code>
+                            Estructura del código CSS3:
+                            <code class="code_maestro">
+                        <span class="etiquetas_class" title="Class_en_CSS">.contenedor1</span>{ <br>
+                            border: 2px solid black; <br>
+                            width: 200px; <br>
+                            height: 100px; <br>
+                            background-color: gray; <br><br>
+                            /* La forma corecta es declarando las propiedades y la duración en mili segundos */ <br>
+                            transition-property: background-color, height, width; <br><br>
+                            /* Se puede definir el tiempo de cabio por propiedad colocando su tiempo en orden. <br>
+                            background-color: 1000ms en 0ms - height: 1000ms en 2000ms - width: 1000ms en 1000ms */ <br>
+                            transition-duration: 1000ms, 2000ms, 2000ms; <br>
+                            transition-delay: 0ms, 2000ms, 1000ms; <br> <br>
+                        
+                            display: flex; <br>
+                            justify-content: center; <br>
+                            align-items: center; <br>
+                        } <br><br>
+                        <span class="etiquetas_class" title="Class_en_CSS">.contenedor1</span>:hover { <br>
+                            background-color: green; <br>
+                            width: 400px; <br>
+                            height: 150px; <br>
+                        }
+                            </code>
+                        </dfn>
+                    </details>
 
-                    Muestra en la web:
-                    <section class="transiciones transiciones_1-2">
-                        <div class="contenedor2">
-                            <p class="transiciones_text">Contenedor2</p>
-                        </div>
-                    </section>
-                    Muestra en la web:
-                    <section class="transiciones">
-                        <div class="contenedor3">
-                            <div class="barra"></div>
-                        </div>
-                    </section>
+                    <details class="details_interno">
+                        <summary>Contenedor 2</summary>
+                        <dfn>
+                            Muestra en la web:
+                            <section class="transiciones transiciones_1-2">
+                                <div class="contenedor2">
+                                    <p class="transiciones_text">Contenedor2</p>
+                                </div>
+                            </section>
+                            Estructura del código HTML:
+                            <code class="code_maestro">
+                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;section
+                                    <span class="etiquetas_class" title="Class_en_HTML">class="transiciones transiciones_1-2"</span>&gt;
+                                </span>
+                                    <code class="code_interno">
+                                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;div
+                                            <span class="etiquetas_class" title="Class_en_HTML">class="contenedor2"</span>&gt;
+                                        </span>
+                                            <code class="code_interno">
+                                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;p
+                                                    <span class="etiquetas_class" title="Class_en_HTML">class="transiciones_text"</span>&gt;
+                                                </span>    
+                                                Contenedor 2 
+                                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/p&gt;</span>
+                                            </code>
+                                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/div&gt;</span>
+                                    </code>
+                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/section&gt;</span>
+                            </code>
+                            Estructura del código CSS3:
+                            <code class="code_maestro">
+                                <span class="etiquetas_class" title="Class_en_CSS">.contenedor2</span>{ <br>
+                                    margin: 10px 0px; <br>
+                                    border: 2px solid black; <br>
+                                    width: 200px; <br>
+                                    height: 100px; <br>
+                                    background-color: gray; <br><br>
+
+                                    transition-property: background-color, width; <br>
+                                    transition-duration: 1000ms, 2000ms;<br><br>
+                                    /*  <br>
+                                        &nbsp; ease: Transition constante. <br>
+                                        &nbsp; ease-in: Transition principio lento y final rapido. <br>
+                                        &nbsp; ease-out: Transition principio rapido y final lento. <br>
+                                        &nbsp; ease-in-out: Transition principio lento, medio rapido y final lento. <br>
+                                        &nbsp; cubic-bezier(.1, .5, .7, -0.7): Transition personalizados. <br>
+                                     */ <br><br>
+                                    transition-timing-function: cubic-bezier(.1, .5, .7, -0.7);<br>
+
+                                    display: flex; <br>
+                                    justify-content: center; <br>
+                                    align-items: center; <br>
+                                } <br><br>
+                                <span class="etiquetas_class" title="Class_en_CSS">.contenedor2</span>:hover { <br>
+                                    background-color: green; <br>
+                                    width: 100%; <br>
+                                }
+                            </code>
+                        </dfn>
+                    </details>
+
+                    <details class="details_interno">
+                        <summary>Contenedor 3</summary>
+                        <dfn>
+                            Muestra en la web:
+                            <section class="transiciones">
+                                <div class="contenedor3">
+                                    <div class="barra"></div>
+                                </div>
+                            </section>
+                            Estructura del código HTML:
+                            <code class="code_maestro">
+                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;transiciones&gt;</span>
+                                    <code class="code_interno">
+                                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;contenedor3&gt;</span>
+                                            <code class="code_interno">
+                                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;barra&gt;</span>  
+                                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/barra&gt;</span>
+                                            </code>
+                                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/contenedor3&gt;</span>
+                                    </code>
+                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/transiciones&gt;</span>
+                            </code>
+                            Estructura del código CSS3:
+                            <code class="code_maestro">
+                                <span class="etiquetas_class" title="Etiqueta_HTML">.contenedor3</span>{ <br>
+                                    border: 1px solid;<br>
+                                    height: 32px;<br>
+                                    border-radius: 16px;<br>
+                                    background-color: rgb(182, 182, 182);<br>
+                                    /* El continido se amolda a la forma del contenedor. */br
+                                    overflow: hidden;<br>
+                                } <br><br>
+                                <span class="etiquetas_class" title="Etiqueta_HTML">.barra</span>{ <br>
+                                    width: 25%;<br>
+                                    height: 100%;<br>
+                                    background-color: green;<br>
+                                    border-right: 3px solid rgb(4, 59, 4);<br>
+                                    /* transition: propiedad, tiempo de demora, efecto y reley */ <br>
+                                    transition: width 2000ms ease-in-out 1000ms; <br>
+                                } <br><br>
+                                <span class="etiquetas_class" title="Etiqueta_HTML">.barra</span>:hover {<br>
+                                    width: 100%; <br>
+                                }
+                            </code>
+                        </dfn>
+                    </details>
                 </dfn>
             </details>
 
             <details class="contenedor_inicio">
                 <summary>Transform en CSS</summary>
-                
+                <dfn>
+                    <section class="Transform_contenedor_esplicaciones">
+                        <h2 class="Transform_title">Propiedad Transform</h2>
+                        <p class="Transform_text">
+                            Nos permite mover, rotar, incrinar o modificar las dimenciones de un objeto. <br>
+                            Esto se puede hacer en 2D o 3D. Para lograrlo la propiedad transform utiliza funciones. <br>
+                        </p>
+
+                        <div class="Transform_contenedor_general">
+
+                            <details class="Transform_contenedor_list">
+                                <summary class="Transform_title_list">2D</summary>
+
+                                <div class="Transform_div_lists">
+
+                                    <details class="Transform_list">
+                                        <summary>translate ( )</summary>
+                                        <dfn>
+                                            <p>Mueve el objeto en el eje X como en el eje Y</p>
+                                            Muestra en la web:
+                                            <section class="muestra">
+                                                <div class="backbox">
+                                                    <div class="box translate2D"> translate( ) </div>
+                                                </div>
+                                            </section>
+
+                                            <details class="Transform_list">
+                                                <summary>Estructura del código HTML:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;section
+                                                        <span class="etiquetas_class" title="etiquetas_class">class="muestra"</span>
+                                                    </span> <br>
+                                                        <code class="code_interno">
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                <span class="etiquetas_class" title="etiquetas_class">class="backbox"</span>
+                                                            </span> <br>
+                                                                <code class="code_interno">
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                    <span class="etiquetas_class" title="etiquetas_class">class="box"</span>
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="translate2D"</span>
+                                                                    </span>
+                                                                    <code class="code_interno">translate( )</code>
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                                </code>
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                        </code>
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/section&gt;</span>
+                                                </code>
+                                            </details>
+                                            
+                                            <details class="Transform_list">
+                                                <summary>Estructura del código CSS:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_class" title="etiquetas_class">.box</span> { <br>
+                                                        transition: transform 1000ms;<br>
+                                                    } <br><br>
+                                                    <span class="etiquetas_class" title="etiquetas_class">.muestra</span>
+                                                    <span class="etiquetas_class" title="Etiqueta_HTML">.translate2D</span>:hover { <br>
+                                                    <code class="code_interno">
+                                                        transform: translate(60px, 12px);
+                                                    </code><br>
+                                                    }
+                                                </code>
+                                            </details>
+                                        </dfn>
+                                    </details>
+
+                                    <details class="Transform_list">
+                                        <summary>rotate ( )</summary>
+                                        <dfn>
+                                            <p>Gira el objeto tanto a la izquierda (left) como a la derecha (right)</p>
+                                            Muestra en la web:
+                                            <section class="muestra">
+                                                <div class="backbox">
+                                                    <div class="box rotate2D"> rotate ( ) </div>
+                                                </div>
+                                            </section>
+                                            
+                                            <details  class="Transform_list">
+                                                <summary>Estructura del código HTML:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;section
+                                                        <span class="etiquetas_class" title="etiquetas_class">class="muestra"</span>
+                                                    </span> <br>
+                                                        <code class="code_interno">
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                <span class="etiquetas_class" title="etiquetas_class">class="backbox"</span>
+                                                            </span> <br>
+                                                                <code class="code_interno">
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="box"</span>
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="rotate2D"</span>
+                                                                    </span>
+                                                                    <code class="code_interno">rotate ( )</code>
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                                </code>
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                        </code>
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/section&gt;</span>
+                                                </code>
+                                            </details>
+
+                                            <details class="Transform_list">
+                                                <summary>Estructura del código CSS:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_class" title="etiquetas_class">.box</span> { <br>
+                                                        transition: transform 1000ms;<br>
+                                                    } <br><br>
+                                                    <span class="etiquetas_class" title="etiquetas_class">.muestra</span>
+                                                    <span class="etiquetas_class" title="Etiqueta_HTML">.rotate2D</span>:hover { <br>
+                                                    <code class="code_interno">
+                                                        transform: rotate(-45deg);
+                                                    </code><br>
+                                                    }
+                                                </code>
+                                            </details>
+                                        </dfn>
+                                    </details>
+
+                                    <details class="Transform_list">
+                                        <summary>scale ( )</summary>
+                                        <dfn>
+                                            <p>Permite hacer más grande o pequeño un objeto</p>
+                                            Muestra en la web:
+                                            <section class="muestra">
+                                                <div class="backbox">
+                                                    <div class="box scale2D"> scale ( ) </div>
+                                                </div>
+                                            </section>
+                                            
+                                            <details  class="Transform_list">
+                                                <summary>Estructura del código HTML:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;section
+                                                        <span class="etiquetas_class" title="etiquetas_class">class="muestra"</span>
+                                                    </span> <br>
+                                                        <code class="code_interno">
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                <span class="etiquetas_class" title="etiquetas_class">class="backbox"</span>
+                                                            </span> <br>
+                                                                <code class="code_interno">
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="box"</span>
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="scale2D"</span>
+                                                                    </span>
+                                                                    <code class="code_interno">scale ( )</code>
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                                </code>
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                        </code>
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/section&gt;</span>
+                                                </code>
+                                            </details>
+
+                                            <details class="Transform_list">
+                                                <summary>Estructura del código CSS:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_class" title="etiquetas_class">.box</span> { <br>
+                                                        transition: transform 1000ms;<br>
+                                                    } <br><br>
+                                                    <span class="etiquetas_class" title="etiquetas_class">.muestra</span>
+                                                    <span class="etiquetas_class" title="Etiqueta_HTML">.scale2D</span>:hover { <br>
+                                                    <code class="code_interno">
+                                                        transform: scale(1.4, .8);
+                                                    </code><br>
+                                                    }
+                                                </code>
+                                            </details>
+                                        </dfn>
+                                    </details>
+
+                                    <details class="Transform_list">
+                                        <summary>skew ( )</summary>
+                                        <dfn>
+                                            <p>Hace un efecto de romboide dependiendo el valor declarado</p>
+                                            Muestra en la web:
+                                            <section class="muestra">
+                                                <div class="backbox">
+                                                    <div class="box skew2D"> skew ( ) </div>
+                                                </div>
+                                            </section>
+                                            
+                                            <details  class="Transform_list">
+                                                <summary>Estructura del código HTML:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;section
+                                                        <span class="etiquetas_class" title="etiquetas_class">class="muestra"</span>
+                                                    </span> <br>
+                                                        <code class="code_interno">
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                <span class="etiquetas_class" title="etiquetas_class">class="backbox"</span>
+                                                            </span> <br>
+                                                                <code class="code_interno">
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="box"</span>
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="skew2D"</span>
+                                                                    </span>
+                                                                    <code class="code_interno">skew ( )</code>
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                                </code>
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                        </code>
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/section&gt;</span>
+                                                </code>
+                                            </details>
+
+                                            <details class="Transform_list">
+                                                <summary>Estructura del código CSS:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_class" title="etiquetas_class">.box</span> { <br>
+                                                        transition: transform 1000ms;<br>
+                                                    } <br><br>
+                                                    <span class="etiquetas_class" title="etiquetas_class">.muestra</span>
+                                                    <span class="etiquetas_class" title="Etiqueta_HTML">.skew2D</span>:hover { <br>
+                                                    <code class="code_interno">
+                                                        transform: skew(-35deg)8);
+                                                    </code><br>
+                                                    }
+                                                </code>
+                                            </details>
+                                        </dfn>
+                                    </details>
+
+                                    <details class="Transform_list">
+                                        <summary>matrix ( )</summary>
+                                        <dfn>
+                                            <p>
+                                                Esta permite declarar todas las funciones anteriores en una sola linea. <br><br>
+                                                Orden de posición: <br> matrix( scaleX(), skewY(), skewX(), scaleY(), traslateX(), traslateY() ) <br>
+                                            </p>
+                                            Muestra en la web:
+                                            <section class="muestra">
+                                                <div class="backbox">
+                                                    <div class="box matrix2D"> matrix ( ) </div>
+                                                </div>
+                                            </section>
+                                            
+                                            <details  class="Transform_list">
+                                                <summary>Estructura del código HTML:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;section
+                                                        <span class="etiquetas_class" title="etiquetas_class">class="muestra"</span>
+                                                    </span> <br>
+                                                        <code class="code_interno">
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                <span class="etiquetas_class" title="etiquetas_class">class="backbox"</span>
+                                                            </span> <br>
+                                                                <code class="code_interno">
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="box"</span>
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="matrix2D"</span>
+                                                                    </span>
+                                                                    <code class="code_interno">matrix ( )</code>
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                                </code>
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                        </code>
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/section&gt;</span>
+                                                </code>
+                                            </details>
+
+                                            <details class="Transform_list">
+                                                <summary>Estructura del código CSS:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_class" title="etiquetas_class">.box</span> { <br>
+                                                        transition: transform 1000ms;<br>
+                                                    } <br><br>
+                                                    <span class="etiquetas_class" title="etiquetas_class">.muestra</span>
+                                                    <span class="etiquetas_class" title="Etiqueta_HTML">.matrix2D</span>:hover { <br>
+                                                    <code class="code_interno">
+                                                        &lt;!--Orden: matrix( scaleX(1), skewY(.25), skewX(.25), scaleY(.8), traslateX(25), traslateY(-10) )--&gt; <br><br>
+                                                        transform: matrix(1, .25, .25, .8, 25, -10);
+                                                    </code><br>
+                                                    }
+                                                </code>
+                                            </details>
+                                        </dfn>
+                                    </details>
+                                </div>
+                            </details>
+
+                            <details class="Transform_contenedor_list">
+                                <summary class="Transform_title_list">3D</summary>
+
+                                <div class="Transform_div_lists">
+
+                                    <details class="Transform_list">
+                                        <summary>rotateX( )</summary>
+                                        <dfn>
+                                            <p>Se puede visualisar mejor con una img. Voltea la img hacia abajo o hacia arriba</p>
+                                            Muestra en la web:
+                                            <section class="muestra">
+                                                <div class="backbox">
+                                                    <div class="box rotateX3D"> rotateX( ) </div>
+                                                </div>
+                                            </section>
+
+                                            <details class="Transform_list">
+                                                <summary>Estructura del código HTML:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;section
+                                                        <span class="etiquetas_class" title="etiquetas_class">class="muestra"</span>
+                                                    </span> <br>
+                                                        <code class="code_interno">
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                <span class="etiquetas_class" title="etiquetas_class">class="backbox"</span>
+                                                            </span> <br>
+                                                                <code class="code_interno">
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                    <span class="etiquetas_class" title="etiquetas_class">class="box"</span>
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="rotateX3D"</span>
+                                                                    </span>
+                                                                    <code class="code_interno">translate( )</code>
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                                </code>
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                        </code>
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/section&gt;</span>
+                                                </code>
+                                            </details>
+                                            
+                                            <details class="Transform_list">
+                                                <summary>Estructura del código CSS:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_class" title="etiquetas_class">.box</span> { <br>
+                                                        transition: transform 1000ms;<br>
+                                                    } <br><br>
+                                                    <span class="etiquetas_class" title="etiquetas_class">.muestra</span>
+                                                    <span class="etiquetas_class" title="Etiqueta_HTML">.rotateX3D</span>:hover { <br>
+                                                    <code class="code_interno">
+                                                        transform: rotateX(180deg);
+                                                    </code><br>
+                                                    }
+                                                </code>
+                                            </details>
+                                        </dfn>
+                                    </details>
+
+                                    <details class="Transform_list">
+                                        <summary>rotateY ( )</summary>
+                                        <dfn>
+                                            <p>Se puede visualisar mejor con una img. Voltea la img hacia la izquierda o hacia la derecha</p>
+                                            Muestra en la web:
+                                            <section class="muestra">
+                                                <div class="backbox">
+                                                    <div class="box rotateY3D"> rotateY ( ) </div>
+                                                </div>
+                                            </section>
+                                            
+                                            <details  class="Transform_list">
+                                                <summary>Estructura del código HTML:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;section
+                                                        <span class="etiquetas_class" title="etiquetas_class">class="muestra"</span>
+                                                    </span> <br>
+                                                        <code class="code_interno">
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                <span class="etiquetas_class" title="etiquetas_class">class="backbox"</span>
+                                                            </span> <br>
+                                                                <code class="code_interno">
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="box"</span>
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="rotateY3D"</span>
+                                                                    </span>
+                                                                    <code class="code_interno">rotate ( )</code>
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                                </code>
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                        </code>
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/section&gt;</span>
+                                                </code>
+                                            </details>
+
+                                            <details class="Transform_list">
+                                                <summary>Estructura del código CSS:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_class" title="etiquetas_class">.box</span> { <br>
+                                                        transition: transform 1000ms;<br>
+                                                    } <br><br>
+                                                    <span class="etiquetas_class" title="etiquetas_class">.muestra</span>
+                                                    <span class="etiquetas_class" title="Etiqueta_HTML">.rotateY3D</span>:hover { <br>
+                                                    <code class="code_interno">
+                                                        transform: rotateY(180deg);
+                                                    </code><br>
+                                                    }
+                                                </code>
+                                            </details>
+                                        </dfn>
+                                    </details>
+
+                                    <details class="Transform_list">
+                                        <summary>rotateZ ( )</summary>
+                                        <dfn>
+                                            <p>
+                                                Se puede visualisar mejor con una img. Gira la img en el eje Z <br><br>
+                                                El origen es el centro del objeto. Lo cambiamos con la propiedad transform-origin dentro del padre.
+                                            </p>
+                                            Muestra en la web:
+                                            <section class="muestra">
+                                                <div class="backbox">
+                                                    <div class="box rotateZ3D"> rotateZ ( ) </div>
+                                                </div>
+                                            </section>
+                                            
+                                            <details  class="Transform_list">
+                                                <summary>Estructura del código HTML:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;section
+                                                        <span class="etiquetas_class" title="etiquetas_class">class="muestra"</span>
+                                                    </span> <br>
+                                                        <code class="code_interno">
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                <span class="etiquetas_class" title="etiquetas_class">class="backbox"</span>
+                                                            </span> <br>
+                                                                <code class="code_interno">
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="box"</span>
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="rotateZ3D"</span>
+                                                                    </span>
+                                                                    <code class="code_interno">scale ( )</code>
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                                </code>
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                        </code>
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/section&gt;</span>
+                                                </code>
+                                            </details>
+
+                                            <details class="Transform_list">
+                                                <summary>Estructura del código CSS:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_class" title="etiquetas_class">.box</span> { <br>
+                                                        transition: transform 1000ms;<br>
+                                                    } <br><br>
+                                                    <span class="etiquetas_class" title="etiquetas_class">.muestra</span>
+                                                    <span class="etiquetas_class" title="Etiqueta_HTML">.rotateZ3D</span>:hover { <br>
+                                                    <code class="code_interno">
+                                                        transform: rotateZ(180deg);
+                                                    </code><br>
+                                                    }
+                                                </code>
+                                            </details>
+                                        </dfn>
+                                    </details>
+
+                                    <details class="Transform_list">
+                                        <summary>skew ( )</summary>
+                                        <dfn>
+                                            <p>efecto con profundidad.</p>
+                                            Muestra en la web:
+                                            <section class="muestra">
+                                                <div class="backbox">
+                                                    <div class="box skew2D"> skew ( ) </div>
+                                                </div>
+                                            </section>
+                                            
+                                            <details  class="Transform_list">
+                                                <summary>Estructura del código HTML:</summary>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;section
+                                                        <span class="etiquetas_class" title="etiquetas_class">class="muestra"</span>
+                                                    </span> <br>
+                                                        <code class="code_interno">
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                <span class="etiquetas_class" title="etiquetas_class">class="backbox"</span>
+                                                            </span> <br>
+                                                                <code class="code_interno">
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;div
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="box"</span>
+                                                                        <span class="etiquetas_class" title="etiquetas_class">class="profundidad3D"</span>
+                                                                    </span>
+                                                                    <code class="code_interno">skew ( )</code>
+                                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                                </code>
+                                                            <span class="etiquetas_html" title="etiquetas_class">&lt;/div&gt;</span> <br>
+                                                        </code>
+                                                    <span class="etiquetas_html" title="etiquetas_class">&lt;/section&gt;</span>
+                                                </code>
+                                            </details>
+
+                                            <details class="Transform_list">
+                                                <summary>Estructura del código CSS:</summary>
+                                                <code class="code_maestro">
+                                                    <p>Dentro del contenedor padre va perspective:</p>
+                                                    <span class="etiquetas_class" title="etiquetas_class">.muestra</span> { <br>
+                                                        perspective: 800px;<br>
+                                                        height: 300px;<br>
+                                                    } <br><br>
+                                                    <span class="etiquetas_class" title="etiquetas_class">.box</span> { <br>
+                                                        transition: transform 1000ms;<br>
+                                                    } <br><br>
+                                                    <span class="etiquetas_class" title="etiquetas_class">.muestra</span>
+                                                    <span class="etiquetas_class" title="Etiqueta_HTML">.profundidad3D</span>:hover { <br>
+                                                    <code class="code_interno">
+                                                        &lt;!-- efecto de profundidad --&gt; <br> 
+                                                        transform: rotateY(180deg);
+                                                    </code><br>
+                                                    }
+                                                </code>
+                                            </details>
+                                        </dfn>
+                                    </details>
+                                </div>
+                            </details>
+                        </div>
+
+                    </section>
+                </dfn>
             </details>
 
             <details class="contenedor_inicio">
