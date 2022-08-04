@@ -675,7 +675,7 @@ article {
 .Animaciones_dfn_list {
     /* border: 1px solid black; */
     margin: 0px;
-    padding: 10px;
+    padding: 5px;
     background-color: var(--gray_strong);
     overflow: hidden;
 
@@ -695,7 +695,7 @@ article {
     background-color: var(--white);
 }
 .animation_tabla {
-    font-size: 12px;
+    font-size: 10px;
 }
 .animation_tabla th {
     padding: 2px;
