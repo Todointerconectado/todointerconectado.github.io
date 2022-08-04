@@ -1608,7 +1608,6 @@
                             
                             <details class="Animaciones_contenedor_list">
                                 <summary class="Animaciones_title_list">Propiedad Animation</summary>
-
                                 <dfn class="Animaciones_dfn_list">
                                     Muestra en la web:
                                     <section class="muestra">
@@ -1616,17 +1615,126 @@
                                             <div class="box1"></div>
                                         </div>
                                     </section>
-                                    Estructura del código HTML:
-                                    <code class="code_maestro">
-                                        &lt;div class="contenedor_barra"&gt;
-                                            <code class="code_interno">
-                                                &lt;div class="box1"&gt;&lt;/&lt;div&gt;
-                                            </code>
-                                        &lt;/div&gt;
-                                    </code>
                                     
-                                    Estructura del código CSS3:
-                                    <details class="details_interno">
+                                    <details class="Transform_list">
+                                        <summary>Estructura del código HTML:</summary>
+                                        <dfn>
+                                            <code class="code_maestro">
+                                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;div
+                                                    <span class="etiquetas_class tooltips-text" title="Class_en_HTML">class="contenedor_barra"
+                                                        <span class="tooltips-box">
+                                                            <i class="fa-solid fa-circle-info"></i>&nbsp; Atributo Clase
+                                                        </span>
+                                                    </span> &gt;
+                                                </span>
+                                                    <code class="code_interno">
+                                                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;div
+                                                            <span class="etiquetas_class tooltips-text" title="Class_en_HTML">class="box1"
+                                                                <span class="tooltips-box">
+                                                                    <i class="fa-solid fa-circle-info"></i>&nbsp; Atributo Clase
+                                                                </span>
+                                                            </span> &gt;
+                                                        </span>
+                                                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/div&gt;</span>
+                                                    </code>
+                                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/div&gt;</span>
+                                            </code>
+                                        </dfn>
+                                    </details>
+
+                                    <details class="Transform_list">
+                                        <summary>Estructura del código CSS3:</summary>
+                                        <dfn>
+                                            <code class="code_maestro">
+                                                <span class="etiquetas_class  tooltips-text" title="Class_en_CSS">.contenedor_barra
+                                                    <span class="tooltips-box">
+                                                        <i class="fa-solid fa-circle-info"></i>&nbsp; Clase en CSS
+                                                    </span>
+                                                </span> { <br>
+                                                    <code class="code_interno">
+                                                        border: 1px solid; <br>
+                                                        background-color: var(--gray_strong); <br>
+                                                        width: 90%; <br>
+                                                        height: 20px; <br>
+                                                        box-sizing: border-box; <br>
+                                                        margin: 10px; <br>
+                                                        border-radius: 10px; <br>
+                                                        overflow: hidden; <br>
+                                                    </code>
+                                                } <br> <br>
+                                                <span class="etiquetas_class tooltips-text" title="Class_en_CSS">.box1
+                                                    <span class="tooltips-box">
+                                                        <i class="fa-solid fa-circle-info"></i>&nbsp; Clase en CSS
+                                                    </span>
+                                                </span> { <br>
+                                                    <code class="code_interno">
+                                                        width: 100%; <br>
+                                                        height: 100%; <br>
+                                                        /* Todos los valores en una sola linea */ <br>
+                                                        animation: name duration timing-function delay iteration-count direction fill-mode; <br>
+                                                        animation: cambiocolor 4000ms cubic-bezier(.2, .6, .3, 1) 0ms 3 alternate-reverse forwards; <br>
+                                                        <table class="animation_tabla">
+                                                            <caption>Todos los valores en una sola linea</caption>
+                                                            <tr>
+                                                                <th>animation:</th>
+                                                                <th>name</th>
+                                                                <th>duration</th>
+                                                                <th>timing-function</th>
+                                                                <th>delay</th>
+                                                                <th>iteration-count</th>
+                                                                <th>direction</th>
+                                                                <th>fill-mode;</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>animation:</th>
+                                                                <th>cambiocolor</th>
+                                                                <th>4000ms</th>
+                                                                <th>cubic-bezier<br>(.2, .6, .3, 1)</th>
+                                                                <th>0ms</th>
+                                                                <th>3</th>
+                                                                <th>alternate-reverse</th>
+                                                                <th>forwards</th>
+                                                            </tr>
+                                                        </table>
+                                                    </code>
+                                                } <br> <br>
+                                                <span class="etiquetas_atributo tooltips-text" title="etiquetas_atributo">@keyframes cambiocolor
+                                                    <span class="tooltips-box">
+                                                        <i class="fa-solid fa-circle-info"></i>&nbsp; Atributo y name
+                                                    </span>
+                                                </span> { <br>
+                                                    <code class="code_interno">
+                                                        0%{ <br>
+                                                            <code class="code_interno">
+                                                                background-color: red; <br>
+                                                                width: 30%; <br>
+                                                            </code>
+                                                        } <br>
+                                                        50%{ <br>
+                                                            <code class="code_interno">
+                                                                background-color: rgb(0, 255, 17); <br>
+                                                                width: 100%; <br>
+                                                            </code>
+                                                        } <br>
+                                                        75%{ <br>
+                                                            <code class="code_interno">
+                                                                background-color: rgb(229, 255, 0); <br>
+                                                                width: 15%; <br>
+                                                            </code>
+                                                        } <br>
+                                                        100%{ <br>
+                                                            <code class="code_interno">
+                                                                background-color: blueviolet; <br>
+                                                                width: 87%; <br>
+                                                            </code>
+                                                        } <br>
+                                                    </code>
+                                                } <br>
+                                            </code>
+                                        </dfn>
+                                    </details>
+
+                                    <details class="Transform_list">
                                         <summary>Tabla de atributos</summary>
                                         <dfn>
                                             <table class="tabla_ej">
@@ -1636,36 +1744,54 @@
                                                 </colgroup>
                                                 <caption>Tabla de Atributos</caption>
                                                 <tr>
-                                                    <th colspan="1">Atributo</th>
-                                                    <th colspan="1">Valor</th>
+                                                    <th colspan="1" style="background-color: var(--blue); color: var(--white);">Atributo</th>
+                                                    <th colspan="1" style="background-color: var(--blue); color: var(--white);">Valor</th>
                                                 </tr>
                                                 <tr>
                                                     <th>name</th>
-                                                    <th>cambiocolor</th>
+                                                    <th>
+                                                        Se crea el nombre de la animación.<br><br>Ej: cambiocolor
+                                                    </th>
                                                 </tr>
                                                 <tr>
                                                     <th>dutation</th>
-                                                    <th>4000ms</th>
+                                                    <th>
+                                                        Se le da el tiempo de duración. <br> Buena plactica hacerlo en mili segundos (ms).<br><br>Ej: 4000ms
+                                                    </th>
                                                 </tr>
                                                 <tr>
                                                     <th>timing-function</th>
-                                                    <th>cubic-bezier(.2, .6, .3, 1)</th>
+                                                    <th>
+                                                        Le damos el efecto de movimiento que queramos.<br><br>
+                                                        ease <br> ease-in <br> ease-out <br> ease-in-out <br>cubic-bezier(.2, .6, .3, 1)  
+                                                    </th>
                                                 </tr>
                                                 <tr>
                                                     <th>delay</th>
-                                                    <th>0ms</th>
+                                                    <th>
+                                                        Es el tiempo que tarda para empezar la animación. <br><br>Ej: 0ms
+                                                    </th>
                                                 </tr>
                                                 <tr>
                                                     <th>interation-count</th>
-                                                    <th>3</th>
+                                                    <th>
+                                                        Son las interaciones que haga la animación. <br> Esta entre infinito y n° naturales. <br><br> 
+                                                        infinite <br> Ej: 3
+                                                    </th>
                                                 </tr>
                                                 <tr>
                                                     <th>direccion</th>
-                                                    <th>alternate-reverse</th>
+                                                    <th>
+                                                        Es la dirección del efecto en la animación. <br> Hay 3 opciones: <br><br>
+                                                        alternate <br> reverse <br> alternate-reverse
+                                                    </th>
                                                 </tr>
                                                 <tr>
                                                     <th>fill-mode</th>
-                                                    <th>forwards</th>
+                                                    <th>
+                                                        Define en que estado termana la animación <br> (en este caso color)<br><br>
+                                                        forwards: <br> Se queda en el ultimo valor establecido
+                                                    </th>
                                                 </tr>
                                             </table>
                                             
@@ -1679,21 +1805,112 @@
                                         </dfn>
                                     </details>
                                 </dfn>
+                            </details>
 
-                            <details class="contenedor_list">
-                                    <summary class="title_list">Cambio de texto</summary>
-                                    <ul class="ul_list">
-                                        <li class="list">
-                                            <details>
-                                                <summary>Nombres</summary>
-                                                <div class="contenedor_name">
-                                                    <div class="nombres">
-                                                        Francisco Carusso
-                                                    </div>
-                                                </div>
-                                            </details>
-                                        </li>
-                                    </ul>
+                            <details class="Animaciones_contenedor_list">
+                                <summary class="Animaciones_title_list">Cambio de texto</summary>
+                                <dfn class="Animaciones_dfn_list">
+                                    Muestra en la web:
+                                    <section class="muestra">
+                                        <div class="contenedor_name">
+                                            <div class="nombres">Francisco Carusso</div>
+                                        </div>
+                                    </section>
+                                    
+                                    <details class="Transform_list">
+                                        <summary>Estructura del código HTML:</summary>
+                                        <dfn>
+                                            <code class="code_maestro">
+                                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;div
+                                                    <span class="etiquetas_class tooltips-text" title="Class_en_HTML">class="contenedor_name"
+                                                        <span class="tooltips-box">
+                                                            <i class="fa-solid fa-circle-info"></i>&nbsp; Atributo Clase
+                                                        </span>
+                                                    </span> &gt;
+                                                </span>
+                                                    <code class="code_interno">
+                                                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;div
+                                                            <span class="etiquetas_class tooltips-text" title="Class_en_HTML">class="nombres"
+                                                                <span class="tooltips-box">
+                                                                    <i class="fa-solid fa-circle-info"></i>&nbsp; Atributo Clase
+                                                                </span>
+                                                            </span> &gt;
+                                                        </span>
+                                                            <code class="code_interno">Francisco Carusso</code>
+                                                        <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/div&gt;</span>
+                                                    </code>
+                                                <span class="etiquetas_html" title="Etiqueta_HTML">&lt;/div&gt;</span>
+                                            </code>
+                                        </dfn>
+                                    </details>
+                                    
+                                    <details class="Transform_list">
+                                        <summary>Estructura del código CSS3:</summary>
+                                        <dfn>
+                                            <code class="code_maestro">
+                                                <span class="etiquetas_class  tooltips-text" title="Class_en_CSS">.contenedor_name
+                                                    <span class="tooltips-box">
+                                                        <i class="fa-solid fa-circle-info"></i>&nbsp; Clase en CSS
+                                                    </span>
+                                                </span> { <br>
+                                                    <code class="code_interno">
+                                                        border: 1px solid; <br>
+                                                        background-color: var(--gray_strong); <br>
+                                                        width: 90%; <br>
+                                                        height: 20px; <br>
+                                                        box-sizing: border-box; <br>
+                                                        margin: 10px; <br>
+                                                        border-radius: 10px; <br>
+                                                        overflow: hidden; <br>
+                                                    </code>
+                                                } <br> <br>
+                                                <span class="etiquetas_class tooltips-text" title="Class_en_CSS">.nombres
+                                                    <span class="tooltips-box">
+                                                        <i class="fa-solid fa-circle-info"></i>&nbsp; Clase en CSS
+                                                    </span>
+                                                </span> { <br>
+                                                    <code class="code_interno">
+                                                        width: 100%; <br>
+                                                        height: 100%; <br>
+                                                        font-size: 3em; <br>
+                                                        text-align: center; <br>
+                                                        padding: 7px 0 0 0; <br>
+                                                        animation: name duration timing-function delay iteration-count direction fill-mode; */ <br>
+                                                        animation: name 2500ms ease 0ms infinite alternate-reverse forwards; <br>
+                                                    </code>
+                                                } <br> <br>
+                                                <span class="etiquetas_atributo tooltips-text" title="etiquetas_atributo">@keyframes name
+                                                    <span class="tooltips-box">
+                                                        <i class="fa-solid fa-circle-info"></i>&nbsp; Atributo y name
+                                                    </span>
+                                                </span> { <br>
+                                                    <code class="code_interno">
+                                                        0%{ <br>
+                                                            <code class="code_interno">
+                                                                color: rgb(255, 0, 0);
+                                                            </code>
+                                                        } <br>
+                                                        50%{ <br>
+                                                            <code class="code_interno">
+                                                                color: rgb(193, 183, 3);
+                                                            </code>
+                                                        } <br>
+                                                        75%{ <br>
+                                                            <code class="code_interno">
+                                                                color: rgb(0, 164, 11);
+                                                            </code>
+                                                        } <br>
+                                                        100%{ <br>
+                                                            <code class="code_interno">
+                                                                color: rgb(2, 2, 143);
+                                                            </code>
+                                                        } <br>
+                                                    </code>
+                                                } <br>
+                                            </code>
+                                        </dfn>
+                                    </details>
+                                </dfn>
                             </details>
 
                         </div>

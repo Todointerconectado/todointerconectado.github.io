@@ -612,67 +612,78 @@ article {
 /* --------------------------- Estilos de esplicación --------------------------- */
 .Animaciones_contenedor_esplicaciones {
     border: 1px solid black;
-    background-color: aquamarine;
-    margin: 2px;
-    padding: 10px;
+    box-shadow: 1px 1px 8px black;
+    margin: 10px;
     width: 100%;
+    height: auto;
     border-radius: 8px;
+    background-color: #e09f54;
     overflow: hidden;
     font-family: 'Signika Negative', 'Segoe UI';
     font-weight: 600;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 .Animaciones_title {
     width: 100%;
-    height: auto;
+    height: 100%;
     text-align: center;
     padding: 10px 0px;
     background-color: var(--blue);
     color: var(--white);
 }
 .Animaciones_text {
-    border: 1px solid;
-    background-color: var(--gray);
+    width: 100%;
     padding: 10px 5px;
     text-align: center;
-    width: 100%;
-    line-height: 30px;
+    background-color: var(--gray);
+    line-height: 25px;
+    height: auto;
 }
 
 .Animaciones_contenedor_general {
-    border: 1px solid;
-    background-color: var(--gray_strong);
-    padding: 10px;
-    width: 100%;
+    /* border: 1px solid; */
     height: auto;
+    /* width: 100%; */
+    padding: 10px 6px;
     list-style: none;
+    background-color: var(--gray_strong);
     display: flex;
-    flex-direction: column;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .Animaciones_contenedor_list {
-    border: 1px solid;
-    box-shadow: 1px 1px 5px black;
-    border-radius: 8px;
-    width: 100%;
+    /* border: 1px solid; */
+    box-shadow: 1px 1px 3px black;
+    border-radius: 5px;
+    overflow: hidden;
+    min-width: 48%;
+    height: 100%;
+    flex-grow: 1;
 }
 .Animaciones_title_list {
-    border: 1px solid;
-    border-radius: 8px;
+    /* border: 1px solid; */
+    height: auto;
+    border-radius: 5px 5px 0 0;
     background-color: var(--blue_sure);
     color: var(--white);
 }
 .Animaciones_dfn_list {
-    border: 1px solid red;
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 10px;
     background-color: var(--gray_strong);
-    margin: 10px;
-    width: auto;
-    height: auto;
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 
@@ -682,6 +693,13 @@ article {
 }
 .fila_valor {
     background-color: var(--white);
+}
+.animation_tabla {
+    font-size: 16px;
+}
+.animation_tabla th {
+    font-size: 12px;
+    font-weight: bold;
 }
 
 /*---------- Texto final de tabla ---------- */
@@ -745,7 +763,7 @@ article {
     /* animation-timing-function: cubic-bezier(.2, .6, .3, 1); */
 
     /* se queda en el ultimo valor establecido (en este caso color) */
-    /* animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 
     /* Todos los valores en una sola linea */
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
@@ -777,7 +795,7 @@ article {
     box-sizing: border-box;
     margin: 10px;
     border-radius: 4px;
-    background-color: white;
+    background-color: var(--gray_strong);
 }
 .nombres {
     width: 100%;
@@ -791,10 +809,10 @@ article {
     0% {
         color: rgb(255, 0, 0);
     }
-    25% {
+    50% {
         color: rgb(193, 183, 3);
     }
-    50% {
+    75% {
         color: rgb(0, 164, 11);
     }
     100% {
