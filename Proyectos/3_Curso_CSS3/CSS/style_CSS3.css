@@ -440,7 +440,7 @@ article {
 .Transform_contenedor_esplicaciones {
     border: 1px solid black;
     box-shadow: 1px 1px 8px black;
-    margin: 10px;
+    margin: 5px;
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -613,7 +613,7 @@ article {
 .Animaciones_contenedor_esplicaciones {
     border: 1px solid black;
     box-shadow: 1px 1px 8px black;
-    margin: 10px;
+    margin: 5px;
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -698,7 +698,9 @@ article {
     font-size: 16px;
 }
 .animation_tabla th {
-    font-size: 12px;
+    padding: 2px;
+    width: auto;
+    font-size: 10px;
     font-weight: bold;
 }
 
