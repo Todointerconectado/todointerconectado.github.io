@@ -1,7 +1,7 @@
-p {
-    margin: 10px;
-}
+
 .padre0 {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 60%;
     height: 150px;
     background-color: rgb(164, 239, 214);
@@ -13,72 +13,96 @@ p {
     padding: 5px;
 }
 .padre1 {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre2 {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre3 {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre4 {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_space-between {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_space-around {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_space-evenly {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_align-items_stretch {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_align-items_center {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_align-items_flex-end {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_align-items_flex-start {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_align-self {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
@@ -91,6 +115,8 @@ p {
 }
 
 .padre_align-items {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
@@ -103,54 +129,72 @@ p {
 }
 
 .padre_flex-direction {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_flex-direction_row-reverse {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_flex-direction_column {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_flex-direction_column_center {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 80%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_flex-nowrap {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 60%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_flex-wrap {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 60%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_flex-wrap_center {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 60%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_flex-wrap_center_top {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 60%;
     height: 200px;
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
 .padre_flex-flow {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
     width: 60%;
     height: 200px;
     background-color: rgb(164, 239, 214);

@@ -420,12 +420,6 @@ article {
 
 /*------------ Transform en CSS ------------*/
 
-.iframe_transform {
-    width: 98%;
-    min-height: 300px;
-    height: auto;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&family=Signika+Negative&display=swap');/* Formateo valores predeterminados */
 :root {
     --blue: rgb(47, 47, 185);
@@ -497,7 +491,7 @@ article {
 }
 
 .Transform_div_lists {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: 0px;
     padding: 10px;
     background-color: var(--white);
@@ -533,6 +527,7 @@ article {
     background-color: white;
     width: 100%;
     height: auto;
+    /* margin: 2px; */
     padding: 20px 0;
     perspective: 800px;
 

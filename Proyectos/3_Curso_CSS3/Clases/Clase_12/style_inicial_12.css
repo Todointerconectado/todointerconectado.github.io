@@ -18,62 +18,60 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* --------------------------- Estilos de libro --------------------------- */
-body {
-    /* border: 10px solid rgb(255, 0, 242); */
-    padding: 50px 30px;
+.Flexbox_contenedor__maestro {
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 5px black;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 5px;
+    /* padding: 5px; */
+    width: 100%;
+    height: 100%;
     font-family: 'Signika Negative', 'Segoe UI';
     font-weight: 600;
     /*------ fondo de la web ------*/
-    background-image: url("/Clases/Clase_13/img/fondo.png");
+    background-image: url("/Proyectos/3_Curso_CSS3/Clases/Clase_13/img/fondo.png");
     background-position: center;
     background-size: contain;
     background-attachment: fixed;
 }
-
-.contenedor__maestro {
-    border: 1px solid black;
-    box-shadow: 0px 0px 10px 1px black;
-    max-width: 800px;
-    height: 100%;
-    margin: auto;
-    background-color: var(--white);
-    border-radius: 8px;
-    overflow: hidden;
-}
-.title {
+.Flexbox_title {
     /* border: 5px solid salmon; */
-    height: 100%;
-    text-align: center;
+    border-radius: 8px 8px 0 0;
     padding: 10px 0px;
-    text-transform: uppercase;
+    height: 100%;
     background-color: var(--blue);
     color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.inicio {
+/*---- Primera ventana de padre e hijos ----*/
+.Flexbox_text {
+    /* border: 5px solid black; */
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    margin: 0px;
+    padding: 10px 0px;
+}
+.Flexbox_inicio {
     /* border: 6px solid rgb(4, 255, 4); */
     height: 100%;
     margin: 0px;
     padding-bottom: 8px;
-    background-color: var(--gray);
+    background-color: transparent;
     text-align: center;
 }
-.text {
-    /* border: 5px solid black; */
-    background-color: var(--gray);
-    height: 100%;
-    margin: 0px;
-    padding: 10px 0px;
-}
-span {
+.Flexbox_span {
     /* border: 2px solid black; */
     /* border: 2px dotted black; */
     /* border: 2px double black; */
-
     /* border: 2px dashed black; */
     color: rgb(86, 84, 84);
-    display: inline-block;
+    display: inline;
     padding: 0px 10px 5px 0px;
     margin: 1px;
 }
@@ -94,57 +92,88 @@ span {
     background-color: var(--green_strong);
 }
 
-.contenedor_general {
-    /* border: 6px solid rgb(0, 195, 255); */
-    background-color: rgb(164, 220, 241);
+/*---- Distintos Atributos de flex ----*/
+.Flexbox_contenedor_general {
+    /* border: 1px solid black; */
+    margin: 10px;
+    /* padding: 10px; */
     background-color: var(lin);
-    padding: 10px 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.contenedor_list {
-    /* border: 5px solid black; */
+.Flexbox_contenedor_list {
+    /* border: 1px solid; */
+    box-shadow: 1px 1px 3px black;
     background-color: var(--white);
-    margin-bottom: 10px;
-    box-shadow: 0px 0px 1px black;
-    box-shadow: 0px 0px 2px 1px black;
     border-radius: 5px;
     overflow: hidden;
+    min-width: 48%;
+    flex-grow: 1;
 }
-.contenedor_list_sub {
-    /* border: 5px solid black; */
-    background-color: var(--white);
-    margin: 10px 40px 10px 40px;
-    box-shadow: 0px 0px 1px black;
-    box-shadow: 0px 0px 2px 1px black;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.title_list {
-    /* border: 4px solid #ff9900; */
+.Flexbox_title_list {
+    /* border: 1px solid black; */
+    border-radius: 5px 5px 0 0;
     background-color: var(--blue_sure);
     color: var(--white);
-    font-size: 18px;
-    padding: 5px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    cursor: pointer;
-}
-.title_list_sub {
-    /* border: 4px solid #ff9900; */
-    background-color: var(--blue_sure_sub);
+    padding: 4px;
+    height: auto;
     font-size: 14px;
-    padding: 5px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     cursor: pointer;
 }
 
-.list_contenido {
-    /* border: 4px solid green; */
-    background-color: var(--white);
-    padding: 0px;
+/*---- Sub secciones de los distintos atributos ----*/
+.Flexbox_list_contenido {
+    border: 1px solid green;
     margin: 0px;
+    padding: 10px;
+    background-color: var(--white);
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    /* margin: 10px; */
+    /* padding: 0px; */
 }
+.Flexbox_list_contenido p {
+    /* border: 1px solid; */
+    background-color: var(--gray_strong);
+    width: 100%;
+    padding: 10px 5px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.contenedor_list_sub {
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 3px black;
+    background-color: var(--gray_strong);
+    min-width: 30%;
+    height: auto;
+    list-style: none;
+    flex-grow: 1;
+}
+.title_list_sub {
+    /* border: 1px solid #ff9900; */
+    padding: 2px;
+    height: auto;
+    border-radius: 0px;
+    background-color: var(--gray);
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
 .contenido {
     border: 1px dashed black;
     margin: 5px;
