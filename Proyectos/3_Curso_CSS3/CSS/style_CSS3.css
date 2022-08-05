@@ -564,7 +564,7 @@ article {
     border-radius: 5px;
     transition: transform 1000ms;
 }
-/* --- Aplicamos transform --- */
+/* -------------- Aplicamos transform -------------- */
 /* -- 2D -- */
 .muestra .translate2D:hover {
     /* se movera hacia la derecha */
@@ -603,7 +603,7 @@ article {
     transform: rotateY(180deg);
 }
 
-/* ---------------------------------------- Anomaciones en CSS  ----------------------------------------*/
+/* ---------------------------------------- Animaciones en CSS  ----------------------------------------*/
 /* --------------------------- Estilos de esplicación --------------------------- */
 .Animaciones_contenedor_esplicaciones {
     border: 1px solid black;
