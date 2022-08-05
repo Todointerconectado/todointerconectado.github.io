@@ -22,8 +22,136 @@
 #hsla {
     background-color: hsla(16, 100%, 50%, 0.3);
 }
+/*------------------------ Position ------------------------*/
+/* Estetico */
+.position_contenedor_general {
+    border: 1px solid;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    background-color: wheat;
+    font-family: 'Signika Negative', 'Segoe UI';
+    font-weight: 600;
+    font-size: 1rem;
 
-/*------------ Parte de un blog ------------*/
+    box-shadow: 5px 5px 5px black;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Position */
+.static {
+    border: 1px solid;
+    background-color: gray;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    /* valor por defecto que ponen los navegadores */
+    position: static;
+}
+
+.base_relative {
+    border: 2px dashed;
+    padding: 0px 60px 75px 20px;
+    width: 100%;
+    height: auto;
+    background: #faf3dd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenedor_relative {
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: rgba(183, 73, 73, .5);
+    width: auto;
+    height: 200px;
+}
+.contenido_relative {
+    border: 1px solid;
+    background-color: rgb(183, 73, 73);
+    border-radius: 8px;
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    box-sizing: border-box;
+    transition: transform 1000ms;
+}
+.contenido_relative:hover {
+    transform: translate(-50px, -50px);
+}
+
+.contenedor_relative_para_absolute {
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: rgb(255, 215, 0);
+    padding: 0 10px 10px 10px;
+    width: auto;
+    height: 200px;
+    position: relative;
+}
+
+.contenido_absolute {
+    border: 1px solid;
+    background-color: aqua;
+    box-shadow: -4px -2px 4px black;
+    border-radius: 8px;
+    padding: 0 10px 10px 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    box-sizing: border-box;
+    transition: transform 1000ms;
+}
+.contenido_absolute:hover {
+    transform: translateY(40%);
+}
+
+.sticky {
+    /* background-color: blueviolet; */
+    /* position: sticky; */
+    /*Detenerce*/
+    /* top: 200px; */
+    /* height: auto; */
+}
+
+.fixed {
+    /* background-color: rgb(196, 124, 36); */
+    /* position: fixed; */
+    /* top: 0; */
+    /* right: 0; */
+    /* width: auto; */
+    /* height: auto; */
+}
+
+/* Estilos de visualización */
+.espacio {
+    /* background-color: darkcyan; */
+    /* height: 1000px; */
+}
+
+span {
+    /* color: rgb(170, 167, 167); */
+    /* font-weight: bold; */
+    /* font-size: 20px; */
+}
+
+pre {
+    /* color: white; */
+}
+
+/*----------------------------------- Parte de un blog ------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&display=swap');
 
 /* border del contenedor */
