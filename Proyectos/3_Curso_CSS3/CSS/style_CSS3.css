@@ -118,38 +118,38 @@
     transform: translateY(40%);
 }
 
-.sticky {
-    /* background-color: blueviolet; */
-    /* position: sticky; */
-    /*Detenerce*/
-    /* top: 200px; */
-    /* height: auto; */
-}
+/* .sticky {
+    background-color: blueviolet;
+    position: sticky;
+    Detenerce
+    top: 200px;
+    height: auto;
+} */
 
-.fixed {
-    /* background-color: rgb(196, 124, 36); */
-    /* position: fixed; */
-    /* top: 0; */
-    /* right: 0; */
-    /* width: auto; */
-    /* height: auto; */
-}
+/* .fixed {
+    background-color: rgb(196, 124, 36);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+} */
 
 /* Estilos de visualización */
-.espacio {
-    /* background-color: darkcyan; */
-    /* height: 1000px; */
-}
+/* .espacio {
+    background-color: darkcyan;
+    height: 1000px;
+} */
 
-span {
-    /* color: rgb(170, 167, 167); */
-    /* font-weight: bold; */
-    /* font-size: 20px; */
-}
+/* span {
+    color: rgb(170, 167, 167);
+    font-weight: bold;
+    font-size: 20px;
+} */
 
-pre {
-    /* color: white; */
-}
+/* pre {
+    color: white;
+} */
 
 /*----------------------------------- Parte de un blog ------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&display=swap');
