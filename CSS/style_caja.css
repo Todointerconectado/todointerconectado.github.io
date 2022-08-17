@@ -96,6 +96,12 @@ body {
     display: flex;
     justify-content: center;
 }
+.url_Todointerconectado {
+    color: var(--color_letra_title_white);
+}
+.url_Todointerconectado:hover {
+    color: var(--color_letra_title_white);
+}
 
 /* Contenedor maestro */
 main {
