@@ -439,59 +439,124 @@
                 <dfn>
                     <section class="position_contenedor_general">
 
-                        <div class="static">position: static;</div>
-
-                        <div class="base_relative">
-                            <p>base Relative</p>
-                            <div class="contenedor_relative">
-                                <p>contenedor relative se mueve </p>
-                                <div class="contenido_relative">
-                                    <p> a la posición bordo.</p>
-                                    <code class="code_maestro">
-                                        <span class="etiquetas_class" title="Class en CSS">.contenido_relative</span>{ <br>
-                                            <code class="code_interno">
-                                                width: 80%; <br>
-                                                height: 100%; <br> <br>
-                                                position: relative; <br>
-                                                top: 10px; <br>
-                                                left: 70px; <br>
-                                            </code>
-                                        }
-                                    </code>
+                        <details class="Transform_contenedor_list">
+                            <summary class="Transform_title_list">Position: static</summary>
+                            <dfn>
+                                <p>Coloca el contenedor en el lugar de inicio, en forma decendente.</p>
+                                <div class="base_relative">
+                                    <div class="static">position: static;</div>
                                 </div>
-                            </div>
-                        </div>
+                            </dfn>
+                        </details>
 
-                        <div class="base_relative">
-                            <p>base Absolute</p>
+                        <details class="Transform_contenedor_list">
+                            <summary class="Transform_title_list">Position: Relative</summary>
+                            <dfn>
+                                <div class="base_relative">
+                                    <p>base Relative</p>
+                                    <div class="contenedor_relative">
+                                        <p>contenedor relative se mueve </p>
+                                        <div class="contenido_relative">
+                                            <p> a la posición bordo.</p>
+                                            <code class="code_maestro">
+                                                <span class="etiquetas_class" title="Class en CSS">.contenido_relative</span>{ <br>
+                                                    <code class="code_interno">
+                                                        width: 80%; <br>
+                                                        height: 100%; <br> <br>
+                                                        position: relative; <br>
+                                                        top: 10px; <br>
+                                                        left: 70px; <br>
+                                                    </code>
+                                                }
+                                            </code>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dfn>
+                        </details>
 
-                            <div class="contenedor_relative_para_absolute">
-                                <p>contenedor relative debajo del contenedor absolute</p>
-                                <code class="code_maestro">
-                                    <span class="etiquetas_class" title="Class en CSS">.contenedor_relative_para_absolute</span>{ <br>
-                                        <code class="code_interno">
-                                            width: auto; <br>
-                                            height: 200px; <br>
-                                            position: relative; <br>
+                        <details class="Transform_contenedor_list">
+                            <summary class="Transform_title_list">Position: Absolute</summary>
+                            <dfn>
+                                <div class="base_relative">
+                                    <p>base Absolute</p>
+                                    <div class="contenedor_relative_para_absolute">
+                                        <p>contenedor relative debajo del contenedor absolute</p>
+                                        <code class="code_maestro">
+                                            <span class="etiquetas_class" title="Class en CSS">.contenedor_relative_para_absolute</span>{ <br>
+                                                <code class="code_interno">
+                                                    width: auto; <br>
+                                                    height: 200px; <br>
+                                                    position: relative; <br>
+                                                </code>
+                                            }
                                         </code>
-                                    }
-                                </code>
-                                <div class="contenido_absolute">
-                                    <p>contenido_absolute</p>
-                                    <code class="code_maestro">
-                                        <span class="etiquetas_class" title="Class en CSS">.contenido_relative</span>{ <br>
-                                            <code class="code_interno">
-                                                width: 100%; <br>
-                                                height: 100%; <br> <br>
-                                                position: absolute; <br>
-                                                top: 50px; <br>
-                                                left: 40px; <br>
+                                        <div class="contenido_absolute">
+                                            <p>contenido_absolute</p>
+                                            <code class="code_maestro">
+                                                <span class="etiquetas_class" title="Class en CSS">.contenido_relative</span>{ <br>
+                                                    <code class="code_interno">
+                                                        width: 100%; <br>
+                                                        height: 100%; <br> <br>
+                                                        position: absolute; <br>
+                                                        top: 50px; <br>
+                                                        left: 40px; <br>
+                                                    </code>
+                                                }
                                             </code>
-                                        }
-                                    </code>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            </dfn>
+                        </details>
+
+                        <details class="Transform_contenedor_list">
+                            <summary class="Transform_title_list">Position: Sticky</summary>
+                            <dfn>
+                                <div class="base_relative">
+                                    <p>sticky: Se puede trabar en una posición cualquiera.</p>
+                                    <div class="sticky_espacio">
+                                        <div class="static">Static: </div>
+                                        <div class="static static2">Static: </div>
+                                        <div class="sticky">
+                                            <code class="code_maestro">
+                                                <span class="etiquetas_class" title="Class_en_CSS">.sticky {</span> <br>
+                                                    <code class="code_interno">
+                                                        position: sticky;<br>
+                                                        top: 60px; /*Detenerce*/ <br>
+                                                    </code>
+                                                }
+                                            </code>
+                                        </div>
+                                        <div class="espacio_interno">
+                                            <p>Para que aparesca el scroll se coloca: overflow-y: auto; dentro del padre.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dfn>
+                        </details>
+
+                        <details class="Transform_contenedor_list">
+                            <summary class="Transform_title_list">Position: Fixed</summary>
+                            <dfn>
+                                <div class="base_relative base_relative_fixed">
+                                    Posicionamos un elemento <br> en cualquier parte <br> de la pantalla.
+                                    <div class="fixed">
+                                        <code class="code_maestro">
+                                            <span class="etiquetas_class" title="Class_en_CSS">.fixed {</span> <br>
+                                                <code class="code_interno">
+                                                    position: fixed; <br>
+                                                    top: 0;<br>
+                                                    right: 0;<br>
+                                                    width: auto;<br>
+                                                    height: auto;<br>
+                                                </code>
+                                            }
+                                        </code>
+                                    </div>
+                                </div>
+                            </dfn>
+                        </details>
                     </section>
                 </dfn>
             </details>
