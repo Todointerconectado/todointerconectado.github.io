@@ -33,6 +33,7 @@
 .grid_padre2 {
     display: grid;
     grid-template-columns: 200px 150px 100px;
+    overflow: auto;
 }
 .grid_padre_1fr {
     display: grid;
