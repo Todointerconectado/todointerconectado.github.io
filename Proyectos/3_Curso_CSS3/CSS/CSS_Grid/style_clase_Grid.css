@@ -1,0 +1,58 @@
+
+.padre0 {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    width: 60%;
+    height: 150px;
+    background-color: rgb(164, 239, 214);
+    margin: 10px auto;
+}
+.grid_hijos0 {
+    border: 1px dotted black;
+    background-color: rgb(29, 198, 142);
+    /* margin: 5px; */
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid_padre {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    width: 80%;
+    height: 200px;
+    background-color: rgb(164, 239, 214);
+    margin: 0px auto;
+}
+
+/* --------------------------- Estilos de Muestra --------------------------- */
+.grid_padre {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.grid_padre2 {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+}
+.grid_padre_1fr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid_padre_3fr {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+}
+.grid_padre_filas {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: auto 100px;
+}
+.grid_padre_column-y-row-gap {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: auto 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+

@@ -15,6 +15,9 @@
     <!-- Hojas de esstilo de flexbox -->
     <link rel="stylesheet" href="/Proyectos/3_Curso_CSS3/CSS/CSS_Flexbox/style_inicial_flexbox.css">
     <link rel="stylesheet" href="/Proyectos/3_Curso_CSS3/CSS/CSS_Flexbox/style_clase_flexbox.css">
+    <!-- Hojas de esstilo de GRID -->
+    <link rel="stylesheet" href="/Proyectos/3_Curso_CSS3/CSS/CSS_Grid/style_inicial_Grid.css">
+    <link rel="stylesheet" href="/Proyectos/3_Curso_CSS3/CSS/CSS_Grid/style_clase_Grid.css">
     <style>
         /*------ Directo en la etiqueta especifica en el código HTML ------*/
         .etiqueta__h1 {
@@ -2627,6 +2630,326 @@
                                         </dfn>
                                     </details>
                                 </div>
+                            </details>
+                        </section>
+                    </section>
+                </dfn>
+            </details>
+
+            <details class="contenedor_inicio">
+                <summary> GRID en CSS</summary>
+                <dfn>
+                    <section class="Grid_contenedor__maestro">
+                        <h1 class="Grid_title">GRID</h1>
+                        <div class="Grid_inicio">
+                            <p class="Grid_text"> Elementos hijos: (N°) dentro del elemento padre: (contenedor verde claro).</p>
+                            <div class="padre"> <span>Elemento padre</span>
+                                <div class="hijos lunes"> <span class="Grid_span">Elemento hijo:</span> 1</div>
+                                <div class="hijos martes"> <span class="Grid_span">Elemento hijo:</span> 2</div>
+                                <div class="hijos miercoles"> <span class="Grid_span">Elemento hijo:</span> 3</div>
+                            </div>
+                        </div>
+                        <P>Con GRID podemos modificar la orientación tanto vertical como horizontal al mismo tiempo.</P>
+                        <section class="Flexbox_contenedor_general">
+                            
+                            <details class="Flexbox_contenedor_list">
+                                <summary class="Flexbox_title_list">display: grid;</summary>
+                                <div class="Flexbox_list_contenido">
+                                    <p>
+                                        Dentro del contenedor padre aplicamos: 
+                                        <span class="etiquetas_atributo tooltips-text" title="Atributo_en_CSS">display: grid;
+                                            <span class="tooltips-box">
+                                                <i class="fa-solid fa-circle-info"></i>&nbsp; Propiedad
+                                            </span>
+                                        </span> <br>
+                                        También, tenemos que detallar cuantas columnas y filas queremos tener. <br>
+                                        Para esto utilizamos la siguiente propiedad:
+                                        <span class="etiquetas_atributo tooltips-text" title="Atributo_en_CSS">grid-template-columns: auto auto;
+                                            <span class="tooltips-box">
+                                                <i class="fa-solid fa-circle-info"></i>&nbsp; Propiedad
+                                            </span>
+                                        </span> <br>
+                                        Me permite expecificar el número de columnas que quiero tener, en este caso son 2 <br> 
+                                        y cada uno de ellos tendra un ancho calculado automaticamente.
+                                    </p>
+                                    <details class="contenedor_list_sub">
+                                        <summary class="title_list_sub"> display: grid; </summary>
+                                        <dfn>
+                                            <p>Estructura del código CSS:</p>
+                                            <code class="code_maestro">
+                                                <span class="etiquetas_class" title="Class_en_CSS">.grid_padre {</span>
+                                                    <code class="code_interno">
+                                                        display: grid;<br>
+                                                        grid-template-columns: auto auto;
+                                                    </code>
+                                                }
+                                            </code>
+                                            <section class="muestra">
+                                                <div class="grid_padre">
+                                                    <div class="grid_hijos0 lunes0">1</div>
+                                                    <div class="grid_hijos0 martes0">2</div>
+                                                    <div class="grid_hijos0 miercoles0">3</div>
+                                                </div>
+                                            </section>
+                                            
+                                        </dfn>
+                                    </details>
+                                    
+                                    <details class="contenedor_list_sub">
+                                        <summary class="title_list_sub"> grid-template-columns: en pixeles </summary>
+                                        <dfn>
+                                            <p>Estructura del código CSS:</p>
+                                            <code class="code_maestro">
+                                                <span class="etiquetas_class" title="Class_en_CSS">.grid_padre2 {</span>
+                                                    <code class="code_interno">
+                                                        display: grid;<br>
+                                                        grid-template-columns: 200px 150px 100px;
+                                                    </code>
+                                                }
+                                            </code>
+                                            <section class="muestra">
+                                                <div class="grid_padre grid_padre2">
+                                                    <div class="grid_hijos0 lunes0">1</div>
+                                                    <div class="grid_hijos0 martes0">2</div>
+                                                    <div class="grid_hijos0 miercoles0">3</div>
+                                                </div>
+                                            </section>
+                                            
+                                        </dfn>
+                                    </details>
+                                </div>
+                            </details>
+                            
+                            <details class="Flexbox_contenedor_list">
+                                <summary class="Flexbox_title_list">Nueva medida: francciones en GRID </summary>
+                                <dfn>
+                                    <div class="Flexbox_list_contenido">
+                                        <p> En GRID aparece una nueva unidad de medida: las fracciones 1fr <br> Esta permiten aprobechar el ancho de la página <br> calculando el ancho de cada elemento automaticamente. </p>
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> Aplicamos fracciones: 1fr </summary>
+                                            <dfn>
+                                                <p>Estructura del código CSS:</p>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_1fr {</span>
+                                                        <code class="code_interno">
+                                                        display: grid;<br>
+                                                        grid-template-columns: 1fr 1fr 1fr;
+                                                        </code>
+                                                    }
+                                                </code>
+                                                <p> grid-template-columns podemos fraccionar el espacio de la pantalla.</p>
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_1fr">
+                                                        <div class="grid_hijos0 lunes0">1</div>
+                                                        <div class="grid_hijos0 martes0">2</div>
+                                                        <div class="grid_hijos0 miercoles0">3</div>
+                                                    </div>
+                                                </section>
+                                            </dfn>
+                                        </details>
+
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> fracciones en más de una columna </summary>
+                                            <dfn>
+                                                <p>Estructura del código CSS:</p>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_3fr {</span>
+                                                        <code class="code_interno">
+                                                        display: grid;<br>
+                                                        grid-template-columns: 3fr 1fr 1fr;
+                                                        </code>
+                                                    }
+                                                </code>
+                                                <p> La fraccion uno esta compuesta por 3fr y las demas por 1fr, dando un total de 5 fracciones.</p>
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_3fr">
+                                                        <div class="grid_hijos0 lunes0">1</div>
+                                                        <div class="grid_hijos0 martes0">2</div>
+                                                        <div class="grid_hijos0 miercoles0">3</div>
+                                                    </div>
+                                                </section>
+                                            </dfn>
+                                        </details>
+
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> N° de filas y altura </summary>
+                                            <dfn>
+                                                <p>Estructura del código CSS:</p>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_filas {</span>
+                                                        <code class="code_interno">
+                                                        display: grid;<br>
+                                                        grid-template-columns: 3fr 1fr 1fr; <br>
+                                                        grid-template-rows: auto 100px;
+                                                        </code>
+                                                    }
+                                                </code>
+                                                <details class="contenedor_list_sub">
+                                                    <summary class="title_list_sub">Tabla</summary>
+                                                    <dfn>
+                                                        <table class="table_ej">
+                                                            <caption>Tipos de valores</caption>
+                                                            <tr>
+                                                                <th>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <th>grid-template-columns:</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Description</th>
+                                                                        </tr>
+                                                                    </table>
+                                                                </th>
+                                                                <th>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <th>3fr</th>
+                                                                            <th>1fr</th>
+                                                                            <th>1fr;</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>column 1</th>
+                                                                            <th>column 2</th>
+                                                                            <th>column 3</th>
+                                                                        </tr>
+                                                                    </table>
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <th>grid-template-rows:</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Description</th>
+                                                                        </tr>
+                                                                    </table>
+                                                                </th>
+                                                                <th>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <th>auto</th>
+                                                                            <th>100px;</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>row 1</th>
+                                                                            <th>row 2 with height</th>
+                                                                        </tr>
+                                                                    </table>
+                                                                </th>
+                                                            </tr>
+                                                        </table>
+                                                    </dfn>
+                                                </details>
+                                                <p>Muestra en la web:</p>
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_filas">
+                                                        <div class="grid_hijos0 lunes0">1: 3fr</div>
+                                                        <div class="grid_hijos0 martes0">2: 1fr</div>
+                                                        <div class="grid_hijos0 miercoles0">3: 1fr</div>
+                                                    </div>
+                                                </section>
+                                            </dfn>
+                                        </details>
+
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> Barios contenedores hijos </summary>
+                                            <dfn>
+                                                <p>Estructura del código CSS:</p>
+                                                <code class="code_maestro">
+                                                    <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_column-y-row-gap {</span>
+                                                        <code class="code_interno">
+                                                            display: grid; <br>
+                                                            grid-template-columns: 3fr 1fr 1fr; <br>
+                                                            grid-template-rows: auto 100px; <br>
+                                                            column-gap: 10px; <br>
+                                                            row-gap: 10px; <br>
+                                                        </code>
+                                                    }
+                                                </code>
+                                                <details class="contenedor_list_sub">
+                                                    <summary class="title_list_sub">Tabla</summary>
+                                                    <dfn>
+                                                        <table class="table_ej">
+                                                            <caption>Tipos de valores</caption>
+                                                            <tr>
+                                                                <th>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <th>grid-template-columns:</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Description</th>
+                                                                        </tr>
+                                                                    </table>
+                                                                </th>
+                                                                <th>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <th>3fr</th>
+                                                                            <th>1fr</th>
+                                                                            <th>1fr;</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>column 1</th>
+                                                                            <th>column 2</th>
+                                                                            <th>column 3</th>
+                                                                        </tr>
+                                                                    </table>
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <th>grid-template-rows:</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Description</th>
+                                                                        </tr>
+                                                                    </table>
+                                                                </th>
+                                                                <th>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <th>auto</th>
+                                                                            <th>100px;</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>row 1</th>
+                                                                            <th>row 2 with height</th>
+                                                                        </tr>
+                                                                    </table>
+                                                                </th>
+                                                            </tr>
+                                                        </table>
+                                                        <ul>
+                                                            <li>Primera fila esta en: auto</li>
+                                                            <li>Segunda fila esta a: 100px</li>
+                                                            <li>Tersera fila al no estar declarada se pone en: auto</li>
+                                                        </ul>
+                                                    </dfn>
+                                                </details>
+                                                <p>Con column-gap y row-gap podemos colocar un espacio entre los hijos. <br>
+                                                    Muestra en la web:</p>
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_column-y-row-gap">
+                                                        <div class="grid_hijos0 ">1</div>
+                                                        <div class="grid_hijos0 ">2</div>
+                                                        <div class="grid_hijos0 ">3</div>
+                                                        <div class="grid_hijos0 ">4</div>
+                                                        <div class="grid_hijos0 ">5</div>
+                                                        <div class="grid_hijos0 ">6</div>
+                                                        <div class="grid_hijos0 ">7</div>
+                                                        <div class="grid_hijos0 ">8</div>
+                                                        <div class="grid_hijos0 ">9</div>
+                                                    </div>
+                                                </section>
+                                            </dfn>
+                                        </details>
+                                    </div>
+                                </dfn>
                             </details>
                         </section>
                     </section>
