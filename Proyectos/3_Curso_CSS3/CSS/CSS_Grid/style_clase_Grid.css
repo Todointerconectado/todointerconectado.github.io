@@ -49,11 +49,97 @@
     grid-template-rows: auto 100px;
 }
 .grid_padre_column-y-row-gap {
+    height: 300px;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
-    grid-template-rows: auto 100px;
+    grid-template-rows: auto 70px;
     column-gap: 10px;
     row-gap: 10px;
 }
 
+/* ------------ align-items ------------ */
+.grid_padre_align-items {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: auto 70px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.grid_padre_align-items:hover {
+    align-items: center;
+}
 
+.grid_padre_align-items_start {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: auto 70px;
+    gap: 10px 10px;
+}
+.grid_padre_align-items_start:hover {
+    align-items: start;
+}
+
+.grid_padre_align-items_end {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: auto 70px;
+    gap: 10px 10px;
+}
+.grid_padre_align-items_end:hover {
+    align-items: end;
+}
+
+/* ------------ justify-itams ------------ */
+.grid_padre_justify-items_center {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: auto 70px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.grid_padre_justify-items_center:hover {
+    align-items: center;
+    justify-items: center;
+}
+
+.grid_padre_justify-items_start {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: auto 70px;
+    gap: 10px 10px;
+}
+.grid_padre_justify-items_start:hover {
+    align-items: start;
+    justify-items: start;
+}
+
+.grid_padre_justify-items_end {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: auto 70px;
+    gap: 10px 10px;
+}
+.grid_padre_justify-items_end:hover {
+    align-items: end;
+    justify-items: end;
+}
+
+/* ------------ order ------------ */
+.grid_order_positive, .grid_order_negativo {
+    background-color: var(--blue_sure_sub);
+}
+
+.grid_padre_order:hover .grid_order_positive {
+    background-color: yellow;
+    order: 1;
+}
+.grid_padre_order:hover .grid_order_negativo {
+    background-color: yellow;
+    order: -1;
+}

@@ -2724,7 +2724,11 @@
                                 <summary class="Flexbox_title_list">Nueva medida: francciones en GRID </summary>
                                 <dfn>
                                     <div class="Flexbox_list_contenido">
-                                        <p> En GRID aparece una nueva unidad de medida: las fracciones 1fr <br> Esta permiten aprobechar el ancho de la página <br> calculando el ancho de cada elemento automaticamente. </p>
+                                        <p> En GRID aparece una nueva unidad de medida: las fracciones 1fr <br>
+                                            Esta permiten aprobechar el ancho de la página <br>
+                                            calculando el ancho de cada elemento automaticamente.
+                                        </p>
+
                                         <details class="contenedor_list_sub">
                                             <summary class="title_list_sub"> Aplicamos fracciones: 1fr </summary>
                                             <dfn>
@@ -2860,11 +2864,13 @@
                                                 <code class="code_maestro">
                                                     <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_column-y-row-gap {</span>
                                                         <code class="code_interno">
+                                                            height: 300px; <br>
                                                             display: grid; <br>
                                                             grid-template-columns: 3fr 1fr 1fr; <br>
-                                                            grid-template-rows: auto 100px; <br>
+                                                            grid-template-rows: auto 70px; <br>
                                                             column-gap: 10px; <br>
                                                             row-gap: 10px; <br>
+                                                            &lt;!-- Aplicamos column-gap y row-gap en la misma linea: gap: 10px 10px; --&gt;
                                                         </code>
                                                     }
                                                 </code>
@@ -2946,6 +2952,358 @@
                                                         <div class="grid_hijos0 ">9</div>
                                                     </div>
                                                 </section>
+                                            </dfn>
+                                        </details>
+                                    </div>
+                                </dfn>
+                            </details>
+
+                            <details class="Flexbox_contenedor_list">
+                                <summary class="Flexbox_title_list">align-items con GRID </summary>
+                                <dfn>
+                                    <div class="Flexbox_list_contenido">
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> align-items: center;</summary>
+                                            <dfn>
+                                                <p> 
+                                                    Al aplicar <span class="etiquetas_atributo" title="Propiedad CSS">align-items: center;</span>
+                                                    los elementos hijos se ajustan al centro <br>
+                                                    con respecto al espacio definido inicialmente. <br> Muestra en la web:
+                                                </p>
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_align-items">
+                                                        <div class="grid_hijos0 ">1</div>
+                                                        <div class="grid_hijos0 ">2</div>
+                                                        <div class="grid_hijos0 ">3</div>
+                                                        <div class="grid_hijos0 ">4</div>
+                                                        <div class="grid_hijos0 ">5</div>
+                                                        <div class="grid_hijos0 ">6</div>
+                                                        <div class="grid_hijos0 ">7</div>
+                                                        <div class="grid_hijos0 ">8</div>
+                                                        <div class="grid_hijos0 ">9</div>
+                                                    </div>
+                                                </section>
+                                                <details class="contenedor_list_sub">
+                                                    <summary class="title_list_sub">Estructura del código CSS:</summary>
+                                                    <dfn>
+                                                        <code class="code_maestro">
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_align-items {</span>
+                                                                <code class="code_interno">
+                                                                    height: 300px; <br>
+                                                                    display: grid; <br>
+                                                                    grid-template-columns: 3fr 1fr 1fr; <br>
+                                                                    grid-template-rows: auto 70px; <br>
+                                                                    column-gap: 10px; <br>
+                                                                    row-gap: 10px; <br>
+                                                                    &lt;!-- Aplicamos column-gap y row-gap en la misma linea: gap: 10px 10px; --&gt; <br>
+                                                                    align-items: center; <br>
+                                                                </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+                                            </dfn>
+                                        </details>
+
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> align-items: start;</summary>
+                                            <dfn>
+                                                <p> Al aplicar <span class="etiquetas_atributo" title="Propiedad CSS">align-items: start;</span>
+                                                    los elementos hijos se ajustan al centro arriba <br>
+                                                    con respecto al espacio definido inicialmente. <br> Muestra en la web:
+                                                </p>
+
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_align-items_start">
+                                                        <div class="grid_hijos0 ">1</div>
+                                                        <div class="grid_hijos0 ">2</div>
+                                                        <div class="grid_hijos0 ">3</div>
+                                                        <div class="grid_hijos0 ">4</div>
+                                                        <div class="grid_hijos0 ">5</div>
+                                                        <div class="grid_hijos0 ">6</div>
+                                                        <div class="grid_hijos0 ">7</div>
+                                                        <div class="grid_hijos0 ">8</div>
+                                                        <div class="grid_hijos0 ">9</div>
+                                                    </div>
+                                                </section>
+
+                                                <details class="contenedor_list_sub">
+                                                    <summary class="title_list_sub">Estructura del código CSS:</summary>
+                                                    <dfn>
+                                                        <code class="code_maestro">
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_align-items_start {</span>
+                                                                <code class="code_interno">
+                                                                    height: 300px; <br>
+                                                                    display: grid; <br>
+                                                                    grid-template-columns: 3fr 1fr 1fr; <br>
+                                                                    grid-template-rows: auto 70px; <br>
+                                                                    gap: 10px 10px; <br>
+                                                                    align-items: start; <br>
+                                                                </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+                                            </dfn>
+                                        </details>
+
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> align-items: end;</summary>
+                                            <dfn>
+                                                <p> Al aplicar <span class="etiquetas_atributo" title="Propiedad CSS">align-items: end;</span>
+                                                    los elementos hijos se ajustan al centro abajo <br>
+                                                    con respecto al espacio definido inicialmente. <br> Muestra en la web:
+                                                </p>
+
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_align-items_end">
+                                                        <div class="grid_hijos0 ">1</div>
+                                                        <div class="grid_hijos0 ">2</div>
+                                                        <div class="grid_hijos0 ">3</div>
+                                                        <div class="grid_hijos0 ">4</div>
+                                                        <div class="grid_hijos0 ">5</div>
+                                                        <div class="grid_hijos0 ">6</div>
+                                                        <div class="grid_hijos0 ">7</div>
+                                                        <div class="grid_hijos0 ">8</div>
+                                                        <div class="grid_hijos0 ">9</div>
+                                                    </div>
+                                                </section>
+
+                                                <details class="contenedor_list_sub">
+                                                    <summary class="title_list_sub">Estructura del código CSS:</summary>
+                                                    <dfn>
+                                                        <code class="code_maestro">
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_align-items_end {</span>
+                                                                <code class="code_interno">
+                                                                    height: 300px; <br>
+                                                                    display: grid; <br>
+                                                                    grid-template-columns: 3fr 1fr 1fr; <br>
+                                                                    grid-template-rows: auto 70px; <br>
+                                                                    gap: 10px 10px; <br>
+                                                                    align-items: end; <br>
+                                                                </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+                                            </dfn>
+                                        </details>
+                                    </div>
+                                </dfn>
+                            </details>
+
+                            <details class="Flexbox_contenedor_list">
+                                <summary class="Flexbox_title_list">justify-items con GRID </summary>
+                                <dfn>
+                                    <div class="Flexbox_list_contenido">
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> justify-items: center;</summary>
+                                            <dfn>
+                                                <p> Al aplicar <span class="etiquetas_atributo" title="Propiedad CSS">justify-items: center;</span>
+                                                    los elementos hijos se ajustan al centro horizontal <br>
+                                                    con respecto al espacio definido inicialmente. <br> Muestra en la web:
+                                                </p>
+
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_justify-items_center">
+                                                        <div class="grid_hijos0 ">1</div>
+                                                        <div class="grid_hijos0 ">2</div>
+                                                        <div class="grid_hijos0 ">3</div>
+                                                        <div class="grid_hijos0 ">4</div>
+                                                        <div class="grid_hijos0 ">5</div>
+                                                        <div class="grid_hijos0 ">6</div>
+                                                        <div class="grid_hijos0 ">7</div>
+                                                        <div class="grid_hijos0 ">8</div>
+                                                        <div class="grid_hijos0 ">9</div>
+                                                    </div>
+                                                </section>
+
+                                                <details class="contenedor_list_sub">
+                                                    <summary class="title_list_sub">Estructura del código CSS:</summary>
+                                                    <dfn>
+                                                        <code class="code_maestro">
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_justify-items_center {</span>
+                                                                <code class="code_interno">
+                                                                    height: 300px; <br>
+                                                                    display: grid; <br>
+                                                                    grid-template-columns: 3fr 1fr 1fr; <br>
+                                                                    grid-template-rows: auto 70px; <br>
+                                                                    gap: 10px 10px; <br>
+                                                                    align-items: center; <br>
+                                                                    justify-items: center; <br>
+                                                                </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+                                            </dfn>
+                                        </details>
+
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> justify-items: start;</summary>
+                                            <dfn>
+                                                <p> Al aplicar <span class="etiquetas_atributo" title="Propiedad CSS">justify-items: start;</span>
+                                                    los elementos hijos se ajustan al centro left top <br>
+                                                    con respecto al espacio definido inicialmente. <br> Muestra en la web:
+                                                </p>
+
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_justify-items_start">
+                                                        <div class="grid_hijos0 ">1</div>
+                                                        <div class="grid_hijos0 ">2</div>
+                                                        <div class="grid_hijos0 ">3</div>
+                                                        <div class="grid_hijos0 ">4</div>
+                                                        <div class="grid_hijos0 ">5</div>
+                                                        <div class="grid_hijos0 ">6</div>
+                                                        <div class="grid_hijos0 ">7</div>
+                                                        <div class="grid_hijos0 ">8</div>
+                                                        <div class="grid_hijos0 ">9</div>
+                                                    </div>
+                                                </section>
+
+                                                <details class="contenedor_list_sub">
+                                                    <summary class="title_list_sub">Estructura del código CSS:</summary>
+                                                    <dfn>
+                                                        <code class="code_maestro">
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_justify-items_start {</span>
+                                                                <code class="code_interno">
+                                                                    height: 300px; <br>
+                                                                    display: grid; <br>
+                                                                    grid-template-columns: 3fr 1fr 1fr; <br>
+                                                                    grid-template-rows: auto 70px; <br>
+                                                                    gap: 10px 10px; <br>
+                                                                    align-items: start; <br>
+                                                                    justify-items: start; <br>
+                                                                </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+                                            </dfn>
+                                        </details>
+
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> justify-items: end;</summary>
+                                            <dfn>
+                                                <p> Al aplicar <span class="etiquetas_atributo" title="Propiedad CSS">justify-items: end;</span>
+                                                    los elementos hijos se ajustan al centro right botter <br>
+                                                    con respecto al espacio definido inicialmente. <br> Muestra en la web:
+                                                </p>
+
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_justify-items_end">
+                                                        <div class="grid_hijos0 ">1</div>
+                                                        <div class="grid_hijos0 ">2</div>
+                                                        <div class="grid_hijos0 ">3</div>
+                                                        <div class="grid_hijos0 ">4</div>
+                                                        <div class="grid_hijos0 ">5</div>
+                                                        <div class="grid_hijos0 ">6</div>
+                                                        <div class="grid_hijos0 ">7</div>
+                                                        <div class="grid_hijos0 ">8</div>
+                                                        <div class="grid_hijos0 ">9</div>
+                                                    </div>
+                                                </section>
+
+                                                <details class="contenedor_list_sub">
+                                                    <summary class="title_list_sub">Estructura del código CSS:</summary>
+                                                    <dfn>
+                                                        <code class="code_maestro">
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_justify-items_end {</span>
+                                                                <code class="code_interno">
+                                                                    height: 300px; <br>
+                                                                    display: grid; <br>
+                                                                    grid-template-columns: 3fr 1fr 1fr; <br>
+                                                                    grid-template-rows: auto 70px; <br>
+                                                                    gap: 10px 10px; <br>
+                                                                    align-items: end; <br>
+                                                                    justify-items: end; <br>
+                                                                </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+                                            </dfn>
+                                        </details>
+                                    </div>
+                                </dfn>
+                            </details>
+
+                            <details class="Flexbox_contenedor_list">
+                                <summary class="Flexbox_title_list">order con GRID </summary>
+                                <dfn>
+                                    <div class="Flexbox_list_contenido">
+                                        <p> Podemos controlar el orden de los elementos hijos con el atributo:
+                                            <span class="etiquetas_atributo" title="Propiedad CSS">order: valor;</span> <br><br>
+
+                                            Se lo aplicamos al contenedor hijo que queremos controlar su pocición. <br>
+                                            Por defecto viene aplicado <span class="etiquetas_atributo" title="Propiedad CSS">order: 0;</span>
+                                            si cambiamos su valor a un N° positivo lo colocaremos al final de los contenedores sin orden <br>
+                                            y si ponemos un valor negativo se colocaran al inicio.
+                                        </p>
+
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> order: 1;</summary>
+                                            <dfn>
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_order">
+                                                        <div class="grid_hijos0 ">1</div>
+                                                        <div class="grid_hijos0 ">2</div>
+                                                        <div class="grid_hijos0 ">3</div>
+                                                        <div class="grid_hijos0 ">4</div>
+                                                        <div class="grid_hijos0 grid_order_positive">5</div>
+                                                        <div class="grid_hijos0 ">6</div>
+                                                        <div class="grid_hijos0 ">7</div>
+                                                        <div class="grid_hijos0 ">8</div>
+                                                        <div class="grid_hijos0 ">9</div>
+                                                    </div>
+                                                </section>
+
+                                                <details class="contenedor_list_sub">
+                                                    <summary class="title_list_sub">Estructura del código CSS:</summary>
+                                                    <dfn>
+                                                        <code class="code_maestro">
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_order_positive {</span>
+                                                                <code class="code_interno">
+                                                                    background-color: yellow; <br>
+                                                                    order: 1;
+                                                                </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+                                            </dfn>
+                                        </details>
+
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> order: -1;</summary>
+                                            <dfn>
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_order">
+                                                        <div class="grid_hijos0 ">1</div>
+                                                        <div class="grid_hijos0 ">2</div>
+                                                        <div class="grid_hijos0 ">3</div>
+                                                        <div class="grid_hijos0 ">4</div>
+                                                        <div class="grid_hijos0 grid_order_negativo">5</div>
+                                                        <div class="grid_hijos0 ">6</div>
+                                                        <div class="grid_hijos0 ">7</div>
+                                                        <div class="grid_hijos0 ">8</div>
+                                                        <div class="grid_hijos0 ">9</div>
+                                                    </div>
+                                                </section>
+
+                                                <details class="contenedor_list_sub">
+                                                    <summary class="title_list_sub">Estructura del código CSS:</summary>
+                                                    <dfn>
+                                                        <code class="code_maestro">
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_order_negativo {</span>
+                                                                <code class="code_interno">
+                                                                    background-color: yellow; <br>
+                                                                    order: -1;
+                                                                </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
                                             </dfn>
                                         </details>
                                     </div>
