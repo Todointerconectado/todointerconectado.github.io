@@ -260,7 +260,7 @@ form {
 
 /*-------- Etiquetas de código --------*/
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&family=Signika+Negative&display=swap');
-.etiquetas_css, .etiquetas_html, .etiquetas_class, .etiquetas_id, .etiquetas_atributo {
+.etiquetas_css, .etiquetas_html, .etiquetas_class, .etiquetas_id, .etiquetas_atributo, .etiqueta_comentario {
     width: auto;
     height: auto;
     margin: 1px 1px 1px 4px;
@@ -292,6 +292,38 @@ form {
 .etiquetas_atributo {
     background-color: rgb(224, 110, 110);
     padding: 2px 5px;
+}
+.details_etiqueta_comentario {
+    margin: 0px;
+    margin-top: 3px;
+    box-shadow: 1px 1px 3px black;
+    /* background-color: rgb(163, 231, 210); */
+    background-color: rgba(255, 255, 255, .6);
+    min-width: 30%;
+    height: auto;
+    list-style: none;
+    flex-grow: 1;
+}
+.summary_etiqueta_comentario {
+    margin: 0;
+    padding: 2px;
+    height: auto;
+    border-radius: 0px;
+    background-color: rgb(143, 202, 183);
+    /* background-color: transparent; */
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-align: start;
+    cursor: pointer;
+}
+.etiqueta_comentario {
+    border: none;
+    background-color: transparent;
+    color: rgb(85, 84, 84);
 }
 .text_etiqueta_codigo {
     border: none;

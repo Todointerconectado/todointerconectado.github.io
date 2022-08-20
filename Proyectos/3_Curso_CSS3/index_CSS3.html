@@ -3315,16 +3315,22 @@
                                 <summary class="Flexbox_title_list"> GRID lines </summary>
                                 <dfn>
                                     <div class="Flexbox_list_contenido">
-                                        <p> 
-                                            Podemos definir el espacio que toma cada cuadrante hijo. <br>
-                                            Para esto sabemos que los bordes entre los cuadrantes estan enumerados en dirección de las filas y columnas. <br>
-                                            Es decir, los bordes de las filas como las columnas tienen una coordenada numerica. <br>
-                                            Entonces, si tenemos 3 fila, tenemos 3 cuadrantes en total tendriamos 4 lineas divisorias. <br>
-                                            Por otro lado, si tenemos 6 columnas, tenemos 6 cuadrantes en total tendriamos 7 lineas divisorias. <br>
-                                        </p>
-                                        <figure class="img_grid_coordenadas">
-                                            <img src="/Proyectos/3_Curso_CSS3/CSS/CSS_Grid/Grid_img/Coordenadas_lineas_grid.png" alt="Coordenadas lineas Grid">
-                                        </figure>
+                                        <details class="details_etiqueta_comentario">
+                                            <summary class="summary_etiqueta_comentario">
+                                                <figure class="img_grid_coordenadas">
+                                                    <img src="/Proyectos/3_Curso_CSS3/CSS/CSS_Grid/Grid_img/Coordenadas_lineas_grid.png" alt="Coordenadas lineas Grid">
+                                                </figure>
+                                            </summary>
+                                            <dfn>
+                                                <p> 
+                                                    Podemos definir el espacio que toma cada cuadrante hijo. <br>
+                                                    Para esto sabemos que los bordes entre los cuadrantes estan enumerados en dirección de las filas y columnas. <br>
+                                                    Es decir, los bordes de las filas como las columnas tienen una coordenada numerica. <br>
+                                                    Entonces, si tenemos 3 fila, tenemos 3 cuadrantes en total tendriamos 4 lineas divisorias. <br>
+                                                    Por otro lado, si tenemos 6 columnas, tenemos 6 cuadrantes en total tendriamos 7 lineas divisorias. <br>
+                                                </p>
+                                            </dfn>
+                                        </details>
 
                                         <details class="contenedor_list_sub">
                                             <summary class="title_list_sub"> Grid lines</summary>
@@ -3434,13 +3440,117 @@
                                                                 <code class="code_interno">
                                                                     width: 60%; <br>
                                                                     height: auto; <br>
+                                                                    overflow: hidden; <br>
                                                                     overflow-y: auto; <br>
                                                                     display: grid; <br>
                                                                     transition: width 3000ms ease 0ms; <br>
-                                                                    &lt;!-- Con auto-fill hacemos que se auto ajusten los cuadrantes de 50px automaticamente si hay espacio. --&gt; <br>
-                                                                    grid-template-columns: repeat(auto-fill, 50px);
+                                                                    <details class="details_etiqueta_comentario">
+                                                                        <summary class="summary_etiqueta_comentario">grid-template-columns: repeat(auto-fill, minmax(70px, 1fr);</summary>
+                                                                        <dfn>
+                                                                            <span class="etiqueta_comentario" title="Comentario">
+                                                                                &lt;!-- <br> Con auto-fill hacemos que se auto ajusten los cuadrantes de 70px automaticamente si hay espacio. <br><br>
+                                                                                Con  minmax(70px, 1fr) hacemos que el tamaño de cada contenedor sea de 70px y crese hasta tener el espacio para un nuevo contenedor. <br> --&gt; 
+                                                                            </span>
+                                                                        </dfn>
+                                                                    </details>
                                                                 </code>
                                                             }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+                                            </dfn>
+                                        </details>
+
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> Grid Área names</summary>
+                                            <dfn>
+                                                <p>También es responsive.</p>
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_Grid-area-names">
+                                                        <div class="grid_hijos0 grid_hijo_1-area-names">1: header</div>
+                                                        <div class="grid_hijos0 grid_hijo_2-area-names">2: article</div>
+                                                        <div class="grid_hijos0 grid_hijo_3-area-names">3: sidemenu</div>
+                                                        <div class="grid_hijos0 grid_hijo_4-area-names">4: main</div>
+                                                        <div class="grid_hijos0 grid_hijo_5-area-names">5: footer</div>
+                                                    </div>
+                                                </section> 
+
+                                                <details class="contenedor_list_sub">
+                                                    <summary class="title_list_sub">Estructura del código CSS:</summary>
+                                                    <dfn>
+                                                        <code class="code_maestro">
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_Grid-area-names {</span>
+                                                                <code class="code_interno">
+                                                                    width: 60%; <br>
+                                                                    height: 200px; <br>
+                                                                    transition: width 2000ms ease 0ms, height 2000ms ease 2000ms; <br>
+                                                                    display: grid; <br>
+                                                                    <details class="details_etiqueta_comentario">
+                                                                        <summary class="summary_etiqueta_comentario">grid-template-areas:</summary>
+                                                                        <dfn>
+                                                                            <code class="code_interno">
+                                                                                <table>
+                                                                                        <caption> matriz </caption>
+                                                                                        <tr>
+                                                                                            <th>'header</th>
+                                                                                            <th>header</th>
+                                                                                            <th>header</th>
+                                                                                            <th>article'</th>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th>'sidemenu</th>
+                                                                                            <th>main</th>
+                                                                                            <th>main</th>
+                                                                                            <th>article'</th>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th>'sidemenu</th>
+                                                                                            <th>main</th>
+                                                                                            <th>main</th>
+                                                                                            <th>article'</th>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th>'footer</th>
+                                                                                            <th>footer</th>
+                                                                                            <th>footer</th>
+                                                                                            <th>footer'</th>
+                                                                                        </tr>
+                                                                                </table>;
+                                                                            </code>
+                                                                        </dfn>
+                                                                    </details>
+                                                                </code>
+                                                            } <br><br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_Grid-area-names</span>:hover { <br>
+                                                                <code class="code_interno">
+                                                                    width: 95%; <br>
+                                                                    height: 300px;
+                                                                </code>
+                                                            } <br><br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_hijo_1-area-names {</span>
+                                                                <code class="code_interno">
+                                                                    grid-area: header;
+                                                                </code>
+                                                            } <br><br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_hijo_2-area-names {</span>
+                                                                <code class="code_interno">
+                                                                    grid-area: article;
+                                                                </code>
+                                                            } <br><br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_hijo_3-area-names {</span>
+                                                                <code class="code_interno">
+                                                                    grid-area: sidemenu;
+                                                                </code>
+                                                            } <br><br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_hijo_4-area-names {</span>
+                                                                <code class="code_interno">
+                                                                    grid-area: main;
+                                                                </code>
+                                                            } <br><br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_hijo_5-area-names {</span>
+                                                                <code class="code_interno">
+                                                                    grid-area: footer;
+                                                                </code>
                                                         </code>
                                                     </dfn>
                                                 </details>
@@ -3456,7 +3566,6 @@
         </section>
     </main>
 
-    <!-- footer -->
     <footer>
         <a class="flecha2" href="#home">
             <p class="simbolo"> > </p>
