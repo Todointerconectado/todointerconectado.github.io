@@ -51,7 +51,8 @@
 .grid_padre_column-y-row-gap {
     height: 300px;
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
+    /* grid-template-columns: 3fr 1fr 1fr; */
+    grid-template-columns: repeat(1, 3fr 1fr 1fr);
     grid-template-rows: auto 70px;
     column-gap: 10px;
     row-gap: 10px;
@@ -142,4 +143,59 @@
 .grid_padre_order:hover .grid_order_negativo {
     background-color: yellow;
     order: -1;
+}
+
+/* ------------ Grid Lines ------------ */
+.img_grid_coordenadas {
+    border: 1px solid;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.img_grid_coordenadas img {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    max-height: 200px;
+}
+.grid_padre_Grid-lines {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.grid_hijo1:hover {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.grid_hijo5 {
+    grid-column: 1 / 4;
+}
+.grid_hijo8 {
+    grid-column: 1 / span 3;
+}
+.grid_hijo4 {
+    grid-column: 6;
+    grid-row: 1 / 4;
+}
+.grid_hijo11 {
+    /* grid-area: fila de inicio: 4 / columna de inicio: 1 /fila final: 7 /columna final: 5; */
+    grid-area: 4 / 1 / 7 / 5;
+}
+
+/* ------------- Grid Responsive ------------- */
+.grid_padre_Grid-responsive {
+    width: 60%;
+    height: auto;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, min 25px);
+    transition: width 3000ms ease 0ms;
+} 
+.grid_padre_Grid-responsive:hover {
+    width: 95%;
 }

@@ -2866,7 +2866,8 @@
                                                         <code class="code_interno">
                                                             height: 300px; <br>
                                                             display: grid; <br>
-                                                            grid-template-columns: 3fr 1fr 1fr; <br>
+                                                            &lt;!-- repeat(cantidad, tamaño) --&gt; <br>
+                                                            grid-template-columns:  repeat(1, 3fr 1fr 1fr); <br>
                                                             grid-template-rows: auto 70px; <br>
                                                             column-gap: 10px; <br>
                                                             row-gap: 10px; <br>
@@ -3309,6 +3310,145 @@
                                     </div>
                                 </dfn>
                             </details>
+
+                            <details class="Flexbox_contenedor_list">
+                                <summary class="Flexbox_title_list"> GRID lines </summary>
+                                <dfn>
+                                    <div class="Flexbox_list_contenido">
+                                        <p> 
+                                            Podemos definir el espacio que toma cada cuadrante hijo. <br>
+                                            Para esto sabemos que los bordes entre los cuadrantes estan enumerados en dirección de las filas y columnas. <br>
+                                            Es decir, los bordes de las filas como las columnas tienen una coordenada numerica. <br>
+                                            Entonces, si tenemos 3 fila, tenemos 3 cuadrantes en total tendriamos 4 lineas divisorias. <br>
+                                            Por otro lado, si tenemos 6 columnas, tenemos 6 cuadrantes en total tendriamos 7 lineas divisorias. <br>
+                                        </p>
+                                        <figure class="img_grid_coordenadas">
+                                            <img src="/Proyectos/3_Curso_CSS3/CSS/CSS_Grid/Grid_img/Coordenadas_lineas_grid.png" alt="Coordenadas lineas Grid">
+                                        </figure>
+
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> Grid lines</summary>
+                                            <dfn>
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_Grid-lines">
+                                                        <div class="grid_hijos0 grid_hijo1">1</div>
+                                                        <div class="grid_hijos0 grid_hijo2">2</div>
+                                                        <div class="grid_hijos0 grid_hijo3">3</div>
+                                                        <div class="grid_hijos0 grid_hijo4">4</div>
+                                                        <div class="grid_hijos0 grid_hijo5">5</div>
+                                                        <div class="grid_hijos0 grid_hijo6">6</div>
+                                                        <div class="grid_hijos0 grid_hijo7">7</div>
+                                                        <div class="grid_hijos0 grid_hijo8">8</div>
+                                                        <div class="grid_hijos0 grid_hijo9">9</div>
+                                                        <div class="grid_hijos0 grid_hijo10">10</div>
+                                                        <div class="grid_hijos0 grid_hijo11">11</div>
+                                                        <div class="grid_hijos0 grid_hijo12">12</div>
+                                                        <div class="grid_hijos0 grid_hijo13">13</div>
+                                                        <div class="grid_hijos0 grid_hijo14">14</div>
+                                                        <div class="grid_hijos0 grid_hijo15">15</div>
+                                                        <div class="grid_hijos0 grid_hijo16">16</div>
+                                                        <div class="grid_hijos0 grid_hijo17">17</div>
+                                                        <div class="grid_hijos0 grid_hijo18">18</div>
+                                                    </div>
+                                                </section>
+
+                                                <details class="contenedor_list_sub">
+                                                    <summary class="title_list_sub">Estructura del código CSS:</summary>
+                                                    <dfn>
+                                                        <code class="code_maestro">
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_Grid-lines {</span>
+                                                                <code class="code_interno">
+                                                                    display: grid;<br>
+                                                                    grid-template-columns: repeat(6, 1fr);
+                                                                </code>
+                                                            } <br><br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_hijo1 {</span>
+                                                                <code class="code_interno">
+                                                                    grid-column-start: 1; <br>
+                                                                    grid-column-end: 4; <br>
+                                                                </code>
+                                                            } <br><br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_hijo5 {</span>
+                                                                <code class="code_interno">
+                                                                    &lt;!-- Las 2 lineas anteriones en una misma linea. --&gt; <br>
+                                                                    grid-column: 1 / 4;
+                                                                </code>
+                                                            } <br><br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_hijo8 {</span>
+                                                                <code class="code_interno">
+                                                                    &lt;!-- Empieza en la linea 1 y se espande 3 espacios. --&gt; <br>
+                                                                    grid-column: 1 / span 3;
+                                                                </code>
+                                                            } <br><br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_hijo4 {</span>
+                                                                <code class="code_interno">
+                                                                    &lt;!-- Empieza en la fila 1 y columna 6, terminando en la fila 4. --&gt; <br>
+                                                                    grid-column: 6; <br>
+                                                                    grid-row: 1 / 4;
+                                                                </code>
+                                                            } <br><br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_hijo11 {</span>
+                                                                <code class="code_interno">
+                                                                    &lt;!-- Marcar areas: valores horizontales como verticales. <br>
+                                                                    grid-area: fila de inicio: 4 / columna de inicio: 1 /fila final: 7 /columna final: 5; --&gt; <br>
+                                                                    grid-area: 4 / 1 / 7 / 5;
+                                                                </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+                                            </dfn>
+                                        </details>
+
+                                        <details class="contenedor_list_sub">
+                                            <summary class="title_list_sub"> Grid Responsive</summary>
+                                            <dfn>
+                                                <section class="muestra">
+                                                    <div class="grid_padre grid_padre_Grid-responsive">
+                                                        <div class="grid_hijos0 grid_hijo_1">1</div>
+                                                        <div class="grid_hijos0 grid_hijo_2">2</div>
+                                                        <div class="grid_hijos0 grid_hijo_3">3</div>
+                                                        <div class="grid_hijos0 grid_hijo_4">4</div>
+                                                        <div class="grid_hijos0 grid_hijo_5">5</div>
+                                                        <div class="grid_hijos0 grid_hijo_6">6</div>
+                                                        <div class="grid_hijos0 grid_hijo_7">7</div>
+                                                        <div class="grid_hijos0 grid_hijo_8">8</div>
+                                                        <div class="grid_hijos0 grid_hijo_9">9</div>
+                                                        <div class="grid_hijos0 grid_hijo_10">10</div>
+                                                        <div class="grid_hijos0 grid_hijo_11">11</div>
+                                                        <div class="grid_hijos0 grid_hijo_12">12</div>
+                                                        <div class="grid_hijos0 grid_hijo_13">13</div>
+                                                        <div class="grid_hijos0 grid_hijo_14">14</div>
+                                                        <div class="grid_hijos0 grid_hijo_15">15</div>
+                                                        <div class="grid_hijos0 grid_hijo_16">16</div>
+                                                        <div class="grid_hijos0 grid_hijo_17">17</div>
+                                                        <div class="grid_hijos0 grid_hijo_18">18</div>
+                                                    </div>
+                                                </section> 
+
+                                                <details class="contenedor_list_sub">
+                                                    <summary class="title_list_sub">Estructura del código CSS:</summary>
+                                                    <dfn>
+                                                        <code class="code_maestro">
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.grid_padre_Grid-responsive {</span>
+                                                                <code class="code_interno">
+                                                                    width: 60%; <br>
+                                                                    height: auto; <br>
+                                                                    overflow-y: auto; <br>
+                                                                    display: grid; <br>
+                                                                    transition: width 3000ms ease 0ms; <br>
+                                                                    &lt;!-- Con auto-fill hacemos que se auto ajusten los cuadrantes de 50px automaticamente si hay espacio. --&gt; <br>
+                                                                    grid-template-columns: repeat(auto-fill, 50px);
+                                                                </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+                                            </dfn>
+                                        </details>
+                                    </div>
+                                </dfn>
+                            </details>
                         </section>
                     </section>
                 </dfn>
@@ -3316,6 +3456,7 @@
         </section>
     </main>
 
+    <!-- footer -->
     <footer>
         <a class="flecha2" href="#home">
             <p class="simbolo"> > </p>
