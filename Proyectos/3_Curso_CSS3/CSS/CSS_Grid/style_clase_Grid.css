@@ -204,7 +204,7 @@
 
 /* ------------- Grid Áreas Names responsive ------------- */
 .grid_padre_Grid-area-names {
-    width: 60%;
+    width: 80%;
     height: 200px;
     transition: width 2000ms ease 0ms, height 2000ms ease 2000ms;
     display: grid;
@@ -218,6 +218,12 @@
 .grid_padre_Grid-area-names:hover {
     width: 95%;
     height: 300px;
+}
+.grid-template-areas_matriz {
+    border: 1px solid;
+}
+.grid-template-areas_matriz tr th {
+    font-size: 11.8px;
 }
 .grid_hijo_1-area-names {
     grid-area: header;
