@@ -980,7 +980,7 @@ article {
     margin: 0;
     border: 1px solid;
     width: 100%;
-    height: 100px;
+    height: 50px;
     transition: height 2000ms ease 0ms;
 }
 .Media_Screem-img img:hover {
@@ -1035,7 +1035,7 @@ article {
     font-weight: bolder;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:460px) {
     .Media_Screem-padre:hover .Media_Screem-Header {
         grid-column: 1/-1;
     }
