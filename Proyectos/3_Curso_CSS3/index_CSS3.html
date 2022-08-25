@@ -3563,6 +3563,93 @@
                     </section>
                 </dfn>
             </details>
+
+            <details class="contenedor_inicio">
+                <summary> Media Query en CSS</summary>
+                <dfn>
+                    <section class="Grid_contenedor__maestro">
+                        <h1 class="Grid_title">MEDIA QUERY</h1>
+                        <div class="Grid_inicio">
+                            <p class="Grid_text"> 
+                                Nos permite modificar los valores de las propiedades CSS dependiendo del medio donde se esté visualizando la página. <br>
+                                El medio influirá en el tamaño de la pantalla si lo estamos viendo en un celular, tablet, PC y pantallas más grandes.
+                            </p>
+                            <figure class="img_grid_coordenadas">
+                                <img src="/Proyectos/3_Curso_CSS3/CSS/CSS_Media-Query/Tipos de tamaños de pantalla.png" alt="Tipos de tamaños de pantallas">
+                            </figure>
+                        </div>
+                        <p>Tenemos 3 tipos de tamaño basicos: Mivil, Tablet y Desktop.</p>
+                        <figure class="Media_Screem-img">
+                            <img src="/Proyectos/3_Curso_CSS3/CSS/CSS_Media-Query/Inicio.png">
+                        </figure>
+                        <section class="Flexbox_contenedor_general">
+                            <details class="Flexbox_contenedor_list">
+                                <summary class="Flexbox_title_list">Movil</summary>
+                                <div class="Flexbox_list_contenido">
+                                    <p>
+                                        Dentro de CSS aplicamso: 
+                                        <span class="etiquetas_atributo tooltips-text" title="Atributo_en_CSS">@media screen and (max-width:480px)
+                                            <span class="tooltips-box">
+                                                <i class="fa-solid fa-circle-info"></i>&nbsp; Propiedad
+                                            </span> { }
+                                        </span>
+                                    </p>
+                                    <details class="contenedor_list_sub">
+                                        <summary class="title_list_sub"> Estructura del código CSS: </summary>
+                                        <dfn>
+                                            <code class="code_maestro">
+                                                <span class="etiquetas_class" title="Class_en_CSS">.Media_Screem-padre {</span>
+                                                    <code class="code_interno">
+                                                        display: grid; <br>
+                                                        grid-template-columns: repeat(12, 1fr); <br>
+                                                        grid-template-rows: repeat(10, 1fr); <br>
+                                                        font-weight: bolder; <br>
+                                                    </code>
+                                                } <br> <br>
+                                                <span class="etiquetas_atributo" title="Propiedad">@media screen and (max-width:480px) {</span>
+                                                    <code class="code_interno">
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.Media_Screem-Header {</span> <br>
+                                                                grid-column: 1/-1; <br>
+                                                            } <br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.Media_Screem-Nav { </span> <br>
+                                                                grid-column: 1/-1; <br>
+                                                            } <br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.Media_Screem-Section { </span> <br>
+                                                                grid-column: 1/-1; <br>
+                                                                grid-row: 3 / span 3; <br>
+                                                            } <br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.Media_Screem-Article { </span> <br>
+                                                                grid-column: 1/-1; <br>
+                                                                grid-row: 6 / span 2; <br>
+                                                            } <br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.Media_Screem-Aside { </span> <br>
+                                                                grid-column: 1/-1; <br>
+                                                                grid-row: 8 / span 2; <br>
+                                                            } <br>
+                                                            <span class="etiquetas_class" title="Class_en_CSS">.Media_Screem-Footer { </span> <br>
+                                                                grid-column: 1/-1; <br>
+                                                            } <br>
+                                                    </code>
+                                                }
+                                            </code>
+                                        </dfn>
+                                    </details>
+                                    <section class="muestra Media_Screem-muestra">
+                                        <div class="Media_Screem-padre">
+                                            <div class="Media_Screem Media_Screem-Header">Header</div>
+                                            <div class="Media_Screem Media_Screem-Nav">Nav</div>
+                                            <div class="Media_Screem Media_Screem-Section">Section</div>
+                                            <div class="Media_Screem Media_Screem-Article">Article</div>
+                                            <div class="Media_Screem Media_Screem-Aside">Aside</div>
+                                            <div class="Media_Screem Media_Screem-Footer">Footer</div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </details>
+                        </section>
+                    </section>
+                </dfn>
+            </details>
         </section>
     </main>
 

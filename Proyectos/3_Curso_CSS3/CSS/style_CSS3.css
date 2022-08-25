@@ -967,3 +967,94 @@ article {
     /Proyectos/3_Curso_CSS3/CSS/CSS_Grid/style_inicial_Grid.css
     /Proyectos/3_Curso_CSS3/CSS/CSS_Grid/style_clase_Grid.css
 */
+
+/* ---------------------------------------- Media Query en CSS  ----------------------------------------*/
+/* ------ Estilos de inicio ------*/
+.Media_Screem-img {
+    /* border: 1px solid; */
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.Media_Screem-img img{
+    margin: 0;
+    border: 1px solid;
+    width: 100%;
+    height: 100px;
+    transition: height 2000ms ease 0ms;
+}
+.Media_Screem-img img:hover {
+    height: 400px;
+}
+
+.Media_Screem-muestra {
+    padding: 0px;
+    height: auto;
+}
+.Media_Screem-padre {
+    /* border: 1px solid; */
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+.Media_Screem {
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Media_Screem-Header {
+    background-color: rgb(255, 185, 9);
+}
+.Media_Screem-Nav {
+    background-color: rgb(252, 162, 8);
+}
+.Media_Screem-Section {
+    background-color: rgb(245, 140, 8);
+}
+.Media_Screem-Article {
+    background-color: rgb(208, 93, 37);
+}
+.Media_Screem-Aside {
+    background-color: rgb(221, 46, 3);
+}
+.Media_Screem-Footer {
+    background-color: rgb(208, 0, 1);
+}
+/* ------ Movil ------*/
+
+.Media_Screem-padre {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    font-weight: bolder;
+}
+
+@media screen and (max-width:480px) {
+    .Media_Screem-padre:hover .Media_Screem-Header {
+        grid-column: 1/-1;
+    }
+    .Media_Screem-padre:hover .Media_Screem-Nav {
+        grid-column: 1/-1;
+    }
+    .Media_Screem-padre:hover .Media_Screem-Section {
+        grid-column: 1/-1;
+        grid-row: 3 / span 3;
+    }
+    .Media_Screem-padre:hover .Media_Screem-Article {
+        grid-column: 1/-1;
+        grid-row: 6 / span 2;
+    }
+    .Media_Screem-padre:hover .Media_Screem-Aside {
+        grid-column: 1/-1;
+        grid-row: 8 / span 2;
+    }
+    .Media_Screem-padre:hover .Media_Screem-Footer {
+        grid-column: 1/-1;
+    }
+}
