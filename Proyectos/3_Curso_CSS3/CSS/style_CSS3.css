@@ -970,35 +970,18 @@ article {
 
 /* ---------------------------------------- Media Query en CSS  ----------------------------------------*/
 /* ------ Estilos de inicio ------*/
-.Media_Screem-img {
-    /* border: 1px solid; */
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-.Media_Screem-img img{
-    margin: 0;
-    border: 1px solid;
-    width: 100%;
-    height: 50px;
-    transition: height 2000ms ease 0ms;
-}
-.Media_Screem-img img:hover {
-    height: 400px;
-}
-
-.Media_Screem-muestra {
+.Media_Screen-muestra {
     padding: 0px;
     height: auto;
 }
-.Media_Screem-padre {
+.Media_Screen-padre {
     /* border: 1px solid; */
     margin: 0;
     padding: 0px;
     width: 100%;
     height: auto;
 }
-.Media_Screem {
+.Media_Screen {
     border: 1px solid;
     margin: 5px;
     padding: 5px;
@@ -1008,53 +991,143 @@ article {
     justify-content: center;
     align-items: center;
 }
-.Media_Screem-Header {
+.Media_Screen-Header {
     background-color: rgb(255, 185, 9);
 }
-.Media_Screem-Nav {
+.Media_Screen-Nav {
     background-color: rgb(252, 162, 8);
 }
-.Media_Screem-Section {
+.Media_Screen-Section {
     background-color: rgb(245, 140, 8);
 }
-.Media_Screem-Article {
+.Media_Screen-Article {
     background-color: rgb(208, 93, 37);
 }
-.Media_Screem-Aside {
+.Media_Screen-Aside {
     background-color: rgb(221, 46, 3);
 }
-.Media_Screem-Footer {
+.Media_Screen-Footer {
     background-color: rgb(208, 0, 1);
 }
-/* ------ Movil ------*/
 
-.Media_Screem-padre {
+/* -------- Estilos del panel de los botenes de Media Query --------*/
+/* ------ Movil ------*/
+.Media_Screen-padre {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
     font-weight: bolder;
 }
 
-@media screen and (max-width:460px) {
-    .Media_Screem-padre:hover .Media_Screem-Header {
-        grid-column: 1/-1;
-    }
-    .Media_Screem-padre:hover .Media_Screem-Nav {
-        grid-column: 1/-1;
-    }
-    .Media_Screem-padre:hover .Media_Screem-Section {
-        grid-column: 1/-1;
-        grid-row: 3 / span 3;
-    }
-    .Media_Screem-padre:hover .Media_Screem-Article {
-        grid-column: 1/-1;
-        grid-row: 6 / span 2;
-    }
-    .Media_Screem-padre:hover .Media_Screem-Aside {
-        grid-column: 1/-1;
-        grid-row: 8 / span 2;
-    }
-    .Media_Screem-padre:hover .Media_Screem-Footer {
-        grid-column: 1/-1;
-    }
+/* img Media Query */
+.Media_Screen-img {
+    border: 1px solid;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: none;
+}
+.Media_Screen-img img{
+    margin: 0;
+    padding: 0px;
+    border: 0px solid;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* Boton radio */
+#boton-MQ-inicio, #boton-MQ-movil, #boton-MQ-tablet, #boton-MQ-desktop {
+    display: none;
+}
+/* Boton label */
+#expand-inicio, #expand-movil, #expand-tablet, #expand-desktop {
+    background-color: #c69c6d;
+    margin-top: 10px;
+    padding: 5px 11px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+/* inicio */
+#boton-MQ-inicio:checked ~ * .Media_Screen-img{
+    height: 420px;
+    display: block;
+    border: none;
+}
+#boton-MQ-inicio:checked ~ * .Media_Screen-padre {
+    display: none;
+    visibility: hidden;
+}
+
+/* movil */
+#boton-MQ-movil:checked ~ * .Media_Screen-Header {
+    grid-column: 1/-1;
+}
+#boton-MQ-movil:checked ~ * .Media_Screen-Nav {
+    grid-column: 1/-1;
+}
+#boton-MQ-movil:checked ~ * .Media_Screen-Section {
+    grid-column: 1/-1;
+    grid-row: 3 / span 3;
+}
+#boton-MQ-movil:checked ~ * .Media_Screen-Article {
+    grid-column: 1/-1;
+    grid-row: 6 / span 2;
+}
+#boton-MQ-movil:checked ~ * .Media_Screen-Aside {
+    grid-column: 1/-1;
+    grid-row: 8 / span 2;
+}
+#boton-MQ-movil:checked ~ * .Media_Screen-Footer {
+    grid-column: 1/-1;
+}
+
+/* tablet */
+#boton-MQ-tablet:checked ~ * .Media_Screen-Header {
+    grid-column: 1/-1;
+}
+#boton-MQ-tablet:checked ~ * .Media_Screen-Nav {
+    grid-column: 1/ span 6;
+    grid-row: 2/ span 3;
+}
+#boton-MQ-tablet:checked ~ * .Media_Screen-Section {
+    grid-column: 7/ span 6;
+    grid-row: 2/ span 3;
+}
+#boton-MQ-tablet:checked ~ * .Media_Screen-Article {
+    grid-column: 1/ span 6;
+    grid-row: 5/ span 2;
+}
+#boton-MQ-tablet:checked ~ * .Media_Screen-Aside {
+    grid-column: 7/ span 6;
+    grid-row: 5/ span 2;
+}
+#boton-MQ-tablet:checked ~ * .Media_Screen-Footer {
+    grid-column: 1/-1;
+}
+
+/* Desktop */
+#boton-MQ-desktop:checked ~ * .Media_Screen-Header {
+    grid-column: 1/-1;
+}
+#boton-MQ-desktop:checked ~ * .Media_Screen-Nav {
+    grid-column: 1/ 4;
+    grid-row: 2/ 6;
+}
+#boton-MQ-desktop:checked ~ * .Media_Screen-Section {
+    grid-column: 4/ 10;
+    grid-row: 2/ 6;
+}
+#boton-MQ-desktop:checked ~ * .Media_Screen-Article {
+    grid-column: 10/ 13;
+    grid-row: 2/ 4;
+}
+#boton-MQ-desktop:checked ~ * .Media_Screen-Aside {
+    grid-column: 10/ 13;
+    grid-row: 4/ 6;
+}
+#boton-MQ-desktop:checked ~ * .Media_Screen-Footer {
+    grid-column: 1/-1;
 }

@@ -3579,9 +3579,6 @@
                             </figure>
                         </div>
                         <p>Tenemos 3 tipos de tamaño basicos: Mivil, Tablet y Desktop.</p>
-                        <figure class="Media_Screem-img">
-                            <img src="/Proyectos/3_Curso_CSS3/CSS/CSS_Media-Query/Inicio.png">
-                        </figure>
                         <section class="Flexbox_contenedor_general">
                             <details class="Flexbox_contenedor_list">
                                 <summary class="Flexbox_title_list">Movil</summary>
@@ -3594,6 +3591,34 @@
                                             </span> { }
                                         </span>
                                     </p>
+
+                                    <fieldset class="fieldset_MQ">
+                                        <legend> Tamaños de pantallas: </legend>
+                                        <input type="radio" id="boton-MQ-inicio"  name="boton_MQ"/>
+                                        <input type="radio" id="boton-MQ-movil"   name="boton_MQ"/>
+                                        <input type="radio" id="boton-MQ-tablet"  name="boton_MQ"/>
+                                        <input type="radio" id="boton-MQ-desktop" name="boton_MQ"/>
+                                        
+                                        <section class="muestra Media_Screen-muestra">
+                                            <figure class="Media_Screen-img">
+                                                <img src="/Proyectos/3_Curso_CSS3/CSS/CSS_Media-Query/Inicio.png">
+                                            </figure>
+                                            <div class="Media_Screen-padre">
+                                                <div class="Media_Screen Media_Screen-Header">Header</div>
+                                                <div class="Media_Screen Media_Screen-Nav">Nav</div>
+                                                <div class="Media_Screen Media_Screen-Section">Section</div>
+                                                <div class="Media_Screen Media_Screen-Article">Article</div>
+                                                <div class="Media_Screen Media_Screen-Aside">Aside</div>
+                                                <div class="Media_Screen Media_Screen-Footer">Footer</div>
+                                            </div>
+                                        </section>
+
+                                        <label for="boton-MQ-inicio" id="expand-inicio">Inicio</label>
+                                        <label for="boton-MQ-movil"   id="expand-movil">Movil</label>
+                                        <label for="boton-MQ-tablet"  id="expand-tablet">Tablet</label>
+                                        <label for="boton-MQ-desktop" id="expand-desktop">Desktop</label>
+                                    </fieldset>
+
                                     <details class="contenedor_list_sub">
                                         <summary class="title_list_sub"> Estructura del código CSS: </summary>
                                         <dfn>
@@ -3606,44 +3631,109 @@
                                                         font-weight: bolder; <br>
                                                     </code>
                                                 } <br> <br>
-                                                <span class="etiquetas_atributo" title="Propiedad">@media screen and (max-width:480px) {</span>
-                                                    <code class="code_interno">
-                                                            <span class="etiquetas_class" title="Class_en_CSS">.Media_Screem-Header {</span> <br>
-                                                                grid-column: 1/-1; <br>
-                                                            } <br>
-                                                            <span class="etiquetas_class" title="Class_en_CSS">.Media_Screem-Nav { </span> <br>
-                                                                grid-column: 1/-1; <br>
-                                                            } <br>
-                                                            <span class="etiquetas_class" title="Class_en_CSS">.Media_Screem-Section { </span> <br>
-                                                                grid-column: 1/-1; <br>
-                                                                grid-row: 3 / span 3; <br>
-                                                            } <br>
-                                                            <span class="etiquetas_class" title="Class_en_CSS">.Media_Screem-Article { </span> <br>
-                                                                grid-column: 1/-1; <br>
-                                                                grid-row: 6 / span 2; <br>
-                                                            } <br>
-                                                            <span class="etiquetas_class" title="Class_en_CSS">.Media_Screem-Aside { </span> <br>
-                                                                grid-column: 1/-1; <br>
-                                                                grid-row: 8 / span 2; <br>
-                                                            } <br>
-                                                            <span class="etiquetas_class" title="Class_en_CSS">.Media_Screem-Footer { </span> <br>
-                                                                grid-column: 1/-1; <br>
-                                                            } <br>
-                                                    </code>
-                                                }
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">/* Movil */</summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">@media screen and (max-width:480px) {</span>
+                                                                <code class="code_interno">
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Header {</span> <br>
+                                                                        grid-column: 1/-1; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Nav { </span> <br>
+                                                                        grid-column: 1/-1; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Section { </span> <br>
+                                                                        grid-column: 1/-1; <br>
+                                                                        grid-row: 3 / span 3; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Article { </span> <br>
+                                                                        grid-column: 1/-1; <br>
+                                                                        grid-row: 6 / span 2; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Aside { </span> <br>
+                                                                        grid-column: 1/-1; <br>
+                                                                        grid-row: 8 / span 2; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Footer { </span> <br>
+                                                                        grid-column: 1/-1; <br>
+                                                                    } <br>
+                                                                </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">/* Tablet */</summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">@media screen and (min-width:460px) and (max-width:768px) {</span>
+                                                                <code class="code_interno">
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Header {</span> <br>
+                                                                        grid-column: 1/-1; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Nav { </span> <br>
+                                                                        grid-column: 1/ span 6; <br>
+                                                                        grid-row: 2/ span 3; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Section { </span> <br>
+                                                                        grid-column: 7/ span 6; <br>
+                                                                        grid-row: 2/ span 3; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Article { </span> <br>
+                                                                        grid-column: 1/ span 6; <br>
+                                                                        grid-row: 5/ span 2; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Aside { </span> <br>
+                                                                        grid-column: 7/ span 6; <br>
+                                                                        grid-row: 5/ span 2; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Footer { </span> <br>
+                                                                        grid-column: 1/-1; <br>
+                                                                    } <br>
+                                                                </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">/* Desktop */</summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">@media screen and (min-width:768px) {</span>
+                                                                <code class="code_interno">
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Header {</span> <br>
+                                                                        grid-column: 1/-1; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Nav { </span> <br>
+                                                                        grid-column: 1/ 4; <br>
+                                                                        grid-row: 2/ 6; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Section { </span> <br>
+                                                                        grid-column: 4/ 10; <br>
+                                                                        grid-row: 2/ 6; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Article { </span> <br>
+                                                                        grid-column: 10/ 13; <br>
+                                                                        grid-row: 2/ 4; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Aside { </span> <br>
+                                                                        grid-column: 10/ 13; <br>
+                                                                        grid-row: 4/ 6; <br>
+                                                                    } <br>
+                                                                    <span class="etiquetas_class" title="Class_en_CSS">.Media_Screen-Footer { </span> <br>
+                                                                        grid-column: 1/-1; <br>
+                                                                    } <br>
+                                                                </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
                                             </code>
                                         </dfn>
                                     </details>
-                                    <section class="muestra Media_Screem-muestra">
-                                        <div class="Media_Screem-padre">
-                                            <div class="Media_Screem Media_Screem-Header">Header</div>
-                                            <div class="Media_Screem Media_Screem-Nav">Nav</div>
-                                            <div class="Media_Screem Media_Screem-Section">Section</div>
-                                            <div class="Media_Screem Media_Screem-Article">Article</div>
-                                            <div class="Media_Screem Media_Screem-Aside">Aside</div>
-                                            <div class="Media_Screem Media_Screem-Footer">Footer</div>
-                                        </div>
-                                    </section>
                                 </div>
                             </details>
                         </section>
