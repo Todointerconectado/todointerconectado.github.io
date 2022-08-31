@@ -48,7 +48,7 @@ body {
     gap: 0px;
 }
 .contenedor_mi_perfil {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     /* background-color: white; */
     width: 150px;
     height: 100%;
@@ -85,7 +85,7 @@ body {
 }
 
 .title1 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: auto;
     height: auto;
     margin: 0;
