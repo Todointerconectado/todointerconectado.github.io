@@ -45,10 +45,10 @@ body {
     align-items: center;
     flex-wrap: wrap;
     flex-grow: 1;
-    gap: 5px;
+    gap: 0px;
 }
 .contenedor_mi_perfil {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     /* background-color: white; */
     width: 150px;
     height: 100%;
@@ -85,15 +85,15 @@ body {
 }
 
 .title1 {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: auto;
     height: auto;
     margin: 0;
     padding: 0;
     color: var(--color_letra_title_white);
     font-family: 'Abril Fatface', cursive;
-    font-size: 19px;
-    letter-spacing: 3px;
+    font-size: 17px;
+    letter-spacing: 2.5px;
     display: flex;
     justify-content: center;
     align-items: center;
