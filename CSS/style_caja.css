@@ -85,12 +85,11 @@ body {
 
 .title1 {
     border: 1px solid black;
-    width: calc(100% - 180px);
     margin: 0;
     padding: 0px;
     color: var(--color_letra_title_white);
     font-family: 'Abril Fatface', cursive;
-    font-size: 22px;
+    font-size: 15px;
     letter-spacing: 3px;
     display: flex;
     justify-content: center;
