@@ -169,6 +169,7 @@ li, dt, dd {
     padding-left: 20px;
     display: inline-block;
     justify-content: flex-start;
+    font-size: 12px;
 }
 .link {
     text-decoration: none;

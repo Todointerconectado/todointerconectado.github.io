@@ -3740,6 +3740,405 @@
                     </section>
                 </dfn>
             </details>
+
+            <!-- <details class="contenedor_inicio"> -->
+                <summary> Pseudoclases y variables en CSS</summary>
+                <dfn>
+                    <section class="Grid_contenedor__maestro">
+                        <section class="Flexbox_contenedor_general">
+                            <details class="Flexbox_contenedor_list">
+                                <summary class="Flexbox_title_list">Variables</summary>
+                                <div class="Flexbox_list_contenido">
+                                    <p>
+                                        Las variables las podemos usar para utilizar un mismo conjunto de propiedades en diferentes partes del codigo. <br>
+                                        Por ejemplo para controlar los colores, dentro de CSS aplicamos:
+                                        <span class="etiquetas_atributo tooltips-text" title="Atributo_en_CSS">
+                                            :root { --nombre_de_la_variable: valor; }
+                                            <span class="tooltips-box">
+                                                <i class="fa-solid fa-circle-info"></i>&nbsp; Propiedad
+                                            </span> { }
+                                        </span>
+                                    </p>
+
+                                    <section class="muestra Media_Screen-muestra">
+                                        <figure class="Media_Screen-img">
+                                            <img src="/Proyectos/3_Curso_CSS3/CSS/CSS_Media-Query/Inicio.png">
+                                        </figure>
+                                        <div class="Variables-padre">
+                                            <div class="variables_colores variables_color_blue">Blue</div>
+                                            <div class="variables_colores variables_color_red">Red</div>
+                                            <div class="variables_colores variables_color_green">Green</div>
+                                        </div>
+                                    </section>
+
+                                    <details class="contenedor_list_sub">
+                                        <summary class="title_list_sub"> Estructura del código CSS: </summary>
+                                        <dfn>
+                                            <code class="code_maestro">
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">
+                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">:root {</span>
+                                                    </summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            --variables_color_blue:  rgb(155, 155, 252); <br>
+                                                            --variables_color_red:   rgb(255, 0, 0); <br>
+                                                            --variables_color_green: rgb(161, 255, 161); <br>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">
+                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                            .Variables-padre {
+                                                        </span>
+                                                    </summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            padding: 4px; <br>
+                                                            width: 100%; <br>
+                                                            height: auto; <br>
+                                                            display: grid; <br>
+                                                            grid-template-columns: repeat(3, 1fr); <br>
+                                                            grid-template-rows: repeat(1, 1fr); <br>
+                                                            font-weight: bolder; <br>
+                                                            gap: 5px; <br>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">
+                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                            .variables_colores {
+                                                        </span>
+                                                    </summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            border: 1px solid; <br>
+                                                            padding: 2px 5px; <br>
+                                                            border-radius: 5px; <br>
+                                                            display: flex; <br>
+                                                            justify-content: center; <br>
+                                                            align-items: center; <br>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">/* variables_color */</summary>
+                                                    <dfn>
+                                                        <code class="code_maestro">
+                                                            <code class="code_interno">
+                                                                <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                                    .variables_color_blue { 
+                                                                </span><br>
+                                                                background-color: var(--variables_color_blue); <br>
+                                                                } <br><br>
+
+                                                                <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                                    .variables_color_red {
+                                                                </span> <br>
+                                                                background-color: var(--variables_color_red); <br>
+                                                                } <br><br>
+
+                                                                <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                                    .variables_color_green {
+                                                                </span> <br>
+                                                                background-color: var(--variables_color_green); <br>
+                                                                }
+                                                            </code>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+                                            </code>
+                                        </dfn>
+                                    </details>
+                                </div>
+                            </details>
+
+                            <details class="Flexbox_contenedor_list">
+                                <summary class="Flexbox_title_list">PseudoClases para &lt;a&gt; </summary>
+                                <div class="Flexbox_list_contenido">
+                                    <p>
+                                        Una Pseudo clase en CSS es una palabla clabe que se le añade a los selectores. <br>
+                                        Y que se refiere a un estado especial del elemento seleccionado. <br>
+                                        El orden para utilizarlos tiene que ser: <br>
+                                        <span class="etiquetas_atributo tooltips-text" title="PSEUDOCLASE">:link</span>
+                                        <span class="etiquetas_atributo tooltips-text" title="PSEUDOCLASE">:visite</span>
+                                        <span class="etiquetas_atributo tooltips-text" title="PSEUDOCLASE">:hover</span>
+                                        <span class="etiquetas_atributo tooltips-text" title="PSEUDOCLASE">:active</span>
+                                    </p>
+
+                                    <section class="muestra Media_Screen-muestra">
+                                        <div class="Conteiner_pseudoclase">
+                                            <ul class="pseudoclase_padre">
+                                                <li> <a class="pseudoclase_a" href="#"> Inicio     </a> </li>
+                                                <li> <a class="pseudoclase_a" href="#"> Acerca de  </a> </li>
+                                                <li> <a class="pseudoclase_a" href="#"> Blog       </a> </li>
+                                                <li> <a class="pseudoclase_a" href="#"> Contactanos</a> </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+
+                                    <details class="contenedor_list_sub">
+                                        <summary class="title_list_sub"> Estructura del código CSS: </summary>
+                                        <dfn>
+                                            <code class="code_maestro">
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">
+                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">.pseudoclase_a:link {</span>
+                                                    </summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            color: red; <br>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">
+                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                            ..pseudoclase_a:visited {
+                                                        </span>
+                                                    </summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            color: green; <br>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">
+                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                            .pseudoclase_a:hover {
+                                                        </span>
+                                                    </summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            background-color: #ff4901; <br>
+                                                            color: white; <br>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">
+                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                            .pseudoclase_a:active {
+                                                        </span>
+                                                    </summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            background-color: aqua; <br>
+                                                            color: black; <br>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+                                            </code>
+                                        </dfn>
+                                    </details>
+                                </div>
+                            </details>
+
+                            <!-- <details class="Flexbox_contenedor_list"> -->
+                                <summary class="Flexbox_title_list">PseudoClases para formularios </summary>
+                                <div class="Flexbox_list_contenido">
+                                    <p>
+                                        Una Pseudo clase en CSS es una palabla clabe que se le añade a los selectores. <br>
+                                        Y que se refiere a un estado especial del elemento seleccionado. <br>
+                                        El orden para utilizarlos tiene que ser: <br>
+                                        <span class="etiquetas_atributo tooltips-text" title="PSEUDOCLASE">:link</span>
+                                    </p>
+
+                                    <section class="muestra Media_Screen-muestra">
+                                        <form action="#" class="Conteiner_pseudoclase_formulario">
+                                            <h2>Pseudoclases en formularios</h2>
+                                            <fieldset>
+                                                <legend> Sección Nombres </legend>
+                                                <section class="paquete_formulario">
+                                                    <label for="Nombre">* Nombre:</label>
+                                                    <input type="text" id="Nombre" class="Pseudoclase_formulario" placeholder="Escribir tu Nombre..." name="Nombre" required autofocus>
+                                                </section>
+
+                                                <section class="paquete_formulario">
+                                                    <label for="Apellido">* Apellido:</label>
+                                                    <input type="text" id="Apellido" class="Pseudoclase_formulario" placeholder="Escribir tu Apellido..." name="Nombre" required autofocus>
+                                                </section>
+
+                                                <section class="paquete_formulario">
+                                                    <label for="Nacionalidad">Nacionalidad:</label>
+                                                    <input type="text" id="Nacionalidad" class="Pseudoclase_formulario" placeholder="Escribir tu Nacionalidad..." name="Nombre" disabled autofocus>
+                                                </section>
+                                            </fieldset>
+
+                                            <fieldset>
+                                                <legend>Selecciona una opción</legend>
+                                                <section class="paquete_formulario">
+                                                    <input id="one" type="radio" name="numeros" value="one">
+                                                    <label for="one">One:</label>
+                                                </section>
+
+                                                <section class="paquete_formulario">
+                                                    <input id="two" type="radio" name="numeros" value="two">
+                                                    <label for="two">Two:</label>
+                                                </section>
+
+                                                <section class="paquete_formulario">
+                                                    <input id="tree" type="radio" name="numeros" value="tree">
+                                                    <label for="tree">Three:</label>
+                                                </section>
+
+                                                <section class="paquete_formulario">
+                                                    <input id="four" type="radio" name="numeros" value="four">
+                                                    <label for="four">Four:</label>
+                                                </section>
+                                            </fieldset>
+
+                                            <fieldset>
+                                                <legend>Selecciona varias opción</legend>
+                                                <section class="paquete_formulario">
+                                                    <input id="one" type="checkbox" name="numeros" value="one">
+                                                    <label for="one">One:</label>
+                                                </section>
+
+                                                <section class="paquete_formulario">
+                                                    <input id="two" type="checkbox" name="two" value="two">
+                                                    <label for="two">Two:</label>
+                                                </section>
+
+                                                <section class="paquete_formulario">
+                                                    <input id="tree" type="checkbox" name="tree" value="tree">
+                                                    <label for="tree">Three:</label>
+                                                </section>
+
+                                                <section class="paquete_formulario">
+                                                    <input id="four" type="checkbox" name="four" value="four">
+                                                    <label for="four">Four:</label>
+                                                </section>
+                                            </fieldset>
+
+                                            <fieldset>
+                                                <legend>Otros</legend>
+                                                <section class="paquete_formulario">
+                                                    <label for="number">Válido entre 5 - 10:</label>
+                                                    <input id="number" type="number" class="Pseudoclase_formulario" min="5" max="10" value="7">
+                                                </section>
+
+                                                <section class="paquete_formulario">
+                                                    <label for="email">Email:</label>
+                                                    <input id="email" type="email" class="Pseudoclase_formulario" name="email" placeholder="@gmail.com">
+                                                </section>
+
+                                                <section class="paquete_formulario">
+                                                    <label for="opcional">Opcional:</label>
+                                                    <input id="opcional" class="Pseudoclase_formulario">
+                                                </section>
+
+                                                <section class="paquete_formulario">
+                                                    <label for="requerido">* Requerido:</label>
+                                                    <input id="requerido" class="Pseudoclase_formulario" required>
+                                                </section>
+
+                                                <section class="paquete_formulario">
+                                                    <label for="Input_normal">Input normal:</label>
+                                                    <input id="Input_normal" class="Pseudoclase_formulario" placeholder="modifica este texto...">
+                                                </section>
+
+                                                <section class="paquete_formulario">
+                                                    <label for="Input_de_solo_lectura">Input de solo lectura:</label>
+                                                    <input id="Input_de_solo_lectura" class="Pseudoclase_formulario" readonly value="No puedes modificar">
+                                                </section>
+                                            </fieldset>
+
+                                            <fieldset>
+                                                <legend>Finalización</legend>
+                                                <section class="paquete_formulario">
+                                                    <input class="control" type="submit" value="Enviar">
+                                                    <input class="control" type="reset" value="Borrar">
+                                                </section>
+                                            </fieldset>
+                                        </form>
+                                    </section>
+
+                                    <details class="contenedor_list_sub">
+                                        <summary class="title_list_sub"> Estructura del código CSS: </summary>
+                                        <dfn>
+                                            <code class="code_maestro">
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">
+                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">.pseudoclase_a:link {</span>
+                                                    </summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            color: red; <br>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">
+                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                            ..pseudoclase_a:visited {
+                                                        </span>
+                                                    </summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            color: green; <br>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">
+                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                            .pseudoclase_a:hover {
+                                                        </span>
+                                                    </summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            background-color: #ff4901; <br>
+                                                            color: white; <br>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+
+                                                <details class="details_etiqueta_comentario">
+                                                    <summary class="summary_etiqueta_comentario">
+                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                            .pseudoclase_a:active {
+                                                        </span>
+                                                    </summary>
+                                                    <dfn>
+                                                        <code class="code_interno">
+                                                            background-color: aqua; <br>
+                                                            color: black; <br>
+                                                            }
+                                                        </code>
+                                                    </dfn>
+                                                </details>
+                                            </code>
+                                        </dfn>
+                                    </details>
+                                </div>
+                            <!-- </details> -->
+                        </section>
+                    </section>
+                </dfn>
+            <!-- </details> -->
         </section>
     </main>
 

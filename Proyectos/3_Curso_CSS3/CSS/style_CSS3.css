@@ -1013,6 +1013,9 @@ article {
 /* -------- Estilos del panel de los botenes de Media Query --------*/
 /* ------ Movil ------*/
 .Media_Screen-padre {
+    /* background-image: url("/Proyectos/3_Curso_CSS3/CSS/CSS_Media-Query/fondo.png"); */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("/Proyectos/3_Curso_CSS3/CSS/CSS_Media-Query/fondo.png");
+    background-size: cover;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -1131,3 +1134,163 @@ article {
 #boton-MQ-desktop:checked ~ * .Media_Screen-Footer {
     grid-column: 1/-1;
 }
+
+/* -------- Aplicamos variables para controlar los colores --------*/
+:root {
+    --variables_color_blue:  rgb(155, 155, 252);
+    --variables_color_red:   rgb(255, 0, 0);
+    --variables_color_green: rgb(161, 255, 161);
+}
+.Variables-padre {
+    /* border: 1px solid; */
+    padding: 4px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    font-weight: bolder;
+    gap: 5px;
+}
+.variables_colores {
+    border: 1px solid;
+    padding: 2px 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.variables_color_blue {
+    background-color: var(--variables_color_blue);
+}
+.variables_color_red {
+    background-color: var(--variables_color_red);
+}
+.variables_color_green {
+    background-color: var(--variables_color_green);
+}
+
+/*-------- Pseudo clases --------*/
+.Conteiner_pseudoclase {
+    /* border: 1px solid; */
+    margin: 10px;
+    width: 100%;
+}
+.pseudoclase_padre {
+    border: none;
+    width: 99%;
+}
+
+.pseudoclase_padre li {
+    border: none;
+    width: 100%;
+}
+.pseudoclase_a {
+    /* border: 1px solid; */
+    padding: 0px 5px;
+}
+/*-------- Aplicamos Pseudoclases --------*/
+.pseudoclase_a:link {
+    color: red;
+}
+.pseudoclase_a:visited{
+    color: green;
+}
+.pseudoclase_a:hover {
+    background-color: #ff4901;
+    color: white;
+}
+.pseudoclase_a:active {
+    background-color: aqua;
+    color: black;
+}
+
+/*-------- Pseudo clases en formularios --------*/
+.Conteiner_pseudoclase_formulario {
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+.Conteiner_pseudoclase_formulario fieldset {
+    display: grid;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.Conteiner_pseudoclase_formulario h2 {
+    text-align: center;
+}
+.paquete_formulario {
+    /* border: 1px solid; */
+    padding: 2px 5px;
+    width: auto;
+    display: flex;
+}
+.paquete_formulario label {
+    /* border: 1px solid; */
+    width: 100%;
+    margin: 0 10px 0 10px;
+    padding: 1px 5px;
+    display: grid;
+    justify-content: flex-end;
+}
+.Pseudoclase_formulario {
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px 5px;
+}
+.paquete_formulario input::placeholder { 
+    color: rgb(117, 117, 117); 
+}
+.paquete_formulario .control {
+    border: 2px solid rgb(57, 162, 173);
+    background-color: rgb(57, 162, 173);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.paquete_formulario .control:active {
+    border: 2px solid rgb(57, 162, 173);
+    background-color: white;
+    color: rgb(57, 162, 173);
+}
+
+/* ---------- pseudoclase :enabled / :disebled ----------*/
+.paquete_formulario input[type=text]:enabled {
+    background-color: rgb(188, 255, 188);
+}
+.paquete_formulario input[type=text]:enabled:hover {
+    background-color: rgb(152, 255, 152);
+}
+.paquete_formulario input[type=text]:disabled {
+    background-color: rgb(221, 221, 221);
+}
+
+/* ---------- pseudoclase :focus ----------*/
+.paquete_formulario input[type=text]:focus {
+    width: 250%;
+}
+
+/* ---------- pseudoclase :checked en los tipo radio ----------*/
+.paquete_formulario input[type=radio]:checked + label{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 1px 5px;
+    background-color: rgb(0, 0, 255);
+    color: white;
+}
+
+.paquete_formulario input[type=checkbox]:checked + label{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 1px 5px;
+    background-color: red;
+    color: white;
+}
+.paquete_formulario input[type=checkbox]:checked{
+    margin-left: 15px;
+}
+
