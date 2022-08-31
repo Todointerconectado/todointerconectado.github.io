@@ -1208,7 +1208,7 @@ article {
 
 /*-------- Pseudo clases en formularios --------*/
 .Conteiner_pseudoclase_formulario {
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 10px;
     margin: 10px;
     width: 100%;
@@ -1226,22 +1226,23 @@ article {
     /* border: 1px solid; */
     padding: 2px 5px;
     width: auto;
-    display: flex;
+    display: inline-flex;
     flex-grow: 1;
 }
 .paquete_formulario label {
     /* border: 1px solid; */
     width: 100%;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 0 5px;
     padding: 1px 5px;
     display: grid;
     justify-content: flex-end;
+    font-size: 14px;
 }
 .Pseudoclase_formulario {
     border: 1px solid;
     border-radius: 3px;
     padding: 3px 5px;
-    width: auto;
+    width: 160%;
 }
 .paquete_formulario input::placeholder { 
     color: rgb(117, 117, 117); 
