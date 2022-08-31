@@ -38,18 +38,19 @@ body {
     /* border: 1px solid rgb(29, 219, 4); */
     margin: 10px 0 0 0;
     padding: 0px;
-    width: 98%;
+    width: 100%;
     height: auto;
     display: inline-flex;
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    flex-grow: 1;
+    gap: 5px;
 }
 .contenedor_mi_perfil {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     /* background-color: white; */
-    width: 140px;
+    width: 160px;
     height: 100%;
     margin: 0;
     padding: 3px;
@@ -84,15 +85,20 @@ body {
 }
 
 .title1 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    width: auto;
+    height: auto;
     margin: 0;
-    padding: 0px;
+    padding: 0;
     color: var(--color_letra_title_white);
     font-family: 'Abril Fatface', cursive;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 3px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 .url_Todointerconectado {
     color: var(--color_letra_title_white);
