@@ -577,11 +577,11 @@ article {
 /* -- Estilos de esplicación -- */
 .Transform_contenedor_esplicaciones {
     border: 1px solid black;
-    box-shadow: 1px 1px 8px black;
-    margin: 5px;
+    box-shadow: 0px 0px 4px black;
+    margin: 0px;
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: #e09f54;
     overflow: hidden;
     font-family: 'Signika Negative', 'Segoe UI';
@@ -610,18 +610,18 @@ article {
 .Transform_contenedor_general {
     height: auto;
     /* width: 100%; */
-    padding: 10px 6px;
+    padding: 5px 2px;
     list-style: none;
     background-color: var(--gray_strong);
 
     display: flex;
-    gap: 10px;
+    gap: 5px;
     flex-wrap: wrap;
 }
 
 .Transform_contenedor_list {
     /* border: 1px solid; */
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 0px 0px 3px 0px black;
     border-radius: 5px;
     overflow: hidden;
     min-width: 48%;
@@ -637,7 +637,7 @@ article {
 .Transform_div_lists {
     border: 1px solid black;
     margin: 0px;
-    padding: 10px;
+    padding: 10px 4px;
     background-color: var(--white);
     overflow: hidden;
 
@@ -752,10 +752,10 @@ article {
 .Animaciones_contenedor_esplicaciones {
     border: 1px solid black;
     box-shadow: 1px 1px 8px black;
-    margin: 5px;
+    margin: 0px;
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: #e09f54;
     overflow: hidden;
     font-family: 'Signika Negative', 'Segoe UI';
@@ -787,17 +787,17 @@ article {
     /* border: 1px solid; */
     height: auto;
     /* width: 100%; */
-    padding: 10px 6px;
+    padding: 10px 2px;
     list-style: none;
     background-color: var(--gray_strong);
     display: flex;
-    gap: 10px;
+    gap: 5px;
     flex-wrap: wrap;
 }
 
 .Animaciones_contenedor_list {
     /* border: 1px solid; */
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 0px 0px 3px black;
     border-radius: 5px;
     overflow: hidden;
     min-width: 48%;
@@ -814,7 +814,7 @@ article {
 .Animaciones_dfn_list {
     /* border: 1px solid black; */
     margin: 0px;
-    padding: 5px;
+    padding: 5px 2px;
     background-color: var(--gray_strong);
     overflow: hidden;
 
