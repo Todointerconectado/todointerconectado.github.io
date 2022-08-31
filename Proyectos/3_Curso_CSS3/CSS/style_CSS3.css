@@ -1323,9 +1323,10 @@ article {
 .paquete_formulario input:optional {
     border: 2px solid rgb(255, 153, 0);
 }
-.paquete_formulario input:required {
-    /* background-color: yellow; */
-}
+/* .paquete_formulario input:required {
+    background-color: yellow;
+} */
+
 /* ---------- pseudoclase :read-write / :read-only ----------*/
 .paquete_formulario input:read-write {
     background-color: rgb(255, 205, 130);
