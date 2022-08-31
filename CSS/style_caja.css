@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&family=Signika+Negative&display=swap');
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gentium+Book+Basic:ital@1&family=Playfair+Display:ital,wght@1,500&family=Signika+Negative&display=swap');:root {
     --color_ContenedorMaestro_Transparente_white: rgba(255, 255, 255, .5);
     --color_fondo_title: rgb(60, 65, 168);
     --color_letra_title_white: rgb(255, 255, 255);
@@ -31,7 +30,7 @@ body {
     z-index: -1;
     max-height: 120%;
     top: -170px;
-    right: -10px;
+    right: 0px;
 }
 
 /* perfil */
@@ -48,9 +47,9 @@ body {
     gap: 10px;
 }
 .contenedor_mi_perfil {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     /* background-color: white; */
-    width: 150px;
+    width: 140px;
     height: 100%;
     margin: 0;
     padding: 3px;
@@ -85,13 +84,13 @@ body {
 }
 
 .title1 {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: calc(100% - 180px);
     margin: 0;
-    padding: 2px 3px;
+    padding: 0px;
     color: var(--color_letra_title_white);
-    font-family: 'Gentium Book Basic', serif;
-    font-size: 25px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 22px;
     letter-spacing: 3px;
     display: flex;
     justify-content: center;
