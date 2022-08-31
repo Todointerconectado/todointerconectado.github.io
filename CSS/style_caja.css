@@ -62,8 +62,8 @@ body {
     border: none;
     margin: 0;
     max-width: 120px;
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     box-shadow: 0 0 10px white
 }
@@ -92,7 +92,7 @@ body {
     padding: 0;
     color: var(--color_letra_title_white);
     font-family: 'Abril Fatface', cursive;
-    font-size: 20px;
+    font-size: 19px;
     letter-spacing: 3px;
     display: flex;
     justify-content: center;
