@@ -1214,6 +1214,7 @@ article {
     width: 100%;
 }
 .Conteiner_pseudoclase_formulario fieldset {
+    /* border: 1px solid; */
     display: grid;
     justify-content: flex-start;
     gap: 5px;
@@ -1226,6 +1227,7 @@ article {
     padding: 2px 5px;
     width: auto;
     display: flex;
+    flex-grow: 1;
 }
 .paquete_formulario label {
     /* border: 1px solid; */
@@ -1239,6 +1241,7 @@ article {
     border: 1px solid;
     border-radius: 3px;
     padding: 3px 5px;
+    width: auto;
 }
 .paquete_formulario input::placeholder { 
     color: rgb(117, 117, 117); 
@@ -1272,6 +1275,7 @@ article {
 /* ---------- pseudoclase :focus ----------*/
 .paquete_formulario input[type=text]:focus {
     width: 250%;
+    height: 25px;
 }
 
 /* ---------- pseudoclase :checked en los tipo radio ----------*/
@@ -1294,3 +1298,37 @@ article {
     margin-left: 15px;
 }
 
+/* ---------- pseudoclase :in-range / :out-of-range ----------*/
+.paquete_formulario input[type=number]:in-range {
+    border: 2px solid green;
+    background-color: greenyellow;
+}
+.paquete_formulario input[type=number]:out-of-range {
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(255, 134, 134);
+}
+
+/* ---------- pseudoclase :valid / :invalid ----------*/
+.paquete_formulario input[type=email]:valid {
+    border: 2px solid green;
+    background-color: greenyellow;
+}
+.paquete_formulario input[type=email]:invalid {
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(255, 134, 134);
+}
+
+/* ---------- pseudoclase :optional / :required ----------*/
+.paquete_formulario input:optional {
+    border: 2px solid rgb(255, 153, 0);
+}
+.paquete_formulario input:required {
+    /* background-color: yellow; */
+}
+/* ---------- pseudoclase :read-write / :read-only ----------*/
+.paquete_formulario input:read-write {
+    background-color: rgb(255, 205, 130);
+}
+.paquete_formulario input:read-only {
+    background-color: rgb(57, 162, 173);
+}

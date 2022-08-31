@@ -3741,7 +3741,7 @@
                 </dfn>
             </details>
 
-            <!-- <details class="contenedor_inicio"> -->
+            <details class="contenedor_inicio">
                 <summary> Pseudoclases y variables en CSS</summary>
                 <dfn>
                     <section class="Grid_contenedor__maestro">
@@ -3951,7 +3951,7 @@
                                 </div>
                             </details>
 
-                            <!-- <details class="Flexbox_contenedor_list"> -->
+                            <details class="Flexbox_contenedor_list">
                                 <summary class="Flexbox_title_list">PseudoClases para formularios </summary>
                                 <div class="Flexbox_list_contenido">
                                     <p>
@@ -3981,6 +3981,54 @@
                                                     <input type="text" id="Nacionalidad" class="Pseudoclase_formulario" placeholder="Escribir tu Nacionalidad..." name="Nombre" disabled autofocus>
                                                 </section>
                                             </fieldset>
+
+                                            <details class="contenedor_list_sub">
+                                                <summary class="title_list_sub"> Estructura del código CSS: </summary>
+                                                <dfn>
+                                                    <code class="code_maestro">
+                                                        <details class="details_etiqueta_comentario">
+                                                            <summary class="summary_etiqueta_comentario"> /* pseudoclase :enabled / :disebled */ </summary>
+                                                            <dfn>
+                                                                <code class="code_interno">
+                                                                    <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                                        input[type=text]:enabled { </span> <br>
+                                                                        <code class="code_interno">
+                                                                            background-color: rgb(188, 255, 188); <br>
+                                                                        </code>
+                                                                    } <br>
+                                                                    <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                                        input[type=text]:enabled:hover { </span> <br>
+                                                                        <code class="code_interno">
+                                                                            background-color: rgb(152, 255, 152) <br>
+                                                                        </code>
+                                                                    } <br>
+                                                                    <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                                        input[type=text]:disabled { </span> <br>
+                                                                        <code class="code_interno">
+                                                                            background-color: rgb(221, 221, 221); <br>
+                                                                        </code>
+                                                                    }
+                                                                </code>
+                                                            </dfn>
+                                                        </details>
+
+                                                        <details class="details_etiqueta_comentario">
+                                                            <summary class="summary_etiqueta_comentario"> /* pseudoclase :focus */ </summary>
+                                                            <dfn>
+                                                                <code class="code_interno">
+                                                                    <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
+                                                                        input[type=text]:focus { </span> <br>
+                                                                        <code class="code_interno">
+                                                                            width: 250%; <br>
+                                                                            height: 25px; <br>
+                                                                        </code>
+                                                                    }
+                                                                </code>
+                                                            </dfn>
+                                                        </details>
+                                                    </code>
+                                                </dfn>
+                                            </details>
 
                                             <fieldset>
                                                 <legend>Selecciona una opción</legend>
@@ -4086,59 +4134,15 @@
                                                         </code>
                                                     </dfn>
                                                 </details>
-
-                                                <details class="details_etiqueta_comentario">
-                                                    <summary class="summary_etiqueta_comentario">
-                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
-                                                            ..pseudoclase_a:visited {
-                                                        </span>
-                                                    </summary>
-                                                    <dfn>
-                                                        <code class="code_interno">
-                                                            color: green; <br>
-                                                            }
-                                                        </code>
-                                                    </dfn>
-                                                </details>
-
-                                                <details class="details_etiqueta_comentario">
-                                                    <summary class="summary_etiqueta_comentario">
-                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
-                                                            .pseudoclase_a:hover {
-                                                        </span>
-                                                    </summary>
-                                                    <dfn>
-                                                        <code class="code_interno">
-                                                            background-color: #ff4901; <br>
-                                                            color: white; <br>
-                                                            }
-                                                        </code>
-                                                    </dfn>
-                                                </details>
-
-                                                <details class="details_etiqueta_comentario">
-                                                    <summary class="summary_etiqueta_comentario">
-                                                        <span class="grid-template-areas_matriz etiquetas_atributo" title="Propiedad">
-                                                            .pseudoclase_a:active {
-                                                        </span>
-                                                    </summary>
-                                                    <dfn>
-                                                        <code class="code_interno">
-                                                            background-color: aqua; <br>
-                                                            color: black; <br>
-                                                            }
-                                                        </code>
-                                                    </dfn>
-                                                </details>
                                             </code>
                                         </dfn>
                                     </details>
                                 </div>
-                            <!-- </details> -->
+                            </details>
                         </section>
                     </section>
                 </dfn>
-            <!-- </details> -->
+            </details>
         </section>
     </main>
 
