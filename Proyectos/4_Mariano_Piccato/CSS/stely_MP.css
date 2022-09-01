@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2? familia= Fuente+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900 & display=swap');
+
 :root {
-    --color_header_conteiner: linear-gradient(to bottom, blue 10%, rgb(0, 108, 231) 90%);
-    --color_header_letras: white;
+    --color_header_conteiner: linear-gradient(to right, white, rgb(224, 240, 250));
+    --color_header_letras: black;
+    --color_header_barra_menu: rgb(2, 56, 119);
+    --color_header_opciones_barra_menu: rgb(0, 116, 199);
+
+    --color_logo_barra: linear-gradient(to right, green, greenyellow, green);
 
     --color_main_conteiner: linear-gradient(to bottom, rgb(0, 108, 231) 10%, rgb(30, 144, 252) 90%);
     --color_main_letras: white;
@@ -13,7 +19,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -21,24 +30,136 @@ body {
     width: 100%;
     height: auto;
     display: grid;
-    gap: 10px;
+    gap: 50px;
 }
 
 /*-------------------------- header --------------------------*/
 header {
     border: 1px solid black;
     width: 100%;
-    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
     background: var(--color_header_conteiner);
-    color: var(--color_header_letras);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
 }
 
+/*---------- Heder Superior -----------*/
+.header__superior {
+    border: 1px solid black;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: var(--color_header_conteiner);
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.logo {
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+    padding: 2px;
+    width: 250px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: transparent;
+    color: rgb(41, 41, 41);
+    -webkit-text-stroke: 1px rgb(64, 64, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo div {
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    width: 90%;
+    height: 4px;
+    background: var(--color_logo_barra);
+}
+
+.search input {
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+}
+
+/*--------- Heder Barra Menu ---------*/
+.container__menu {
+    /* border: 1px solid black; */
+    padding: 0 20px;
+    width: 100%;
+    height: 70px;
+    background: var(--color_header_barra_menu);
+}
+.menu {
+    /* border: 1px solid black; */
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+.menu nav {
+    /* border: 1px solid black; */
+    height: 100%;
+}
+/*---- Menu Principal ----*/
+.menu nav > ul {
+    border: 1px solid white;
+    height: 100%;
+    display: flex;
+    gap: 14px;
+}
+.menu nav > ul > li {
+    /* border: 1px solid black; */
+    height: 100%;
+    position: relative; /* Despues los sub-menu se posicionan en relación a su padre. */
+}
+.menu nav > ul > li > a {
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding: 0 6px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 300ms ease, background 300ms ease, box-shadow 300ms ease, -webkit-text-stroke 300ms ease, color 300ms ease, font-weight 300ms ease, padding  300ms ease, font-size  300ms ease, font-weight 300ms ease;
+}
+.menu nav > ul > li > a:hover {
+    transform: scale(1.1);
+    background: var(--color_header_opciones_barra_menu);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    -webkit-text-stroke: .5px rgb(255, 255, 255);
+    color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 3px;
+}
+
+/*---- Logo Home ----*/
+.menu nav > ul > li:first-child > a {
+    /* border: 1px solid white; */
+    padding: 0px 15px;
+}
+.menu nav > ul > li:first-child > a > img {
+    /* border: 1px solid white; */
+    width: 50px;
+}
+#selected {
+    border-radius: 5px;
+    transform: scale(1.1);
+    background:var(--color_header_opciones_barra_menu);
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, .5);
+}
+
+
 /*-------------------------- main --------------------------*/
-main {
+/* main {
     border: 1px solid black;
     width: 100%;
     height: 50px;
@@ -48,10 +169,10 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 24px;
-}
+} */
 
 /*-------------------------- footer --------------------------*/
-footer {
+/* footer {
     border: 1px solid black;
     padding: 10px 0;
     width: 100%;
@@ -65,7 +186,7 @@ footer {
     flex-grow: 1;
 }
 address {
-    /* border: 1px solid; */
+    border: 1px solid;
     padding: 0 10px;
     width: 100%;
     height: auto;
@@ -73,4 +194,4 @@ address {
     justify-content: center;
     flex-wrap: wrap;
     flex-grow: 1;
-}
+} */
