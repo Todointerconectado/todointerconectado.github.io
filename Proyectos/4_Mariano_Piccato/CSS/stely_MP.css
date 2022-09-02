@@ -45,7 +45,7 @@ header {
 .header__superior {
     /* border: 1px solid black; */
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     max-width: 1200px;
     background: var(--color_header_conteiner);
     display: flex;
@@ -53,29 +53,59 @@ header {
     align-items:center;
     justify-content: space-between;
 }
+
 .logo {
     /* border: 1px solid black; */
     border-radius: 5px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
-    padding: 2px 0px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+    padding: 2px 4px;
     width: 300px;
     font-size: 18px;
     letter-spacing: 2px;
     background-color: transparent;
-    color: rgb(64, 64, 255);
     font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0px;
 }
-.logo div {
-    /* border: 1px solid black; */
-    border-radius: 5px;
-    width: 90%;
-    height: 4px;
-    background: var(--color_logo_barra);
+.logo > span {
+    /* border: 1px solid; */
+    text-shadow: 3px 3px 3px rgb(117, 117, 117);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: rgb(24, 24, 24);
 }
+.off_on {
+    color: rgb(189, 189, 189);
+    fill: rgb(189, 189, 189);
+    text-shadow: 3px 3px 3px rgb(24, 24, 24);
+}
+.logo > span > svg {
+    /* border: 1px solid; */
+    box-sizing: content-box;
+    padding: 0 10px 2px 0;
+    width: 34px;
+    height: 100%;
+    font-weight: bold;
+}
+.logo > .logo_frase {
+    border: none;
+    width: 75%;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: flex-end;
+    text-shadow: none;
+}
+
 .search input {
     border-radius: 5px;
     width: 300px;
@@ -245,18 +275,32 @@ header {
 @media screen and (max-width: 430px) {
     /*---------- Heder Superior -----------*/
     .header__superior {
-        padding: 10px;
+        padding: 5px;
     }
+    /* Conteiner del logo */
     .logo {
-        width: auto;
+        transform: scale(.9);
     }
-    .logo h2 {
-        padding: 4px 10px;
-        font-size: 12px;
+    .logo > span {
+        text-shadow: 3px 3px 3px rgb(117, 117, 117);
+        font-size: 30px;
+        letter-spacing: 8px;
     }
+    .logo > span > svg {
+        padding: 0 8px 2px 0;
+        width: 30px;
+    }
+    .logo > .logo_frase {
+        /* border: 1px solid; */
+        width: 85%;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    /* buscador */
     .search input {
         border: .5px solid rgb(112, 112, 112);
-        width: 200px;
+        width: 180px;
         padding: 5px;
     }
 
@@ -339,6 +383,7 @@ header {
         border: 1px solid transparent;
     }
     .barra_menu {
+        transform: scale(.7);
         display: flex;
     }
 
