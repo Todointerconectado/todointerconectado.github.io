@@ -54,6 +54,7 @@ header {
     justify-content: space-between;
 }
 
+/* Contemner del logo */
 .logo {
     /* border: 1px solid black; */
     border-radius: 5px;
@@ -87,15 +88,25 @@ header {
     color: rgb(189, 189, 189);
     fill: rgb(189, 189, 189);
     text-shadow: 3px 3px 3px rgb(24, 24, 24);
+    transition: color 1200ms ease, text-shadow 1200ms ease;
 }
 .logo > span > svg {
     /* border: 1px solid; */
     box-sizing: content-box;
-    padding: 0 10px 2px 0;
+    padding: 0 0x 0px 0;
     width: 34px;
     height: 100%;
     font-weight: bold;
+    transition: transform 1200ms ease, fill 1200ms ease;
 }
+.logo > span > .fusi {
+    transition: color 1200ms ease, text-shadow 1200ms ease;
+}
+.logo > span > span:last-child {
+    /* border: 1px solid; */
+    padding-left: 10px;
+}
+
 .logo > .logo_frase {
     border: none;
     width: 75%;
@@ -105,7 +116,29 @@ header {
     justify-content: flex-end;
     text-shadow: none;
 }
+/* cambia color */
+.logo > span > svg:hover {
+    /* border: 1px solid; */
+    fill: rgb(24, 24, 24);
+    transform: rotate(360deg);
+}
+.logo > span > svg:hover ~ span:first-of-type {
+    color: rgb(189, 189, 189);
+    text-shadow: 3px 3px 3px rgb(24, 24, 24);
+}
+.logo > span > svg:hover ~ .off_on {
+    color: rgb(24, 24, 24);
+    text-shadow: 3px 3px 3px rgb(189, 189, 189);
+}
+/* cambia position */
+.logo > span > svg {
+    order: 2;
+}
+.logo > span > span:last-child {
+    order: 3;
+}
 
+/* buscador */
 .search input {
     border-radius: 5px;
     width: 300px;
@@ -277,7 +310,7 @@ header {
     .header__superior {
         padding: 5px;
     }
-    /* Conteiner del logo */
+    /* Contemner del logo */
     .logo {
         transform: scale(.9);
     }
@@ -287,8 +320,12 @@ header {
         letter-spacing: 8px;
     }
     .logo > span > svg {
-        padding: 0 8px 2px 0;
-        width: 30px;
+        padding: 0 0px 0px 0;
+        width: 28px;
+    }
+    .logo > span > span:last-child {
+        /* border: 1px solid; */
+        padding-left: 6px;
     }
     .logo > .logo_frase {
         /* border: 1px solid; */
@@ -373,7 +410,7 @@ header {
     font-size: 18px;
     }
 
-    /*--------- Elementos responsivos ---------*/
+    /*--------- element's responsive ---------*/
     /*---- Icono Barra ----*/
     .conteiner__barra {
         display: flex;
