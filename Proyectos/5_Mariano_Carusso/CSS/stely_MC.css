@@ -74,14 +74,14 @@ header {
     height: auto;
     background: var(--color_header_conteiner);
     display: flex;
-    gap: 10px;
+    gap: 2px;
     align-items:center;
     justify-content: space-between;
 }
 
 /* Contemner del logo */
 .logo {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 5px;
     /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2); */
     padding: 0px 0px;
@@ -360,6 +360,7 @@ header {
     /*---------- Heder Superior -----------*/
     .header__superior {
         padding: 0px;
+        gap: 0;
     }
     /* Contemner del logo */
     .logo {
@@ -394,11 +395,11 @@ header {
     /* buscador */
     .search input {
         border: .5px solid rgb(112, 112, 112);
-        width: 160px;
+        width: 140px;
         padding: 5px;
     }
     .search input::placeholder {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     /*--------- Heder Barra Menu ---------*/
