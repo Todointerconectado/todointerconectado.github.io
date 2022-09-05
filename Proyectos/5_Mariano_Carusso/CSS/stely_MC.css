@@ -81,10 +81,10 @@ header {
 
 /* Contemner del logo */
 .logo {
-    /* border: 4px solid black; */
+    border: 1px solid black;
     border-radius: 5px;
     /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2); */
-    padding: 2px 5px;
+    padding: 0px 0px;
     width: 300px;
     font-size: 18px;
     letter-spacing: 2px;
@@ -365,7 +365,6 @@ header {
     .logo {
         transform: scale(.9);
         width: auto;
-        /* border: 1px solid; */
     }
     .logo > span {
         text-shadow: 2px 2px 3px rgb(117, 117, 117);
