@@ -396,47 +396,13 @@ main {
     animation: autoplay 60000ms ease 0ms infinite alternate forwards;
 }
 @keyframes autoplay {
-    7% {
+    0% {
         transform: translate3d(calc(-100% * 0), 0, 0);
-    }
-    14% {
-        transform: translate3d(calc(-100% * 1), 0, 0);
-    }
-    21% {
-        transform: translate3d(calc(-100% * 2), 0, 0);
-    }
-    28% {
-        transform: translate3d(calc(-100% * 3), 0, 0);
-    }
-    35% {
-        transform: translate3d(calc(-100% * 4), 0, 0);
-    }
-    42% {
-        transform: translate3d(calc(-100% * 5), 0, 0);
-    }
-    49% {
-        transform: translate3d(calc(-100% * 6), 0, 0);
-    }
-    56% {
-        transform: translate3d(calc(-100% * 7), 0, 0);
-    }
-    63% {
-        transform: translate3d(calc(-100% * 8), 0, 0);
-    }
-    70% {
-        transform: translate3d(calc(-100% * 9), 0, 0);
-    }
-    77% {
-        transform: translate3d(calc(-100% * 10), 0, 0);
-    }
-    84% {
-        transform: translate3d(calc(-100% * 11), 0, 0);
     }
     100% {
         transform: translate3d(calc(-100% * 12), 0, 0);
     }
 }
-
 
 .item__slite {
     /* border: 1px solid rgb(255, 25, 0); */
@@ -449,26 +415,34 @@ main {
 }
 
 .pagination {
-    /* border: 1px solid; */
+    /* border: 1px solid red; */
+    padding: 10px 5px;
     width: 100%;
-    /* height: 70px; */
+    height: 30px;
     /* overflow-x: scroll; */
+    background: linear-gradient(to bottom, rgba(102, 102, 102, .5) , rgb(0, 0, 0, .5));
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
     position: absolute;
-    bottom: 15px;
+    bottom: 5px;
     left: 0;
+    transition: all 600ms ease;
 }
+.pagination:hover {
+    opacity: 1;
+}
+
 .pagination__item {
     border: 1px solid rgba(128, 128, 128, 0.21);
     border-radius: 5px;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.1);
-    width: 40px;
-    height: auto;
+    width: 10px;
+    height: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -477,13 +451,18 @@ main {
     box-sizing: border-box;
     transition: border 300ms ease, transform 300ms ease;
 }
+
 .pagination__item:hover {
     border: 1px solid white;
     transform: scale(2);
+    border-radius: 0px;
+    width: 10px;
+    height: auto;
 }
 
 .pagination__item img {
     display: inline-block;
+    width: 100%;
     height: 100%;
     transform: scale(0);
     opacity: 0;
