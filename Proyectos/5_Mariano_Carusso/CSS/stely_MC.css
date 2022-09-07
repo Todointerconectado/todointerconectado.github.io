@@ -393,13 +393,49 @@ main {
     display: flex;
     transform: translate3d(0, 0, 0);
     transition: all 600ms;
-    animation-name: autoplay;
-    animation-duration: 6500ms;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+    animation: autoplay 60000ms ease 0ms infinite alternate forwards;
 }
-
+@keyframes autoplay {
+    7% {
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    14% {
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    21% {
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+    28% {
+        transform: translate3d(calc(-100% * 3), 0, 0);
+    }
+    35% {
+        transform: translate3d(calc(-100% * 4), 0, 0);
+    }
+    42% {
+        transform: translate3d(calc(-100% * 5), 0, 0);
+    }
+    49% {
+        transform: translate3d(calc(-100% * 6), 0, 0);
+    }
+    56% {
+        transform: translate3d(calc(-100% * 7), 0, 0);
+    }
+    63% {
+        transform: translate3d(calc(-100% * 8), 0, 0);
+    }
+    70% {
+        transform: translate3d(calc(-100% * 9), 0, 0);
+    }
+    77% {
+        transform: translate3d(calc(-100% * 10), 0, 0);
+    }
+    84% {
+        transform: translate3d(calc(-100% * 11), 0, 0);
+    }
+    100% {
+        transform: translate3d(calc(-100% * 12), 0, 0);
+    }
+}
 
 
 .item__slite {
@@ -415,21 +451,23 @@ main {
 .pagination {
     /* border: 1px solid; */
     width: 100%;
+    /* height: 70px; */
+    /* overflow-x: scroll; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     left: 0;
 }
 .pagination__item {
-    border: 1px solid rgba(128, 128, 128, 0.1);
+    border: 1px solid rgba(128, 128, 128, 0.21);
     border-radius: 5px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -462,7 +500,7 @@ input[id="1"]:checked ~ .slide {
     transform: translate3d(0, 0, 0);
 }
 input[id="1"]:checked ~ .pagination .pagination__item[for="1"] {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.5);
 }
 
 input[id="2"]:checked ~ .slide {
@@ -478,6 +516,86 @@ input[id="3"]:checked ~ .slide {
     transform: translate3d(calc(-100% * 2), 0, 0);
 }
 input[id="3"]:checked ~ .pagination .pagination__item[for="3"] {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+input[id="4"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+}
+input[id="4"]:checked ~ .pagination .pagination__item[for="4"] {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+input[id="5"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 4), 0, 0);
+}
+input[id="5"]:checked ~ .pagination .pagination__item[for="5"] {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+input[id="6"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 5), 0, 0);
+}
+input[id="6"]:checked ~ .pagination .pagination__item[for="6"] {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+input[id="7"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 6), 0, 0);
+}
+input[id="7"]:checked ~ .pagination .pagination__item[for="7"] {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+input[id="8"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 7), 0, 0);
+}
+input[id="8"]:checked ~ .pagination .pagination__item[for="8"] {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+input[id="9"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 8), 0, 0);
+}
+input[id="9"]:checked ~ .pagination .pagination__item[for="9"] {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+input[id="10"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 9), 0, 0);
+}
+input[id="10"]:checked ~ .pagination .pagination__item[for="10"] {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+input[id="11"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 10), 0, 0);
+}
+input[id="11"]:checked ~ .pagination .pagination__item[for="11"] {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+input[id="12"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 11), 0, 0);
+}
+input[id="12"]:checked ~ .pagination .pagination__item[for="12"] {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+input[id="13"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 12), 0, 0);
+}
+input[id="13"]:checked ~ .pagination .pagination__item[for="13"] {
     background: rgba(255, 255, 255, 0.7);
 }
 
