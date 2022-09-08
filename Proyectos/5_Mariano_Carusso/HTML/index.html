@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Mariano Carusso</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.6/glider.min.css">
     <link rel="icon" href="/Proyectos/5_Mariano_Carusso/CSS/img/logo_blanco.png">
     <link rel="stylesheet" href="/Proyectos/5_Mariano_Carusso/CSS/stely_MC.css">
 </head>
@@ -88,6 +89,11 @@
 
     <main>
         <section class="container__carousel">
+            <div class="title_carousel">
+                <h3>Title of the Proyecto</h3>
+            </div>
+
+            <input type="radio" id="play" name="image__slide">
             <input type="radio" id="1" name="image__slide">
             <input type="radio" id="2" name="image__slide">
             <input type="radio" id="3" name="image__slide">
@@ -157,6 +163,10 @@
             </div>
 
             <div class="pagination">
+                <label for="play" class="pagination__item__play">
+                    <i class="fa-brands fa-google-play"></i>
+                </label>
+
                 <label for="1" class="pagination__item">
                     <img src="/Proyectos/5_Mariano_Carusso/CSS/img/Obra 01/01.jpg" alt="">
                 </label>
@@ -194,7 +204,7 @@
                 </label>
 
                 <label for="10" class="pagination__item">
-                    <img src="/Proyectos/5_Mariano_Carusso/CSS/img/Obra 01/10.png" alt="">
+                    <img src="/Proyectos/5_Mariano_Carusso/CSS/img/Obra 01/10.jpg" alt="">
                 </label>
 
                 <label for="11" class="pagination__item">
@@ -204,14 +214,8 @@
                 <label for="12" class="pagination__item">
                     <img src="/Proyectos/5_Mariano_Carusso/CSS/img/Obra 01/12.jpg" alt="">
                 </label>
-
-                <label for="13" class="pagination__item">
-                    <img src="/Proyectos/5_Mariano_Carusso/CSS/img/Obra 01/13.jpg" alt="">
-                </label>
             </div>
         </section>
-
-        Contenido
     </main>
 
     <footer>
@@ -221,5 +225,7 @@
             <p>Company S.L. Todos los derechos reservados.</p>
         </address>
     </footer>
+
+    <script src="https://kit.fontawesome.com/4600a4ff4e.js" crossorigin="anonymous"></script>
 </body>
 </html>

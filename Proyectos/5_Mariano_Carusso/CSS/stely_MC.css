@@ -67,16 +67,19 @@ header {
 
 /*---------- Heder Superior -----------*/
 .header__superior {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: auto;
-    padding: 10px;
+    padding: 0 10px;
     max-width: 1200px;
+    width: 100%;
     height: auto;
     background: var(--color_header_conteiner);
     display: flex;
     gap: 2px;
     align-items:center;
     justify-content: space-between;
+    /* flex-wrap: wrap; */
+    flex-grow: 1;
 }
 
 /* Contemner del logo */
@@ -192,7 +195,7 @@ header {
 /* buscador */
 .search input {
     border-radius: 5px;
-    width: 300px;
+    width: 180px;
     padding: 10px;
 }
 
@@ -368,15 +371,27 @@ main {
     align-items: center;
     font-size: 24px;
 }
+
+/* ---------- carousel ----------*/
 .container__carousel {
-    /* border: 1px solid black; */
+    /* border: 3px solid black; */
     /* border-radius: 6px; */
     overflow: hidden;
-    /* padding: 5px; */
-    max-width: 1000px;
+    max-width: 800px;
     width: 100%;
     position: relative;
 }
+.title_carousel {
+    /* border: 3px solid rgb(235, 4, 4); */
+    padding: 5px 0;
+    text-align: center;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
 .container__carousel > input {
     display: none;
 }
@@ -393,7 +408,10 @@ main {
     display: flex;
     transform: translate3d(0, 0, 0);
     transition: all 600ms;
-    animation: autoplay 60000ms ease 0ms infinite alternate forwards;
+    animation: autoplay 55000ms ease 0ms infinite alternate forwards;
+}
+.slide:hover ~ .pagination {
+    opacity: .5;
 }
 @keyframes autoplay {
     0% {
@@ -416,36 +434,54 @@ main {
 
 .pagination {
     /* border: 1px solid red; */
-    padding: 10px 5px;
+    padding: 0px 5px;
     width: 100%;
-    height: 30px;
-    /* overflow-x: scroll; */
-    background: linear-gradient(to bottom, rgba(102, 102, 102, .5) , rgb(0, 0, 0, .5));
+    height: auto;
+    /* overflow-y: auto; */
+    background: linear-gradient(to bottom, rgba(102, 102, 102, .9) , rgb(0, 0, 0, .9));
     opacity: 0;
     display: flex;
+    overflow-y: auto;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
     left: 0;
     transition: all 600ms ease;
 }
 .pagination:hover {
-    opacity: 1;
+    opacity: 2;
+}
+.pagination__item__play {
+    /* border: 1px solid red; */
+    padding-right: 10px;
+    width: auto;
+    height: auto;
+}
+
+.pagination__item__play .fa-google-play {
+    font-size: 20px;
+    color: rgba(255, 255, 255);
+    opacity: 30%;
+}
+.pagination__item__play .fa-google-play:hover {
+    opacity: 60%;
 }
 
 .pagination__item {
     border: 1px solid rgba(128, 128, 128, 0.21);
     border-radius: 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-y: auto;
     background-color: rgba(255, 255, 255, 0.1);
-    width: 10px;
+    width: 30px;
     height: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: cover;
     cursor: pointer;
     text-align: center;
     box-sizing: border-box;
@@ -456,7 +492,7 @@ main {
     border: 1px solid white;
     transform: scale(2);
     border-radius: 0px;
-    width: 10px;
+    width: 20px;
     height: auto;
 }
 
@@ -464,6 +500,7 @@ main {
     display: inline-block;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     transform: scale(0);
     opacity: 0;
     transition: opacity 300ms ease, transform 300ms ease;
@@ -749,4 +786,12 @@ address {
     #ckeck__menu:checked ~ .menu > .li__home > a > img {
         height: 90px;
     }
+
+    /* --------------------------- Main --------------------------- */
+    /* --------- Carousel --------- */
+    .title_carousel {
+        font-size: 14px;
+    }
 }
+
+
