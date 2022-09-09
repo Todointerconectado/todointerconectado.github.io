@@ -214,7 +214,7 @@ header {
 
 /*---- Menu Principal ----*/
 .menu {
-    border: 1px solid rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
     padding: 2px 10px;
     max-width: 900px;
     height: 100%;
@@ -234,7 +234,7 @@ header {
     position: relative; /* Despues los sub-menu se posicionan en relación a su padre. */
 }
 .menu > li > a {
-    border: 1px solid rgb(27, 224, 9);
+    /* border: 1px solid rgb(27, 224, 9); */
     border-radius: 5px;
     padding: 0 6px;
     width: 100%;
@@ -376,9 +376,10 @@ main {
 
 /* ---------- carousel ----------*/
 .container__carousel {
-    border: 3px solid black;
+    border: 2px solid black;
     overflow: hidden;
     max-width: 800px;
+    height: auto;
     width: 100%;
     position: relative;
     display: flex;
@@ -426,7 +427,6 @@ main {
     }
 }
 
-
 .item__slite {
     /* border: 1px solid rgb(255, 25, 0); */
     max-width: 100%;
@@ -438,74 +438,88 @@ main {
 }
 
 .pagination {
-    border: 2px solid red;
+    /* border: 1px solid red; */
+    border-radius: 5px;
     background: linear-gradient(to bottom, rgba(102, 102, 102, .9) , rgb(0, 0, 0, .9));
-    overflow: hidden;
-    padding: 15px 5px;
-    /* max-width: 100%; */
-    width: 90%;
+    max-width: 700px;
+    width: 100%;
     height: auto;
-    /* opacity: 0; */
+    opacity: 0;
     display: flex;
-    /* flex-direction: column; */
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
     flex-wrap: nowrap;
     position: absolute;
-    bottom: 10px;
-    transition: all 600ms ease;
+    bottom: 20px;
+    transition: opacity 600ms ease;
 }
 .pagination:hover {
-    opacity: 2;
+    opacity: 1;
 }
+
 .pagination__item__play {
     /* border: 1px solid red; */
-    padding-right: 10px;
+    padding: 0 20px;
     width: auto;
     height: auto;
 }
-
 .pagination__item__play .fa-google-play {
-    font-size: 20px;
+    font-size: 30px;
     color: rgba(255, 255, 255);
-    opacity: 30%;
+    opacity: 40%;
 }
 .pagination__item__play .fa-google-play:hover {
-    opacity: 60%;
+    opacity: 95%;
+}
+
+.lista__pagination__item {
+    /* border: 1px solid rgb(60, 255, 0); */
+    background-color: transparent;
+    padding: 8px 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    gap: 13px;
 }
 
 .pagination__item {
-    box-sizing: border-box;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 200px;
+    /* border: 1px solid rgb(1, 18, 255); */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .1);
+    width: calc( 100% / 4.2 );
     height: auto;
     cursor: pointer;
-    text-align: center;
-    transition: border 300ms ease, transform 300ms ease;
+    transition: transform 300ms ease, border-radius 300ms ease;
 }
 
 .pagination__item:hover {
-    transform: scale(2);
+    transform: scale(1.1);
     border-radius: 0px;
 }
 
 .pagination__item img {
     /* border: 2px solid greenyellow; */
-    display: block;
-    min-width: 100%;
-    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .1);
     object-fit: cover;
-    /* transform: scale(0); */
-    /* opacity: 0; */
-    transition: opacity 300ms ease, transform 300ms ease;
+    display: block;
+    width: auto;
+    transform: scale(0);
+    transition: border-radius 600ms ease, transform 600ms ease;
 }
 .pagination__item:hover img {
-    opacity: 1;
     transform: scale(1);
+    border-radius: 0px;
+}
+
+.pagination__item figcaption {
+    background-color: transparent;
+    color: transparent;
+    min-width: 200px;
+    font-size: 1px;
 }
 
 /* event's de input */
@@ -790,106 +804,21 @@ address {
     .title_carousel {
         font-size: 14px;
     }
-}
 
+    .pagination {
+        transform: scale(.9);
+        bottom: 5px;
+    }
 
-.galeria {
-    /* box-sizing: border-box; */
-    /* border: 1px solid red; */
-    margin-bottom: 0px;
-    background-color: transparent;
-    /* padding: 5px; */
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
-.galeria .lista__imagenes{
-    /* border: 3px solid rgb(94, 255, 0); */
-    padding: 10px;
-    width: 100%;
-    max-width: 1200px;
-    overflow-y: auto;
-    display: flex;
-    gap: 10px;
-}
-.galeria .lista__imagenes img{
-    border: 1px solid black;
-    object-fit: cover;
-    display: block;
-    /* Cantidad de img a ver en el contenedor */
-    width: calc(100% / 2);
-    height: auto;
+    .lista__pagination__item {
+        transform: scale(.9);
+    }
 
-    /* Tamaño de las imagenes */
-    /* max-width: 100%; */
-    /* height: 300px; */
-}
+    .pagination__item {
+        width: calc( 100% / 4.5 );
+    }
 
-
-
-
-
-.galeria2 {
-    /* box-sizing: border-box; */
-    border: 3px solid red;
-    background-color: white;
-    padding: 5px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
-.galeria2 .lista__imagenes{
-    border: 3px solid rgb(94, 255, 0);
-    background-color: bisque;
-    padding: 10px;
-    width: 100%;
-    max-width: 600px;
-    overflow-y: auto;
-    display: flex;
-    gap: 10px;
-}
-.card{
-    border: 1px solid rgb(1, 18, 255);
-    background-color: white;
-    /* object-fit: cover; */
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-}
-
-.card img{
-    /* border: 3px solid rgb(209, 17, 226); */
-    object-fit: cover;
-    display: block;
-    /* Cantidad de img a ver en el contenedor */
-    width: auto;
-    height: 100%;
-}
-
-.cuerpo_card {
-    /* border: 1px solid red; */
-    width: 100%;
-    height: auto;
-    font-size: 14px;
-    text-align: left;
-}
-.cuerpo_card figcaption {
-    background-color: black;
-    color: white;
-    padding: 2px 5px;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-.cuerpo_card p {
-    padding: 20px 5px;
-    width: 100%;
-    height: auto;
-    color: black;
-    font-size: 14px;
+    .pagination__item__play .fa-google-play {
+        transform: scale(.9);
+    }
 }
