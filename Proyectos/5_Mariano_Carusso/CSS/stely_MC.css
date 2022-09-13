@@ -10,6 +10,8 @@
     --color_main_conteiner: linear-gradient(to bottom, rgb(2, 56, 119) 10%, rgb(30, 144, 252) 90%);
     --color_main_letras: white;
 
+    --color_texto_descripcion_proyecto: rgb(102, 102, 102);
+
     --color_footer_conteiner: linear-gradient(to bottom, rgb(2, 56, 119) 10%, rgb(30, 144, 252) 90%);
     --color_footer_letras: rgb(255, 255, 255);
 }
@@ -27,6 +29,7 @@ html {
     /* border: 3px solid green; */
     width: 100%;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -371,12 +374,28 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    gap: 10px;
+}
+
+#Project_1 {
+    border:  3px solid red;
+}
+
+#Project_2 {
+    border:  3px solid green;
+}
+
+#Project_3 {
+    border:  3px solid blue;
+}
+
+#Project_4 {
+    border:  3px solid violet;
 }
 
 /* ---------- carousel ----------*/
 .container__carousel {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     overflow: hidden;
     max-width: 800px;
     height: auto;
@@ -385,16 +404,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.title_carousel {
-    /* border: 3px solid rgb(235, 4, 4); */
-    padding: 5px 0;
-    text-align: center;
-    font-size: 24px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    text-decoration: underline;
-    text-transform: uppercase;
 }
 
 .container__carousel > input {
@@ -439,9 +448,9 @@ main {
 
 .pagination {
     /* border: 1px solid red; */
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background: linear-gradient(to bottom, rgba(102, 102, 102, .9) , rgb(0, 0, 0, .9));
-    max-width: 700px;
+    max-width: 100%;
     width: 100%;
     height: auto;
     opacity: 0;
@@ -450,7 +459,7 @@ main {
     align-items: center;
     flex-wrap: nowrap;
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     transition: opacity 600ms ease;
 }
 .pagination:hover {
@@ -475,10 +484,10 @@ main {
 .lista__pagination__item {
     /* border: 1px solid rgb(60, 255, 0); */
     background-color: transparent;
-    padding: 8px 10px;
+    /* padding: 8px 10px; */
     width: 100%;
     height: 100%;
-    max-width: 600px;
+    max-width: 700px;
     overflow-y: auto;
     display: flex;
     align-items: center;
@@ -489,7 +498,7 @@ main {
     /* border: 1px solid rgb(1, 18, 255); */
     border-radius: 10px;
     background-color: rgba(255, 255, 255, .1);
-    width: calc( 100% / 4.2 );
+    width: calc( 100% / 6.7 );
     height: auto;
     cursor: pointer;
     transition: transform 300ms ease, border-radius 300ms ease;
@@ -627,6 +636,57 @@ input[id="13"]:checked ~ .pagination .pagination__item[for="13"] {
     background: rgba(255, 255, 255, 0.7);
 }
 
+/* --------------------------- description del proyecto --------------------------- */
+.description_del_proyecto {
+    /* border: 1px solid; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+}
+.title_carousel {
+    /* border: 1px solid; */
+    padding: 5px 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.description_del_proyecto p {
+    /* border: 1px solid; */
+    font-size: 14px;
+    font-weight: 300;
+    width: 95%;
+    height: auto;
+    line-height: 1.2;
+    color: var(--color_texto_descripcion_proyecto);
+}
+.description_del_proyecto h3 {
+    /* border: 1px solid; */
+    width: 95%;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.description_del_proyecto ul {
+    padding-bottom: 25px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2px;
+
+}
+.description_del_proyecto ul li, .description_del_proyecto ul li time {
+    /* border: 1px solid; */
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color_texto_descripcion_proyecto);
+}
 
 /*-------------------------- footer --------------------------*/
 footer {
@@ -802,23 +862,15 @@ address {
     /* --------------------------- Main --------------------------- */
     /* --------- Carousel --------- */
     .title_carousel {
-        font-size: 14px;
-    }
-
-    .pagination {
-        transform: scale(.9);
-        bottom: 5px;
-    }
-
-    .lista__pagination__item {
-        transform: scale(.9);
+        /* font-size: 14px; */
     }
 
     .pagination__item {
-        width: calc( 100% / 4.5 );
+        width: calc( 100% / 6.3 );
+        border-radius: 2px;
     }
 
     .pagination__item__play .fa-google-play {
-        transform: scale(.9);
+        transform: scale(.7);
     }
 }
