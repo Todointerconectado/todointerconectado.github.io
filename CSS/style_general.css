@@ -73,6 +73,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 5px;
 }
 
 .contenedor_inicio {
@@ -120,14 +121,13 @@ dfn {
 
 .details_interno {
     background-color: var(--color_contenedor_dfn);
+    box-shadow: 0px 0px 5px 1px var(--color_sombrasContenedores_black);
     border-radius: 5px;
     overflow: hidden;
     margin: 3px;
     flex-grow: 1;
 }
-.details_interno:hover {
-    box-shadow: 0px 0px 5px 1px var(--color_sombrasContenedores_black);
-}
+
 .details_interno summary {
     border-radius: 5px;
     background-color: var(--color_contenedor_title_comandos_interno);
