@@ -69,7 +69,7 @@ body {
     align-items: center;
     gap: 15px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     color: var(--color-primary);
 }
 .logo figure img{
@@ -77,6 +77,14 @@ body {
     height: 60px;
     object-fit: cover;
     border-radius: 50%;
+}
+.logo figure figcaption {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    font-family: 'Fredoka One', cursive;
+    /* font-family: 'Alfa Slab One', cursive; */
+    /* font-family: 'Caveat', cursive; */
 }
 
 /* ----- Menu ----- */
