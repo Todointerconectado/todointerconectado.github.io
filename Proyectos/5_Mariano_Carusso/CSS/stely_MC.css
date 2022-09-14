@@ -32,6 +32,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
     /* border: 3px solid red; */
     /* background-color: blueviolet; */
@@ -70,7 +71,7 @@ header {
 
 /*---------- Heder Superior -----------*/
 .header__superior {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto;
     padding: 0 10px;
     max-width: 1200px;
@@ -371,26 +372,15 @@ main {
     background: rgb(212, 212, 212);
     color: black;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
-#Project_1 {
-    border:  3px solid red;
-}
-
-#Project_2 {
-    border:  3px solid green;
-}
-
-#Project_3 {
-    border:  3px solid blue;
-}
-
-#Project_4 {
-    border:  3px solid violet;
+.card {
+    /* border: 2px solid green; */
+    width: 30%;
 }
 
 /* ---------- carousel ----------*/
@@ -417,12 +407,10 @@ main {
 
 .slide {
     /* border: 1px solid rgb(248, 6, 228); */
-    /* padding: 5px; */
-    /* gap: 5px; */
     display: flex;
     transform: translate3d(0, 0, 0);
     transition: all 600ms;
-    animation: autoplay 55000ms ease 0ms infinite alternate forwards;
+    animation: autoplay 300000ms cubic-bezier(0,0,1,1) 0ms infinite alternate forwards;
 }
 .slide:hover ~ .pagination {
     opacity: .5;
@@ -531,7 +519,7 @@ main {
     font-size: 1px;
 }
 
-/* event's de input */
+/* event's de input obra 1 */
 input[id="1"]:checked ~ .slide {
     animation: none;
     transform: translate3d(0, 0, 0);
@@ -636,10 +624,28 @@ input[id="13"]:checked ~ .pagination .pagination__item[for="13"] {
     background: rgba(255, 255, 255, 0.7);
 }
 
+/* event's de input obra 1 */
+input[id="14"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 0), 0, 0);
+}
+input[id="14"]:checked ~ .pagination .pagination__item[for="14"] {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+input[id="15"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+input[id="15"]:checked ~ .pagination .pagination__item[for="15"] {
+    background: rgba(255, 255, 255, 0.7);
+}
+
 /* --------------------------- description del proyecto --------------------------- */
 .description_del_proyecto {
     /* border: 1px solid; */
     width: 100%;
+    max-width: 800px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -718,7 +724,16 @@ address {
     flex-grow: 1;
 }
 
-/* ------------------------------ Header Rerponsive Movil ------------------------------ */
+/* ------------------------------ Responsive Tablet ------------------------------ */
+@media screen and (min-width: 430px) and (max-width: 800px) {
+    /* --------------------------- Main --------------------------- */
+    /* --------- Carousel --------- */
+    .card {
+        width: 70%;
+    }
+}
+
+/* ------------------------------ Responsive Movil ------------------------------ */
 @media screen and (max-width: 430px) {
     /*---------- Heder Superior -----------*/
     .header__superior {
@@ -861,8 +876,8 @@ address {
 
     /* --------------------------- Main --------------------------- */
     /* --------- Carousel --------- */
-    .title_carousel {
-        /* font-size: 14px; */
+    .card {
+        width: 100%;
     }
 
     .pagination__item {
