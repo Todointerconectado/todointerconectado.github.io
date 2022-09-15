@@ -143,8 +143,8 @@
 
 .card-ability img {
     /* border: 1px solid; */
-    width: 64px;
-    height: auto;
+    width: auto;
+    height: 100px;
 }
 
 .card-ability figcaption abbr{
@@ -162,9 +162,6 @@
     /* font-family: 'Alfa Slab One', cursive; */
     font-family: 'Caveat', cursive;
 }
-
-
-
 
 
 /* ----------------------------- responsive ----------------------------- */
