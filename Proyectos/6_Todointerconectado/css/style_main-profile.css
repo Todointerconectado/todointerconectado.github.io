@@ -9,8 +9,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 }
 
+/* ----------------------------- Profile ----------------------------- */
 .profile {
     /* border: 2px solid red; */
     background-color: var(--color-theme);
@@ -21,7 +23,7 @@
     align-items: center;
     gap: 10px;
 }
-/* ------ Profile ------ */
+
 .profile-title {
     /* border: 1px solid; */
     margin: 0;
@@ -79,6 +81,7 @@
     height: auto;
 }
 .profile-img-section img {
+    /* border: 1px solid; */
     width: 100%;
     max-width: 350px;
     object-fit: cover;
@@ -92,7 +95,80 @@
     background-color: var(--color-secondary);
 }
 
-@media screen and (min-width: 430px) {
+/* ----------------------------- skills ----------------------------- */
+.skills {
+    /* border: 2px solid; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.skills h2 {
+    /* border: 2px solid; */
+    padding: 5px 10px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 35px;
+    letter-spacing: 1.5px;
+}
+
+.container-skills{
+    /* border: 2px solid green; */
+    padding: 10px;
+    max-width: 1400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card-ability {
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px var(--color-shades);
+    background: rgb(237, 237, 237);
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-ability img {
+    /* border: 1px solid; */
+    width: 64px;
+    height: auto;
+}
+
+.card-ability figcaption abbr{
+    /* border: 1px solid; */
+    border-radius: 8px;
+    padding: 2px 5px;
+    min-width: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* font-family: 'Fredoka One', cursive; */
+    /* font-family: 'Alfa Slab One', cursive; */
+    font-family: 'Caveat', cursive;
+}
+
+
+
+
+
+/* ----------------------------- responsive ----------------------------- */
+@media screen and (min-width: 500px) {
     .profile {
         flex-direction: row;
         justify-content: space-between;

@@ -2,6 +2,7 @@
 :root {
     --color-theme: rgb(255, 255, 255);
     --color-primary: rgb(18, 79, 136);
+    --color-shades: rgb(18, 79, 136, 0.3);
     --color-secondary: rgb(247, 195, 49);
     --color-text-inverse: rgb(255, 255, 255);
     --color-text: rgb(0, 0, 0);
