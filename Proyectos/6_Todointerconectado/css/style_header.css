@@ -2,6 +2,7 @@
 :root {
     --color-theme: rgb(255, 255, 255);
     --color-primary: rgb(18, 79, 136);
+    --color-primary-sure: linear-gradient(rgb(29, 129, 211),rgb(18, 79, 136),rgb(29, 129, 211),rgb(18, 79, 136),rgb(29, 129, 211));
     --color-shades: rgb(18, 79, 136, 0.3);
     --color-secondary: rgb(247, 195, 49);
     --color-text-inverse: rgb(255, 255, 255);
@@ -41,6 +42,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
 .contenedor_navegacion {
