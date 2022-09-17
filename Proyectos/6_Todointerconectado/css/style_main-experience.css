@@ -3,40 +3,39 @@ html {
 }
 
 /* ----------- wave water ----------- */
-.experiences figure {
-    border: nono;
-    background-color: transparent;
+.slider {
     width: 100%;
-    overflow-y: auto;
     height: auto;
+    margin: 0 auto;
+    overflow: hidden;
 }
-.wave {
-    /* border: 2px solid green; */
-    width: 300%;
-    height: 170px;
-    background-image: url(/Proyectos/6_Todointerconectado/css/img/wave_1.png);
-    background-repeat: repeat-x;
-    animation: wave-top 7000ms linear infinite;
+.slider .slide-track {
+    display: flex;
+    width: calc(1900px * 2);
+    -webkit-animation: scroll 9000ms linear infinite;
+    animation: scroll 9000ms linear infinite;
+}
+.slider .slide {
+    width: 1900px;
+}
+.slider .slide img{
+    width: 100%;
     display: block;
 }
 
-@keyframes wave-top {
+@keyframes scroll {
     0% {
-        margin-left: 0;
+        -webkit-transform:  translateX(0);
+        transform: translateX(0);
     }
     100% {
-        margin-left: -1600px;
+        -webkit-transform:  translateX(calc(-1900px * 1));
+        transform: translateX(calc(-1900px * 1));
     }
 }
 
 .wave-bottom {
-    display: block;
     transform: rotate(180deg);
-}
-.wave img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
 }
 
 /* ----------- section experience ----------- */
