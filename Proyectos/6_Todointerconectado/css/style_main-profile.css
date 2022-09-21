@@ -131,6 +131,12 @@
     flex-wrap: wrap;
 }
 
+.ability-url {
+    /* border: 2px solid red; */
+    text-decoration: none;
+    color: black;
+}
+
 .card-ability {
     /* border: 2px solid red; */
     border-radius: 10px;
