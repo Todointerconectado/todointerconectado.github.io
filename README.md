@@ -1,4 +1,4 @@
 # todointerconectado.github.io
-Aprendemos desde cero a avanzado las tecnologías como: HTML - CSS3 - GIT - GITHUB - JS - ETC.
+We learn from scratch to advanced technologies such as: HTML - CSS3 - GIT - GITHUB - JS - ETC.
 
-https://todointerconectado.github.io
+https://todointerconectado.com
