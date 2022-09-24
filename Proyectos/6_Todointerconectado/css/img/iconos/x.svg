@@ -1,6 +1,0 @@
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
-    <g transform="translate(0.000000,24) scale(0.100000,-0.100000)" fill="#8b8b8b" stroke="none">
-        <path d="M0 228 c0 -7 21 -34 47 -60 l47 -48 -47 -48 c-26 -26 -47 -53 -47 -60 0 -23 25 -11 72 35 l48 47 48 -47 c26 -26 53 -47 60 -47 23 0 11 25 -35
-        72 l-47 48 47 48 c46 47 58 72 35 72 -7 0 -34 -21 -60 -47 l-48 -47 -48 47 c-47 46 -72 58 -72 35z"/>
-    </g>
-</svg>
