@@ -1,16 +1,16 @@
 # todointerconectado.github.io
-## Descripción
+## Descripción 👨‍💼
 
 Este es un porfolio creado con html, css y javascript usando metodologia BEM y una arquitectura ITCSS.
 
-#Autor -
+## Autor 🖋
 **Francisco Carusso**
 
-*[LinkedIn] (https://www.linkedin.com/in/franciscocaruso/)
-*[Portafolio web] (https://todointerconectado.com/)
+* [LinkedIn] (https://www.linkedin.com/in/franciscocaruso/)
+* [Portafolio web] (https://todointerconectado.com/)
 
 ## Ver ejemplo en vivo 💻
-- [EnlaceGITHUBPages] (https://todointerconectado.com/)
+- [Enlace GITHUB Pages] (https://todointerconectado.com/)
 
 ## Instalación 
 Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
