@@ -6,7 +6,7 @@ Este es un portafolio creado con html, css y javascript usando metodologia BEM y
 ## Autor 🖋
 **Francisco Carusso**
 
-* [LinkedIn] (https://www.linkedin.com/in/franciscocaruso/)
+* [LinkedIn] (https://www.linkedin.com/in/franciscocarusso/)
 * [Portafolio web] (https://todointerconectado.com/)
 
 ## Ver ejemplo en vivo 💻
