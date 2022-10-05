@@ -68,8 +68,8 @@ html {
 
 .container-experiences {
     /* border: 3px solid rgb(247, 8, 255); */
-    padding: 15px 20px;
-    max-width: 1400px;
+    padding: 15px 10px;
+    max-width: 1300px;
     color: var(--color-text-inverse);
     display: flex;
     flex-direction: column;
@@ -79,7 +79,7 @@ html {
 
 .experiences_grid {
     /* border: 1px solid red; */
-    max-width: 650px;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
 }
@@ -95,19 +95,32 @@ html {
     /* font-size: 20px; */
     font-size: 2.5em;
     text-transform: uppercase;
+    color: white;
+    text-decoration: none;
 }
-
-.experiences-cargo {
-    padding: 15px 0;
-    /* font-size: 18px; */
-    font-size: 2em;
-    font-weight: 500;
+.experiences-company:hover {
+    text-decoration: underline;
+    /* -webkit-text-stroke: .5px gold; */
 }
 
 .experiences-description {
+    padding: 20px 0;
     max-width: 500px;
     font-size: 1.5em;
     font-weight: 400;
+}
+
+.experiences-previsualizacion {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.experiences-import-Project {
+    margin-top: 15px;
+    width: 100%;
+    min-height: 465px;
+    background-color: white;
 }
 
 .line, .empty {
@@ -132,8 +145,8 @@ html {
 
     .experiences_grid {
         /* border: 2px solid rgb(114, 233, 4); */
-        padding: 20px;
-        margin: 0 30px;
+        /* padding: 15px 5px; */
+        margin: 0 5px;
     }
 
     .experiences_left {
