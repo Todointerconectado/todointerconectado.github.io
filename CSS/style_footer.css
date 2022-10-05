@@ -7,7 +7,7 @@ footer {
     background: var(--color-primary-sure);
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 20px 5px 100px 5px;
     gap: 5px;
     display: flex;
     flex-direction: column;
@@ -45,4 +45,72 @@ footer {
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
+}
+
+/*---------------------------------- Redes social's ----------------------------------*/
+.conteiner-contacos {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    flex-wrap: wrap;
+}
+
+.conteiner-contacos_redSocial {
+    list-style: none;
+    /* border: 1px solid rgb(9, 248, 88); */
+    width: auto;
+    min-width: 80px;
+    height: auto;
+    margin: 5px 20px;
+}
+
+.conteiner-contacos_figure {
+    /* border: 3px solid violet; */
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-contacos_figure a {
+    margin-bottom: 5px;
+    /* border: 1px solid darkgoldenrod; */
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.conteiner-contacos_figure-img {
+    padding: 0;
+    width: 64px;
+    display: block;
+}
+
+.conteiner-contacos_figure-figcaption {
+    margin-top: 5px;
+    color: var(--color-text-inverse);
+    font-size: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 430px) {
+    .texto_footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
