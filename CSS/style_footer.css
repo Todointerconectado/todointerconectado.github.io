@@ -4,21 +4,23 @@ html {
 
 /*---------------------------------- footer ----------------------------------*/
 footer {
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    border-radius: 14px;
     background: var(--color-primary-sure);
+    color: var(--color-text-inverse);
+    font-size: 18px;
     width: 100%;
     height: auto;
-    min-height: 600px;
-    padding: 20px 5px 100px 5px;
-    gap: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 25px;
+    display: grid;
+    gap: 20px;
 }
 
 /* ---- Boton de subida ----*/
 .flecha{
     /* border: 1px solid red; */
+    margin: 0 auto;
     border-radius: 50%;
     padding: 0;
     width: 60px;
@@ -38,14 +40,88 @@ footer {
     height: 100%;
 }
 
-.texto_footer {
-    padding: 20px 5px;
+.contact-title {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
-    color: var(--color-text-inverse);
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact-details {
+    /* border: 2px solid green; */
+    display: grid;
+    gap: 20px;
+}
+.contact-details-group {
+    display: grid;
+    gap: 3px;
+}
+.contact-label {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* ---------------- formulation ---------------- */
+.contact-form {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 14px;
+    padding: 10px;
+    display: grid;
+    gap: 20px;
+    text-align: center;
+}
+.contact-form-group {
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+    height: auto;
+}
+
+.contact-form legend {
+    /* border: 2px solid rgb(201, 7, 226); */
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.contact-form-group-completar {
+    border: none;
+    border-radius: 7px;
+    background-color: transparent;
+    margin: 5px 0 0 0;
+    padding: 10px 15px;
+    width: 100%;
+    height: 100%;
+    color: var(--color-text-inverse);
+    font-weight: 500;
+    font-size: 16px;
+}
+.contact-form-group-completar::placeholder {
+    color: rgb(168, 166, 166);
+    font-weight: 300;
+}
+
+.contact-form-group-textarea {
+    resize: vertical;
+}
+
+.contact-form-submit {
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-text);
+    border-radius: 7px;
+    color: var(--color-text-inverse);
+    border: 1px solid var(--color-theme);
+    transition: transform 50ms ease;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact-form-submit:hover {
+    box-shadow: 0 0 5px var(--color-secondary);
 }
 
 /*---------------------------------- Redes social's ----------------------------------*/
@@ -92,6 +168,9 @@ footer {
     align-items: center;
     text-decoration: none;
 }
+.conteiner-contacos_figure a:hover {
+    filter: drop-shadow(0 0 5px var(--color-text-inverse));
+}
 
 .conteiner-contacos_figure-img {
     padding: 0;
@@ -99,19 +178,50 @@ footer {
     display: block;
 }
 
+
 .conteiner-contacos_figure-figcaption {
     margin-top: 5px;
     color: var(--color-text-inverse);
-    font-size: 10px;
+    font-size: 12px;
     text-decoration: none;
     letter-spacing: 1px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 430px) {
-    .texto_footer {
-        display: flex;
-        flex-direction: column;
+
+@media screen and (min-width: 950px) {
+    footer {
+        font-size: 20px;
+        padding: 70px;
+        max-width: 1400px;
+        box-sizing: border-box;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:  
+            "title      from"
+            "details    from"
+            "contactos  contactos"
+            "flecha     flecha"
+        ;
+    }
+    
+    .contact-title {
+        font-size: 35px;
+        text-align: left;
+        grid-area: title;
+    }
+    .contact-details {
+        grid-area: details;
+    }
+    .contact-form {
+        grid-area: from;
+    }
+    .nav-contactos {
+        grid-area: contactos;
+    }
+    .flecha {
+        grid-area: flecha;
     }
 }
