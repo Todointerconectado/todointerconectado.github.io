@@ -17,9 +17,6 @@
         <link rel="stylesheet" href="/CSS/style_main-profile.css">
         <link rel="stylesheet" href="/CSS/style_main-experience.css">
         <link rel="stylesheet" href="/CSS/style_footer.css">
-    
-        <!-- JavaScript  -->
-        <script defer src="/JS/app.js"></script>
     </head>
     
     <body>
@@ -40,7 +37,7 @@
                     <button class="close-menu" aria-label="Cerrar menú">
                         <img src="CSS/img/iconos/x.svg" alt="Icono cerrar barra">
                     </button>
-                    <li><a class="selected" href="#profile">Perfil</a></li>
+                    <li><a href="#profile" class="selected">Perfil</a></li>
                     <li><a href="#experience">Experiencia</a></li>
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#contact">Contacto</a></li>
@@ -49,7 +46,7 @@
         </header>
     
         <main id="home" class="main">
-            <section class="profile">
+            <section class="profile" id="profile">
                 <article class="profile-info">
                     <h1 class="profile-title">Hola, soy <br><strong>Francisco Carusso</strong></h1>
                     <p>
@@ -68,7 +65,7 @@
                 </figure>
             </section>
     
-            <section class="experiences">
+            <section class="experiences" id="experience">
                 <section class="slider">
                     <article class="slide-track">
                         <figure class="slide">
@@ -179,7 +176,7 @@
                 </section>
             </section>
     
-            <section class="skills">
+            <section class="skills" id="skills">
                 <h2>Habilidades</h2>
                 <article class="container-skills">
                     <figure class="card-ability">
@@ -225,7 +222,7 @@
             </section>
         </main>
     
-        <footer>
+        <footer id="contact">
             <a class="flecha" href="#home">
                 <img class="simbolo" src="/CSS/img/iconos/flecha.png" alt="flecha hacia arriba">
             </a>
@@ -304,5 +301,8 @@
                 </li>
             </ul>
         </footer>
+
+        <!-- JavaScript  -->
+        <script defer src="/JS/app.js"></script>
     </body>
 </html>
