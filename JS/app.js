@@ -40,7 +40,6 @@ menuLinks.forEach(menuLink => {
 });
 
 
-
 // connect the form to whatsapp
 var sendbtn = document.querySelector('#sendbtn');
 
@@ -50,7 +49,7 @@ function enviarMensaje() {
     var inputName = document.querySelector('#name').value
     var textareaMensaje = document.querySelector('#description').value
 
-    let urlWhatsapp = "https://api.whatsapp.com/send?phone=541154120432&text=NombreyApellido: %0A" + inputName + "%0A%0AMensaje: %0A" + textareaMensaje + "%0A";
+    let urlWhatsapp = "https://api.whatsapp.com/send?phone=541154120432&text=Nombre y Apellido: %0A" + inputName + "%0A%0AMensaje: %0A" + textareaMensaje + "%0A";
 
     window.open(urlWhatsapp);
 }
