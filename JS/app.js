@@ -11,8 +11,7 @@ openMenuBtn.addEventListener("click", toggleMenu);
 closeMenuBtn.addEventListener("click", toggleMenu);
 
 // sacar el menú al seleccionar una sección - bring up the menu when selecting a section
-// Combinación de teclado:
-// alt + 91: []  -  alt + 92: \  -  alt + 94: ^  - alt + 96: ``
+// Combinación de teclado: alt + 91: []  -  alt + 92: \  -  alt + 94: ^  - alt + 96: ``
 const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
 
 const observer = new IntersectionObserver((entries) => {
@@ -40,13 +39,13 @@ menuLinks.forEach(menuLink => {
 });
 
 // connect the form to whatsapp
-var sendbtn = document.querySelector('#sendbtn');
+let sendbtn = document.querySelector('#sendbtn');
 
 sendbtn.addEventListener('click' , enviarMensaje);
 
 function enviarMensaje() {
-    var inputName = document.querySelector('#name').value
-    var textareaMensaje = document.querySelector('#description').value
+    let inputName = document.querySelector('#name').value
+    let textareaMensaje = document.querySelector('#description').value
 
     let urlWhatsapp = "https://api.whatsapp.com/send?phone=541154120432&text=Nombre y Apellido: %0A" + inputName + "%0A%0AMensaje: %0A" + textareaMensaje + "%0A";
 
