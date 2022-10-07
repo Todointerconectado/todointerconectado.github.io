@@ -39,20 +39,18 @@ menuLinks.forEach(menuLink => {
     }
 });
 
+
+
 // connect the form to whatsapp
+var sendbtn = document.querySelector('#sendbtn');
 
-// function gotowhatsapp() {
-    
-//     var name = document.getElementById("name").value;
-//     var phone = document.getElementById("phone").value;
-//     var email = document.getElementById("email").value;
-//     var service = document.getElementById("service").value;
+sendbtn.addEventListener('click' , enviarMensaje);
 
-//     var url = "https://wa.me/918789529215?text=" 
-//     + "Name: " + name + "%0a"
-//     + "Phone: " + phone + "%0a"
-//     + "Email: " + email  + "%0a"
-//     + "Service: " + service; 
+function enviarMensaje() {
+    var inputName = document.querySelector('#name').value
+    var textareaMensaje = document.querySelector('#description').value
 
-//     window.open(url, '_blank').focus();
-// }
+    let urlWhatsapp = "https://api.whatsapp.com/send?phone=541154120432&text=NombreyApellido: %0A" + inputName + "%0A%0AMensaje: %0A" + textareaMensaje + "%0A";
+
+    window.open(urlWhatsapp);
+}
