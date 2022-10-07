@@ -39,7 +39,6 @@ menuLinks.forEach(menuLink => {
     }
 });
 
-
 // connect the form to whatsapp
 var sendbtn = document.querySelector('#sendbtn');
 
