@@ -141,11 +141,20 @@ body {
     position: absolute;
     top: calc(100% + 0px);
     left: 0;
+    bottom: 0;
     width: 100%;
     height: 4px;
     border-radius: 100px;
     opacity: 0;
-    transition: opacity 300ms ease;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: opacity 300ms ease, transform 400ms ease;
+}
+.menu li a:hover:after {
+    transform: scaleX(1);
+}
+.menu li a.selected:after {
+    transform: scaleX(1);
 }
 
 .menu li a.selected::after, 
