@@ -3,24 +3,28 @@ html {
 }
 
 /* ----------- wave water ----------- */
-.slider {
+.slider2 {
     width: 100%;
-    height: auto;
+    height: 72.5px;
     margin: 0 auto;
     overflow: hidden;
 }
-.slider .slide-track {
+.slide-track2 {
     display: flex;
-    width: calc(1900px * 2);
+    width: calc(100% * 1);
     -webkit-animation: scroll 9000ms linear infinite;
     animation: scroll 9000ms linear infinite;
 }
-.slider .slide {
-    width: 1900px;
-}
-.slider .slide img{
+.slide2 {
     width: 100%;
+}
+.img-wave{
+    width: calc(633px * 6);
+    height: 72.5px;
     display: block;
+    background-image: url(/CSS/img/wave_1.png);
+    background-repeat: repeat-x;
+    background-size: contain;
 }
 
 @keyframes scroll {
