@@ -43,7 +43,6 @@ html {
 }
 
 /* ----------- section experience ----------- */
-
 .experiences {
     /* border: 4px solid rgb(128, 255, 128); */
     margin: 0 auto;
@@ -52,7 +51,6 @@ html {
 }
 
 .sit {
-    /* border: 2px solid rgb(7, 255, 234); */
     background: var(--color-primary-sure);
     display: flex;
     flex-direction: column;
@@ -65,38 +63,56 @@ html {
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     text-transform: uppercase;
-    /* font-size: 30px; */
     font-size: 4em;
     font-weight: bold;
 }
 
 .container-experiences {
-    /* border: 3px solid rgb(247, 8, 255); */
     padding: 15px 10px;
-    max-width: 1300px;
+    width: 100%;
+    max-width: 1600px;
     color: var(--color-text-inverse);
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.experiences_grid {
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px var(--color-text);
+    padding: 10px;
+    max-width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
-.experiences_grid {
-    /* border: 1px solid red; */
-    max-width: 700px;
+.experiences_grid div {
+    padding: 5px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.two-experiences_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .experiences-time {
+    width: auto;
     font-size: 3em;
     font-weight: bold;
-    /* color: var(--color-secondary); */
     color: red;
 }
 
 .experiences-company {
-    /* font-size: 20px; */
     font-size: 2.5em;
     text-transform: uppercase;
     color: white;
@@ -108,27 +124,27 @@ html {
 }
 
 .experiences-description {
-    padding: 20px 0;
-    max-width: 500px;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    color: var(--color-text-inverse);
     font-size: 1.5em;
     font-weight: 400;
+    line-height: 1.5;
 }
 
-.experiences-previsualizacion {
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.experiences-import-Project {
-    margin-top: 15px;
+/* imagen de html | css | github */
+.container-img {
     width: 100%;
-    min-height: 465px;
-    background-color: white;
+    height: auto;
 }
-
-.line, .empty {
-    display: none;
+.container-img img {
+    margin: 0 auto;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
 }
 
 @media screen and (min-width: 700px) {
@@ -136,57 +152,53 @@ html {
         font-size: 75%;
     }
 
-    .line, .empty {
-        display: block;
-    }
-
     .container-experiences {
-        /* border: 2px solid red; */
         display: grid;
-        grid-template-columns: auto 2px auto;
-        gap: 0 20px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 
     .experiences_grid {
-        /* border: 2px solid rgb(114, 233, 4); */
-        /* padding: 15px 5px; */
         margin: 0 5px;
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .two-experiences_grid1 {
+        padding-bottom: 200px;
+        grid-column: 2 / -1;
+        grid-row: 2 / -1;
+    }
+
+    .two-experiences_grid2 {
+        padding-top: 200px;
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
     }
 
     .experiences_left {
         text-align: right;
     }
+}
 
-    .line {
-        /* border: 2px solid; */
-        height: 100%;
-        background: var(--color-text-inverse);
-        position: relative;
+@media screen and (min-width: 1300px) {
+    .experiences_grid {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+    
+    .experiences_grid div {
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
-    .line::before,
-    .line::after {
-        content: "";
-        display: block;
-        width: 25px;
-        height: 15px;
-        border-radius: 50%;
-        background: var(--color-text-inverse);
-        position: absolute;
-        top: -5px;
-        left: -12px;
-        z-index: 1;
-    }
-    .line::after {
-        content: "";
-        display: block;
-        width: 25px;
-        height: 15px;
-        border-radius: 50%;
-        background: var(--color-text-inverse);
-        position: absolute;
-        top: 100%;
-        left: -12px;
-        z-index: 1;
+    .experiences-description {
+        grid-column: 1 / 2;
+        background: var(--color-menu-mobil-background);
+        display: flex;
+        align-items: center;
     }
 }
