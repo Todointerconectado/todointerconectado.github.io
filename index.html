@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="/CSS/style_footer.css">
     </head>
     
-    <body>
+    <body class="body">
         <header class="header">
             <nav class="contenedor_navegacion">
                 <a href="https://todointerconectado.com" class="logo">
@@ -51,138 +51,128 @@
         </header>
     
         <main id="home" class="main">
-            <section class="profile" id="profile">
-                <article class="profile-info">
-                    <h1 class="profile-title">Hola, soy <br><strong>Francisco Carusso</strong></h1>
-                    <p>
-                        Soy un apasionado por la programación y desarrollo de software, con una dedicación plena a crear experiencias unicas para el usuario desarrollando la interfas, aplicando varias tecnologías encaminadas al front-end.
-                    </p>
-                    <button class="profile-btn">
-                        <a href="CSS/archivos/Desarrollador Web Front-end. CV. Francisco Carusso.pdf" target="_blank">
-                            Descargar CV
-                        </a>
-                    </button>
-                </article>
-    
-                <figure class="profile-img-section">
-                    <img src="/CSS/img/portada1.2.png" title="Programador Francisco Carusso" alt="Programador Francisco Carusso">
-                    <div class="profile-img-line"></div>
-                </figure>
-            </section>
-    
-            <section class="experiences" id="experience">
-                <section class="slider wave-top">
-                    <section class="slider2">
-                        <article  class="slide-track2">
-                            <figure class="slide2">
-                                <div class="img-wave"></div>
-                            </figure>
-                        </article>
+            <div class="video-de-fondo">
+                <section class="profile" id="profile">
+                    <article class="profile-info">
+                        <h1 class="profile-title">
+                            Hola, soy
+                            <br><strong class="profile-name">Francisco Carusso</strong>
+                            <br><strong class="profile-developer">Front-end Developer</strong>
+                        </h1>
+                        <p>
+                            Soy un apasionado por la programación y desarrollo de software, con una dedicación plena a crear experiencias unicas para el usuario desarrollando la interfas, aplicando varias tecnologías encaminadas al front-end.
+                        </p>
+                        <button class="profile-btn">
+                            <a href="CSS/archivos/Desarrollador Web Front-end. CV. Francisco Carusso.pdf" target="_blank">
+                                Descargar CV
+                            </a>
+                        </button>
+                    </article>
+                    <figure class="profile-img-section">
+                        <img src="/CSS/img/portada1.2.png" title="Programador Francisco Carusso" alt="Programador Francisco Carusso">
+                        <div class="profile-img-line"></div>
+                    </figure>
+                </section>
+
+                <section class="experiences" id="experience">
+                    <section class="slider wave-top">
+                        <section class="slider2">
+                            <article  class="slide-track2">
+                                <figure class="slide2">
+                                    <div class="img-wave"></div>
+                                </figure>
+                            </article>
+                        </section>
+                    </section>
+                    <div class="sit">
+                        <h2 class="experiences_title">Experiencia</h2>
+                        <section class="desafios-contenedor">
+                            <article class="desafios-article">
+                                <figure class="desafios-figure">
+                                    <img class="desafios-img" src="/CSS/img/Desafios/usersComments.png" alt="Primer desafío Front-end">
+                                    <figcaption class="desafios-figcaption">desafío: 1</figcaption>
+                                    <div class="capa">
+                                        <a href="https://todointerconectado.com/usersComments/" target="_blank" title="Realizado por Francisco Carusso">Ir al Desafio!</a>
+                                    </div>
+                                </figure>
+                            </article>
+                            <article class="desafios-article">
+                                <figure class="desafios-figure">
+                                    <img class="desafios-img" src="/CSS/img/Desafios/fourcard.png" alt="Primer desafío Front-end">
+                                    <figcaption  class="desafios-figcaption">desafío: 2</figcaption>
+                                    <div class="capa">
+                                        <a href="https://todointerconectado.com/fourcard/" target="_blank" title="Realizado por Francisco Carusso">Ir al Desafio!</a>
+                                    </div>
+                                </figure>
+                            </article>
+                        </section>
+                        <section class="container-experiences">
+                            <div class="two-experiences_grid two-experiences_grid1">
+                                <article class="experiences_grid">
+                                    <div>
+                                        <time class="experiences-time">01-07-2022</time>
+                                        <a  class="experiences-company" target="_blank" href="https://todointerconectado.com/Proyectos/1_Curso_HTML/HTML/index-HTML.html">Tecnoligía HTML</a>
+                                    </div>
+                                    <p class="experiences-description">
+                                        En esta página desarrollamos una sección por cada etiqueta, la cual entregamos su descripción y ejemplos de su aplicación escribiendo el respectivo codigo para hacer sencillo el entendimiento y su progresiva utilización.
+                                    </p>
+                                    <figure class="container-img">
+                                        <img src="/CSS/img/img_HTML.png" alt="imagen html">
+                                    </figure>
+                                </article>
+                                <article class="experiences_grid experiences_left">
+                                    <div>
+                                        <time class="experiences-time">01-08-2022</time>
+                                        <a  class="experiences-company" target="_blank" href="https://todointerconectado.com/Proyectos/3_Curso_CSS3/index_CSS3.html">Tecnoligía CSS</a>
+                                    </div>
+                
+                                    <p class="experiences-description">
+                                        En esta página desarrollamos una sección por cada etiqueta, clase, id, propiedad la cual entregamos su descripción y ejemplos de su aplicación escribiendo el respectivo codigo para hacer sencillo el entendimiento y su progresiva utilización.
+                                    </p>
+                                    <figure class="container-img">
+                                        <img src="/CSS/img/img_css.png" alt="imagen css">
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="two-experiences_grid two-experiences_grid2">
+                                <article class="experiences_grid">
+                                    <div>
+                                        <time class="experiences-time">01-09-2022</time>
+                                        <a  class="experiences-company" target="_blank" href="https://todointerconectado.com/Proyectos/2-Git_GitHub/index_git.html">TecnoligÍa GIT / GITHUB</a>
+                                    </div>
+                                    <p class="experiences-description">
+                                        En esta página desarrollamos una sección por cada etiqueta la cual entregamos su descripción para hacer sencillo el entendimiento y su progresiva utilización.
+                                    </p>
+                                    <figure class="container-img">
+                                        <img src="/CSS/img/img_git.png" alt="imagen github">
+                                    </figure>
+                                </article>
+                                <article class="experiences_grid">
+                                    <div>
+                                        <time class="experiences-time">01-11-2022</time>
+                                        <a  class="experiences-company" target="_blank" href="https://todointerconectado.com/Proyectos/2-Git_GitHub/index_git.html">TecnoligÍa JavaScript</a>
+                                    </div>
+                                    <p class="experiences-description">
+                                        próximamente desarrollaremos principios de JavaScript.
+                                    </p>
+                                    <figure class="container-img">
+                                        <img src="/CSS/img/img_JavaScript.png" alt="imagen JavaScript">
+                                    </figure>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                    <section class="slider wave-bottom">
+                        <section class="slider2">
+                            <article  class="slide-track2">
+                                <figure class="slide2">
+                                    <div class="img-wave"></div>
+                                </figure>
+                            </article>
+                        </section>
                     </section>
                 </section>
-    
-                <div class="sit">
-                    <h2 class="experiences_title">Experiencia</h2>
-
-                    <section class="desafios-contenedor">
-                        <article class="desafios-article">
-                            <figure class="desafios-figure">
-                                <img class="desafios-img" src="/CSS/img/Desafios/usersComments.png" alt="Primer desafío Front-end">
-                                <figcaption class="desafios-figcaption">desafío: 1</figcaption>
-                                <div class="capa">
-                                    <a href="https://todointerconectado.com/usersComments/" target="_blank" title="Realizado por Francisco Carusso">Ir al Desafio!</a>
-                                </div>
-                            </figure>
-                        </article>
-
-                        <article class="desafios-article">
-                            <figure class="desafios-figure">
-                                <img class="desafios-img" src="/CSS/img/Desafios/fourcard.png" alt="Primer desafío Front-end">
-                                <figcaption  class="desafios-figcaption">desafío: 2</figcaption>
-                                <div class="capa">
-                                    <a href="https://todointerconectado.com/fourcard/" target="_blank" title="Realizado por Francisco Carusso">Ir al Desafio!</a>
-                                </div>
-                            </figure>
-                        </article>
-                    </section>
-
-                    <section class="container-experiences">
-                        <div class="two-experiences_grid two-experiences_grid1">
-                            <article class="experiences_grid">
-                                <div>
-                                    <time class="experiences-time">01-07-2022</time>
-                                    <a  class="experiences-company" target="_blank" href="https://todointerconectado.com/Proyectos/1_Curso_HTML/HTML/index-HTML.html">Tecnoligía HTML</a>
-                                </div>
-
-                                <p class="experiences-description">
-                                    En esta página desarrollamos una sección por cada etiqueta, la cual entregamos su descripción y ejemplos de su aplicación escribiendo el respectivo codigo para hacer sencillo el entendimiento y su progresiva utilización.
-                                </p>
-
-                                <figure class="container-img">
-                                    <img src="/CSS/img/img_HTML.png" alt="imagen html">
-                                </figure>
-                            </article>
-
-                            <article class="experiences_grid experiences_left">
-                                <div>
-                                    <time class="experiences-time">01-08-2022</time>
-                                    <a  class="experiences-company" target="_blank" href="https://todointerconectado.com/Proyectos/3_Curso_CSS3/index_CSS3.html">Tecnoligía CSS</a>
-                                </div>
-                            
-                                <p class="experiences-description">
-                                    En esta página desarrollamos una sección por cada etiqueta, clase, id, propiedad la cual entregamos su descripción y ejemplos de su aplicación escribiendo el respectivo codigo para hacer sencillo el entendimiento y su progresiva utilización.
-                                </p>
-
-                                <figure class="container-img">
-                                    <img src="/CSS/img/img_css.png" alt="imagen css">
-                                </figure>
-                            </article>
-                        </div>
-
-                        <div class="two-experiences_grid two-experiences_grid2">
-                            <article class="experiences_grid">
-                                <div>
-                                    <time class="experiences-time">01-09-2022</time>
-                                    <a  class="experiences-company" target="_blank" href="https://todointerconectado.com/Proyectos/2-Git_GitHub/index_git.html">TecnoligÍa GIT / GITHUB</a>
-                                </div>
-
-                                <p class="experiences-description">
-                                    En esta página desarrollamos una sección por cada etiqueta la cual entregamos su descripción para hacer sencillo el entendimiento y su progresiva utilización.
-                                </p>
-
-                                <figure class="container-img">
-                                    <img src="/CSS/img/img_git.png" alt="imagen github">
-                                </figure>
-                            </article>
-
-                            <article class="experiences_grid">
-                                <div>
-                                    <time class="experiences-time">01-11-2022</time>
-                                    <a  class="experiences-company" target="_blank" href="https://todointerconectado.com/Proyectos/2-Git_GitHub/index_git.html">TecnoligÍa JavaScript</a>
-                                </div>
-
-                                <p class="experiences-description">
-                                    próximamente desarrollaremos principios de JavaScript.
-                                </p>
-
-                                <figure class="container-img">
-                                    <img src="/CSS/img/img_JavaScript.png" alt="imagen JavaScript">
-                                </figure>
-                            </article>
-                        </div>
-                    </section>
-                </div>
-
-                <section class="slider wave-bottom">
-                    <section class="slider2">
-                        <article  class="slide-track2">
-                            <figure class="slide2">
-                                <div class="img-wave"></div>
-                            </figure>
-                        </article>
-                    </section>
-                </section>
-            </section>
+            </div>
     
             <section class="skills" id="skills">
                 <h2>Habilidades</h2>

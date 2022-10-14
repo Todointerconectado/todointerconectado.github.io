@@ -19,7 +19,7 @@ html {
     width: 100%;
 }
 .img-wave{
-    width: calc(633px * 6);
+    width: calc(633px * 9);
     height: 72.5px;
     display: block;
     background-image: url(/CSS/img/wave_1.png);
@@ -40,11 +40,12 @@ html {
 
 .wave-bottom {
     transform: rotate(180deg);
+    background: var(--color-theme);
 }
 
 /* ----------- section experience ----------- */
+
 .experiences {
-    /* border: 4px solid rgb(128, 255, 128); */
     margin: 0 auto;
     width: 100%;
     height: auto;

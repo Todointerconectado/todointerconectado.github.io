@@ -1,27 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Caveat:wght@400;700&family=Fredoka+One&family=Gentium+Book+Basic:ital@1&family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@700&family=Playfair+Display:ital,wght@1,500&family=Rubik+Maze&family=Signika+Negative&family=Source+Sans+Pro:wght@400;700;900&display=swap');
+
 .main {
-    /* border: 2px solid red; */
-    background-color: var(--color-theme);
-    margin-top: 80px;
+    /* background-color: var(--color-theme); */
+    margin-top: 70px;
     padding-bottom: 20px;
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
 }
 
 /* ----------------------------- Profile ----------------------------- */
 .profile {
-    /* border: 2px solid red; */
-    background-color: var(--color-theme);
     text-align: center;
+    width: 100%;
+    height: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
     gap: 10px;
+    background: 
+    linear-gradient(to right, rgb(255, 255, 255, .8), rgb(255, 255, 255, .8) ),
+    url(/CSS/img/img-codigo-hojarota.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .profile-title {
@@ -31,6 +33,11 @@
     font-weight: bold;
     color: var(--color-primary);
     font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+}
+.profile-developer {
+    font-size: 33px;
+    text-transform: uppercase;
 }
 .profile-info p {
     /* border: 1px solid; */
@@ -75,7 +82,6 @@
 
 /* ------ Portage ------ */
 .profile-img-section {
-    /* border: 2px solid green; */
     width: 60%;
     max-width: 350px;
     height: auto;
@@ -103,6 +109,7 @@
 /* ----------------------------- skills ----------------------------- */
 .skills {
     /* border: 2px solid; */
+    background: var(--color-theme);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -180,9 +187,9 @@
 @media screen and (min-width: 500px) {
     .profile {
         flex-direction: row;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         width: 100%;
-        max-width: 1200px;
+        /* max-width: 1200px; */
     }
 
     /* ------ Profile ------ */
