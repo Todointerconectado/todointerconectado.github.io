@@ -208,3 +208,32 @@ html {
         align-items: center;
     }
 }
+
+
+/* ---- Container Videos ---- */
+
+.containerVideos {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.videoYouTube {
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    transition: box-shadow 300ms ease;
+}
+.videoYouTube:hover {
+    box-shadow: 0 0 10px rgb(255, 255, 255, .5);
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
