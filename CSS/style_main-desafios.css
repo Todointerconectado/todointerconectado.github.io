@@ -1,8 +1,19 @@
+.experiences_sub_title {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: var(--color-text-inverse);
+    width: 100%;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
 .desafios-contenedor {
     border-radius: 8px;
     overflow: hidden;
     width: 100%;
-    height: 600px;
+    height: 300px;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -11,15 +22,18 @@
 .desafios-article {
     box-shadow: 0px 20px 30px var(--color-box-shadow);
     width: 100%;
-    height: auto;
+    height: 100%;
     overflow: hidden;
     display: flex;
     flex: 1;
     position: relative;
-    transition: flex 300ms ease;
+    transition: flex 1400ms ease;
 }
 .desafios-article:hover {
-    flex: 50%;
+    flex: 80%;
+}
+.desafios-article:hover .desafios-img {
+    object-fit: contain;
 }
 
 .desafios-figure {
@@ -33,7 +47,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all 300ms ease;
+    background-repeat: no-repeat;
 }
 
 .desafios-figcaption {
@@ -42,20 +56,24 @@
     width: 100%;
     height: auto;
     display: block;
-    font-size: 20px;
+    font-size: 8px;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
+}
+
+.desafios-article:hover .desafios-figcaption {
+    font-size: 14px;
 }
 
 .capa {
     padding: 10px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: -20%;
     width: 100%;
     height: 600px;
-    background-color: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .6);
     opacity: 1;
     display: flex;
     flex-direction: column;
@@ -69,9 +87,9 @@
 
 .capa a {
     border-radius: 8px;
-    box-shadow: 0px 10px 30px var(--color-box-shadow);
+    box-shadow: 0px 5px 30px var(--color-box-shadow);
     padding: 10px;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
@@ -80,8 +98,8 @@
     color: var(--color-text-inverse);
     text-decoration: none;
     opacity: 0;
-    *visibility: hidden;
-    *display: none;
+    visibility: hidden;
+    display: none;
     transition: 
         opacity 500ms ease,
         transform 0ms ease;
@@ -96,11 +114,8 @@
     transform: scale(0.8);
 }
 
-@media screen and (min-width: 1300px) {
-    .desafios-contenedor {
-        height: 700px;
-    }
-    .capa {
-        height: 700px;
+@media screen and (min-width: 600px) {
+    .desafios-figcaption {
+        font-size: 13px;
     }
 }

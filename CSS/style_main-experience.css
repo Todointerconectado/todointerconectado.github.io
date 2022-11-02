@@ -46,6 +46,8 @@ html {
 /* ----------- section experience ----------- */
 
 .experiences {
+    position: relative;
+    bottom: 70px;
     margin: 0 auto;
     width: 100%;
     height: auto;
@@ -85,6 +87,7 @@ html {
 .experiences_grid {
     border-radius: 8px;
     box-shadow: 3px 3px 10px var(--color-text);
+    background: var(--color-card-experience);
     padding: 10px;
     max-width: 800px;
     height: auto;

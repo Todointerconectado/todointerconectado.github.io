@@ -43,7 +43,12 @@
                         <img src="CSS/img/iconos/x.svg" alt="Icono cerrar barra">
                     </button>
                     <li><a href="#profile" class="selected">Perfil</a></li>
-                    <li><a href="#experience">Experiencia</a></li>
+                    <li class="conteiner_sub-menu"><a href="#experience">Experiencias</a>
+                        <ul class="sub-menu">
+                            <li><a href="#desafios">Desafios Front-end</a></li>
+                            <li><a href="#aprender">Tecnologías Web!</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
@@ -86,7 +91,9 @@
                     </section>
 
                     <div class="sit">
-                        <h2 class="experiences_title">Experiencia</h2>
+                        <h2 class="experiences_title">Experiencias</h2>
+                        
+                        <h3 id="desafios" class="experiences_sub_title">Desafios Font-end</h3>
                         <section class="desafios-contenedor">
                             <article class="desafios-article">
                                 <figure class="desafios-figure">
@@ -117,8 +124,39 @@
                                     </div>
                                 </figure>
                             </article>
+
+                            <article class="desafios-article">
+                                <figure class="desafios-figure">
+                                    <img class="desafios-img" src="/CSS/img/Desafios/gridcomponent.png" alt="Cuarto desafío Front-end">
+                                    <figcaption  class="desafios-figcaption">desafío: 4</figcaption>
+                                    <div class="capa">
+                                        <a href="https://todointerconectado.com/gridcomponent" target="_blank" title="Realizado por Francisco Carusso">Ir al Desafio!</a>
+                                    </div>
+                                </figure>
+                            </article>
+
+                            <article class="desafios-article">
+                                <figure class="desafios-figure">
+                                    <img class="desafios-img" src="/CSS/img/Desafios/previewcard.png" alt="Terser desafío Front-end">
+                                    <figcaption  class="desafios-figcaption">desafío: 5</figcaption>
+                                    <div class="capa">
+                                        <a href="https://todointerconectado.com/previewcard" target="_blank" title="Realizado por Francisco Carusso">Ir al Desafio!</a>
+                                    </div>
+                                </figure>
+                            </article>
+
+                            <article class="desafios-article">
+                                <figure class="desafios-figure">
+                                    <img class="desafios-img" src="/CSS/img/Desafios/introductorymeetingpage.png" alt="Terser desafío Front-end">
+                                    <figcaption  class="desafios-figcaption">desafío: 6</figcaption>
+                                    <div class="capa">
+                                        <a href="https://todointerconectado.com/introductorymeetingpage" target="_blank" title="Realizado por Francisco Carusso">Ir al Desafio!</a>
+                                    </div>
+                                </figure>
+                            </article>
                         </section>
 
+                        <h3 id="aprender" class="experiences_sub_title">Aprender las tecnologías de la Web!</h3>
                         <section class="container-experiences">
                             <div class="two-experiences_grid two-experiences_grid1">
                                 <article class="experiences_grid">
@@ -133,6 +171,7 @@
                                         <img src="/CSS/img/img_HTML.png" alt="imagen html">
                                     </figure>
                                 </article>
+
                                 <article class="experiences_grid experiences_left">
                                     <div>
                                         <time class="experiences-time">01-08-2022</time>
@@ -147,6 +186,7 @@
                                     </figure>
                                 </article>
                             </div>
+
                             <div class="two-experiences_grid two-experiences_grid2">
                                 <article class="experiences_grid">
                                     <div>
@@ -160,6 +200,7 @@
                                         <img src="/CSS/img/img_git.png" alt="imagen github">
                                     </figure>
                                 </article>
+
                                 <article class="experiences_grid">
                                     <div>
                                         <time class="experiences-time">01-11-2022</time>
