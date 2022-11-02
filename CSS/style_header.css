@@ -189,7 +189,9 @@ body {
     left: -5px;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 300ms ease, opacity 300ms ease, top 300ms ease;
+    transition: visibility 300ms ease,
+                opacity 300ms ease,
+                top 300ms ease;
 }
 .menu > .conteiner_sub-menu:hover > ul {
     visibility: visible;
