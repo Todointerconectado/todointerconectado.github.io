@@ -1,6 +1,8 @@
 # todointerconectado.github.io
-## Descripción 👨‍💼
 
+![Layout preview for the Todointerconectado page](./CSS/img/banner.png)
+
+## Descripción 👨‍💼
 Este es un portafolio creado con html, css y javascript usando metodologia BEM y una arquitectura ITCSS.
 
 ## Autor 🖋
