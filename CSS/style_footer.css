@@ -1,74 +1,46 @@
 html {
     scroll-behavior: smooth;
 }
-/*  */
+
 /*---------------------------------- footer ----------------------------------*/
-footer {
+.footer {
     margin: 0 auto;
-    border-radius: 14px;
+    border-radius: 14px 14px 0 0;
     background: var(--color-primary-sure);
     color: var(--color-text-inverse);
     font-size: 18px;
     width: 100%;
     height: auto;
     padding: 25px;
-    display: grid;
-    gap: 20px;
-}
-
-/* ---- Boton de subida ----*/
-.flecha{
-    /* border: 1px solid red; */
-    margin: 0 auto;
-    border-radius: 50%;
-    padding: 0;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform 1s;
-}
-.flecha:hover {
-    transform: scale(1.2);
-}
-.simbolo {
-    width: 100%;
-    height: 100%;
+    gap: 40px;
 }
 
 .contact-title {
+    width: 100%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     font-weight: bold;
-    text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
-}
-
-.contact-details {
-    /* border: 2px solid green; */
-    display: grid;
-    gap: 20px;
-}
-.contact-details-group {
-    display: grid;
-    gap: 3px;
-}
-.contact-label {
-    text-transform: uppercase;
-    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ---------------- formulation ---------------- */
 .contact-form {
     border: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    max-width: 800px;
     border-radius: 14px;
     background: var(--color-text-inverse);
     padding: 10px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     text-align: center;
 }
@@ -118,12 +90,39 @@ footer {
 }
 
 .contact-form-submit:hover {
-    box-shadow: 0 0 5px var(--color-secondary);
+    opacity: .8;
+}
+
+/* ---- CORREO ---- */
+
+.contact-container-gmail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-text-gmail {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-text-gmail:hover {
+    text-decoration:underline;
+}
+
+.contact-gmail {
+    width: 20px;
 }
 
 /*---------------------------------- Redes social's ----------------------------------*/
 .conteiner-contacos {
-    /* border: 1px solid red; */
     width: 100%;
     height: auto;
     display: flex;
@@ -175,7 +174,6 @@ footer {
     display: block;
 }
 
-
 .conteiner-contacos_figure-figcaption {
     margin-top: 5px;
     color: var(--color-text-inverse);
@@ -184,6 +182,52 @@ footer {
     letter-spacing: 1px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+/* ---- Boton de subida ----*/
+.flecha{
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+}
+.flecha:hover {
+    transform: scale(1.2);
+}
+.simbolo {
+    width: 100%;
+    height: 100%;
+}
+
+/* -------- Copyright -------- */
+
+.contact-details-group {
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.contact-text-from {
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-label {
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 
@@ -205,7 +249,7 @@ footer {
     }
     
     .contact-title {
-        font-size: 35px;
+        font-size: 4rem;
         text-align: left;
         grid-area: title;
     }

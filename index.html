@@ -83,7 +83,6 @@
         <!-- Bookstores -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 
-
         <!-- style sheets -->
         <link rel="stylesheet" href="/CSS/style_header.css">
         <link rel="stylesheet" href="/CSS/style_main-profile.css">
@@ -114,6 +113,7 @@
                     <li class="conteiner_sub-menu"><a href="#experience">Experiencias</a>
                         <ul class="sub-menu">
                             <li><a href="#desafios">Desafios Front-end</a></li>
+                            <li><a href="#videosyoutube">Videos YouTube</a></li>
                             <li><a href="#aprender">Tecnologías Web!</a></li>
                         </ul>
                     </li>
@@ -223,12 +223,26 @@
                                     </div>
                                 </figure>
                             </article>
+
+                            <article class="desafios-article">
+                                <figure class="desafios-figure">
+                                    <img class="desafios-img" src="/CSS/img/Desafios/nftcard.png" alt="Terser desafío Front-end">
+                                    <figcaption  class="desafios-figcaption">desafío: 7</figcaption>
+                                    <div class="capa">
+                                        <a href="https://todointerconectado.com/nftcard" target="_blank" title="Realizado por Francisco Carusso">Ir al Desafio!</a>
+                                    </div>
+                                </figure>
+                            </article>
                         </section>
 
-                        <div class="containerVideos">
-                            <h3 id="videos" class="experiences_sub_title">Videos Tutoriales</h3>
+                        <div id="videosyoutube" class="containerVideos">
+                            <h3 id="videos" class="experiences_sub_title">Videos YouTube</h3>
                             <div class="videoYouTube">
                                 <iframe class="video" src="https://www.youtube.com/embed/VGONJt-d2Q4?list=PLwr1YWkTKwmry2PeOoZCiwWXu1dubjUNZ"  target="_blank" title="Ampliar la pantalla del escritorio al celular!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="videoYouTube">
+                                <iframe class="video" src="https://www.youtube.com/embed/LeaKOlriVCk" title="INSTALL WSL 2 EN WINDOWS y CONFIGURATOR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
 
@@ -237,7 +251,6 @@
                             <div class="two-experiences_grid two-experiences_grid1">
                                 <article class="experiences_grid">
                                     <div>
-                                        <time class="experiences-time">01-07-2022</time>
                                         <a  class="experiences-company" target="_blank" href="https://todointerconectado.com/Proyectos/1_Curso_HTML/HTML/index-HTML.html">Tecnoligía HTML</a>
                                     </div>
                                     <p class="experiences-description">
@@ -250,8 +263,8 @@
 
                                 <article class="experiences_grid experiences_left">
                                     <div>
-                                        <time class="experiences-time">01-08-2022</time>
-                                        <a  class="experiences-company" target="_blank" href="https://todointerconectado.com/Proyectos/3_Curso_CSS3/index_CSS3.html">Tecnoligía CSS</a>
+                                        <a class="experiences-company" 
+                                        target="_blank" href="https://todointerconectado.com/Proyectos/3_Curso_CSS3/index_CSS3.html">Tecnoligía CSS</a>
                                     </div>
                 
                                     <p class="experiences-description">
@@ -266,7 +279,6 @@
                             <div class="two-experiences_grid two-experiences_grid2">
                                 <article class="experiences_grid">
                                     <div>
-                                        <time class="experiences-time">01-09-2022</time>
                                         <a  class="experiences-company" target="_blank" href="https://todointerconectado.com/Proyectos/2-Git_GitHub/index_git.html">TecnoligÍa GIT / GITHUB</a>
                                     </div>
                                     <p class="experiences-description">
@@ -279,7 +291,6 @@
 
                                 <article class="experiences_grid">
                                     <div>
-                                        <time class="experiences-time">01-11-2022</time>
                                         <a  class="experiences-company" target="_blank" href="https://todointerconectado.com/Proyectos/2-Git_GitHub/index_git.html">TecnoligÍa JavaScript</a>
                                     </div>
                                     <p class="experiences-description">
@@ -306,7 +317,7 @@
             </div>
     
             <section class="skills" id="skills">
-                <h2>Habilidades</h2>
+                <h2 class="experiences_title">Habilidades</h2>
                 <article class="container-skills">
                     <figure class="card-ability">
                         <img src="/CSS/img/iconos/VS_Code.svg" alt="HTML">
@@ -351,30 +362,10 @@
             </section>
         </main>
     
-        <footer id="contact">
+        <footer id="contact" class="footer">
             <h2 class="contact-title">Contacto</h2>
-    
-            <address class="contact-details">
-                <div class="contact-details-group">
-                    <p class="contact-label">Correo:</p>
-                    <p class="contact-text">francisconicolascarusso@gmail.com</p>
-                </div>
-
-                <div class="contact-details-group">
-                    <h3><strong>Todointerconectado</strong></h3>
-                    <span>Copyright &copy; 2022-2023</span>
-                    <span>Todos los derechos reservados.</span>
-                </div>
-
-                <div class="contact-details-group">
-                    <p class="contact-text">
-                        Deje su mensaje y con gusto le responderé.
-                    </p>
-                </div>
-            </address>
 
             <form action="#" target="_blank" class="contact-form">
-
                 <a class="logo contact-form-logo">
                     <figure>
                         <img src="CSS/img/logo.jpg" alt="Programador">
@@ -382,14 +373,29 @@
                     </figure>
                 </a>
 
-                <h3 class="contact-form-title">Reservación</h3>
+                <h3 class="contact-form-title">Deje su mensaje y con gusto le responderé.</h3>
                 
-                <input class="contact-form-group-completar"  type="text" name="name" id="name" placeholder="Nombre y Apellido...">
+                <input class="contact-form-group-completar"
+                    required autofocus
+                    type="text" name="name" id="name" 
+                    placeholder="Nombre y Apellido..."
+                >
 
-                <textarea  class="contact-form-group-completar contact-form-group-textarea"  type="text" name="description" id="description" rows="6" placeholder="Escribe tu consulta..." ></textarea>
+                <textarea class="contact-form-group-completar contact-form-group-textarea" type="text" name="description" id="description" rows="6" placeholder="Escribe tu consulta..." required autofocus></textarea>
                 
-                <button type="submit" class="contact-form-submit" id="sendbtn">Hablemos por WhatSapp!</button>
+                <button type="submit" class="contact-form-submit" id="sendbtn">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Hablemos por WhatSapp!
+                </button>
             </form>
+
+            <address class="contact-container-gmail">
+                <p class="contact-label">Escribir al Correo:</p>
+                <a class="contact-text-gmail" href="mailto:francisconicolascarusso@gmail.com?subject=Te%20escribo%20desde%20la%20página%20web%20Todointerconectado.com&body=Me%20interesa%20saber%20más%20de%20información,%20mi%20nombre%20es:">
+                    <img class="contact-gmail" src="./CSS/img/iconos/gmail.png" alt="gmail">
+                    francisconicolascarusso@gmail.com
+                </a>
+            </address>
 
             <nav class="nav-contactos">
                 <ul class="conteiner-contacos">
@@ -464,9 +470,16 @@
             <a class="flecha" href="#profile">
                 <img class="simbolo" src="/CSS/img/iconos/flecha.png" alt="flecha  hacia arriba">
             </a>
+
+            <div class="contact-details-group">
+                <span>Copyright &copy; 2022-2023</span>
+                <span>Todos los derechos reservados a</span>
+                <h3><strong>Todointerconectado</strong></h3>
+            </div>
         </footer>
 
         <!-- JavaScript  -->
-        <script defer src="/JS/app.js"></script>
+        <script src="/JS/app.js"></script>
+        <script src="https://kit.fontawesome.com/4600a4ff4e.js" crossorigin="anonymous"></script>
     </body>
 </html>
