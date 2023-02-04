@@ -109,3 +109,18 @@
         font-size: 13px;
     }
 }
+
+/* ------- Animation Desafios ------- */
+/* 
+    odd  señala a los números impares.
+    even señala a los números pares.
+    Las animaciones se encuentran en la style_main_profile
+*/
+
+.desafios-article:nth-child(odd) {
+    animation: upDown 1000ms ease;
+}
+
+.desafios-article:nth-child(even) {
+    animation: downUp 1000ms ease;
+}

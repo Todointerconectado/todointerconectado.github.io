@@ -39,6 +39,7 @@
     color: var(--color-primary);
     font-family: 'Noto Sans', sans-serif;
     text-transform: uppercase;
+    animation: upDown 1000ms ease;
 }
 
 .profile-developer {
@@ -49,7 +50,6 @@
 }
 
 .profile-info p {
-    /* border: 1px solid; */
     margin: 0 auto;
     padding: 10px;
     width: 100%;
@@ -62,16 +62,28 @@
     line-height: 1.3;
     letter-spacing: 1px;
     word-spacing: auto;
+    animation: leftRight 1000ms ease;
+}
+
+.profileContainerButton {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    animation: downUp 1000ms ease;
+}
+
+.profile-btn {
+    overflow: hidden;
 }
 .profile-btn a {
     width: 100%;
 }
-.profile-btn {
-    overflow: hidden;
-}
+
 .profile-btn,
 .profile-btn a {
-    margin: 10px;
     border: none;
     border-radius: 5px;
     background-color: var(--color-primary);
@@ -84,6 +96,7 @@
     cursor: pointer;
     transition: filter 300ms ease, box-shadow 100ms ease;
 }
+
 .profile-btn:hover {
     filter: brightness(130%);
     box-shadow: 2px 2px 5px .1px var(--color-menu-mobil-background);
@@ -94,6 +107,7 @@
     width: 60%;
     max-width: 350px;
     height: auto;
+    animation: rightLeft 1000ms ease;
 }
 .profile-img-section img {
     /* border: 1px solid; */
@@ -192,7 +206,7 @@
 }
 
 /* ----------------------------- responsive ----------------------------- */
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 0px) and (max-width: 700px) {
     .profile {
         flex-direction: column;
         width: 100%;
@@ -210,12 +224,52 @@
         font-size: 25px;
         text-transform: uppercase;
     }
+
     .profile-info p {
         padding: 20px 5px;
         max-width: 700px;
         font-size: 16px;
     }
+
     .container-skills{
         gap: 60px;
+    }
+}
+
+
+/* ---- Animation ----*/
+@keyframes upDown {
+    0% {
+        transform: translateY(-500px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes downUp {
+    0% {
+        transform: translateY(500px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes leftRight {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes rightLeft {
+    0% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0px);
     }
 }
