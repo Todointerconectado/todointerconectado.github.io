@@ -184,6 +184,48 @@ html {
     text-transform: uppercase;
 }
 
+/* ---------- QR ---------- */
+.containerQr {
+    border-radius: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    height: 24px;
+    display: grid;
+    place-items: center;
+    transition: all 1000ms ease;
+}
+
+.containerQr:hover {
+    background-image: url("/CSS/img/QR/linkedin.png");
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+    width: 150px;
+    height: 150px;
+}
+
+.qrGithub:hover {
+    background-image: url("/CSS/img/QR/github.png");
+}
+.qrYoutube:hover {
+    background-image: url("/CSS/img/QR/youtube.png");
+}
+.qrInstagram:hover {
+    background-image: url("/CSS/img/QR/instagram.png");
+}
+.qrTiktok:hover {
+    background-image: url("/CSS/img/QR/tiktok.png");
+}
+.qrWhatsapp:hover {
+    background-image: url("/CSS/img/QR/whatsapp.png");
+}
+.qrTwiter:hover {
+    background-image: url("/CSS/img/QR/twiter.png");
+}
+
 /* ---- Boton de subida ----*/
 .flecha{
     margin: 0 auto;
