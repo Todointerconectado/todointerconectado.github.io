@@ -89,7 +89,9 @@ body {
     width: 60px;
     height: 60px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 21% 79% 71% 29% / 30% 30% 70% 70%;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  6px  6px 12px #8f8f8f, -6px -6px 12px #ffffff;
 }
 .logo figure figcaption {
     font-size: 16px;
@@ -314,3 +316,46 @@ body {
         left: 90px;
     }
 }
+
+
+
+/* .logo2 {
+    margin: 50px;
+    border: 20px solid rgb(47, 49, 157);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width:  670px;
+    height: 670px;
+}
+.logo2 div {
+    margin: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width:  550px;
+    height: 550px;
+}
+.logo2 div figure {
+    overflow: hidden;
+    width:  500px;
+    height: 500px;
+    display: flex;
+    background: 
+    linear-gradient(to right, rgba(173, 173, 173, 0.8), rgb(255, 255, 255, .8) ),
+    url("/CSS/img/codigo_portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 21% 79% 71% 29% / 30% 30% 70% 70%;
+    box-shadow:  6px  6px 12px #8f8f8f, -6px -6px 12px #ffffff;
+}
+.logo2 div figure img{
+    width:  auto;
+    object-fit: cover;
+    border-radius: 21% 79% 71% 29% / 30% 30% 70% 70%;
+} */
