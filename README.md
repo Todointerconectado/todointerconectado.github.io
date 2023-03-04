@@ -1,15 +1,14 @@
 # todointerconectado.github.io
 
-![Layout preview for the Todointerconectado page](./CSS/img/banner.png)
+![Layout preview for the Todointerconectado page](/CSS/img/miniatura_2.png)
 
 ## Descripción 👨‍💼
 Este es un portafolio creado con html, css y javascript usando metodologia BEM y una arquitectura ITCSS.
 
-## Autor 🖋
-**Francisco Carusso**
+## Author: Francisco Carusso 🖋 
 
 * [LinkedIn] (https://www.linkedin.com/in/franciscocarusso/)
-* [Portafolio web] (https://todointerconectado.com/)
+* [Portfolio web] (https://todointerconectado.com/)
 
 ## Ver ejemplo en vivo 💻
 - [Enlace GITHUB Pages] (https://todointerconectado.com/)
