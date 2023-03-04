@@ -1,9 +1,11 @@
 # todointerconectado.github.io
-
-![Layout preview for the Todointerconectado page](/CSS/img/miniatura_2.png)
+<p align="center">
+   <img align="center" src="/CSS/img/miniatura_2.png" 
+   alt="Layout preview for the Todointerconectado page"/>
+</p>
 
 ## Descripción 👨‍💼
-Este es un portafolio creado con html, css y javascript usando metodologia BEM y una arquitectura ITCSS.
+Este es un portafolio creado con html, css y javascript.
 
 ## Author: Francisco Carusso 🖋 
 
