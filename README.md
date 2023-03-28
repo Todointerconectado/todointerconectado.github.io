@@ -1,4 +1,4 @@
-# [![web](https://raw.githubusercontent.com/Todointerconectado/Todointerconectado/23a0a9d6cdf33d7f565d15e335868aa68d371598/img/web.svg)](https://todointerconectado.com)
+# <h1 align="center"> [![web](https://raw.githubusercontent.com/Todointerconectado/Todointerconectado/23a0a9d6cdf33d7f565d15e335868aa68d371598/img/web.svg)](https://todointerconectado.com) </h1>
 
 <p align="center" width="300">
     <a href="https://github.com/Todointerconectado">
@@ -17,9 +17,7 @@
     </h2>
 </p>
 
-[![Insignia Certification](https://raw.githubusercontent.com/Todointerconectado/Todointerconectado/main/img/Platzi-Certifications-brightgreen.svg)](https://platzi.com/p/franciscoCarusso/)
-
-[![Youtube Todointerconectado channel](https://raw.githubusercontent.com/Todointerconectado/Todointerconectado/23a0a9d6cdf33d7f565d15e335868aa68d371598/img/youtube.svg)](https://www.youtube.com/@todointerconectado)
+[![Insignia Certification](https://raw.githubusercontent.com/Todointerconectado/Todointerconectado/main/img/Platzi-Certifications-brightgreen.svg)](https://platzi.com/p/franciscoCarusso/) [![Youtube Todointerconectado channel](https://raw.githubusercontent.com/Todointerconectado/Todointerconectado/23a0a9d6cdf33d7f565d15e335868aa68d371598/img/youtube.svg)](https://www.youtube.com/@todointerconectado)
 
 
 ```javascript
