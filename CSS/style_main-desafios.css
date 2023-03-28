@@ -1,3 +1,18 @@
+:root {
+    --color-theme: rgb(255, 255, 255);
+    --color-primary: rgb(18, 79, 136);
+    --color-primary-sure: linear-gradient(rgb(29, 129, 211),rgb(18, 79, 136),rgb(29, 129, 211),rgb(18, 79, 136),rgb(29, 129, 211));
+    --color-shades: rgb(18, 79, 136, 0.3);
+
+    --color-card-experience: rgb(33, 139, 245);
+
+    --color-secondary: rgb(247, 195, 49);
+    --color-text-inverse: rgb(255, 255, 255);
+    --color-text: rgb(0, 0, 0);
+    --color-box-shadow: rgb(0, 0, 0, .8);
+    --color-header-shallow: rgb(229, 229, 229);
+    --color-menu-mobil-background: rgb(58, 68, 96);
+}
 
 .desafios-contenedor {
     border-radius: 8px;

@@ -6,7 +6,8 @@ html {
 .slider2 {
     width: 100%;
     height: 72.5px;
-    margin: 0 auto;
+    display: flex;
+    margin: 90% auto;
     overflow: hidden;
 }
 .slide-track2 {
@@ -22,7 +23,7 @@ html {
     width: calc(633px * 9);
     height: 72.5px;
     display: block;
-    background-image: url(/CSS/img/wave_1.png);
+    background-image: url("/CSS/img/wave_1.png");
     background-repeat: repeat-x;
     background-size: contain;
 }
@@ -40,13 +41,13 @@ html {
 
 .wave-bottom {
     transform: rotate(180deg);
-    background: var(--color-theme);
+    background: transparent;
 }
 
 /* ----------- section experience ----------- */
 
 .experiences {
-    position: relative;
+    /* position: relative; */
     bottom: 70px;
     margin: 0 auto;
     width: 100%;
@@ -54,6 +55,9 @@ html {
 }
 
 .sit {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
     padding: 10px;
     background: var(--color-primary-sure);
     display: flex;
