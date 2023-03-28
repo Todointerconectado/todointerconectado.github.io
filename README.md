@@ -36,7 +36,7 @@
   <tr>
     <td>
       <a href="https://todointerconectado.com" target="_blank">
-        <img align="center" src="[![Youtube Todointerconectado channel](/img/youtube.svg)](https://www.youtube.com/@todointerconectado)" alt="https://todointerconectado.com" height="30" width="40" /></a>
+        <img align="center" src="https://raw.githubusercontent.com/Todointerconectado/Todointerconectado/main/img/TIC.png" alt="https://todointerconectado.com" height="30" width="40" /></a>
     </td>
     <td>
       <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=franciscocarusso" target="_blank">
