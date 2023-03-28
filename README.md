@@ -1,4 +1,4 @@
-# todointerconectado.com
+# [![web](https://raw.githubusercontent.com/Todointerconectado/Todointerconectado/23a0a9d6cdf33d7f565d15e335868aa68d371598/img/web.svg)](https://todointerconectado.com)
 
 <p align="center" width="300">
     <a href="https://github.com/Todointerconectado">
@@ -18,9 +18,9 @@
 </p>
 
 [![Insignia Certification](https://raw.githubusercontent.com/Todointerconectado/Todointerconectado/main/img/Platzi-Certifications-brightgreen.svg)](https://platzi.com/p/franciscoCarusso/)
-[![web](https://raw.githubusercontent.com/Todointerconectado/Todointerconectado/23a0a9d6cdf33d7f565d15e335868aa68d371598/img/web.svg)](https://todointerconectado.com)
+
 [![Youtube Todointerconectado channel](https://raw.githubusercontent.com/Todointerconectado/Todointerconectado/23a0a9d6cdf33d7f565d15e335868aa68d371598/img/youtube.svg)](https://www.youtube.com/@todointerconectado)
-[![Email](https://raw.githubusercontent.com/Todointerconectado/Todointerconectado/23a0a9d6cdf33d7f565d15e335868aa68d371598/img/email.svg)](mailto:francisconicolascarusso@gmail.com)
+
 
 ```javascript
     let saludos = [
