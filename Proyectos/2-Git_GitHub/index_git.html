@@ -8,7 +8,7 @@
     <title>Git/GitHub</title>
     <script src="https://kit.fontawesome.com/4600a4ff4e.js" crossorigin="anonymous"></script>
     
-    <link rel="icon" href="/CSS/MULTIMEDIA/Logo de la pagina.png" type="png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/CSS/img/favicons/Logo de la pagina_2.png">
     <link rel="stylesheet" href="/CSS/style_caja.css">
     <link rel="stylesheet" href="/CSS/style_general.css">
     <script src="/Proyectos/2-Git_GitHub/js/JavaScrip.js"></script>
@@ -170,6 +170,22 @@
                             git push --tags: <br> Guardamos los tags en GitHub.
                         </dfn>
                     </details>
+                    <details>
+                        <summary>Estaba tratando de ingresar a un repositorio canónico esta mañana y obtuve el siguiente error:</summary>
+                        <dfn>
+                            $ git push origin main <br>
+                            error: src refspec master matches more than one. <br>
+                            error: failed to push some refs to 'ssh://user@Todointerconectado/srv/git/repo' <br> <br>
+                            Esto sucedió porque accidentalmente había creado una etiqueta main localmente: <br> <br>
+                            Comando: $ git tag <br>
+                            tag1 <br>
+                            main <br>
+                            tag2 <br> <br>
+                            Una vez que eliminé esta etiqueta localmente vamos a poder hacer push y crear ramas <br>
+
+                            Comando: git tag -d main
+                        </dfn>
+                    </details>
                 </dfn>
             </details>
 
@@ -219,7 +235,9 @@
         </a>
 
         <address class="texto_footer">
-            Copyright &copy; 2022-2023 Todointerconectado Company S.L. Todos los derechos reservados.
+            <span>Copyright &copy; 2022-2023</span>
+            <span>Todos los derechos reservados a</span>
+            <h3><strong>Francisco Carusso | Todointerconectado</strong></h3>
         </address>
     </footer>
 </body>
