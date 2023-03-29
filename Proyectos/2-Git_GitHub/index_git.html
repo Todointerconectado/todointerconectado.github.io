@@ -226,6 +226,51 @@
                     </details>
                 </dfn>
             </details>
+
+            <details class="contenedor_inicio">
+                <summary>Como generar un Pull requests de un solo commit:</summary>
+                <dfn> 
+                    Para esto tenemso que hacer un congunto de pasos: <br>
+                    <ol>
+                        <li>
+                            Primero vamos a la rama que tenemos ese commit: <br>
+                            git switch nombre-rama
+                        </li>
+                        <li>
+                            Copiamos el código SHA del commit: <br>
+                            git log
+                        </li>
+                        <li>
+                            Vamos a la rama que queremos generar el Pull requests y creamos una rama temporal y nos movemos a ella.
+                            <ol>
+                                <li>Non movemos a la rama: git switch nombre-rama</li>
+                                <li>creamos la rama&nbsp;&nbsp;&nbsp;&nbsp;: git branch nombre-rama-temporal</li>
+                                <li>Nos movemos a la rama: git switch nombre-rama-temporal</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Dentro de la rama temporal utilizamos cherry-pick <br>
+
+                            git cherry-pick SHA <br><br>
+                            Ej: git cherry-pick c8dc73f56eb5e548a0f9df2989d8346580ada1b7
+                        </li>
+                        <li>
+                            Si llegas a tener conflictos al usar cherry-pick, debes hacer lo mismo que cuando tienes conflictos con un merge y cambiar los archivos con los que tengas problemas (posiblemente por haber editado el mismo archivo).
+                        </li>
+                        <li>
+                            Ahora subir esa rama-temporal al repositorio: <br>
+                            git push origin rama-temporal
+                        </li>
+                        <li>
+                            Generas el Pull requests entre la rama que quieres el commit y la rama-temporal. Listo 😁
+                        </li>
+                        <li>
+                            Al finalizar podes eliminar la rama del repositorio desde GitHub. <br>
+                            En local podes eliminar la rama con: git branch -D rama-temporal.
+                        </li>
+                    </ol>
+                </dfn>
+            </details>
         </section>
     </main>
 
