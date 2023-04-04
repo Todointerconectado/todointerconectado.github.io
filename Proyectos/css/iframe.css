@@ -22,3 +22,7 @@ html {
 .iframe:hover {
     box-shadow: 3px 3px 10px black;
 }
+
+.iframe {
+    margin: 20px;
+}
