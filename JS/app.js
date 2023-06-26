@@ -52,4 +52,17 @@ function enviarMensaje() {
     window.open(urlWhatsapp);
 }
 
-// 
+// Compartir en redes sociales
+
+const link  = 'https:/\/todointerconectado.com'; //encodeURI(window.location.href);
+const msg   = encodeURIComponent('Comparte esta página para ayudar a otras personas!');
+const title = encodeURIComponent(document.querySelector('title').textContent);
+
+const compartir_facebook = document.querySelector('.compartir-facebook');
+compartir_facebook.href = `https://www.facebook.com/share.php?u=${link}`;
+
+const compartir_twitter = document.querySelector('.compartir-twitter');
+compartir_twitter.href = `https://twitter.com/share?&url=${link}&text=${msg}&hashtags=todointerconectado,desarrolloweb,javascript,programming`;
+
+const compartir_linkedin = document.querySelector('.compartir-linkedin');
+compartir_linkedin.href = `https://www.linkedin.com/sharing/share-offsite/?url=${link}`;
