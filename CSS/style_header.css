@@ -68,14 +68,14 @@ body {
 
 /* ----- logo ----- */
 
-.header .contenedor_navegacion .logo {
+.logo {
     /* border: 1px solid rgb(123, 255, 0); */
     width: auto;
     height: 100%;
     text-decoration: none;
     text-transform: uppercase;
 } 
-.header .contenedor_navegacion .logo figure {
+.logo figure {
     /* border: 1px solid violet; */
     width: auto;
     height: 100%;
@@ -86,7 +86,7 @@ body {
     font-weight: bold;
     color: var(--color-primary);
 }
-.header .contenedor_navegacion .logo figure img{
+.logo figure img{
     width: 60px;
     height: 60px;
     object-fit: cover;
@@ -94,7 +94,7 @@ body {
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
     box-shadow:  6px  6px 12px #8f8f8f, -6px -6px 12px #ffffff;
 }
-.header .contenedor_navegacion .logo figure figcaption {
+.logo figure figcaption {
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 2.5px;
@@ -105,7 +105,7 @@ body {
 
 /* ----- Menu ----- */
 
-.header .contenedor_navegacion .menu {
+.menu {
     padding: 5px 10px;
     margin: 0;
     width: auto;
@@ -116,7 +116,7 @@ body {
     list-style: none;
     gap: 20px;
 }
-.header .contenedor_navegacion .menu li {
+.menu li {
     box-sizing: border-box;
     height: 100%;
     display: flex;
@@ -126,7 +126,7 @@ body {
     /* Despues los sub-menu se posicionan en relación a su padre. */
     position: relative;
 }
-.header .contenedor_navegacion .menu li a {
+.menu li a {
     text-decoration: none;
     text-align: center;
     width: auto;
@@ -138,11 +138,13 @@ body {
     transition: color 300ms ease,
                 font-weight 300ms ease;
 }
-.header .contenedor_navegacion .menu li a:hover {
+.menu li a:hover {
     color: var(--color-primary);
     font-weight: bold;
 }
-.header .contenedor_navegacion .menu .close-menu, .open-menu {
+
+.close-menu, 
+.open-menu {
     display: none;
 }
 
@@ -175,7 +177,7 @@ body {
 
 /* -------- Pseudo selector's (after y before) -------- */
 
-.header .contenedor_navegacion .menu li a::after {
+.menu li a::after {
     content: "";
     background-color: var(--color-secondary);
     position: absolute;
@@ -190,14 +192,14 @@ body {
     transform-origin: left;
     transition: opacity 300ms ease, transform 400ms ease;
 }
-.header .contenedor_navegacion .menu li a:hover:after {
+.menu li a:hover:after {
     transform: scaleX(1);
 }
-.header .contenedor_navegacion .menu li a.selected:after {
+.menu li a.selected:after {
     transform: scaleX(1);
 }
-.header .contenedor_navegacion .menu li a.selected::after, 
-.header .contenedor_navegacion .menu li a:hover::after {
+.menu li a.selected::after, 
+.menu li a:hover::after {
     opacity: 0.8;
 }
 
@@ -268,7 +270,7 @@ body {
     /* -------------- HEADER: Bar de navigation -------------- */
 
     /* ----- Menu ----- */
-    .header .contenedor_navegacion .menu {
+    .menu {
     flex-direction: column;
     align-items: center;
     position: fixed;
@@ -296,14 +298,14 @@ body {
     letter-spacing: 2px;
     }
 
-    .header .contenedor_navegacion .open-menu,
-    .header .contenedor_navegacion .menu .close-menu {
+    .open-menu,
+    .close-menu {
         display: block;
         border: none;
         background: none;
         cursor: pointer;
     }
-    .header .contenedor_navegacion .menu .close-menu {
+    .close-menu {
         align-self: flex-end;
         padding: 21px 10px;
     }
@@ -338,16 +340,47 @@ body {
         font-weight: 500;
         letter-spacing: 2px;
     }
-    /*---- Sub-Menu applicator seudo class ----*/
-    .header .contenedor_navegacion .menu .conteiner_sub-menu .sub-menu:before {
+    /* ---- Sub-Menu applicator seudo class ----*/
+    .sub-menu:before {
         top: -10px;
         left: 90px;
     }
 
-    /* compartirlo en redes sociales */
+    /* -------- compartirlo en redes sociales -------- */
     .header .contenedor_navegacion .compartir {
+        margin-right: 5px;
+        border-radius: 8px;
+        padding: 5px 22px;
+        width: 35px;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .3);
+        backdrop-filter: blur(1.8px);
+        background: rgba(255, 255, 255, .2);
+        position: absolute;
+        right: -50px;
+        bottom: -800%;
         display: flex;
         flex-direction: column;
+        transition: right 300ms ease;
+    }
+
+    .header .contenedor_navegacion .compartir:hover {
+        right: 10px;
+    }
+
+    .header .contenedor_navegacion .compartir:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 0px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid rgba(255, 255, 255);
+        transform: rotate(-43deg);
+        border-radius: 0px 0px 100% 0px;
+        box-shadow: -2px -2px 4px 0 rgba(0, 0, 0, .5);
+        position: absolute;
+        top: 20px;
+        left: -20px;
     }
 
     .header .contenedor_navegacion .compartir h3 {
@@ -357,56 +390,16 @@ body {
     .header .contenedor_navegacion .compartir_redes {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        align-items: center;
         list-style: none;
     }
 
     .header .contenedor_navegacion .compartir_redes li i {
-        height: 15px;
+        font-size: 30px;
+        color:rgb(18, 79, 136);
     }
 
-
+    .header .contenedor_navegacion .compartir_redes li i:hover {
+        font-size: 35px;
+    }
 }
-
-
-
-/* .logo2 {
-    margin: 50px;
-    border: 20px solid rgb(47, 49, 157);
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width:  670px;
-    height: 670px;
-}
-.logo2 div {
-    margin: 50px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width:  550px;
-    height: 550px;
-}
-.logo2 div figure {
-    overflow: hidden;
-    width:  500px;
-    height: 500px;
-    display: flex;
-    background: 
-    linear-gradient(to right, rgba(173, 173, 173, 0.8), rgb(255, 255, 255, .8) ),
-    url("/CSS/img/codigo_portada.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 21% 79% 71% 29% / 30% 30% 70% 70%;
-    box-shadow:  6px  6px 12px #8f8f8f, -6px -6px 12px #ffffff;
-}
-.logo2 div figure img{
-    width:  auto;
-    object-fit: cover;
-    border-radius: 21% 79% 71% 29% / 30% 30% 70% 70%;
-} */
