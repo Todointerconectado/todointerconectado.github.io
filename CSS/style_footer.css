@@ -170,7 +170,7 @@ html {
 
 .conteiner-contacos_figure-img {
     padding: 0;
-    width: 64px;
+    width: 30px;
     display: block;
 }
 
@@ -231,8 +231,8 @@ html {
     margin: 0 auto;
     border-radius: 50%;
     padding: 0;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     overflow: hidden;
     display: flex;

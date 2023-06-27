@@ -184,13 +184,11 @@
 }
 
 .card-ability img {
-    /* border: 1px solid; */
     width: auto;
-    height: 100px;
+    height: 50px;
 }
 
 .card-ability figcaption abbr{
-    /* border: 1px solid; */
     border-radius: 8px;
     padding: 2px 5px;
     min-width: 100px;
@@ -200,8 +198,6 @@
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
-    /* font-family: 'Fredoka One', cursive; */
-    /* font-family: 'Alfa Slab One', cursive; */
     font-family: 'Caveat', cursive;
 }
 
