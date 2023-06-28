@@ -21,6 +21,7 @@
         <meta name="category" content="tecnologías">
         <meta itemprop="name" content="Todointerconectado">
         <meta itemprop="image" content="/CSS/img/miniatura.webp">
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
         <!-- meta Facebook SEO: The Open Graph protocol -->
         <meta property="og:title" content="Todointerconectado | Francisco Carusso">
@@ -102,9 +103,11 @@
                 </button>
     
                 <ul class="menu">
-                    <button class="close-menu" aria-label="Cerrar menú">
-                        <img src="CSS/img/iconos/x.svg" alt="Icono cerrar barra">
-                    </button>
+                    <li class="menu-close-menu">
+                        <button class="close-menu" aria-label="Cerrar menú">
+                            <img src="CSS/img/iconos/x.svg" alt="Icono cerrar barra">
+                        </button>
+                    </li>
                     <li>
                         <a href="#profile" class="selected">Perfil</a>
                     </li>
@@ -125,17 +128,29 @@
                     <h3>Compártelo en:</h3>
                     <ul class="compartir_redes">
                         <li>
-                            <a class="compartir-twitter" target="_blank" alt="compartir en twitter">
+                            <a class="compartir-twitter" 
+                                href=""
+                                aria-label="compartir en twitter"
+                                target="_blank" 
+                                alt="compartir en twitter">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a class="compartir-facebook" target="_blank" alt="compartir en facebook">
+                            <a class="compartir-facebook"
+                                href=""
+                                aria-label="compartir en facebook"
+                                target="_blank"
+                                alt="compartir en facebook">
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a class="compartir-linkedin" target="_blank"  alt="compartir en linkedin">
+                            <a class="compartir-linkedin"
+                                href=""
+                                aria-label="compartir en linkedin"
+                                target="_blank" 
+                                alt="compartir en linkedin">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                         </li>
@@ -250,8 +265,8 @@
                             <article class="desafios-article" data-aos="fade-down"
                             data-aos-easing="linear" data-aos-duration="2000">
                                 <figure class="desafios-figure">
-                                    <img class="desafios-img" 
-                                    src="https://todointerconectado.com/tiendaJulieta/assets/images/miniatura.png" alt="imagen tienda Julieta">
+                                    <img class="desafios-img"
+                                    src="css/img/Desafios/tiendaJulieta.webp" alt="imagen tienda Julieta">
                                     <figcaption  class="desafios-figcaption">Proyecto 2</figcaption>
                                     <div class="capa">
                                         <a href="https://todointerconectado.com/tiendaJulieta/" target="_blank" title="Realizado por Francisco Carusso">Ir al Desafio!</a>

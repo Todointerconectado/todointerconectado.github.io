@@ -105,6 +105,11 @@ body {
 
 /* ----- Menu ----- */
 
+.menu-close-menu {
+    display: flex;
+    width: 90%;
+}
+
 .menu {
     padding: 5px 10px;
     margin: 0;
