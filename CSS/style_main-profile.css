@@ -21,7 +21,7 @@
     gap: 10px;
     background: 
     linear-gradient(to right, rgba(173, 173, 173, 0.8), rgb(255, 255, 255, .8) ),
-    url("/CSS/img/codigo_portada.jpg");
+    url("/CSS/img/codigo_portada.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
