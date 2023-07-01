@@ -52,7 +52,7 @@ function enviarMensaje() {
     window.open(urlWhatsapp);
 }
 
-// Compartir en redes sociales
+// --------- Compartir en redes sociales ---------
 
 const link  = 'https:/\/todointerconectado.com'; //encodeURI(window.location.href);
 const msg   = encodeURIComponent('Comparte esta página para ayudar a otras personas!');
@@ -66,3 +66,42 @@ compartir_twitter.href = `https://twitter.com/share?&url=${link}&text=${msg}&has
 
 const compartir_linkedin = document.querySelector('.compartir-linkedin');
 compartir_linkedin.href = `https://www.linkedin.com/sharing/share-offsite/?url=${link}`;
+
+
+// --------- Aviso al salir de la página ---------
+window.addEventListener('visibilitychange', e => {
+
+    const delayMsj = 1500;
+    const msj = [
+        "Todointerconectado Tech web",
+        "¡Te extrañamos...",
+        "de Todointerconectado",
+        "Aprende JavaScript,",
+        "html5, css3 y más!"
+    ];
+
+    document.hidden
+    // La página está oculta (se cambió de pestaña)
+    ? document.title = showMessagesInfinitely(msj, delayMsj)
+    
+    // La página está visible nuevamente (se volvió a la pestaña)
+    : document.title = 'Todointerconectado Tech web';
+});
+
+const showMessagesInfinitely = (messages, delay) => {
+    let index = 0;
+
+    const updateTitle = () => {
+        // Actualiza el texto de la etiqueta <title> con el mensaje actual
+        document.title = messages[index];
+        index++;
+        if (index >= messages.length) {
+            index = 0;
+        }
+    }
+
+    // Muestra el primer mensaje inmediatamente
+    updateTitle();
+
+    return setInterval(updateTitle, delay);
+}
