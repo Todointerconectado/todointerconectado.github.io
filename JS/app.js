@@ -69,25 +69,6 @@ compartir_linkedin.href = `https://www.linkedin.com/sharing/share-offsite/?url=$
 
 
 // --------- Aviso al salir de la página ---------
-window.addEventListener('visibilitychange', e => {
-
-    const delayMsj = 1500;
-    const msj = [
-        "Todointerconectado Tech web",
-        "¡Te extrañamos...",
-        "de Todointerconectado",
-        "Aprende JavaScript,",
-        "html5, css3 y más!"
-    ];
-
-    document.hidden
-    // La página está oculta (se cambió de pestaña)
-    ? document.title = showMessagesInfinitely(msj, delayMsj)
-    
-    // La página está visible nuevamente (se volvió a la pestaña)
-    : document.title = 'Todointerconectado Tech web';
-});
-
 const showMessagesInfinitely = (messages, delay) => {
     let index = 0;
 
@@ -105,3 +86,18 @@ const showMessagesInfinitely = (messages, delay) => {
 
     return setInterval(updateTitle, delay);
 }
+
+window.addEventListener( 'visibilitychange', (e) => {
+    const delayMsj = 1500;
+    const msj = [
+        "¡Te extrañamos...",
+        "de Todointerconectado"
+    ];
+
+    document.hidden
+    // La página está oculta (se cambió de pestaña)
+    ? document.title = showMessagesInfinitely(msj, delayMsj)
+    
+    // La página está visible nuevamente (se volvió a la pestaña)
+    : document.title = 'Todointerconectado Tech web';
+});
