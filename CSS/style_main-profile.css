@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Caveat:wght@400;700&family=Fredoka+One&family=Gentium+Book+Basic:ital@1&family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@700&family=Playfair+Display:ital,wght@1,500&family=Rubik+Maze&family=Signika+Negative&family=Source+Sans+Pro:wght@400;700;900&display=swap');
+:root {
+    --color-theme: rgb(255, 255, 255);
+    --color-primary: rgb(18, 79, 136);
+    --color-primary-sure: linear-gradient(rgb(29, 129, 211),rgb(18, 79, 136),rgb(29, 129, 211),rgb(18, 79, 136),rgb(29, 129, 211));
+    --color-shades: rgb(18, 79, 136, 0.3);
+
+    --color-card-experience: rgb(33, 139, 245);
+
+    --color-secondary: rgb(247, 195, 49);
+    --color-text-inverse: rgb(255, 255, 255);
+    --color-text: rgb(0, 0, 0);
+    --color-box-shadow: rgb(0, 0, 0, .8);
+    --color-header-shallow: rgb(229, 229, 229);
+    --color-menu-mobil-background: rgb(58, 68, 96);
+}
 
 .main {
     /* background-color: var(--color-theme); */
@@ -28,17 +43,20 @@
 }
 
 .profile-info {
-    padding: 10px 0;
+    border: trasparent;
+    padding: 10px;
 }
 
 .profile-title {
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 2px black;
     margin: 0;
     font-size: 30px;
     font-weight: bold;
     color: var(--color-primary);
     font-family: 'Noto Sans', sans-serif;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
     animation: upDown 1000ms ease;
 }
 
@@ -49,6 +67,40 @@
     color: goldenrod;
 }
 
+/* ------------ Form Nombre del Usuario ------------ */
+.profile-form {
+    padding: 25px 0px;
+    width: 100%;
+}
+.profile-form-fieldset {
+    border-radius: 10px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.profile-form-label {
+    padding: 0 10px;
+    font-size: 24px;
+}
+.profile-input-nombre-bienvenida {
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    max-width: 240px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    background: rgba(255, 255, 255, 0.8); 
+}
+.profile-input-nombre-bienvenida::placeholder {
+    color: rgb(168, 166, 166);
+    font-weight: 300;
+}
+
+/* ------------ Descripción ------------ */
 .profile-info p {
     margin: 0 auto;
     padding: 10px;
@@ -66,35 +118,30 @@
 }
 
 .profileContainerButton {
+    padding: 15px 10px;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 10px;
     animation: downUp 1000ms ease;
 }
 
 .profile-btn {
-    overflow: hidden;
-}
-.profile-btn a {
-    width: 100%;
-}
-
-.profile-btn,
-.profile-btn a {
     border: none;
-    border-radius: 5px;
-    background-color: var(--color-primary);
+    border-radius: 8px;
+    padding: 10px;
+    background: var(--color-primary);
     color: var(--color-text-inverse);
     font-size: 20px;
-    padding: 0.5em 1em;
     font-weight: 500;
     letter-spacing: 1.3px;
-    text-decoration: none;
     cursor: pointer;
     transition: filter 300ms ease, box-shadow 100ms ease;
+}
+.profile-btn a {
+    color: var(--color-text-inverse);
+    text-decoration: none;
 }
 
 .profile-btn:hover {

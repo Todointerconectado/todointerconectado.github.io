@@ -20,6 +20,41 @@ const containerMenu = () => {
 containerMenu();
 
 
+// --------- Saludo de Bienvenida ---------
+const containerSaludoBienvenisa = () => {
+    // sto toma referencia al nuevo botón que se agregó y al título y los almacena en variables:
+    let miBoton = document.querySelector('button');
+    let tituloPersonalizado = document.querySelector('h1');
+
+    function estableceNameUser () {
+        let miNombre = prompt('Por favor, ingresar tu nombre:');
+
+        if(!miNombre) {
+            estableceNameUser();
+        }
+        else {
+            localStorage.setItem('nombre', miNombre);
+            tituloPersonalizado.textContent = 'Bienvenido a Todointerconectado!, ' + miNombre;
+        }
+    }
+
+    // inicialización de la bienvenida
+    if (!localStorage.getItem('nombre') ) {
+        estableceNameUser();
+    }
+    else {
+        let nombreAlmacenado = localStorage.getItem('nombre');
+
+        tituloPersonalizado.textContent = 'Bienvenido a Todointerconectado!, ' + nombreAlmacenado;
+    }
+
+    // Manipulará el botón
+    miBoton.onclick = function() {
+        estableceNameUser();
+    }
+}
+
+
 // --------- sacar el menú al seleccionar una sección ---------
 const containerSeccionSeleccionado = () => {
     const menuLinks = document.querySelectorAll('.menu a[href^="#"]');

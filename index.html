@@ -3,16 +3,12 @@
     <head>
         <!-- meta Principales -->
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
         
         <title>Todointerconectado Tech web</title>
         
         <link rel="preconnect" href="https://fonts.googleapis.com/">
-        
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        
-        <!-- Bookstores -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 
         <!-- style sheets -->
         <link rel="stylesheet" type="text/css" href="/CSS/style_header.css">
@@ -165,10 +161,23 @@
 
                     <article class="profile-info">
                         <h1 class="profile-title">
-                            Hola, soy
-                            <br><strong class="profile-name">Francisco Carusso</strong>
-                            <br><strong class="profile-developer">Front-end Developer</strong>
+                            soy
+                            <strong class="profile-name">Francisco Carusso</strong>
+                            <strong class="profile-developer">Front-end Developer</strong>
                         </h1>
+
+                        <form action="#" class="profile-title profile-form">
+                            <fieldset class="profile-form-fieldset">
+                                <legend>
+                                    <label for="input_nombre_bienvenida" class="profile-form-label">
+                                        ¿Cómo te llamas?
+                                    </label>
+                                </legend>
+                                
+                                <input class="profile-input-nombre-bienvenida" id="input_nombre_bienvenida" type="text" name="nameUsuario" required autofocus placeholder="Escribe tu nombre..">
+                                <input class="profile-btn" type="submit" value="Listo!">
+                            </fieldset>
+                        </form>
 
                         <article>
                             <p>
@@ -178,7 +187,7 @@
                                 desarrollo la Experiencia del usuario, aplicando varias tecnologías como: JavaScript, HTML5, CSS3, SASS, Git, GitHub entre otras, encaminadas al front-end.
                             </p>
                             <p>
-                                <br>Te invito a conocerme un poco más:<br>
+                                Te invito a conocerme un poco más:
                             </p>
                         </article>
 
