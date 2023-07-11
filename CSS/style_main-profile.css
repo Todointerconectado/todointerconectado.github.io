@@ -69,8 +69,12 @@
 
 /* ------------ Form Nombre del Usuario ------------ */
 .profile-form {
+    display: block;
     padding: 25px 0px;
     width: 100%;
+}
+.profile-form-ocultar {
+    display: none;
 }
 .profile-form-fieldset {
     border-radius: 10px;
@@ -98,6 +102,18 @@
 .profile-input-nombre-bienvenida::placeholder {
     color: rgb(168, 166, 166);
     font-weight: 300;
+}
+
+#container_form_saludo_text {
+    padding: 30px 10px;
+}
+
+/* ________ icono del saludo ___________ */
+.fa-pen-to-square {
+    cursor: pointer;
+}
+.fa-pen-to-square:hover {
+    filter: brightness(130%);
 }
 
 /* ------------ Descripción ------------ */

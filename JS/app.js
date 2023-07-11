@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', () => {
+    console.info(`%c The DOM document has been fully loaded 😎👍🏽.`,
+        `color: white; background: blue; border-radius: 10px; padding: 3px 10px;`);
+});
+
 // --------- Section menu ---------
 const containerMenu = () => {
     const datosMenu = {
@@ -20,39 +25,70 @@ const containerMenu = () => {
 containerMenu();
 
 
-// --------- Saludo de Bienvenida ---------
+// --------- Saludo de Bienvenida: Diagrama_de_flujo.drawio  ---------
 const containerSaludoBienvenisa = () => {
-    // sto toma referencia al nuevo botón que se agregó y al título y los almacena en variables:
-    let miBoton = document.querySelector('button');
-    let tituloPersonalizado = document.querySelector('h1');
-
-    function estableceNameUser () {
-        let miNombre = prompt('Por favor, ingresar tu nombre:');
-
-        if(!miNombre) {
-            estableceNameUser();
-        }
-        else {
-            localStorage.setItem('nombre', miNombre);
-            tituloPersonalizado.textContent = 'Bienvenido a Todointerconectado!, ' + miNombre;
-        }
+    const datos_saludo = {
+        'profile_info' : document.querySelector('.profile-info'), 
+        'profile_title': document.querySelector('#profile_title'),
+        'profile_form' : document.querySelector('#profile_form')
     }
 
-    // inicialización de la bienvenida
-    if (!localStorage.getItem('nombre') ) {
-        estableceNameUser();
-    }
-    else {
+    const form_mostrar_nombre = () => {
+        datos_saludo.profile_form.classList.add('profile-form-ocultar');
+
         let nombreAlmacenado = localStorage.getItem('nombre');
 
-        tituloPersonalizado.textContent = 'Bienvenido a Todointerconectado!, ' + nombreAlmacenado;
+        const name_user_section = document.createElement('section');
+        name_user_section.id = 'container_form_saludo_text';
+        name_user_section.classList = 'profile-title';
+        name_user_section.innerHTML = `
+            <h3>
+                Bienvenid@ ${nombreAlmacenado} <i 
+                    id="profile_form_btn_editar"
+                    class="fa-solid fa-pen-to-square">
+                </i>
+            </h3>
+        `;
+        datos_saludo.profile_title.after(name_user_section);
+    };
+
+    const form_escribir_nombre = () => {
+        datos_saludo.profile_form.classList.remove('profile-form-ocultar');
+
+        datos_saludo.profile_form.addEventListener('submit', e => {
+            e.preventDefault();
+            // name="nameUsuario" del input 
+            let {nameUsuario} = e.target;
+            
+            localStorage.setItem('nombre', nameUsuario.value);
+            // form_mostrar_nombre();
+            location.reload();
+        });
+    };
+
+    const preguntar_name = () => {
+        localStorage.getItem('nombre')
+            ? form_mostrar_nombre()
+            : form_escribir_nombre();
     }
 
-    // Manipulará el botón
-    miBoton.onclick = function() {
-        estableceNameUser();
-    }
+    const editar_saludo = () => {
+        profile_form_btn_editar.addEventListener('click', e => {
+            e.preventDefault();
+
+            localStorage.setItem('nombre', '');
+            profile_form.classList.remove('profile-form-ocultar');
+
+            const section_saludo = document.querySelector('#container_form_saludo_text');
+            datos_saludo.profile_info.removeChild(section_saludo);
+            preguntar_name();
+        })
+    };
+
+    preguntar_name();
+    editar_saludo();
 }
+containerSaludoBienvenisa();
 
 
 // --------- sacar el menú al seleccionar una sección ---------
