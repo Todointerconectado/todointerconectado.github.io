@@ -156,5 +156,8 @@
         "utilizando",
         "varias",
         "versiones"
+    ],
+    "conventionalCommits.scopes": [
+        "pdf (CV)"
     ]
 }
